@@ -1,0 +1,1 @@
+//zamf_var_medics = ["B_medic_F","O_medic_F","I_medic_F"];
