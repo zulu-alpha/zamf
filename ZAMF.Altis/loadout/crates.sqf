@@ -227,7 +227,6 @@ switch (_loadout) do {
 
 	};
 
-
 	case "limited_fst": {
 
 		// MG Acc

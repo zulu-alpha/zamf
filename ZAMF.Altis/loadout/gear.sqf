@@ -42,6 +42,8 @@ _head_heli = ["H_PilotHelmetHeli_B", "H_PilotHelmetHeli_O", "H_PilotHelmetHeli_O
 _head_heli_2 = ["h_booniehat_kampat_arid", "h_booniehat_kampat_transitional", "h_booniehat_kampat_woodland"] select _index;
 _head_ds = _head_co;
 _head_ct = "";
+_head_tm_at_tl = _head_sl;
+_head_tm_at_at = _head_sl;
 
 // uniform
 _uniform_co = ["u_uniform3_kampat_arid", "u_uniform3_kampat_transitional", "u_uniform3_kampat_woodland"] select _index;
@@ -58,6 +60,8 @@ _uniform_fst_u = _uniform_sl;
 _uniform_heli = _uniform_sl;
 _uniform_ds = _uniform_co;
 _uniform_ct = ["u_uniform1_kampat_arid", "u_uniform1_kampat_transitional", "u_uniform1_kampat_woodland"] select _index;
+_uniform_tm_at_tl = _uniform_sl;
+_uniform_tm_at_at = _uniform_sl;
 
 // vest
 _vest_co = ["v_platecarrier1_kampat_arid", "v_platecarrier1_kampat_transitional", "v_platecarrier1_kampat_woodland"] select _index;
@@ -68,12 +72,14 @@ _vest_r = _vest_sl;
 _vest_ftl = _vest_sl;
 _vest_g = _vest_sl;
 _vest_ar = _vest_sl;
-_vest_fst_a = _vest_r;
-_vest_fst_w = _vest_r;
-_vest_fst_u = _vest_r;
+_vest_fst_a = _vest_sl;
+_vest_fst_w = _vest_sl;
+_vest_fst_u = _vest_sl;
 _vest_heli = ["V_TacVestIR_blk", "V_TacVestIR_blk", "V_TacVestIR_blk"] select _index;
 _vest_ds = "";
 _vest_ct = "";
+_vest_tm_at_tl = _vest_sl;
+_vest_tm_at_at = _vest_sl;
 
 // backpack
 _backpack_co = ["tf_rt1523g", "tf_rt1523g", "tf_rt1523g_bwmod"] select _index;
@@ -90,6 +96,8 @@ _backpack_fst_u = "B_rhsusf_B_BACKPACK";
 _backpack_heli = "";
 _backpack_ds = "";
 _backpack_ct = "";
+_backpack_tm_at_tl = "B_Carryall_cbr";
+_backpack_tm_at_at = _backpack_g;
 
 
 removeAllWeapons _unit;
@@ -151,7 +159,6 @@ switch (_loadout) do {
 		_unit linkItem _nv;
 
 	};
-
 
 	case "eng": {
 
@@ -602,6 +609,93 @@ switch (_loadout) do {
 		_unit linkItem "ItemWatch";
 		_unit linkItem _radio_squad;
 		_unit linkItem "ItemAndroid";
+		_unit linkItem _nv;
+
+	};
+
+	case "tm_at_tl": {
+
+		comment "Add containers";
+		_unit forceAddUniform _uniform_tm_at_tl;
+		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_fieldDressing";};
+		for "_i" from 1 to 2 do {_unit addItemToUniform "ACE_morphine";};
+		_unit addItemToUniform "ACE_EarPlugs";
+		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_CableTie";};
+		for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+		_unit addVest _vest_tm_at_tl;
+		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
+		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
+		_unit addItemToVest "ACE_CableTie";
+		_unit addItemToVest "Chemlight_green";
+		for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";};
+		for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
+		for "_i" from 1 to 3 do {_unit addItemToVest "SmokeShellGreen";};
+		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellOrange";};
+		for "_i" from 1 to 3 do {_unit addItemToVest "Chemlight_blue";};
+		for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+		for "_i" from 1 to 6 do {_unit addItemToVest "rhs_mag_mk84";};
+		_unit addBackpack _backpack_tm_at_tl;
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_fgm148_magazine_AT";};
+		_unit addHeadgear _head_tm_at_tl;
+		_unit addGoggles "G_Combat";
+
+		comment "Add weapons";
+		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
+		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
+		_unit addWeapon "hgun_P07_F";
+		_unit addWeapon "ACE_Vector";
+
+		comment "Add items";
+		_unit linkItem "ItemMap";
+		_unit linkItem "ItemCompass";
+		_unit linkItem "ItemWatch";
+		_unit linkItem _radio_squad;
+		_unit linkItem "ItemAndroid";
+		_unit linkItem _nv;
+
+	};
+
+	case "tm_at_at": {
+
+		comment "Add containers";
+		_unit forceAddUniform _uniform_tm_at_at;
+		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_fieldDressing";};
+		for "_i" from 1 to 2 do {_unit addItemToUniform "ACE_morphine";};
+		_unit addItemToUniform "ACE_EarPlugs";
+		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_CableTie";};
+		for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+		for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_mk84";};
+		_unit addVest _vest_tm_at_at;
+		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
+		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
+		for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
+		for "_i" from 1 to 3 do {_unit addItemToVest "SmokeShellGreen";};
+		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellOrange";};
+		for "_i" from 1 to 3 do {_unit addItemToVest "Chemlight_blue";};
+		for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+		for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";};
+		for "_i" from 1 to 4 do {_unit addItemToVest "SmokeShell";};
+		_unit addBackpack _backpack_tm_at_at;
+		_unit addItemToBackpack "rhs_fgm148_magazine_AT";
+		_unit addItemToBackpack "rhs_fgm148_magazine_AT";
+		_unit addHeadgear _head_tm_at_at;
+		_unit addGoggles "G_Combat";
+
+		comment "Add weapons";
+		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
+		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
+		_unit addWeapon "rhs_weap_fgm148";
+		_unit addWeapon "hgun_P07_F";
+		_unit addWeapon "Binocular";
+
+		comment "Add items";
+		_unit linkItem "ItemMap";
+		_unit linkItem "ItemCompass";
+		_unit linkItem "ItemWatch";
+		_unit linkItem _radio_squad;
+		_unit linkItem "ItemMicroDAGR";
 		_unit linkItem _nv;
 
 	};
