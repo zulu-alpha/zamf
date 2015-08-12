@@ -549,7 +549,6 @@ switch (_loadout) do {
 		for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 		for "_i" from 1 to 6 do {_unit addItemToVest "rhs_mag_mk84";};
 		_unit addBackpack _backpack_fst_w;
-		_unit addItemToBackpack "B_UavTerminal";
 		_unit addHeadgear _head_fst_w;
 		_unit addGoggles "G_Combat";
 

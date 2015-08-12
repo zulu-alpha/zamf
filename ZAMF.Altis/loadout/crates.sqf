@@ -380,9 +380,6 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_DefusalKit", _numItem];
 		_crate addItemCargoGlobal ["b_UAVTerminal", _numItem];
 
-		// Medical
-
-
 
 		_crate addBackpackCargoGlobal ["tf_rt1523g", _numItem];
 		_crate addBackpackCargoGlobal ["B_UAV_01_backpack_F", _numWeapon];
@@ -401,16 +398,14 @@ switch (_loadout) do {
 	};
 
 	case "ugv": {
+		// Controller
+		_crate addItemCargoGlobal ["B_UavTerminal", 1];
 
 		// UAV
 		_crate addBackpackCargoGlobal ["B_UAV_01_backpack_F", 1];
 
 		// RQ-11
 		_crate addBackpackCargoGlobal ["B_rhsusf_B_BACKPACK", 1];
-
-		// Backpacks
-		_crate addBackpackCargoGlobal ["B_HMG_01_weapon_F", 1];
-		_crate addBackpackCargoGlobal ["B_HMG_01_support_F", 1];
 
 		// Mortar
 		_crate addBackpackCargoGlobal ["B_Mortar_01_support_F", 1];

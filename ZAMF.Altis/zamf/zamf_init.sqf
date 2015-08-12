@@ -102,6 +102,9 @@ if ((isServer) && ("zeusify" in _input)) then {
 	} count allCurators;
 };
 
+// R3F Logistics
+if ("logistics" in _input) then {execVM "R3F_LOG\init.sqf"};
+
 // Finish world initialization before mission is launched.
 finishMissionInit;
 

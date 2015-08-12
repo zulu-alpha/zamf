@@ -2061,7 +2061,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
-			init="nul = [this, ""limited_squad_resupply"", ""Resupply"", false] call zamf_fnc_crate; ";
+			init="nul = [this, ""limited_squad_resupply"", ""Squad Resupply"", false] call zamf_fnc_crate; ";
 		};
 		class Item6
 		{
@@ -2071,7 +2071,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
-			init="nul = [this, ""limited_squad_resupply"", ""Resupply"", false] call zamf_fnc_crate; ";
+			init="nul = [this, ""limited_squad_resupply"", ""Squad Resupply"", false] call zamf_fnc_crate; ";
 		};
 		class Item7
 		{
@@ -2081,7 +2081,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
-			init="nul = [this, ""limited_squad_resupply"", ""Resupply"", false] call zamf_fnc_crate;  ";
+			init="nul = [this, ""limited_squad_resupply"", ""Squad Resupply"", false] call zamf_fnc_crate; ";
 		};
 		class Item8
 		{
@@ -2091,7 +2091,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
-			init="nul = [this, ""limited_squad_resupply"", ""Resupply"", false] call zamf_fnc_crate;  ";
+			init="nul = [this, ""limited_squad_resupply"", ""Squad Resupply"", false] call zamf_fnc_crate; ";
 		};
 		class Item9
 		{
@@ -2111,7 +2111,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
-			init="nul = [this, ""limited_squad_resupply"", ""Resupply"", false] call zamf_fnc_crate;  ";
+			init="nul = [this, ""limited_squad_resupply"", ""Squad Resupply"", false] call zamf_fnc_crate; ";
 		};
 		class Item11
 		{
@@ -2121,7 +2121,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
-			init="nul = [this, ""limited_squad_resupply"", ""Resupply"", false] call zamf_fnc_crate;  ";
+			init="nul = [this, ""limited_squad_resupply"", ""Squad Resupply"", false] call zamf_fnc_crate; ";
 		};
 		class Item12
 		{
@@ -2131,7 +2131,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
-			init="nul = [this, ""limited_squad_resupply"", ""Resupply"", false] call zamf_fnc_crate;   ";
+			init="nul = [this, ""limited_squad_resupply"", ""Squad Resupply"", false] call zamf_fnc_crate; ";
 		};
 		class Item13
 		{
@@ -2141,7 +2141,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
-			init="nul = [this, ""limited_squad_resupply"", ""Resupply"", false] call zamf_fnc_crate;  ";
+			init="nul = [this, ""limited_squad_resupply"", ""Squad Resupply"", false] call zamf_fnc_crate; ";
 		};
 		class Item14
 		{
