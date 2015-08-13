@@ -129,6 +129,8 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_key_lockpick", 2];
 		_crate addItemCargoGlobal ["ACE_ATragMX", 2];
 		_crate addItemCargoGlobal ["ACE_key_west", 1];
+		_crate addItemCargoGlobal ["ACE_Sandbag_empty", 20];
+		_crate addItemCargoGlobal ["ACE_TacticalLadder_Pack", 2];
 
 
 		// BackPacks
@@ -146,6 +148,11 @@ switch (_loadout) do {
 
 		// DMR Bipod
 		_crate addItemCargoGlobal ["rhsusf_acc_harris_bipod", 1];
+
+		// DMR Equipment
+		_crate addItemCargoGlobal ["ACE_Tripod", 1];
+		_crate addItemCargoGlobal ["ACE_SpottingScope", 1];
+		_crate addItemCargoGlobal ["ACE_RangeCard", 1];
 
 	};
 
@@ -227,6 +234,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["Laserbatteries", 2];
 		_crate addItemCargoGlobal ["ACE_CableTie", 40];
 		_crate addItemCargoGlobal ["ToolKit", 2];
+		_crate addItemCargoGlobal ["ACE_Sandbag_empty", 20];
 
 		// DM
 		_crate addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m993_Mag", 12];
@@ -274,9 +282,11 @@ switch (_loadout) do {
 
 		// Equipment
 		_crate addItemCargoGlobal ["ACE_CableTie", 8];
+		_crate addItemCargoGlobal ["ACE_Sandbag_empty", 20];
 
 		// BackPacks
 		_crate addBackpackCargoGlobal [_backpack_big, 2];
+		_crate addBackpackCargoGlobal [_backpack, 2];
 
 	};
 
@@ -316,9 +326,99 @@ switch (_loadout) do {
 
 		// Equipment
 		_crate addItemCargoGlobal ["ACE_CableTie", 8];
+		_crate addItemCargoGlobal ["ACE_Sandbag_empty", 20];
 
 		// BackPacks
 		_crate addBackpackCargoGlobal [_backpack_big, 2];
+		_crate addBackpackCargoGlobal [_backpack, 2];
+
+	};
+
+	case "limited_hmg_resupply": {
+
+		// Medical
+		_crate addItemCargoGlobal ["ACE_fieldDressing", 32];
+		_crate addItemCargoGlobal ["ACE_morphine", 12];
+		_crate addItemCargoGlobal ["ACE_epinephrine", 6];
+		_crate addItemCargoGlobal ["ACE_bloodIV", 1];
+		_crate addItemCargoGlobal ["ACE_EarPlugs", 3];
+
+		// R
+		_crate addMagazineCargoGlobal ['rhs_mag_30Rnd_556x45_M855A1_Stanag', 12];
+		_crate addMagazineCargoGlobal ['rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red', 4];
+
+		// Pistol
+		_crate addMagazineCargoGlobal ['16Rnd_9x21_Mag', 12];
+
+		// HMG 'ammo'
+		_crate addBackpackCargoGlobal ["RHS_M2_Gun_Bag", 4];
+
+		// Grenades
+		_crate addMagazineCargoGlobal ['Chemlight_blue', 8];
+		_crate addMagazineCargoGlobal ['Chemlight_green', 8];
+		_crate addMagazineCargoGlobal ['SmokeShell', 12];
+		_crate addMagazineCargoGlobal ['SmokeShellGreen', 12];
+		_crate addMagazineCargoGlobal ['SmokeShellOrange', 12];
+		_crate addMagazineCargoGlobal ['HandGrenade', 6];
+		_crate addMagazineCargoGlobal ['rhs_mag_mk84', 6];
+		_crate addMagazineCargoGlobal ["ACE_IR_Strobe_Item", 6];
+
+		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 6];
+		_crate addMagazineCargoGlobal ["ACE_HandFlare_Green", 6];
+		_crate addMagazineCargoGlobal ["ACE_HandFlare_Red", 6];
+		_crate addMagazineCargoGlobal ["ACE_HandFlare_White", 6];
+
+		// Equipment
+		_crate addItemCargoGlobal ["ACE_CableTie", 12];
+		_crate addItemCargoGlobal ["ACE_Sandbag_empty", 20];
+
+		// BackPacks
+		_crate addBackpackCargoGlobal [_backpack_big, 3];
+		_crate addBackpackCargoGlobal [_backpack, 3];
+
+	};
+
+	case "limited_gmg_resupply": {
+
+		// Medical
+		_crate addItemCargoGlobal ["ACE_fieldDressing", 32];
+		_crate addItemCargoGlobal ["ACE_morphine", 12];
+		_crate addItemCargoGlobal ["ACE_epinephrine", 6];
+		_crate addItemCargoGlobal ["ACE_bloodIV", 1];
+		_crate addItemCargoGlobal ["ACE_EarPlugs", 3];
+
+		// R
+		_crate addMagazineCargoGlobal ['rhs_mag_30Rnd_556x45_M855A1_Stanag', 12];
+		_crate addMagazineCargoGlobal ['rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red', 4];
+
+		// Pistol
+		_crate addMagazineCargoGlobal ['16Rnd_9x21_Mag', 12];
+
+		// GMG 'ammo'
+		_crate addBackpackCargoGlobal ["RHS_Mk19_Gun_Bag", 4];
+
+		// Grenades
+		_crate addMagazineCargoGlobal ['Chemlight_blue', 8];
+		_crate addMagazineCargoGlobal ['Chemlight_green', 8];
+		_crate addMagazineCargoGlobal ['SmokeShell', 12];
+		_crate addMagazineCargoGlobal ['SmokeShellGreen', 12];
+		_crate addMagazineCargoGlobal ['SmokeShellOrange', 12];
+		_crate addMagazineCargoGlobal ['HandGrenade', 6];
+		_crate addMagazineCargoGlobal ['rhs_mag_mk84', 6];
+		_crate addMagazineCargoGlobal ["ACE_IR_Strobe_Item", 6];
+
+		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 6];
+		_crate addMagazineCargoGlobal ["ACE_HandFlare_Green", 6];
+		_crate addMagazineCargoGlobal ["ACE_HandFlare_Red", 6];
+		_crate addMagazineCargoGlobal ["ACE_HandFlare_White", 6];
+
+		// Equipment
+		_crate addItemCargoGlobal ["ACE_CableTie", 12];
+		_crate addItemCargoGlobal ["ACE_Sandbag_empty", 20];
+
+		// BackPacks
+		_crate addBackpackCargoGlobal [_backpack_big, 3];
+		_crate addBackpackCargoGlobal [_backpack, 3];
 
 	};
 
@@ -382,6 +482,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_key_lockpick", 2];
 		_crate addItemCargoGlobal ["ACE_ATragMX", 2];
 		_crate addItemCargoGlobal ["ACE_key_west", 1];
+		_crate addItemCargoGlobal ["ACE_Sandbag_empty", 20];
 
 		_crate addItemCargoGlobal ["ACE_RangeTable_82mm", 2];
 
@@ -397,10 +498,15 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag", 4];
 
 		// DMR Optics
-		_crate addItemCargoGlobal ["optic_LRPS", 1];
+		_crate addItemCargoGlobal ["optic_AMS", 1];
 
 		// DMR Bipod
 		_crate addItemCargoGlobal ["rhsusf_acc_harris_bipod", 1];
+
+		// DMR Equipment
+		_crate addItemCargoGlobal ["ACE_Tripod", 1];
+		_crate addItemCargoGlobal ["ACE_SpottingScope", 1];
+		_crate addItemCargoGlobal ["ACE_RangeCard", 1];
 
 	};
 
@@ -449,6 +555,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_key_lockpick", _numItem];
 		_crate addItemCargoGlobal ["ACE_ATragMX", _numItem];
 		_crate addItemCargoGlobal ["ACE_key_west", _numItem];
+		_crate addItemCargoGlobal ["ACE_Sandbag_empty", _numItem];
 
 		_crate addItemCargoGlobal ["ACE_RangeTable_82mm", _numItem];
 
@@ -477,6 +584,8 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_microDAGR", _numItem];
 
 		_crate addItemCargoGlobal ["Alive_tablet", _numItem];
+
+		_crate addItemCargoGlobal ["ACE_TacticalLadder_Pack", _numItem];
 
 	};
 
@@ -526,6 +635,11 @@ switch (_loadout) do {
 		this addItemToBackpack "ACE_EarPlugs";
 		this addItemToBackpack "ACE_Kestrel4500";
 		this addWeapon "ACE_Vector";
+		this addItemToBackpack "ACE_Tripod";
+		this addItemToBackpack "ACE_SpottingScope";
+		this addItemToBackpack "ACE_RangeCard";
+		this addItemToBackpack "ACE_Sandbag_empty";
+		this addBackpack "ACE_TacticalLadder_Pack";
 
 		this linkItem "ACE_NVG_Gen1";
 		this linkItem "ACE_NVG_Gen2";
