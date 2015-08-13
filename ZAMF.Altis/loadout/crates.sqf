@@ -376,6 +376,10 @@ switch (_loadout) do {
 		_crate addBackpackCargoGlobal [_backpack_big, 3];
 		_crate addBackpackCargoGlobal [_backpack, 3];
 
+		// DM
+		_crate addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m993_Mag", 12];
+		_crate addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag", 4];
+
 	};
 
 	case "limited_gmg_resupply": {
@@ -419,6 +423,10 @@ switch (_loadout) do {
 		// BackPacks
 		_crate addBackpackCargoGlobal [_backpack_big, 3];
 		_crate addBackpackCargoGlobal [_backpack, 3];
+
+		// DM
+		_crate addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m993_Mag", 12];
+		_crate addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag", 4];
 
 	};
 

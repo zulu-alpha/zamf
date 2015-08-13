@@ -1116,7 +1116,7 @@ class Mission
 					special="NONE";
 					id=35;
 					side="WEST";
-					vehicle="B_Soldier_TL_F";
+					vehicle="B_soldier_AAT_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -1761,7 +1761,7 @@ class Mission
 					special="NONE";
 					id=48;
 					side="WEST";
-					vehicle="B_Soldier_TL_F";
+					vehicle="B_soldier_AAA_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -2093,7 +2093,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
-			init="nul = [this, ""limited_squad_resupply"", ""Squad Resupply"", false] call zamf_fnc_crate; ";
+			init="nul = [this, ""limited_hmg_resupply"", ""HMG Resupply"", false] call zamf_fnc_crate; ";
 		};
 		class Item6
 		{
@@ -2127,7 +2127,7 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={14670.21,17.91,16633.549};
+			position[]={14670.244,17.91,16633.758};
 			azimut=90;
 			id=72;
 			side="EMPTY";
@@ -2137,17 +2137,17 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={14670.23,17.91,16635.162};
+			position[]={14670.23,17.91,16635.332};
 			azimut=90;
 			id=73;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
-			init="nul = [this, ""limited_squad_resupply"", ""Squad Resupply"", false] call zamf_fnc_crate; ";
+			init="nul = [this, ""limited_gmg_resupply"", ""GMG Resupply"", false] call zamf_fnc_crate; ";
 		};
 		class Item11
 		{
-			position[]={14670.213,17.91,16638.439};
+			position[]={14670.247,17.91,16638.508};
 			azimut=90;
 			id=74;
 			side="EMPTY";
@@ -2157,7 +2157,7 @@ class Mission
 		};
 		class Item12
 		{
-			position[]={14670.208,17.91,16636.828};
+			position[]={14670.242,17.91,16636.896};
 			azimut=90;
 			id=75;
 			side="EMPTY";
