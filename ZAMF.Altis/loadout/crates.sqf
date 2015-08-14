@@ -43,7 +43,7 @@ _backpack_2c = ["b_bergen_kampat_arid_2IC", "b_bergen_kampat_transitional_2IC", 
 _backpack_pl = ["b_bergen_kampat_arid_PL", "b_bergen_kampat_transitional_PL", "b_bergen_kampat_woodland_PL"] select _index;
 _backpack_md = ["b_bergen_kampat_arid_MEDIC", "b_bergen_kampat_transitional_MEDIC", "b_bergen_kampat_woodland_MEDIC"] select _index;
 _backpack = ["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_kampat_woodland"] select _index;
-_backpack_big = "B_Carryall_cbr";
+_backpack_big = ["B_Carryall_cbr", "B_Carryall_mcamo", "B_Carryall_oli"] select _index;
 
 
 switch (_loadout) do {
@@ -81,10 +81,6 @@ switch (_loadout) do {
 		_crate addWeaponCargoGlobal ["rhs_weap_M136", 4];
 		_crate addMagazineCargoGlobal ["rhs_m136_mag", 4];
 
-		// MANPAD
-		_crate addWeaponCargoGlobal ["rhs_weap_fim92", 1];
-		_crate addMagazineCargoGlobal ["rhs_fim92_mag", 4];
-
 		// Pistol
 		_crate addMagazineCargoGlobal ['16Rnd_9x21_Mag', 20];
 
@@ -97,7 +93,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ['SmokeShellOrange', 20];
 		_crate addMagazineCargoGlobal ['HandGrenade', 20];
 		_crate addMagazineCargoGlobal ['rhs_mag_mk84', 36];
-		_crate addMagazineCargoGlobal ["ACE_IR_Strobe_Item", 10];
+		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 10];
 
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 4];
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Green", 4];
@@ -186,15 +182,8 @@ switch (_loadout) do {
 		_crate addWeaponCargoGlobal ["rhs_weap_M136", 4];
 		_crate addMagazineCargoGlobal ["rhs_m136_mag", 4];
 
-		// ATGM
-		_crate addMagazineCargoGlobal ["rhs_fgm148_magazine_AT", 4];
-
-		// MANPAD
-		_crate addMagazineCargoGlobal ["rhs_fim92_mag", 4];
-
 		// Pistol
 		_crate addMagazineCargoGlobal ['16Rnd_9x21_Mag', 20];
-
 
 		// Grenades
 		_crate addMagazineCargoGlobal ['Chemlight_blue', 28];
@@ -204,7 +193,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ['SmokeShellOrange', 20];
 		_crate addMagazineCargoGlobal ['HandGrenade', 20];
 		_crate addMagazineCargoGlobal ['rhs_mag_mk84', 36];
-		_crate addMagazineCargoGlobal ["ACE_IR_Strobe_Item", 10];
+		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 10];
 
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 4];
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Green", 4];
@@ -273,7 +262,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ['SmokeShellOrange', 8];
 		_crate addMagazineCargoGlobal ['HandGrenade', 4];
 		_crate addMagazineCargoGlobal ['rhs_mag_mk84', 4];
-		_crate addMagazineCargoGlobal ["ACE_IR_Strobe_Item", 4];
+		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 4];
 
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 4];
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Green", 4];
@@ -317,7 +306,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ['SmokeShellOrange', 8];
 		_crate addMagazineCargoGlobal ['HandGrenade', 4];
 		_crate addMagazineCargoGlobal ['rhs_mag_mk84', 4];
-		_crate addMagazineCargoGlobal ["ACE_IR_Strobe_Item", 4];
+		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 4];
 
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 4];
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Green", 4];
@@ -361,7 +350,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ['SmokeShellOrange', 12];
 		_crate addMagazineCargoGlobal ['HandGrenade', 6];
 		_crate addMagazineCargoGlobal ['rhs_mag_mk84', 6];
-		_crate addMagazineCargoGlobal ["ACE_IR_Strobe_Item", 6];
+		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 6];
 
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 6];
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Green", 6];
@@ -409,7 +398,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ['SmokeShellOrange', 12];
 		_crate addMagazineCargoGlobal ['HandGrenade', 6];
 		_crate addMagazineCargoGlobal ['rhs_mag_mk84', 6];
-		_crate addMagazineCargoGlobal ["ACE_IR_Strobe_Item", 6];
+		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 6];
 
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 6];
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Green", 6];
@@ -467,7 +456,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ['SmokeShellOrange', 10];
 		_crate addMagazineCargoGlobal ['HandGrenade', 10];
 		_crate addMagazineCargoGlobal ['rhs_mag_mk84', 18];
-		_crate addMagazineCargoGlobal ["ACE_IR_Strobe_Item", 5];
+		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 5];
 
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 4];
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Green", 4];
