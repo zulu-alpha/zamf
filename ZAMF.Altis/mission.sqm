@@ -1854,7 +1854,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					init="nul = [this, ""tm_hmg_tl"", ""Dragon'3'4""] call zamf_fnc_team;";
+					init="nul = [this, ""tm_gmg_tl"", ""Dragon'3'4""] call zamf_fnc_team;";
 					description="Dragon'3'4'A [TL]";
 				};
 				class Item1
@@ -1868,8 +1868,8 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					init="nul = [this, ""tm_hmg_g"", ""Dragon'3'4""] call zamf_fnc_team;";
-					description="Dragon'3'4 [HMG Gunner]";
+					init="nul = [this, ""tm_gmg_g"", ""Dragon'3'4""] call zamf_fnc_team;";
+					description="Dragon'3'4 [GMG Gunner]";
 				};
 				class Item2
 				{
@@ -1882,7 +1882,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					init="nul = [this, ""tm_hmg_ab"", ""Dragon'3'4""] call zamf_fnc_team;";
+					init="nul = [this, ""tm_gmg_ab"", ""Dragon'3'4""] call zamf_fnc_team;";
 					description="Dragon'3'4' [DM\Ammo bearer]";
 				};
 			};
