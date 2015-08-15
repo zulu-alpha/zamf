@@ -124,11 +124,11 @@ _backpack_tm_at_tl = ["B_Carryall_cbr", "B_Carryall_mcamo", "B_Carryall_oli"] se
 _backpack_tm_at_at = _backpack_g;
 _backpack_tm_aa_tl = _backpack_tm_at_tl;
 _backpack_tm_aa_aa = _backpack_g;
-_backpack_tm_hmg_tl = "RHS_M2_MiniTripod_Bag";
-_backpack_tm_hmg_g = "RHS_M2_Gun_Bag";
+_backpack_tm_hmg_tl = "RHS_M2_Gun_Bag";
+_backpack_tm_hmg_g = "RHS_M2_MiniTripod_Bag";
 _backpack_tm_hmg_ab = "RHS_M2_Gun_Bag";
-_backpack_tm_gmg_tl = "RHS_Mk19_Tripod_Bag";
-_backpack_tm_gmg_g = "RHS_Mk19_Gun_Bag";
+_backpack_tm_gmg_tl = "RHS_Mk19_Gun_Bag";
+_backpack_tm_gmg_g = "RHS_Mk19_Tripod_Bag";
 _backpack_tm_gmg_ab = "RHS_Mk19_Gun_Bag";
 
 
