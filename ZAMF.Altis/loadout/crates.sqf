@@ -39,10 +39,7 @@ _index = call zamf_fnc_getClimate;
 _backpack_lr = ["tf_rt1523g", "tf_rt1523g", "tf_rt1523g_bwmod"] select _index;
 _backpack_lr_big = ["tf_rt1523g_big", "tf_rt1523g_big", "tf_rt1523g_big_bwmod"] select _index;
 
-_backpack_2c = ["b_bergen_kampat_arid_2IC", "b_bergen_kampat_transitional_2IC", "b_bergen_kampat_woodland_2IC"] select _index;
-_backpack_pl = ["b_bergen_kampat_arid_PL", "b_bergen_kampat_transitional_PL", "b_bergen_kampat_woodland_PL"] select _index;
-_backpack_md = ["b_bergen_kampat_arid_MEDIC", "b_bergen_kampat_transitional_MEDIC", "b_bergen_kampat_woodland_MEDIC"] select _index;
-_backpack = ["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_kampat_woodland"] select _index;
+_backpack = ["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_kampat_transitional"] select _index;
 _backpack_big = ["B_Carryall_cbr", "B_Carryall_mcamo", "B_Carryall_oli"] select _index;
 
 
@@ -518,6 +515,8 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_bloodIV", 30];
 		_crate addItemCargoGlobal ["ACE_bodyBag", 30];
 		_crate addItemCargoGlobal ["ACE_EarPlugs", 30];
+
+		_crate addItemCargoGlobal ["optic_DMS", 1]; // Prescription optics for Oxx
 
 	};
 

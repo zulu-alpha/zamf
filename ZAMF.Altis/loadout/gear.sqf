@@ -27,8 +27,8 @@ _nv = "ACE_NVG_Gen4"; // nv
 _radio_squad = "tf_anprc152";
 
 // head
-_head_co = ["h_milcap_kampat_arid", "h_milcap_kampat_transitional", "h_milcap_kampat_woodland"] select _index;
-_head_sl = ["h_canvashelmet_kampat_arid", "h_canvashelmet_kampat_transitional", "h_canvashelmet_kampat_woodland"] select _index;
+_head_co = ["h_milcap_kampat_arid", "h_milcap_kampat_transitional", "h_milcap_kampat_transitional"] select _index;
+_head_sl = ["h_canvashelmet_kampat_arid", "h_canvashelmet_kampat_transitional", "h_canvashelmet_kampat_transitional"] select _index;
 _head_eng = _head_sl;
 _head_md = _head_sl;
 _head_r = _head_sl;
@@ -39,7 +39,7 @@ _head_fst_a = _head_r;
 _head_fst_w = _head_r;
 _head_fst_u = _head_r;
 _head_heli = ["H_PilotHelmetHeli_B", "H_PilotHelmetHeli_O", "H_PilotHelmetHeli_O"] select _index;
-_head_heli_2 = ["h_booniehat_kampat_arid", "h_booniehat_kampat_transitional", "h_booniehat_kampat_woodland"] select _index;
+_head_heli_2 = ["h_booniehat_kampat_arid", "h_booniehat_kampat_transitional", "h_booniehat_kampat_transitional"] select _index;
 _head_ds = _head_co;
 _head_ct = "";
 _head_tm_at_tl = _head_sl;
@@ -54,8 +54,8 @@ _head_tm_gmg_g = _head_sl;
 _head_tm_gmg_ab = _head_sl;
 
 // uniform
-_uniform_co = ["u_uniform3_kampat_arid", "u_uniform3_kampat_transitional", "u_uniform3_kampat_woodland"] select _index;
-_uniform_sl = ["u_uniform2_kampat_arid", "u_uniform2_kampat_transitional", "u_uniform1_kampat_woodland"] select _index;
+_uniform_co = ["u_uniform3_kampat_arid", "u_uniform3_kampat_transitional", "u_uniform3_kampat_transitional"] select _index;
+_uniform_sl = ["u_uniform2_kampat_arid", "u_uniform2_kampat_transitional", "u_uniform1_kampat_transitional"] select _index;
 _uniform_eng = _uniform_sl;
 _uniform_md = _uniform_sl;
 _uniform_r = _uniform_sl;
@@ -67,7 +67,7 @@ _uniform_fst_w = _uniform_sl;
 _uniform_fst_u = _uniform_sl;
 _uniform_heli = _uniform_sl;
 _uniform_ds = _uniform_co;
-_uniform_ct = ["u_uniform1_kampat_arid", "u_uniform1_kampat_transitional", "u_uniform1_kampat_woodland"] select _index;
+_uniform_ct = ["u_uniform1_kampat_arid", "u_uniform1_kampat_transitional", "u_uniform1_kampat_transitional"] select _index;
 _uniform_tm_at_tl = _uniform_sl;
 _uniform_tm_at_at = _uniform_sl;
 _uniform_tm_aa_tl = _uniform_sl;
@@ -80,8 +80,8 @@ _uniform_tm_gmg_g = _uniform_sl;
 _uniform_tm_gmg_ab = _uniform_sl;
 
 // vest
-_vest_co = ["v_platecarrier1_kampat_arid", "v_platecarrier1_kampat_transitional", "v_platecarrier1_kampat_woodland"] select _index;
-_vest_sl = ["v_platecarrier2_kampat_arid", "v_platecarrier2_kampat_transitional", "v_platecarrier2_kampat_woodland"] select _index;
+_vest_co = ["v_platecarrier1_kampat_arid", "v_platecarrier1_kampat_transitional", "v_platecarrier1_kampat_transitional"] select _index;
+_vest_sl = ["v_platecarrier2_kampat_arid", "v_platecarrier2_kampat_transitional", "v_platecarrier2_kampat_transitional"] select _index;
 _vest_eng = _vest_sl;
 _vest_md = _vest_sl;
 _vest_r = _vest_sl;
@@ -108,19 +108,19 @@ _vest_tm_gmg_ab = _vest_sl;
 // backpack
 _backpack_co = ["tf_rt1523g", "tf_rt1523g", "tf_rt1523g_bwmod"] select _index;
 _backpack_sl = ["tf_rt1523g_big", "tf_rt1523g_big", "tf_rt1523g_big_bwmod"] select _index;
-_backpack_md = ["b_bergen_kampat_arid_MEDIC", "b_bergen_kampat_transitional_MEDIC", "b_bergen_kampat_woodland_MEDIC"] select _index;
-_backpack_r = ["b_bergen_kampat_arid_LS", "b_bergen_kampat_transitional_LS", "b_bergen_kampat_woodland_LS"] select _index;
-_backpack_ftl = ["b_bergen_kampat_arid_PL", "b_bergen_kampat_transitional_PL", "b_bergen_kampat_woodland_PL"] select _index;
-_backpack_g = ["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_kampat_woodland"] select _index;
+_backpack_md = ["b_bergen_kampat_arid_MEDIC", "b_bergen_kampat_transitional_MEDIC", "b_bergen_kampat_transitional_MEDIC"] select _index;
+_backpack_r = ["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_kampat_transitional"] select _index;
+_backpack_ftl = ["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_kampat_transitional"] select _index;
+_backpack_g = ["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_kampat_transitional"] select _index;
 _backpack_eng = _backpack_g;
-_backpack_ar = ["b_bergen_kampat_arid_2IC", "b_bergen_kampat_transitional_2IC", "b_bergen_kampat_woodland_2IC"] select _index;
+_backpack_ar = ["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_kampat_transitional"] select _index;
 _backpack_fst_a = _backpack_sl;
 _backpack_fst_w = _backpack_sl;
 _backpack_fst_u = "B_rhsusf_B_BACKPACK";
 _backpack_heli = "";
 _backpack_ds = "";
 _backpack_ct = "";
-_backpack_tm_at_tl = ["B_Carryall_cbr", "B_Carryall_mcamo", "B_Carryall_oli"] select _index;
+_backpack_tm_at_tl = ["b_carryall_kampat_arid", "b_carryall_kampat_arid", "b_carryall_kampat_transitional"] select _index;
 _backpack_tm_at_at = _backpack_g;
 _backpack_tm_aa_tl = _backpack_tm_at_tl;
 _backpack_tm_aa_aa = _backpack_g;
