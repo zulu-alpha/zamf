@@ -113,7 +113,6 @@ switch (_loadout) do {
 		// Equipment
 		_crate addWeaponCargoGlobal ["Laserdesignator", 1];
 		_crate addMagazineCargoGlobal ["Laserbatteries", 1];
-		_crate addItemCargoGlobal ["ACE_Kestrel4500", 2];
 		_crate addItemCargoGlobal ["ACE_CableTie", 40];
 		_crate addItemCargoGlobal ["MineDetector", 2];
 		_crate addItemCargoGlobal ["ToolKit", 2];
@@ -123,7 +122,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_ATragMX", 2];
 		_crate addItemCargoGlobal ["ACE_key_west", 1];
 		_crate addItemCargoGlobal ["ACE_Sandbag_empty", 20];
-		_crate addItemCargoGlobal ["ACE_TacticalLadder_Pack", 2];
+		_crate addBackpackCargoGlobal ["ACE_TacticalLadder_Pack", 2];
 
 
 		// BackPacks
@@ -137,7 +136,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag", 4];
 
 		// DMR Optics
-		_crate addItemCargoGlobal ["optic_AMS", 1];
+		_crate addItemCargoGlobal ["optic_SOS", 1];
 
 		// DMR Bipod
 		_crate addItemCargoGlobal ["rhsusf_acc_harris_bipod", 1];
@@ -146,6 +145,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_Tripod", 1];
 		_crate addItemCargoGlobal ["ACE_SpottingScope", 1];
 		_crate addItemCargoGlobal ["ACE_RangeCard", 1];
+		_crate addItemCargoGlobal ["ACE_Kestrel4500", 1];
 
 	};
 
@@ -464,7 +464,6 @@ switch (_loadout) do {
 		// Equipment
 		_crate addWeaponCargoGlobal ["Laserdesignator", 1];
 		_crate addMagazineCargoGlobal ["Laserbatteries", 1];
-		_crate addItemCargoGlobal ["ACE_Kestrel4500", 1];
 		_crate addItemCargoGlobal ["ACE_CableTie", 20];
 		_crate addItemCargoGlobal ["MineDetector", 1];
 		_crate addItemCargoGlobal ["ToolKit", 1];
@@ -492,7 +491,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag", 4];
 
 		// DMR Optics
-		_crate addItemCargoGlobal ["optic_AMS", 1];
+		_crate addItemCargoGlobal ["optic_SOS", 1];
 
 		// DMR Bipod
 		_crate addItemCargoGlobal ["rhsusf_acc_harris_bipod", 1];
@@ -501,6 +500,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_Tripod", 1];
 		_crate addItemCargoGlobal ["ACE_SpottingScope", 1];
 		_crate addItemCargoGlobal ["ACE_RangeCard", 1];
+		_crate addItemCargoGlobal ["ACE_Kestrel4500", 1];
 
 	};
 
@@ -581,7 +581,7 @@ switch (_loadout) do {
 
 		_crate addItemCargoGlobal ["Alive_tablet", _numItem];
 
-		_crate addItemCargoGlobal ["ACE_TacticalLadder_Pack", _numItem];
+		_crate addBackpackCargoGlobal ["ACE_TacticalLadder_Pack", _numItem];
 
 	};
 

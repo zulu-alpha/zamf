@@ -953,7 +953,7 @@ switch (_loadout) do {
 
 		comment "Add weapons";
 		_unit addWeapon "rhs_weap_m14ebrri";
-		_unit addPrimaryWeaponItem "optic_AMS";
+		_unit addPrimaryWeaponItem "optic_SOS";
 		_unit addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
 		_unit addWeapon "hgun_P07_F";
 		_unit addWeapon "Binocular";
@@ -1093,7 +1093,7 @@ switch (_loadout) do {
 
 		comment "Add weapons";
 		_unit addWeapon "rhs_weap_m14ebrri";
-		_unit addPrimaryWeaponItem "optic_AMS";
+		_unit addPrimaryWeaponItem "optic_SOS";
 		_unit addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
 		_unit addWeapon "hgun_P07_F";
 		_unit addWeapon "Binocular";
