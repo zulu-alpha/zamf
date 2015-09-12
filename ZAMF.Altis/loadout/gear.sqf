@@ -40,6 +40,7 @@ _head_fst_w = _head_r;
 _head_fst_u = _head_r;
 _head_heli = ["H_PilotHelmetHeli_B", "H_PilotHelmetHeli_O", "H_PilotHelmetHeli_O"] select _index;
 _head_heli_2 = ["h_booniehat_kampat_arid", "h_booniehat_kampat_transitional", "h_booniehat_kampat_transitional"] select _index;
+_head_crew = "h_crewhelmet_kampat";
 _head_ds = _head_co;
 _head_ct = "";
 _head_tm_at_tl = _head_sl;
@@ -66,6 +67,7 @@ _uniform_fst_a = _uniform_sl;
 _uniform_fst_w = _uniform_sl;
 _uniform_fst_u = _uniform_sl;
 _uniform_heli = _uniform_sl;
+_uniform_crew = ["u_uniform1_kampat_arid", "u_uniform1_kampat_transitional", "u_uniform1_kampat_transitional"] select _index;
 _uniform_ds = _uniform_co;
 _uniform_ct = ["u_uniform1_kampat_arid", "u_uniform1_kampat_transitional", "u_uniform1_kampat_transitional"] select _index;
 _uniform_tm_at_tl = _uniform_sl;
@@ -92,6 +94,7 @@ _vest_fst_a = _vest_sl;
 _vest_fst_w = _vest_sl;
 _vest_fst_u = _vest_sl;
 _vest_heli = ["V_TacVestIR_blk", "V_TacVestIR_blk", "V_TacVestIR_blk"] select _index;
+_vest_crew = ["v_tacticalvest_kampat_arid", "v_tacticalvest_kampat_transitional", "v_tacticalvest_kampat_transitional"] select _index;
 _vest_ds = "";
 _vest_ct = "";
 _vest_tm_at_tl = _vest_sl;
@@ -1111,7 +1114,6 @@ switch (_loadout) do {
 
 	};
 
-
 	case "heli": {
 
 		comment "Add containers";
@@ -1140,6 +1142,42 @@ switch (_loadout) do {
 		comment "Add weapons";
 		_unit addWeapon "rhs_weap_m4_carryhandle";
 		_unit addWeapon "hgun_Pistol_Signal_F";
+
+		comment "Add items";
+		_unit linkItem "ItemMap";
+		_unit linkItem "ItemCompass";
+		_unit linkItem "ItemWatch";
+		_unit linkItem _radio_squad;
+		_unit linkItem "ItemGPS";
+		_unit linkItem _nv;
+
+	};
+
+	case "crew": {
+
+		comment "Add containers";
+		_unit forceAddUniform _uniform_crew;
+		_unit addItemToUniform "ACE_morphine";
+		_unit addItemToUniform "ACE_EarPlugs";
+		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_CableTie";};
+		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_fieldDressing";};
+		_unit addItemToUniform "16Rnd_9x21_Mag";
+		_unit addVest _vest_crew;
+		_unit addItemToVest "16Rnd_9x21_Mag";
+		for "_i" from 1 to 4 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
+		_unit addItemToVest "SmokeShellGreen";
+		_unit addItemToVest "SmokeShellBlue";
+		_unit addItemToVest "B_IR_Grenade";
+		for "_i" from 1 to 2 do {_unit addItemToVest "Chemlight_blue";};
+		_unit addItemToVest "Chemlight_green";
+		_unit addHeadgear _head_crew;
+		_unit addGoggles "G_Balaclava_combat";
+
+		comment "Add weapons";
+		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "hgun_P07_F";
+		_unit addWeapon "Binocular";
 
 		comment "Add items";
 		_unit linkItem "ItemMap";
