@@ -28,7 +28,8 @@ class Mission
 		"ace_advanced_ballistics",
 		"ace_winddeflection",
 		"ace_viewdistance",
-		"alive_sys_logistics"
+		"alive_sys_logistics",
+		"3DEN"
 	};
 	addOnsAuto[]=
 	{
@@ -39,7 +40,8 @@ class Mission
 		"alive_sup_combatsupport",
 		"alive_sys_profile",
 		"A3_Characters_F_BLUFOR",
-		"A3_Modules_F_Curator_Curator",
+		"3DEN",
+		"a3_modules_f_curator_curator",
 		"A3_Soft_F_Crusher_UGV",
 		"alive_sys_playeroptions",
 		"ace_common",
@@ -2032,10 +2034,10 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=18;
+		items=20;
 		class Item0
 		{
-			position[]={14705.066,17.91,16639.818};
+			position[]={14707.335,17.91,16640.031};
 			azimut=90;
 			special="NONE";
 			id=63;
@@ -2047,7 +2049,7 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={14699.646,17.91,16639.814};
+			position[]={14700.692,17.91,16640.061};
 			azimut=90;
 			id=64;
 			side="EMPTY";
@@ -2057,7 +2059,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={14701.188,17.91,16639.83};
+			position[]={14702.481,17.91,16640.039};
 			azimut=90;
 			id=65;
 			side="EMPTY";
@@ -2067,7 +2069,7 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={14698.08,17.91,16639.809};
+			position[]={14695.219,17.91,16640.02};
 			azimut=90;
 			id=66;
 			side="EMPTY";
@@ -2117,7 +2119,7 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={14702.681,17.91,16639.816};
+			position[]={14705.578,17.91,16640.031};
 			azimut=90;
 			id=71;
 			side="EMPTY";
@@ -2207,13 +2209,33 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={14693.495,17.91,16639.789};
+			position[]={14692.345,17.91,16639.992};
 			azimut=90;
 			id=80;
 			side="EMPTY";
 			vehicle="Box_NATO_AmmoVeh_F";
 			skill=0.60000002;
 			init="nul = [this, ""para"", ""Paradrop"", false] call zamf_fnc_crate;";
+		};
+		class Item18
+		{
+			position[]={14698.815,17.91,16640.057};
+			azimut=90;
+			id=81;
+			side="EMPTY";
+			vehicle="Box_NATO_AmmoVeh_F";
+			skill=0.60000002;
+			init="nul = [this, ""limited_hmg"", ""Dragon'3'3"", true] call zamf_fnc_crate;";
+		};
+		class Item19
+		{
+			position[]={14697.001,17.91,16640.055};
+			azimut=90;
+			id=82;
+			side="EMPTY";
+			vehicle="Box_NATO_AmmoVeh_F";
+			skill=0.60000002;
+			init="nul = [this, ""limited_hmg"", ""Dragon'3'4"", true] call zamf_fnc_crate;";
 		};
 	};
 	class Markers
