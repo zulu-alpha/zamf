@@ -32,6 +32,7 @@ class ZAMF
 		class disableAI {description = "Disables the AI for all the crew of a specified unit."; file = "zamf\ai\disable_ai.sqf";};
 		class team {description = "Sets the gear and group ID of a unit.";};
 		class crate {description = "Sets the gear and group restrictions of a crate.";};
+		class spectateOptions {description = "Gives the target player local only action menu options to spectate. Must be spawned.";};
 	};
 
 	class res

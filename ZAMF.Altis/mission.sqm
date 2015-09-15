@@ -103,7 +103,7 @@ class Mission
 					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="this hideobject true; this allowDamage False; this addAction [""Freecam"", ""zamf\debug\freecam.sqf""]; nul = [this, ""zeus""] spawn zamf_fnc_gear; ";
+					init="this hideobject true; this allowDamage False; nul = [this] spawn zamf_fnc_spectateOptions; nul = [this, ""zeus""] spawn zamf_fnc_gear; ";
 					description="Spectator";
 				};
 				class Item1
@@ -116,7 +116,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					init="this hideobject true; this allowDamage False; this addAction [""Freecam"", ""zamf\debug\freecam.sqf""]; nul = [this, ""zeus""] spawn zamf_fnc_gear; ";
+					init="this hideobject true; this allowDamage False; nul = [this] spawn zamf_fnc_spectateOptions; nul = [this, ""zeus""] spawn zamf_fnc_gear; ";
 					description="Spectator";
 				};
 			};
@@ -472,7 +472,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="zeus";
-					init="this hideobject true; this allowDamage False; this addAction [""Freecam"", ""zamf\debug\freecam.sqf""]; nul = [this, ""zeus""] spawn zamf_fnc_gear; ";
+					init="this hideobject true; this allowDamage False; nul = [this] spawn zamf_fnc_spectateOptions; nul = [this, ""zeus""] spawn zamf_fnc_gear; ";
 					description="Zeus";
 				};
 			};
