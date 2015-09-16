@@ -182,7 +182,7 @@ switch (_loadout) do {
 		_unit addGoggles "G_Lowprofile";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_carryhandle";
 		_unit addWeapon "ACE_Vector";
 
 		comment "Add items";
@@ -226,7 +226,7 @@ switch (_loadout) do {
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_carryhandle";
 		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
 		_unit addWeapon "hgun_P07_F";
@@ -271,7 +271,7 @@ switch (_loadout) do {
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_carryhandle";
 		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
 		_unit addWeapon "hgun_P07_F";
@@ -320,7 +320,7 @@ switch (_loadout) do {
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_carryhandle";
 		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
 		_unit addWeapon "hgun_P07_F";
@@ -365,7 +365,7 @@ switch (_loadout) do {
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_carryhandle";
 		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
 		_unit addWeapon "hgun_P07_F";
@@ -410,7 +410,7 @@ switch (_loadout) do {
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_carryhandle";
 		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
 		_unit addWeapon "hgun_P07_F";
@@ -464,7 +464,7 @@ switch (_loadout) do {
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_m320";
+		_unit addWeapon "rhs_weap_m4a1_m320";
 		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
 		_unit addWeapon "hgun_P07_F";
@@ -682,7 +682,7 @@ switch (_loadout) do {
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_carryhandle";
 		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
 		_unit addWeapon "hgun_P07_F";
@@ -726,7 +726,7 @@ switch (_loadout) do {
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_carryhandle";
 		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
 		_unit addWeapon "rhs_weap_fgm148";
@@ -771,7 +771,7 @@ switch (_loadout) do {
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_carryhandle";
 		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
 		_unit addWeapon "hgun_P07_F";
@@ -816,7 +816,7 @@ switch (_loadout) do {
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_carryhandle";
 		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
 		_unit addWeapon "rhs_weap_fim92";
@@ -862,7 +862,7 @@ switch (_loadout) do {
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_carryhandle";
 		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
 		_unit addWeapon "hgun_P07_F";
@@ -908,7 +908,7 @@ switch (_loadout) do {
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_carryhandle";
 		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
 		_unit addWeapon "hgun_P07_F";
@@ -1002,7 +1002,7 @@ switch (_loadout) do {
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_carryhandle";
 		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
 		_unit addWeapon "hgun_P07_F";
@@ -1048,7 +1048,7 @@ switch (_loadout) do {
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_carryhandle";
 		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
 		_unit addWeapon "hgun_P07_F";
@@ -1140,7 +1140,7 @@ switch (_loadout) do {
 		_unit addHeadgear _head_heli;
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_carryhandle";
 		_unit addWeapon "hgun_Pistol_Signal_F";
 
 		comment "Add items";
@@ -1175,7 +1175,7 @@ switch (_loadout) do {
 		_unit addGoggles "G_Balaclava_combat";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_carryhandle";
 		_unit addWeapon "hgun_P07_F";
 		_unit addWeapon "Binocular";
 
