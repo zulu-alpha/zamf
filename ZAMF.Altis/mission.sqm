@@ -29,7 +29,10 @@ class Mission
 		"3DEN",
 		"ace_respawn",
 		"ace_finger",
-		"ace_sitting"
+		"ace_sitting",
+		"ace_cargo",
+		"ace_repair",
+		"A3_Soft_F_Gamma_HEMTT"
 	};
 	addOnsAuto[]=
 	{
@@ -54,7 +57,10 @@ class Mission
 		"ace_respawn",
 		"ace_finger",
 		"ace_sitting",
+		"ace_cargo",
+		"ace_repair",
 		"A3_Weapons_F_Ammoboxes",
+		"A3_Soft_F_Gamma_HEMTT",
 		"a3_map_altis"
 	};
 	randomSeed=6713907;
@@ -82,7 +88,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=36;
+		items=39;
 		class Item0
 		{
 			side="CIV";
@@ -301,6 +307,7 @@ class Mission
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
+					text="eng_1";
 					init="nul = [this, ""eng"", ""Dragon'0""] call zamf_fnc_team;";
 					description="Dragon'0'E [Engineer]";
 				};
@@ -1755,10 +1762,10 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=1;
+				items=4;
 				class Item0
 				{
-					position[]={14702.505,17.91,16637.568};
+					position[]={14696.768,17.91,16637.592};
 					azimut=-89.397102;
 					special="NONE";
 					id=56;
@@ -1766,83 +1773,56 @@ class Mission
 					vehicle="B_Helipilot_F";
 					player="PLAY CDG";
 					leader=1;
-					rank="CORPORAL";
+					rank="SERGEANT";
 					skill=0.60000002;
-					init="nul = [this, ""heli"", ""Ghostrider'4""] call zamf_fnc_team;";
-					description="Ghostrider'4 [Heli Pilot]";
+					init="nul = [this, ""heli"", ""Ghostrider""] call zamf_fnc_team;";
+					description="Ghostrider'1 [Heli Pilot]";
 				};
-			};
-		};
-		class Item28
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item1
 				{
-					position[]={14696.81,17.91,16637.59};
+					position[]={14698.779,17.91,16637.582};
 					azimut=-89.397102;
 					special="NONE";
 					id=57;
 					side="WEST";
 					vehicle="B_Helipilot_F";
 					player="PLAY CDG";
-					leader=1;
-					rank="SERGEANT";
+					rank="CORPORAL";
 					skill=0.60000002;
-					init="nul = [this, ""heli"", ""Ghostrider'1""] call zamf_fnc_team;";
-					description="Ghostrider'1 [Heli Pilot]";
+					init="nul = [this, ""heli"", ""Ghostrider""] call zamf_fnc_team;";
+					description="Ghostrider'2 [Heli Pilot]";
 				};
-			};
-		};
-		class Item29
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item2
 				{
-					position[]={14698.792,17.91,16637.592};
+					position[]={14700.725,17.91,16637.604};
 					azimut=-89.397102;
 					special="NONE";
 					id=58;
 					side="WEST";
 					vehicle="B_Helipilot_F";
 					player="PLAY CDG";
-					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					init="nul = [this, ""heli"", ""Ghostrider'2""] call zamf_fnc_team;";
-					description="Ghostrider'2 [Heli Pilot]";
+					init="nul = [this, ""heli"", ""Ghostrider""] call zamf_fnc_team;";
+					description="Ghostrider'3 [Heli Pilot]";
 				};
-			};
-		};
-		class Item30
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item3
 				{
-					position[]={14700.664,17.91,16637.582};
+					position[]={14702.605,17.91,16637.586};
 					azimut=-89.397102;
 					special="NONE";
 					id=59;
 					side="WEST";
 					vehicle="B_Helipilot_F";
 					player="PLAY CDG";
-					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					init="nul = [this, ""heli"", ""Ghostrider'3""] call zamf_fnc_team;";
-					description="Ghostrider'3 [Heli Pilot]";
+					init="nul = [this, ""heli"", ""Ghostrider""] call zamf_fnc_team;";
+					description="Ghostrider'4 [Heli Pilot]";
 				};
 			};
 		};
-		class Item31
+		class Item28
 		{
 			side="LOGIC";
 			class Vehicles
@@ -1876,7 +1856,7 @@ class Mission
 				};
 			};
 		};
-		class Item32
+		class Item29
 		{
 			side="LOGIC";
 			class Vehicles
@@ -1884,7 +1864,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14682.497,17.91,16684.477};
+					position[]={14681.616,17.91,16684.412};
 					class args
 					{
 						items=2;
@@ -1910,7 +1890,7 @@ class Mission
 				};
 			};
 		};
-		class Item33
+		class Item30
 		{
 			side="LOGIC";
 			class Vehicles
@@ -1918,7 +1898,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14687.509,17.91,16684.557};
+					position[]={14685.741,17.91,16684.279};
 					class args
 					{
 						items=1;
@@ -1938,7 +1918,7 @@ class Mission
 				};
 			};
 		};
-		class Item34
+		class Item31
 		{
 			side="WEST";
 			class Vehicles
@@ -1988,7 +1968,7 @@ class Mission
 				};
 			};
 		};
-		class Item35
+		class Item32
 		{
 			side="WEST";
 			class Vehicles
@@ -2038,16 +2018,268 @@ class Mission
 				};
 			};
 		};
+		class Item33
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14663.296,17.91,16672.539};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_moduleCargoSettings";
+							typeName="enable";
+						};
+					};
+					id=69;
+					side="LOGIC";
+					vehicle="ACE_moduleCargoSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item34
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14668.287,17.91,16672.471};
+					class args
+					{
+						items=9;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="engineerSetting_Repair";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="engineerSetting_Wheel";
+						};
+						class Item2
+						{
+							value="0.6";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="repairDamageThreshold";
+						};
+						class Item3
+						{
+							value="0.4";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="repairDamageThreshold_Engineer";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="consumeItem_ToolKit";
+						};
+						class Item5
+						{
+							value="3";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="fullRepairLocation";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="engineerSetting_fullRepair";
+						};
+						class Item7
+						{
+							value="1";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="addSpareParts";
+						};
+						class Item8
+						{
+							value="0";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="wheelRepairRequiredItems";
+						};
+					};
+					id=70;
+					side="LOGIC";
+					vehicle="ACE_moduleRepairSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item35
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14672.918,17.91,16672.504};
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="eng_1";
+							parentCls="ACE_moduleAssignEngineerRoles";
+							typeName="EnableList";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ACE_moduleAssignEngineerRoles";
+							typeName="role";
+						};
+					};
+					id=71;
+					side="LOGIC";
+					vehicle="ACE_moduleAssignEngineerRoles";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item36
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14677.257,17.91,16672.471};
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="repair_1";
+							parentCls="ACE_moduleAssignRepairVehicle";
+							typeName="EnableList";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ACE_moduleAssignRepairVehicle";
+							typeName="role";
+						};
+					};
+					id=72;
+					side="LOGIC";
+					vehicle="ACE_moduleAssignRepairVehicle";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item37
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14681.526,17.91,16672.512};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="repair_1";
+							parentCls="ACE_moduleAddSpareParts";
+							typeName="List";
+						};
+						class Item1
+						{
+							value="ACE_Wheel";
+							parentCls="ACE_moduleAddSpareParts";
+							typeName="Part";
+						};
+						class Item2
+						{
+							value="7";
+							parentCls="ACE_moduleAddSpareParts";
+							typeName="Amount";
+						};
+					};
+					id=73;
+					side="LOGIC";
+					vehicle="ACE_moduleAddSpareParts";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item38
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14685.955,17.91,16672.432};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="repair_1";
+							parentCls="ACE_moduleAddSpareParts";
+							typeName="List";
+						};
+						class Item1
+						{
+							value="ACE_Track";
+							parentCls="ACE_moduleAddSpareParts";
+							typeName="Part";
+						};
+						class Item2
+						{
+							value="4";
+							parentCls="ACE_moduleAddSpareParts";
+							typeName="Amount";
+						};
+					};
+					id=74;
+					side="LOGIC";
+					vehicle="ACE_moduleAddSpareParts";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=16;
+		items=17;
 		class Item0
 		{
 			position[]={14706.847,17.91,16645.164};
 			azimut=90;
 			special="NONE";
-			id=69;
+			id=75;
 			side="EMPTY";
 			vehicle="Box_NATO_AmmoVeh_F";
 			leader=1;
@@ -2058,7 +2290,7 @@ class Mission
 		{
 			position[]={14700.204,17.91,16645.193};
 			azimut=90;
-			id=70;
+			id=76;
 			side="EMPTY";
 			vehicle="Box_NATO_AmmoVeh_F";
 			skill=0.60000002;
@@ -2068,7 +2300,7 @@ class Mission
 		{
 			position[]={14701.993,17.91,16645.172};
 			azimut=90;
-			id=71;
+			id=77;
 			side="EMPTY";
 			vehicle="Box_NATO_AmmoVeh_F";
 			skill=0.60000002;
@@ -2078,7 +2310,7 @@ class Mission
 		{
 			position[]={14694.73,17.91,16645.152};
 			azimut=90;
-			id=72;
+			id=78;
 			side="EMPTY";
 			vehicle="Box_NATO_AmmoVeh_F";
 			skill=0.60000002;
@@ -2088,7 +2320,7 @@ class Mission
 		{
 			position[]={14671.99,17.91,16633.686};
 			azimut=90;
-			id=73;
+			id=79;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
@@ -2098,7 +2330,7 @@ class Mission
 		{
 			position[]={14671.976,17.91,16635.305};
 			azimut=90;
-			id=74;
+			id=80;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
@@ -2108,7 +2340,7 @@ class Mission
 		{
 			position[]={14671.958,17.91,16638.512};
 			azimut=90;
-			id=75;
+			id=81;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
@@ -2118,7 +2350,7 @@ class Mission
 		{
 			position[]={14671.953,17.91,16636.902};
 			azimut=90;
-			id=76;
+			id=82;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
@@ -2128,7 +2360,7 @@ class Mission
 		{
 			position[]={14705.09,17.91,16645.164};
 			azimut=90;
-			id=77;
+			id=83;
 			side="EMPTY";
 			vehicle="Box_NATO_AmmoVeh_F";
 			skill=0.60000002;
@@ -2138,7 +2370,7 @@ class Mission
 		{
 			position[]={14670.244,17.91,16633.758};
 			azimut=90;
-			id=78;
+			id=84;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
@@ -2148,7 +2380,7 @@ class Mission
 		{
 			position[]={14670.23,17.91,16635.332};
 			azimut=90;
-			id=79;
+			id=85;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
@@ -2158,7 +2390,7 @@ class Mission
 		{
 			position[]={14670.247,17.91,16638.508};
 			azimut=90;
-			id=80;
+			id=86;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
@@ -2168,7 +2400,7 @@ class Mission
 		{
 			position[]={14670.242,17.91,16636.896};
 			azimut=90;
-			id=81;
+			id=87;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
@@ -2178,7 +2410,7 @@ class Mission
 		{
 			position[]={14691.856,17.91,16645.125};
 			azimut=90;
-			id=82;
+			id=88;
 			side="EMPTY";
 			vehicle="Box_NATO_AmmoVeh_F";
 			skill=0.60000002;
@@ -2188,7 +2420,7 @@ class Mission
 		{
 			position[]={14698.327,17.91,16645.189};
 			azimut=90;
-			id=83;
+			id=89;
 			side="EMPTY";
 			vehicle="Box_NATO_AmmoVeh_F";
 			skill=0.60000002;
@@ -2198,11 +2430,22 @@ class Mission
 		{
 			position[]={14696.513,17.91,16645.188};
 			azimut=90;
-			id=84;
+			id=90;
 			side="EMPTY";
 			vehicle="Box_NATO_AmmoVeh_F";
 			skill=0.60000002;
 			init="nul = [this, ""limited_hmg"", ""Dragon'3'4"", true] call zamf_fnc_crate;";
+		};
+		class Item16
+		{
+			position[]={14674.298,17.91,16629.172};
+			azimut=90.603302;
+			special="NONE";
+			id=91;
+			side="EMPTY";
+			vehicle="B_Truck_01_Repair_F";
+			skill=0.60000002;
+			text="repair_1";
 		};
 	};
 	class Markers

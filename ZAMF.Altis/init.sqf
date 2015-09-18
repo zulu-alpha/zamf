@@ -15,7 +15,6 @@ zamf_respawntimer = 5;
 "tfar_config",		     // ZA Specific config settings for TFAR, such as disabling auto microdagr and backpack radios.
 "mcc_limit",		     // Limit MCC to Admins.
 "zeusify",		     // Make sure that all units are detected by zeus.
-"logistics",		     // Enable a logistics script
 "zam_res"		     // Enable ZAM Resume
 
 ] call ZAMF_fnc_zamf_init;

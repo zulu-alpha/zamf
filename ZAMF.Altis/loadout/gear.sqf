@@ -215,6 +215,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";};
 		for "_i" from 1 to 4 do {_unit addItemToVest "SmokeShell";};
+		_unit addItemToVest "ACE_key_west";
 		_unit addBackpack _backpack_eng;
 		_unit addItemToBackpack "ToolKit";
 		_unit addItemToBackpack "MineDetector";
@@ -1137,6 +1138,7 @@ switch (_loadout) do {
 		_unit addItemToVest "SmokeShellGreen";
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellRed";};
 		for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+		_unit addItemToVest "ACE_key_west";
 		_unit addHeadgear _head_heli;
 
 		comment "Add weapons";
@@ -1169,6 +1171,7 @@ switch (_loadout) do {
 		_unit addItemToVest "SmokeShellGreen";
 		_unit addItemToVest "SmokeShellBlue";
 		_unit addItemToVest "B_IR_Grenade";
+		_unit addItemToVest "ACE_key_west";
 		for "_i" from 1 to 2 do {_unit addItemToVest "Chemlight_blue";};
 		_unit addItemToVest "Chemlight_green";
 		_unit addHeadgear _head_crew;

@@ -57,6 +57,3 @@ class CfgFunctions
 
 // Cyro's spectator script
 #include "..\CSSA3\CSSA3_header.hpp"
-
-// Logistics
-#include "..\R3F_LOG\desc_include.h"

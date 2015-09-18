@@ -47,9 +47,6 @@ switch (_loadout) do {
 
 	case "limited_squad": {
 
-		// Limit in logistics
-		_crate setVariable ["R3F_LOG_disabled", true];
-
 		// MG Acc
 		_crate addItemCargoGlobal ["ACE_SpareBarrel", 2];
 
@@ -146,8 +143,6 @@ switch (_loadout) do {
 	};
 
 	case "limited_fst": {
-		// Limit in logistics
-		_crate setVariable ["R3F_LOG_disabled", true];
 
 		// MG Acc
 		_crate addItemCargoGlobal ["ACE_SpareBarrel", 1];
@@ -246,9 +241,6 @@ switch (_loadout) do {
 
 	case "med": {
 
-		// Limit in logistics
-		_crate setVariable ["R3F_LOG_disabled", true];
-
 		_crate addItemCargoGlobal ["ACE_fieldDressing", 500];
 		_crate addItemCargoGlobal ["ACE_morphine", 60];
 		_crate addItemCargoGlobal ["ACE_epinephrine", 50];
@@ -261,9 +253,6 @@ switch (_loadout) do {
 	};
 
 	case "items": {
-
-		// Limit in logistics
-		_crate setVariable ["R3F_LOG_disabled", true];
 
 		// Equipment
 		_crate addWeaponCargoGlobal ["Binocular", _numItem];
@@ -343,9 +332,6 @@ switch (_loadout) do {
 	};
 
 	case "para": {
-
-		// Limit in logistics
-		_crate setVariable ["R3F_LOG_disabled", true];
 
 		_crate addBackpackCargoGlobal ["B_Parachute", 30];
 		_crate addBackpackCargoGlobal ["ACE_NonSteerableParachute", 30];
