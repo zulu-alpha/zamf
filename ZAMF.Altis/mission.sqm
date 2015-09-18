@@ -60,7 +60,7 @@ class Mission
 	randomSeed=6713907;
 	class Intel
 	{
-		briefingName="Example mission name: CO@12_Street to Street_V26_HC";
+		briefingName="Example mission name: CO@12_Street to Street_V29_HC";
 		resistanceWest=0;
 		resistanceEast=1;
 		startWeather=0.29999998;

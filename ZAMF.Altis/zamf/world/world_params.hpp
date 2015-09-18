@@ -46,7 +46,7 @@ class clouds {
 	values[]={-1,0,1,2};
 	texts[]={"Default","Clear","Overcast","Stormy"};
 	default = zamf_world_params_clouds;
-};  
+};
 
 #ifndef zamf_world_params_fogValue
 	#define zamf_world_params_fogValue -1
@@ -56,7 +56,7 @@ class fogValue {
 	values[]={-1,0,1,2,3,4,5,6,7,8,9,10};
 	texts[]={"Default","0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"};
 	default = zamf_world_params_fogValue;
-};  
+};
 
 #ifndef zamf_world_params_fogDecay
 	#define zamf_world_params_fogDecay 0
@@ -66,7 +66,7 @@ class fogDecay {
 	values[]={0,1,2,3,4,5,6,7,8,9,10,20,30,40,50,60,70,80,90,100};
 	texts[]={"0","0.01","0.02","0.03","0.04","0.05","0.06","0.07","0.08","0.09","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"};
 	default = zamf_world_params_fogDecay;
-};  
+};
 
 #ifndef zamf_world_params_fogBase
 	#define zamf_world_params_fogBase 0
@@ -76,14 +76,4 @@ class fogBase {
 	values[]={0,10,20,30,40,50,60,70,80,90,100,150,200,300,500,1000};
 	texts[]={"0m","10m","20m","30m","40m","50m","60m","70m","80m","90m","100m","150m","200m","300m","500m","1000m"};
 	default = zamf_world_params_fogBase;
-};
-
-#ifndef zamf_world_params_debug
-	#define zamf_world_params_debug 0
-#endif
-class zamf_debug {
-	title="    ZAM Debug";
-	values[]={0,1};
-	texts[]={"Disable","Enable"};
-	default = zamf_world_params_debug;
 };

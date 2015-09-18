@@ -1,16 +1,13 @@
 onLoadMissionTime = true;
 
-//////// The code below this line does not normally need to be adjusted. ////////
-////////   If you want to adjust more, please see parameters settings.   ////////
-////////                 (hint near top of this file)                    ////////
-
-
 // http://community.bistudio.com/wiki/Arma_3_Respawn
-respawnDelay=10000; //Now set in parameters (this will be overwritten)
 respawnVehicleDelay = 50;
 respawnDialog=0;
 respawnButton=1;
-respawnTemplates[] = {"Base"};  // Hides respawn timer
+respawnTemplates[] = {"Base", "Tickets", "EndMission"};  // Hides respawn timer
+
+// Disable respawn by adjusting the tickets in the init.sqf
+respawnDelay = 25;
 
 respawn=3;
 // RespawnType     Description
@@ -57,3 +54,9 @@ class CfgFunctions
 
 // Paramaters are handled in the following file:
 #include "zamf_params.hpp"
+
+// Cyro's spectator script
+#include "..\CSSA3\CSSA3_header.hpp"
+
+// Logistics
+#include "..\R3F_LOG\desc_include.h"

@@ -33,6 +33,10 @@ class ZAMF
 		class team {description = "Sets the gear and group ID of a unit.";};
 		class crate {description = "Sets the gear and group restrictions of a crate.";};
 		class spectateOptions {description = "Gives the target player local only action menu options to spectate. Must be spawned.";};
+		class zamf_init {
+			file = "zamf\zamf_init.sqf";
+			description = "Initializes many ZAMF functionality in their correct order.";
+		};
 	};
 
 	class res

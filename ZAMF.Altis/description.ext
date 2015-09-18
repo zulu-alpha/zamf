@@ -5,11 +5,10 @@ author = "Author";
 onLoadName = "Mission Name";
 onLoadMission = "Description";
 
-
 //// Put custom default parameters here:
 // (See /zamf/zamf_params.hpp for how to do this)
-// Eg: just uncomment (remove //) from the line below to enable respawn and set the timer to 10 seconds:
-//#define zamf_medical_params_respawntimer 10
+// Eg: just uncomment (remove //) from the line below to chang the view distance to 2000m:
+//#define zamf_world_params_world_def_view_distance 2000
 
 //// Game Type
 class Header {
@@ -33,7 +32,7 @@ class Header {
 
 
 //// Remove text channels
-disableChannels[]={0,1,2,5,6};
+disableChannels[] = {0,1,2,5,6};
 // Disable global, side, command and system chat. MOTD and admin say have exception and will show in global. Introduced in BETA 1.60.93398.
 // 0 = Global
 // 1 = Side
@@ -50,9 +49,3 @@ forceRotorLibSimulation = 1;
 #include "zamf\zamf_description.hpp"
 
 //// Put custom code under here:
-
-// Cyro's spectator script
-#include "CSSA3\CSSA3_header.hpp"
-
-// Logistics
-#include "R3F_LOG\desc_include.h"

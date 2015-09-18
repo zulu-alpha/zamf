@@ -86,8 +86,17 @@ if (hasInterface) then
 	sleep 0.1;
 	diag_log text "[CSSA3 Notice]: Player no longer null, adding eventhandlers. (CSSA3_init)";
 
-	player addEventHandler ["killed", {['killed',_this] spawn CSSA3_fnc_createSpectateDialog}];
-	player addEventHandler ["respawn", {['respawn',_this] spawn CSSA3_fnc_createSpectateDialog}];
+	player addEventHandler ["killed", {
+		if (playerRespawnTime > 20) then {
+			['killed',_this] spawn CSSA3_fnc_createSpectateDialog
+		};
+	}];
+
+	player addEventHandler ["respawn", {
+		if (playerRespawnTime > 20) then {
+			['respawn',_this] spawn CSSA3_fnc_createSpectateDialog
+		};
+	}];
 
 	//Add player UID to array of players who joined before out of time (_timeToJIP).
 	_sentArray = [[netID player],"CSSA3_fnc_addToJIP",false,false,false] call bis_fnc_MP;

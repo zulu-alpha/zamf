@@ -5,16 +5,6 @@
 
 
 
-
-////// Medical //////
-
-//// Respawn Timer
-// In seconds. must be 0 if using BTC. Use large number for effectively no respawn
-//#define zamf_medical_params_respawntimer 10000
-
-
-
-
 ////// World //////
 //// Hour
 // options: 0 to 23 for hour
@@ -54,35 +44,9 @@
 // options: Base altitude of fog (in meters)
 //#define zamf_world_params_fogBase 0
 
-//// ZAMF Debug
-// options: 1 for on, 0 for off
-//#define zamf_world_params_debug 0
-
-
-
-
-////// External //////
-//// ZAM - Resume
-// options: 1 for on, 0 for off
-//#define zamf_external_params_zam_res_enabled 1
-
-//// ZAM - Show Name
-// options: 1 for on, 0 for off
-//#define zamf_external_params_zam_showNamess_enabled 1
-
-
-
 
 
 class Params {
-        class medical_header {
-        title = ":: Medical";
-        values[]= {0};
-        texts[]= {" "};
-        default = 0;
-        };
-
-        #include "medical\medical_params.hpp" // Must be placed first in current state (for x39 module)
 
 	class world_header {
         title = ":: World";
@@ -92,14 +56,5 @@ class Params {
 	};
 
 	#include "world\world_params.hpp"
-
-	class external_header {
-        title = ":: External";
-        values[]= {0};
-        texts[]= {" "};
-        default = 0;
-	};
-
-	#include "external\external_params.hpp"
 
 };
