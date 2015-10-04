@@ -83,6 +83,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ['SmokeShellOrange', 20];
 		_crate addMagazineCargoGlobal ['HandGrenade', 20];
 		_crate addMagazineCargoGlobal ['rhs_mag_mk84', 36];
+		_crate addMagazineCargoGlobal ['B_IR_Grenade', 10];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 10];
 
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 4];
@@ -116,6 +117,8 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_key_west", 1];
 		_crate addItemCargoGlobal ["ACE_Sandbag_empty", 20];
 		_crate addBackpackCargoGlobal ["ACE_TacticalLadder_Pack", 2];
+		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 10];
+		_crate addItemCargoGlobal ["ACE_Flashlight_XL50", 10];
 
 
 		// BackPacks
@@ -173,6 +176,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ['SmokeShellOrange', 10];
 		_crate addMagazineCargoGlobal ['HandGrenade', 10];
 		_crate addMagazineCargoGlobal ['rhs_mag_mk84', 18];
+		_crate addMagazineCargoGlobal ['B_IR_Grenade', 3];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 5];
 
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 4];
@@ -196,6 +200,8 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_ATragMX", 2];
 		_crate addItemCargoGlobal ["ACE_key_west", 1];
 		_crate addItemCargoGlobal ["ACE_Sandbag_empty", 20];
+		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 3];
+		_crate addItemCargoGlobal ["ACE_Flashlight_XL50", 3];
 
 		_crate addItemCargoGlobal ["ACE_RangeTable_82mm", 2];
 
@@ -236,6 +242,13 @@ switch (_loadout) do {
 		// BackPacks
 		_crate addBackpackCargoGlobal [_backpack, 3];
 		_crate addBackpackCargoGlobal [_backpack_big, 3];
+
+		// Grenades
+		_crate addMagazineCargoGlobal ['B_IR_Grenade', 3];
+
+		// Equipment
+		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 3];
+		_crate addItemCargoGlobal ["ACE_Flashlight_XL50", 3];
 
 	};
 
@@ -281,6 +294,8 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_ATragMX", _numItem];
 		_crate addItemCargoGlobal ["ACE_key_west", _numItem];
 		_crate addItemCargoGlobal ["ACE_Sandbag_empty", _numItem];
+		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", _numItem];
+		_crate addItemCargoGlobal ["ACE_Flashlight_XL50", _numItem];
 
 		_crate addItemCargoGlobal ["ACE_RangeTable_82mm", _numItem];
 
@@ -377,6 +392,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ['SmokeShellOrange', 20];
 		_crate addMagazineCargoGlobal ['HandGrenade', 20];
 		_crate addMagazineCargoGlobal ['rhs_mag_mk84', 36];
+		_crate addMagazineCargoGlobal ['B_IR_Grenade', 10];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 10];
 
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 4];
@@ -446,6 +462,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ['SmokeShellOrange', 8];
 		_crate addMagazineCargoGlobal ['HandGrenade', 4];
 		_crate addMagazineCargoGlobal ['rhs_mag_mk84', 4];
+		_crate addMagazineCargoGlobal ['B_IR_Grenade', 2];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 4];
 
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 4];
@@ -490,6 +507,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ['SmokeShellOrange', 8];
 		_crate addMagazineCargoGlobal ['HandGrenade', 4];
 		_crate addMagazineCargoGlobal ['rhs_mag_mk84', 4];
+		_crate addMagazineCargoGlobal ['B_IR_Grenade', 2];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 4];
 
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 4];
@@ -537,6 +555,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ['SmokeShellOrange', 12];
 		_crate addMagazineCargoGlobal ['HandGrenade', 6];
 		_crate addMagazineCargoGlobal ['rhs_mag_mk84', 6];
+		_crate addMagazineCargoGlobal ['B_IR_Grenade', 3];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 6];
 
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 6];
@@ -584,6 +603,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ['SmokeShellOrange', 12];
 		_crate addMagazineCargoGlobal ['HandGrenade', 6];
 		_crate addMagazineCargoGlobal ['rhs_mag_mk84', 6];
+		_crate addMagazineCargoGlobal ['B_IR_Grenade', 3];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 6];
 
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 6];
@@ -624,6 +644,10 @@ switch (_loadout) do {
 		this addItemToBackpack "ACE_RangeCard";
 		this addItemToBackpack "ACE_Sandbag_empty";
 		this addBackpack "ACE_TacticalLadder_Pack";
+
+		this addItemToBackpack "ACE_Flashlight_MX991";
+		this addItemToBackpack "ACE_Flashlight_XL50";
+		this addItemToBackpack "ACE_Flashlight_KSF1";
 
 		this linkItem "ACE_NVG_Gen1";
 		this linkItem "ACE_NVG_Gen2";

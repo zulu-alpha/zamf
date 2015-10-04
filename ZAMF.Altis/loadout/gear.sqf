@@ -25,6 +25,7 @@ _index = call zamf_fnc_getClimate;
 _nv = "ACE_NVG_Gen4"; // nv
 //["ACE_NVG_Gen1", "ACE_NVG_Gen2", "NVGoggles", "ACE_NVG_Gen4", "ACE_NVG_Wide"]
 _radio_squad = "tf_anprc152";
+_map_light = "ACE_Flashlight_MX991";
 
 // head
 _head_co = ["h_milcap_kampat_arid", "h_milcap_kampat_transitional", "h_milcap_kampat_transitional"] select _index;
@@ -159,6 +160,7 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_IR_Strobe_Item";
 		_unit addItemToUniform "rhs_mag_mk84";
 		_unit addItemToUniform "SmokeShellOrange";
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_co;
 		for "_i" from 1 to 6 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -205,6 +207,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_CableTie";};
 		for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 		for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_mk84";};
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_eng;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -253,6 +256,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_CableTie";};
 		for "_i" from 1 to 4 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 		_unit addItemToUniform "16Rnd_9x21_Mag";
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_sl;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -299,6 +303,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 		_unit addItemToUniform "16Rnd_9x21_Mag";
 		for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_mk84";};
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_md;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -349,6 +354,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 		_unit addItemToUniform "16Rnd_9x21_Mag";
 		for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_mk84";};
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_r;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -392,6 +398,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_CableTie";};
 		for "_i" from 1 to 4 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 		_unit addItemToUniform "16Rnd_9x21_Mag";
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_ftl;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -438,6 +445,7 @@ switch (_loadout) do {
 		_unit addItemToUniform "16Rnd_9x21_Mag";
 		for "_i" from 1 to 2 do {_unit addItemToUniform "1Rnd_SmokeRed_Grenade_shell";};
 		for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_g;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -493,6 +501,7 @@ switch (_loadout) do {
 		_unit addItemToUniform "SmokeShellGreen";
 		_unit addItemToUniform "SmokeShell";
 		for "_i" from 1 to 2 do {_unit addItemToUniform "Chemlight_blue";};
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_ar;
 		_unit addItemToVest "HandGrenade";
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellOrange";};
@@ -531,6 +540,7 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_MapTools";
 		for "_i" from 1 to 4 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 		_unit addItemToUniform "16Rnd_9x21_Mag";
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_fst_a;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -578,6 +588,7 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_MapTools";
 		for "_i" from 1 to 4 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 		_unit addItemToUniform "16Rnd_9x21_Mag";
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_fst_w;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -623,6 +634,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_CableTie";};
 		_unit addItemToUniform "ACE_MapTools";
 		for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_fst_w;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -665,6 +677,7 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_EarPlugs";
 		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_CableTie";};
 		for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_tm_at_tl;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -710,6 +723,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 		for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_mk84";};
 		_unit addItemToUniform "16Rnd_9x21_Mag";
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_tm_at_at;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -754,6 +768,7 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_EarPlugs";
 		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_CableTie";};
 		for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_tm_aa_tl;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -799,6 +814,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 		for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_mk84";};
 		_unit addItemToUniform "16Rnd_9x21_Mag";
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_tm_aa_aa;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -845,6 +861,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_CableTie";};
 		for "_i" from 1 to 4 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 		_unit addItemToUniform "16Rnd_9x21_Mag";
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_tm_hmg_tl;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -893,6 +910,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 		for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_mk84";};
 		_unit addItemToUniform "16Rnd_9x21_Mag";
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_tm_hmg_g;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -940,6 +958,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_mk84";};
 		_unit addItemToUniform "16Rnd_9x21_Mag";
 		for "_i" from 1 to 2 do {_unit addItemToUniform "rhsusf_20Rnd_762x51_m993_Mag";};
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_tm_hmg_ab;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -985,6 +1004,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_CableTie";};
 		for "_i" from 1 to 4 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 		_unit addItemToUniform "16Rnd_9x21_Mag";
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_tm_gmg_tl;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -1033,6 +1053,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 		for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_mk84";};
 		_unit addItemToUniform "16Rnd_9x21_Mag";
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_tm_gmg_g;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -1080,6 +1101,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_mk84";};
 		_unit addItemToUniform "16Rnd_9x21_Mag";
 		for "_i" from 1 to 2 do {_unit addItemToUniform "rhsusf_20Rnd_762x51_m993_Mag";};
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_tm_gmg_ab;
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
@@ -1127,6 +1149,7 @@ switch (_loadout) do {
 		_unit addItemToUniform "SmokeShellGreen";
 		_unit addItemToUniform "SmokeShell";
 		for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_heli;
 		for "_i" from 1 to 2 do {_unit addItemToVest "ACE_morphine";};
 		for "_i" from 1 to 3 do {_unit addItemToVest "ACE_fieldDressing";};
@@ -1164,6 +1187,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_CableTie";};
 		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_fieldDressing";};
 		_unit addItemToUniform "16Rnd_9x21_Mag";
+		_unit addItemToUniform _map_light;
 		_unit addVest _vest_crew;
 		_unit addItemToVest "16Rnd_9x21_Mag";
 		for "_i" from 1 to 4 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
@@ -1208,6 +1232,7 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addItemToUniform "ACE_MapTools";
 		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_M84";};
+		_unit addItemToUniform _map_light;
 		_unit addHeadgear _head_ds;
 		_unit addGoggles "G_Shades_Black";
 
@@ -1227,6 +1252,7 @@ switch (_loadout) do {
 
 		comment "Add containers";
 		_unit forceAddUniform "U_Competitor";
+		_unit addItemToUniform _map_light;
 		_unit addBackpack _backpack_co;
 		_unit addHeadgear "H_MilCap_gry";
 		_unit addGoggles "G_Goggles_VR";
