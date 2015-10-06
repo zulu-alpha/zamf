@@ -147,7 +147,6 @@ removeGoggles _unit;
 
 
 
-
 switch (_loadout) do {
 
 	case "co": {
@@ -271,12 +270,14 @@ switch (_loadout) do {
 		for "_i" from 1 to 6 do {_unit addItemToVest "rhs_mag_mk84";};
 		for "_i" from 1 to 3 do {_unit addItemToVest "16Rnd_9x21_Mag";};
 		_unit addBackpack _backpack_sl;
+		_unit addItemToBackpack "ACE_HuntIR_monitor";
+		for "_i" from 1 to 3 do {_unit addItemToBackpack "ACE_HuntIR_M203";};
 		_unit addItemToBackpack "ACE_MapTools";
 		_unit addHeadgear _head_sl;
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
-		_unit addWeapon "rhs_weap_m4a1_carryhandle";
+		_unit addWeapon "rhs_weap_m4a1_m320";
 		_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 		_unit addPrimaryWeaponItem "rhsusf_acc_EOTECH";
 		_unit addWeapon "hgun_P07_F";

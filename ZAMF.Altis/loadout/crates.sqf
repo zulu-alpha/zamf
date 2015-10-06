@@ -309,6 +309,9 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ToolKit", _numItem];
 		_crate addItemCargoGlobal ["ACE_DefusalKit", _numItem];
 		_crate addItemCargoGlobal ["b_UAVTerminal", _numItem];
+		_crate addItemCargoGlobal ["ACE_HuntIR_monitor", _numItem];
+		_crate addMagazineCargoGlobal ["ACE_HuntIR_M203", _numAmmo];
+
 
 
 		_crate addBackpackCargoGlobal ["tf_rt1523g", _numItem];
@@ -376,6 +379,7 @@ switch (_loadout) do {
 		// Launcher ammo
 		_crate addMagazineCargoGlobal ['3Rnd_HE_Grenade_shell', 20];
 		{_crate addMagazineCargoGlobal [_x, 6]} count ['1Rnd_Smoke_Grenade_shell','1Rnd_SmokeRed_Grenade_shell'];
+		_crate addMagazineCargoGlobal [ "ACE_HuntIR_M203", 3];
 
 		// RPG
 		_crate addWeaponCargoGlobal ["rhs_weap_M136", 4];
@@ -644,6 +648,10 @@ switch (_loadout) do {
 		this addItemToBackpack "ACE_RangeCard";
 		this addItemToBackpack "ACE_Sandbag_empty";
 		this addBackpack "ACE_TacticalLadder_Pack";
+
+		this addMagazineToBackpack "ACE_HuntIR_M203";
+		this addItemToBackpack "ACE_HuntIR_monitor";
+
 
 		this addItemToBackpack "ACE_Flashlight_MX991";
 		this addItemToBackpack "ACE_Flashlight_XL50";
