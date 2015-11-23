@@ -625,6 +625,11 @@ switch (_loadout) do {
 
 	};
 
+	case "repair": {
+		_crate addItemCargoGlobal ["ToolKit", 2];
+		_crate addBackpackCargoGlobal [_backpack_big, 2];
+	};
+
 };
 
 
