@@ -8,7 +8,6 @@ class ZAMF
 			preInit = 1;
 			description = "Runs code that needs to be executed extremely early";
 		};
-
 	};
 
 	class loadout
