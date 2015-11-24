@@ -208,7 +208,7 @@ class Mission
 					special="NONE";
 					id=3;
 					side="WEST";
-					vehicle="B_Soldier_SL_F";
+					vehicle="B_officer_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
