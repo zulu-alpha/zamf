@@ -2281,7 +2281,7 @@ class Mission
 			vehicle="B_CargoNet_01_ammo_F";
 			leader=1;
 			skill=0.60000002;
-			init="nul = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+			init="nul = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal; [this, true, ""Arsenal""] call ZAM_fnc_showNames_addDiscoverable;";
 		};
 		class Item1
 		{
