@@ -34,7 +34,8 @@ class Mission
 		"ace_repair",
 		"A3_Soft_F_Gamma_HEMTT",
 		"ace_captives",
-		"A3_Characters_F_Mark"
+		"A3_Characters_F_Mark",
+		"A3_Supplies_F_Heli_CargoNets"
 	};
 	addOnsAuto[]=
 	{
@@ -63,8 +64,9 @@ class Mission
 		"ace_repair",
 		"alive_main",
 		"ace_captives",
-		"A3_Weapons_F_Ammoboxes",
+		"A3_Supplies_F_Heli_CargoNets",
 		"A3_Soft_F_Gamma_HEMTT",
+		"A3_Weapons_F_Ammoboxes",
 		"a3_map_altis"
 	};
 	randomSeed=6713907;
@@ -2276,28 +2278,28 @@ class Mission
 			special="NONE";
 			id=72;
 			side="EMPTY";
-			vehicle="Box_NATO_AmmoVeh_F";
+			vehicle="B_CargoNet_01_ammo_F";
 			leader=1;
 			skill=0.60000002;
 			init="nul = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
 		};
 		class Item1
 		{
-			position[]={14707.387,17.91,16619.398};
+			position[]={14707.423,17.91,16619.361};
 			azimut=270;
 			id=73;
 			side="EMPTY";
-			vehicle="Box_NATO_AmmoVeh_F";
+			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			init="nul = [this, ""squad"", ""Dragon'1"", true] call zamf_fnc_crate;";
 		};
 		class Item2
 		{
-			position[]={14707.298,17.91,16632.795};
+			position[]={14707.473,17.91,16632.795};
 			azimut=270;
 			id=74;
 			side="EMPTY";
-			vehicle="Box_NATO_AmmoVeh_F";
+			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			init="nul = [this, ""fst"", ""Dragon'4"", true] call zamf_fnc_crate;";
 		};
@@ -2307,7 +2309,7 @@ class Mission
 			azimut=90;
 			id=75;
 			side="EMPTY";
-			vehicle="Box_NATO_AmmoVeh_F";
+			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			init="nul = [this, ""explosives"", ""Explosives"", false] call zamf_fnc_crate;";
 		};
@@ -2317,17 +2319,17 @@ class Mission
 			azimut=90;
 			id=76;
 			side="EMPTY";
-			vehicle="Box_NATO_AmmoVeh_F";
+			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			init="nul = [this, ""para"", ""Paradrop"", false] call zamf_fnc_crate;";
 		};
 		class Item5
 		{
-			position[]={14707.316,17.91,16630.645};
+			position[]={14707.457,17.91,16630.855};
 			azimut=270;
 			id=77;
 			side="EMPTY";
-			vehicle="Box_NATO_AmmoVeh_F";
+			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			init="nul = [this, ""mmg_team"", ""Dragon'3'3"", true] call zamf_fnc_crate;";
 		};
@@ -2345,11 +2347,11 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={14707.392,17.91,16624.719};
+			position[]={14707.428,17.91,16624.719};
 			azimut=270;
 			id=79;
 			side="EMPTY";
-			vehicle="Box_NATO_AmmoVeh_F";
+			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			init="nul = [this, ""squad"", ""Dragon'2"", true] call zamf_fnc_crate;";
 		};
@@ -2359,7 +2361,7 @@ class Mission
 			azimut=90;
 			id=80;
 			side="EMPTY";
-			vehicle="Box_NATO_AmmoVeh_F";
+			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			init="nul = [this, ""hq"", ""Dragon'0"", true] call zamf_fnc_crate;";
 		};
@@ -2369,7 +2371,7 @@ class Mission
 			azimut=90;
 			id=81;
 			side="EMPTY";
-			vehicle="Box_NATO_AmmoVeh_F";
+			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			init="nul = [this, ""med"", ""Medical"", false] call zamf_fnc_crate;";
 		};
@@ -2379,67 +2381,67 @@ class Mission
 			azimut=90;
 			id=82;
 			side="EMPTY";
-			vehicle="Box_NATO_AmmoVeh_F";
+			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			init="nul = [this, ""equipment"", ""Equipment"", false] call zamf_fnc_crate;";
 		};
 		class Item11
 		{
-			position[]={14707.316,17.91,16629.072};
+			position[]={14707.456,17.91,16629.178};
 			azimut=270;
 			id=83;
 			side="EMPTY";
-			vehicle="Box_NATO_AmmoVeh_F";
+			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			init="nul = [this, ""atgm_team"", ""Dragon'3'2"", true] call zamf_fnc_crate;";
 		};
 		class Item12
 		{
-			position[]={14707.317,17.91,16627.779};
+			position[]={14707.457,17.91,16627.5};
 			azimut=270;
 			id=84;
 			side="EMPTY";
-			vehicle="Box_NATO_AmmoVeh_F";
+			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			init="nul = [this, ""aa_team"", ""Dragon'3'1"", true] call zamf_fnc_crate;";
 		};
 		class Item13
 		{
-			position[]={14707.261,17.91,16635.406};
+			position[]={14707.471,17.91,16635.406};
 			azimut=270;
 			id=85;
 			side="EMPTY";
-			vehicle="Box_NATO_AmmoVeh_F";
+			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			init="nul = [this, ""heli"", ""Ghostrider"", true] call zamf_fnc_crate;";
 		};
 		class Item14
 		{
-			position[]={14707.226,17.91,16637.539};
+			position[]={14707.436,17.91,16637.539};
 			azimut=270;
 			id=86;
 			side="EMPTY";
-			vehicle="Box_NATO_AmmoVeh_F";
+			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			init="nul = [this, ""jet"", ""Reaper"", true] call zamf_fnc_crate;";
 		};
 		class Item15
 		{
-			position[]={14707.228,17.91,16640.084};
+			position[]={14707.438,17.91,16640.084};
 			azimut=270;
 			id=87;
 			side="EMPTY";
-			vehicle="Box_NATO_AmmoVeh_F";
+			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			init="nul = [this, ""crew"", ""Badger'1"", true] call zamf_fnc_crate;";
 		};
 		class Item16
 		{
-			position[]={14707.226,17.91,16641.762};
+			position[]={14707.436,17.91,16641.762};
 			azimut=270;
 			id=88;
 			side="EMPTY";
-			vehicle="Box_NATO_AmmoVeh_F";
+			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			init="nul = [this, ""crew"", ""Badger'2"", true] call zamf_fnc_crate;";
 		};
