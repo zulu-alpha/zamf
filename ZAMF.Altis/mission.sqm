@@ -2258,7 +2258,7 @@ class Mission
 					special="NONE";
 					id=71;
 					side="WEST";
-					vehicle="B_Helipilot_F";
+					vehicle="B_Pilot_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
