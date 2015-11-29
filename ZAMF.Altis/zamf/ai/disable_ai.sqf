@@ -6,8 +6,10 @@ _unit = _this select 0;
 {
 	_x disableAI "TARGET";
 	_x disableAI "AUTOTARGET";
-	_x disableAI "FSM";
 	_x disableAI "MOVE";
+	_x disableAI "ANIM";
+	_x disableAI "FSM";
+	_x disableAI "SUPPRESSION";
 	_X setunitpos "up";
 	//_x setBehaviour "CARELESS";
 	_x setCombatMode "BLUE"
