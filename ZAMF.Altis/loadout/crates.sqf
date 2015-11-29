@@ -222,7 +222,7 @@ switch (_loadout) do {
 
 		_crate addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 64];
 		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 16];
-		_crate addMagazineCargoGlobal ["rhs_200rnd_556x45_M_SAW", 12];
+		_crate addMagazineCargoGlobal ["rhs_200rnd_556x45_M_SAW", 11];
 
 		_crate addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell", 36];
 		_crate addMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell", 8];
