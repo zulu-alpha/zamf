@@ -3,19 +3,11 @@ class Mission
 {
 	addOns[]=
 	{
-		"a3_map_altis",
 		"A3_Characters_F_Civil",
-		"A3_Characters_F_BLUFOR",
-		"A3_Weapons_F_Ammoboxes",
-		"a3_weapons_f_beta_ammoboxes",
-		"alive_main",
-		"alive_sys_player",
-		"alive_sys_profile",
-		"a3_characters_f_gamma",
-		"A3_Modules_F_Curator_Curator",
-		"a3_weapons_f_gamma_ammoboxes",
 		"a3_characters_f",
-		"A3_Modules_F_GroupModifiers",
+		"alive_sys_profile",
+		"A3_Characters_F_BLUFOR",
+		"A3_Modules_F_Curator_Curator",
 		"A3_Soft_F_Crusher_UGV",
 		"alive_sys_playeroptions",
 		"ace_common",
@@ -26,17 +18,20 @@ class Mission
 		"ace_winddeflection",
 		"ace_viewdistance",
 		"alive_sys_logistics",
-		"3DEN",
+		"A3_Characters_F_Mark",
+		"A3_Characters_F_Gamma",
 		"ace_respawn",
 		"ace_finger",
 		"ace_sitting",
 		"ace_cargo",
 		"ace_repair",
-		"A3_Soft_F_Gamma_HEMTT",
+		"alive_main",
 		"ace_captives",
-		"A3_Characters_F_Mark",
+		"ace_vehiclelock",
 		"A3_Supplies_F_Heli_CargoNets",
-		"ace_vehiclelock"
+		"A3_Soft_F_Gamma_HEMTT",
+		"A3_Weapons_F_Ammoboxes",
+		"a3_map_altis"
 	};
 	addOnsAuto[]=
 	{
@@ -44,8 +39,7 @@ class Mission
 		"a3_characters_f",
 		"alive_sys_profile",
 		"A3_Characters_F_BLUFOR",
-		"3DEN",
-		"a3_modules_f_curator_curator",
+		"A3_Modules_F_Curator_Curator",
 		"A3_Soft_F_Crusher_UGV",
 		"alive_sys_playeroptions",
 		"ace_common",
