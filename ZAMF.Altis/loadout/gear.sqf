@@ -190,7 +190,20 @@ if (_unit == player) then {
 	// To make sure _unit is only added once and to the player
 	if ( (isNil "zamf_var_gear_init") || {!zamf_var_gear_init} ) then {
 		zamf_var_gear_init = true;
-		zamf_var_gear_loadout = _loadout; // Done so that the var is in the scope of the respawn event
-		player addEventHandler ["respawn", {[_this select 0, zamf_var_gear_loadout] spawn zamf_fnc_gear}];
+		// Restore loadout from saved one on respawn, otherwise use base loadout defined in this file.
+		// Global variables are used so that the var is in the scope of the respawn event.
+		zamf_var_gear_loadout = _loadout;
+		player addEventHandler ["respawn", {
+			if !(isNil "zamf_var_gear_loadout_saved") then {
+				// Restore saved kit
+				[_this select 0, zamf_var_gear_loadout_saved, ["ammo"]] call zamf_fnc_setLoadout;
+				// Restore earplugs if installed
+				if ( !(isNil "zamf_var_gear_loadout_saved_earplugs") and {zamf_var_gear_loadout_saved_earplugs} ) then {
+					player setVariable ["ace_hasEarPlugsIn", true, true];
+				};
+			} else {
+				[_this select 0, zamf_var_gear_loadout] spawn zamf_fnc_gear
+			};
+		}];
 	};
 };

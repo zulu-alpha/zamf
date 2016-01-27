@@ -15,7 +15,7 @@
 		(NUL)
 */
 
-private ["_crate", "_gear", "_nam", "_restrict", "_check"];
+private ["_crate", "_gear", "_nam", "_restrict", "_check", "_crate_name", "_player_gid"];
 
 _crate = _this select 0;
 _gear = _this select 1;
@@ -25,6 +25,32 @@ _restrict = _this select 3;
 
 [_crate, _gear] spawn zamf_fnc_crates;
 [_crate, true, _nam] call ZAM_fnc_showNames_addDiscoverable;
+
+// Add option to save loadout for respawn
+// Only add it if the right crate (not strictly necessary)
+_crate addAction [
+	("<t color=""#0000FF"">" + ("Save loadout") + "</t>"),
+	{
+		// Save kit
+		zamf_var_gear_loadout_saved = [player, ["ammo"]] call zamf_fnc_getLoadout;
+		// Save earplugs
+		if ([player] call ace_Hearing_fnc_hasEarPlugsIn) then {
+			zamf_var_gear_loadout_saved_earplugs = true;
+		};
+		// Notify player
+		if !(isNil "zamf_var_gear_loadout_saved") then {
+			hint "Loadout saved";
+		} else {
+			hint "Loadout failed to save";
+		};
+	},
+	 nil,
+	-15,
+	true,
+	true,
+	"",
+	"(_target getVariable [""zam_showNames_name"", """"]) == (groupId (group _this))"
+];
 
 // Apply restriction
 if (_restrict) then {
