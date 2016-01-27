@@ -2390,7 +2390,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
-			init="nul = [this, ""atgm_team"", ""Dragon'3'2"", true] call zamf_fnc_crate;";
+			init="nul = [this, ""aa_team"", ""Dragon'3'2"", true] call zamf_fnc_crate;";
 		};
 		class Item12
 		{
@@ -2400,7 +2400,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
-			init="nul = [this, ""aa_team"", ""Dragon'3'1"", true] call zamf_fnc_crate;";
+			init="nul = [this, ""atgm_team"", ""Dragon'3'1"", true] call zamf_fnc_crate;";
 		};
 		class Item13
 		{
