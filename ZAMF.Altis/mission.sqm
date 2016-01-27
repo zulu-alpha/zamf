@@ -2104,7 +2104,7 @@ class Mission
 						};
 						class Item2
 						{
-							value="true";
+							value="false";
 							parentCls="ALiVE_require";
 							typeName="ALiVE_AI_DISTRIBUTION";
 						};
