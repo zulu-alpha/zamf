@@ -609,7 +609,7 @@ switch (_loadout) do {
 
 		_crate addWeaponCargoGlobal ["rhs_weap_m240B", 1];
 		_crate addItemCargoGlobal ["rhsusf_acc_ELCAN", 1];
-		_crate addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m993_Mag", 14];
+		_crate addMagazineCargoGlobal ["rhsusf_100Rnd_762x51", 14];
 		_crate addItemCargoGlobal ["ACE_SpareBarrel", 1];
 
 		// Launcher
@@ -667,7 +667,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m993_Mag", 6];
 		_crate addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag", 2];
 
-		_crate addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m993_Mag", 14];
+		_crate addMagazineCargoGlobal ["rhsusf_100Rnd_762x51", 14];
 		_crate addItemCargoGlobal ["ACE_SpareBarrel", 1];
 
 		// Launcher

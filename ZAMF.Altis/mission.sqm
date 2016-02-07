@@ -259,6 +259,7 @@ class Mission
 					id=6;
 					side="CIV";
 					vehicle="C_man_1";
+					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
 					text="zeus";
@@ -631,7 +632,7 @@ class Mission
 					id=13;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
