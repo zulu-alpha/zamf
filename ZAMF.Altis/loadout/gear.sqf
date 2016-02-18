@@ -10,7 +10,7 @@
 if !(hasInterface) then {
 	waitUntil {time > 5};
 } else {
-	waitUntil {(time > 0) && !(isNull player) && (name player != "Error: No vehicle")};
+	waitUntil {!(isNull player) && {name player != "Error: No vehicle"}};
 };
 
 _unit = _this select 0;

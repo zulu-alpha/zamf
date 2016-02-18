@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=111;
+		nextID=117;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14719.472,37.642773,16578.334};
-		dir[]={-0.48306987,-0.53356761,0.6944052};
-		up[]={-0.30475438,0.84567004,0.43807822};
-		aside[]={0.82098693,-3.4030818e-006,0.57113183};
+		pos[]={14681.981,35.070423,16582.811};
+		dir[]={0.05706336,-0.60994142,0.79055041};
+		up[]={0.043918237,0.79235357,0.60843647};
+		aside[]={0.99750465,-3.2079406e-006,-0.07199505};
 	};
 };
 binarizationWanted=0;
@@ -650,7 +650,7 @@ class Mission
 			side="Civilian";
 			class Entities
 			{
-				items=2;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
@@ -689,11 +689,72 @@ class Mission
 					id=26;
 					type="C_man_1";
 				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14665.428,17.911438,16610.148};
+					};
+					side="Civilian";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="this hideobject true; this allowDamage False; nul = [this] spawn zamf_fnc_spectateOptions; nul = [this, ""zeus""] spawn zamf_fnc_gear; ";
+						description="Spectator";
+						isPlayable=1;
+					};
+					id=112;
+					type="C_man_1";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14668.346,17.911438,16609.865};
+					};
+					side="Civilian";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="this hideobject true; this allowDamage False; nul = [this] spawn zamf_fnc_spectateOptions; nul = [this, ""zeus""] spawn zamf_fnc_gear; ";
+						description="Spectator";
+						isPlayable=1;
+					};
+					id=114;
+					type="C_man_1";
+				};
 			};
 			class Attributes
 			{
 			};
 			id=24;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Spectators";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item25
 		{
@@ -882,8 +943,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						init="nul = [this, ""officer""] call zamf_fnc_gear;";
-						description="A [CO]";
+						init="nul = [this, ""officer"", ""Dragon'0""] call zamf_fnc_team;";
+						description="Dragon'0'A [CO]";
 						isPlayable=1;
 					};
 					id=29;
@@ -902,8 +963,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="M [Platoon Medic]";
+						init="nul = [this, ""grunt"", ""Dragon'0""] call zamf_fnc_team;";
+						description="Dragon'0'M [Platoon Medic]";
 						isPlayable=1;
 					};
 					id=30;
@@ -922,9 +983,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
+						init="nul = [this, ""grunt"", ""Dragon'0""] call zamf_fnc_team;";
 						name="eng_1";
-						description="E [Engineer]";
+						description="Dragon'0'E [Engineer]";
 						isPlayable=1;
 					};
 					id=31;
@@ -992,6 +1053,29 @@ class Mission
 			{
 			};
 			id=32;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Zeus";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item28
 		{
@@ -1886,8 +1970,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="0'A [SL]";
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'0'A [SL]";
 						isPlayable=1;
 					};
 					id=41;
@@ -1906,8 +1990,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="0'M [Squad Medic]";
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'0'M [Squad Medic]";
 						isPlayable=1;
 					};
 					id=42;
@@ -1926,8 +2010,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="1'A [FTL]";
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'1'A [FTL]";
 						isPlayable=1;
 					};
 					id=43;
@@ -1945,8 +2029,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="1 [R]";
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'1 [R]";
 						isPlayable=1;
 					};
 					id=44;
@@ -1965,8 +2049,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="1'B [AR]";
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'1'B [AR]";
 						isPlayable=1;
 					};
 					id=45;
@@ -1984,8 +2068,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="1 [G]";
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'1 [G]";
 						isPlayable=1;
 					};
 					id=46;
@@ -2004,8 +2088,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="2'A [FTL]";
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'2'A [FTL]";
 						isPlayable=1;
 					};
 					id=47;
@@ -2023,8 +2107,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="2 [R]";
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'2 [R]";
 						isPlayable=1;
 					};
 					id=48;
@@ -2043,8 +2127,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="2'B [AR]";
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'2'B [AR]";
 						isPlayable=1;
 					};
 					id=49;
@@ -2062,8 +2146,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="2 [G]";
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'2 [G]";
 						isPlayable=1;
 					};
 					id=50;
@@ -2119,8 +2203,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="0'A [SL]";
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'0'A [SL]";
 						isPlayable=1;
 					};
 					id=52;
@@ -2139,8 +2223,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="0'M [Squad Medic]";
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'0'M [Squad Medic]";
 						isPlayable=1;
 					};
 					id=53;
@@ -2159,8 +2243,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="1'A [FTL]";
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'1'A [FTL]";
 						isPlayable=1;
 					};
 					id=54;
@@ -2178,8 +2262,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="1 [R]";
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'1 [R]";
 						isPlayable=1;
 					};
 					id=55;
@@ -2198,8 +2282,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="1'B [AR]";
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'1'B [AR]";
 						isPlayable=1;
 					};
 					id=56;
@@ -2217,8 +2301,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="1 [G]";
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'1 [G]";
 						isPlayable=1;
 					};
 					id=57;
@@ -2237,8 +2321,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="2'A [FTL]";
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'2'A [FTL]";
 						isPlayable=1;
 					};
 					id=58;
@@ -2256,8 +2340,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="2 [R]";
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'2 [R]";
 						isPlayable=1;
 					};
 					id=59;
@@ -2276,8 +2360,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="2'B [AR]";
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'2'B [AR]";
 						isPlayable=1;
 					};
 					id=60;
@@ -2295,8 +2379,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="2 [G]";
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'2 [G]";
 						isPlayable=1;
 					};
 					id=61;
@@ -2352,8 +2436,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="A [TL]";
+						init="nul = [this, ""grunt"", ""Dragon'3'2""] call zamf_fnc_team;";
+						description="Dragon'3'2'A [TL]";
 						isPlayable=1;
 					};
 					id=63;
@@ -2372,8 +2456,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="[ATGM]";
+						init="nul = [this, ""grunt"", ""Dragon'3'2""] call zamf_fnc_team;";
+						description="Dragon'3'2 [ATGM]";
 						isPlayable=1;
 					};
 					id=64;
@@ -3600,8 +3684,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="A [TL]";
+						init="nul = [this, ""grunt"", ""Dragon'3'3""] call zamf_fnc_team;";
+						description="Dragon'3'3'A [TL]";
 						isPlayable=1;
 					};
 					id=75;
@@ -3620,8 +3704,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="[MANPAD]";
+						init="nul = [this, ""grunt"", ""Dragon'3'3""] call zamf_fnc_team;";
+						description="Dragon'3'3 [MANPAD]";
 						isPlayable=1;
 					};
 					id=76;
@@ -3677,8 +3761,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="A [TL]";
+						init="nul = [this, ""grunt"", ""Dragon'3'1""] call zamf_fnc_team;";
+						description="Dragon'3'1'A [TL]";
 						isPlayable=1;
 					};
 					id=78;
@@ -3697,8 +3781,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="[LMG\CSW Gunner]";
+						init="nul = [this, ""grunt"", ""Dragon'3'1""] call zamf_fnc_team;";
+						description="Dragon'3'1 [LMG\CSW Gunner]";
 						isPlayable=1;
 					};
 					id=79;
@@ -3717,8 +3801,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="[Ammo bearer\DM]";
+						init="nul = [this, ""grunt"", ""Dragon'3'1""] call zamf_fnc_team;";
+						description="Dragon'3'1 [Ammo bearer\DM]";
 						isPlayable=1;
 					};
 					id=80;
@@ -3774,8 +3858,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="A";
+						init="nul = [this, ""grunt"", ""Dragon'4""] call zamf_fnc_team;";
+						description="Dragon'4'A";
 						isPlayable=1;
 					};
 					id=82;
@@ -3794,8 +3878,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="4'W";
+						init="nul = [this, ""grunt"", ""Dragon'4""] call zamf_fnc_team;";
+						description="Dragon'4'W";
 						isPlayable=1;
 					};
 					id=83;
@@ -3813,8 +3897,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this, ""grunt""] call zamf_fnc_gear;";
-						description="4'U";
+						init="nul = [this, ""grunt"", ""Dragon'4""] call zamf_fnc_team;";
+						description="Dragon'4'U";
 						isPlayable=1;
 					};
 					id=84;
@@ -3870,9 +3954,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="nul = [this, ""heli""] call zamf_fnc_gear;";
+						init="nul = [this, ""heli"", ""Ghostrider""] call zamf_fnc_team;";
 						name="eng_2";
-						description="1 [Heli Pilot]";
+						description="Ghostrider'1 [Heli Pilot]";
 						isPlayable=1;
 					};
 					id=86;
@@ -3891,9 +3975,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this, ""heli""] call zamf_fnc_gear;";
+						init="nul = [this, ""heli"", ""Ghostrider""] call zamf_fnc_team;";
 						name="eng_3";
-						description="2 [Heli Pilot]";
+						description="Ghostrider'2 [Heli Pilot]";
 						isPlayable=1;
 					};
 					id=87;
@@ -3912,9 +3996,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this, ""heli""] call zamf_fnc_gear;";
+						init="nul = [this, ""heli"", ""Ghostrider""] call zamf_fnc_team;";
 						name="eng_4";
-						description="3 [Heli Pilot]";
+						description="Ghostrider'3 [Heli Pilot]";
 						isPlayable=1;
 					};
 					id=88;
@@ -4107,8 +4191,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="nul = [this, ""crew""] call zamf_fnc_gear;";
-						description="[Commander]";
+						init="nul = [this, ""crew"", ""Badger'1""] call zamf_fnc_team;";
+						description="Badger'1 [Commander]";
 						isPlayable=1;
 					};
 					id=93;
@@ -4127,8 +4211,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this, ""crew""] call zamf_fnc_gear;";
-						description="[Gunner]";
+						init="nul = [this, ""crew"", ""Badger'1""] call zamf_fnc_team;";
+						description="Badger'1 [Gunner]";
 						isPlayable=1;
 					};
 					id=94;
@@ -4146,8 +4230,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this, ""crew""] call zamf_fnc_gear;";
-						description="[Driver]";
+						init="nul = [this, ""crew"", ""Badger'1""] call zamf_fnc_team;";
+						description="Badger'1 [Driver]";
 						isPlayable=1;
 					};
 					id=95;
@@ -4203,8 +4287,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="nul = [this, ""crew""] call zamf_fnc_gear;";
-						description="[Commander]";
+						init="nul = [this, ""crew"", ""Badger'2""] call zamf_fnc_gear;";
+						description="Badger'2 [Commander]";
 						isPlayable=1;
 					};
 					id=97;
@@ -4223,8 +4307,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this, ""crew""] call zamf_fnc_gear;";
-						description="[Gunner]";
+						init="nul = [this, ""crew"", ""Badger'2""] call zamf_fnc_gear;";
+						description="Badger'2 [Gunner]";
 						isPlayable=1;
 					};
 					id=98;
@@ -4242,8 +4326,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this, ""crew""] call zamf_fnc_gear;";
-						description="[Driver]";
+						init="nul = [this, ""crew"", ""Badger'2""] call zamf_fnc_gear;";
+						description="Badger'2 [Driver]";
 						isPlayable=1;
 					};
 					id=99;
@@ -5038,9 +5122,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="nul = [this, ""jet""] call zamf_fnc_gear;";
+						init="nul = [this, ""jet"", ""Reaper""] call zamf_fnc_team;";
 						name="eng_5";
-						description="[Fixed Wing Pilot]";
+						description="Reaper [Fixed Wing Pilot]";
 						isPlayable=1;
 					};
 					id=109;
