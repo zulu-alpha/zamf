@@ -3,12 +3,12 @@ class EditorData
 {
 	moveGridStep=1;
 	angleGridStep=0.2617994;
-	scaleGridStep=1;
+	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=69;
 	class ItemIDProvider
 	{
-		nextID=117;
+		nextID=254;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14681.981,35.070423,16582.811};
-		dir[]={0.05706336,-0.60994142,0.79055041};
-		up[]={0.043918237,0.79235357,0.60843647};
-		aside[]={0.99750465,-3.2079406e-006,-0.07199505};
+		pos[]={14696.675,45.05851,16582.463};
+		dir[]={0.031185025,-0.49259222,0.86979121};
+		up[]={0.017653078,0.87020952,0.49234551};
+		aside[]={0.99942404,1.2087548e-007,-0.035834581};
 	};
 };
 binarizationWanted=0;
@@ -31,7 +31,6 @@ addons[]=
 	"A3_Characters_F_Civil",
 	"a3_characters_f",
 	"alive_sys_profile",
-	"A3_Characters_F_BLUFOR",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Characters_F_Common",
 	"A3_Soft_F_Crusher_UGV",
@@ -43,8 +42,6 @@ addons[]=
 	"ace_winddeflection",
 	"ace_viewdistance",
 	"alive_sys_logistics",
-	"A3_Characters_F_Mark",
-	"A3_Characters_F_Gamma",
 	"ace_respawn",
 	"ace_finger",
 	"ace_sitting",
@@ -52,7 +49,10 @@ addons[]=
 	"ace_repair",
 	"alive_main",
 	"ace_captives",
-	"ace_vehiclelock"
+	"ace_vehiclelock",
+	"A3_Characters_F_BLUFOR",
+	"A3_Characters_F_Mark",
+	"A3_Characters_F_Gamma"
 };
 randomSeed=8441238;
 class ScenarioData
@@ -68,6 +68,25 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
 		{
 			property="RespawnTemplates";
 			expression="true";
@@ -100,25 +119,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
 				};
 			};
 		};
@@ -165,7 +165,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14689.828,18.735302,16641.527};
+				position[]={14690,18.735302,16649};
 				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
@@ -182,7 +182,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14707.423,18.735302,16619.361};
+				position[]={14709,18.735302,16622};
 				angles[]={0,4.712389,0};
 			};
 			side="Empty";
@@ -199,7 +199,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14707.473,18.735302,16632.795};
+				position[]={14709,18.735302,16638};
 				angles[]={0,4.712389,0};
 			};
 			side="Empty";
@@ -216,7 +216,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14689.871,18.735302,16634.17};
+				position[]={14690,18.735302,16634};
 				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
@@ -233,7 +233,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14689.866,18.735302,16636.221};
+				position[]={14690,18.735302,16636};
 				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
@@ -250,7 +250,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14707.498,18.735302,16627.072};
+				position[]={14709,18.735302,16631};
 				angles[]={0,4.712389,0};
 			};
 			side="Empty";
@@ -291,7 +291,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14674.298,20.223686,16629.172};
-				angles[]={0,1.5813259,0};
+				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
 			class Attributes
@@ -302,13 +302,36 @@ class Mission
 			};
 			id=7;
 			type="B_Truck_01_Repair_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item8
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14707.428,18.735302,16624.719};
+				position[]={14709,18.735302,16626};
 				angles[]={0,4.712389,0};
 			};
 			side="Empty";
@@ -325,7 +348,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14689.925,18.735302,16621.141};
+				position[]={14690,18.735302,16622};
 				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
@@ -342,7 +365,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14689.904,18.735302,16632.217};
+				position[]={14690,18.735302,16632};
 				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
@@ -359,7 +382,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14689.87,18.735302,16630.156};
+				position[]={14690,18.735302,16630};
 				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
@@ -376,7 +399,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14707.482,18.735302,16630.473};
+				position[]={14709,18.735302,16635};
 				angles[]={0,4.712389,0};
 			};
 			side="Empty";
@@ -416,7 +439,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14707.483,18.735302,16628.795};
+				position[]={14709,18.735302,16633};
 				angles[]={0,4.712389,0};
 			};
 			side="Empty";
@@ -456,7 +479,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14707.471,18.735302,16635.406};
+				position[]={14709,18.735302,16641};
 				angles[]={0,4.712389,0};
 			};
 			side="Empty";
@@ -473,7 +496,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14707.436,18.735302,16637.539};
+				position[]={14709,18.735302,16649};
 				angles[]={0,4.712389,0};
 			};
 			side="Empty";
@@ -490,7 +513,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14707.438,18.735302,16640.084};
+				position[]={14709,18.735302,16644};
 				angles[]={0,4.712389,0};
 			};
 			side="Empty";
@@ -507,7 +530,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14707.436,18.735302,16641.762};
+				position[]={14709,18.735302,16646};
 				angles[]={0,4.712389,0};
 			};
 			side="Empty";
@@ -524,7 +547,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14670.886,18.802422,16640.793};
+				position[]={14671,18.802422,16641};
 				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
@@ -541,7 +564,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14669.418,18.802422,16640.834};
+				position[]={14670,18.802422,16641};
 				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
@@ -558,7 +581,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14670.984,18.802422,16636.543};
+				position[]={14671,18.802422,16637};
 				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
@@ -575,7 +598,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14670.984,18.802422,16634.447};
+				position[]={14671,18.802422,16635};
 				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
@@ -592,7 +615,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14670.904,18.802422,16638.566};
+				position[]={14671,18.802422,16639};
 				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
@@ -632,7 +655,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14670.92,18.802422,16632.307};
+				position[]={14671,18.802422,16633};
 				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
@@ -656,7 +679,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14665.303,17.911438,16612.646};
+						position[]={14671.345,17.911438,16614.055};
 					};
 					side="Civilian";
 					flags=2;
@@ -675,7 +698,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14668.381,17.911438,16612.543};
+						position[]={14672.943,17.911438,16614.053};
 					};
 					side="Civilian";
 					class Attributes
@@ -694,7 +717,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14665.428,17.911438,16610.148};
+						position[]={14671.345,17.911438,16611.848};
 					};
 					side="Civilian";
 					class Attributes
@@ -713,7 +736,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14668.346,17.911438,16609.865};
+						position[]={14672.944,17.911438,16611.848};
 					};
 					side="Civilian";
 					class Attributes
@@ -925,104 +948,6 @@ class Mission
 		class Item26
 		{
 			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=3;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14691.57,17.911438,16621.084};
-						angles[]={0,1.5813206,0};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CAPTAIN";
-						init="nul = [this, ""officer"", ""Dragon'0""] call zamf_fnc_team;";
-						description="Dragon'0'A [CO]";
-						isPlayable=1;
-					};
-					id=29;
-					type="B_officer_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14691.611,17.911438,16623.063};
-						angles[]={0,1.5813206,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="nul = [this, ""grunt"", ""Dragon'0""] call zamf_fnc_team;";
-						description="Dragon'0'M [Platoon Medic]";
-						isPlayable=1;
-					};
-					id=30;
-					type="B_medic_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14691.512,17.911438,16619.035};
-						angles[]={0,1.5813206,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="nul = [this, ""grunt"", ""Dragon'0""] call zamf_fnc_team;";
-						name="eng_1";
-						description="Dragon'0'E [Engineer]";
-						isPlayable=1;
-					};
-					id=31;
-					type="B_engineer_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=28;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Dragon'0";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item27
-		{
-			dataType="Group";
 			side="Civilian";
 			class Entities
 			{
@@ -1032,7 +957,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14673.827,17.911438,16612.584};
+						position[]={14674.545,17.911438,16614.049};
 					};
 					side="Civilian";
 					flags=2;
@@ -1077,12 +1002,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item28
+		class Item27
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14673.873,17.91,16609.217};
+				position[]={14674.64,17.91,16611.684};
 			};
 			id=34;
 			type="ModuleCurator_F";
@@ -1186,7 +1111,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item29
+		class Item28
 		{
 			dataType="Group";
 			side="West";
@@ -1198,8 +1123,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14676.098,17.911438,16636.008};
-						angles[]={0,1.5813259,0};
+						position[]={14676,17.911438,16636.051};
+						angles[]={0,1.5707964,0};
 					};
 					side="West";
 					flags=2;
@@ -1237,13 +1162,13 @@ class Mission
 			};
 			id=35;
 		};
-		class Item30
+		class Item29
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14676.098,19.987141,16635.91};
-				angles[]={0,1.5813259,0};
+				position[]={14676,19.987141,16635.953};
+				angles[]={0,1.5707964,0};
 			};
 			side="West";
 			flags=2;
@@ -1257,8 +1182,31 @@ class Mission
 			};
 			id=36;
 			type="B_UGV_01_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
-		class Item31
+		class Item30
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1937,567 +1885,24 @@ class Mission
 				nAttributes=35;
 			};
 		};
-		class Item32
+		class Item31
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14670.479,17.91,16612.623};
+				position[]={14676.827,17.91,16614.051};
 			};
 			name="HCSlot";
 			isPlayable=1;
 			id=39;
 			type="HeadlessClient_F";
 		};
-		class Item33
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=10;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14696.692,17.911438,16618.961};
-						angles[]={0,4.712389,0};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'0'A [SL]";
-						isPlayable=1;
-					};
-					id=41;
-					type="B_Soldier_SL_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14696.69,17.911438,16620.248};
-						angles[]={0,4.712389,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'0'M [Squad Medic]";
-						isPlayable=1;
-					};
-					id=42;
-					type="B_medic_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14698.733,17.911438,16618.52};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'1'A [FTL]";
-						isPlayable=1;
-					};
-					id=43;
-					type="B_Soldier_TL_F";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14700.69,17.911438,16618.486};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'1 [R]";
-						isPlayable=1;
-					};
-					id=44;
-					type="B_Soldier_F";
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14702.827,17.911438,16618.482};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'1'B [AR]";
-						isPlayable=1;
-					};
-					id=45;
-					type="B_soldier_AR_F";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14704.817,17.911438,16618.455};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'1 [G]";
-						isPlayable=1;
-					};
-					id=46;
-					type="B_Soldier_GL_F";
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14698.7,17.911438,16620.723};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'2'A [FTL]";
-						isPlayable=1;
-					};
-					id=47;
-					type="B_Soldier_TL_F";
-				};
-				class Item7
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14700.725,17.911438,16620.688};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'2 [R]";
-						isPlayable=1;
-					};
-					id=48;
-					type="B_Soldier_F";
-				};
-				class Item8
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14702.758,17.911438,16620.684};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'2'B [AR]";
-						isPlayable=1;
-					};
-					id=49;
-					type="B_soldier_AR_F";
-				};
-				class Item9
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14704.783,17.911438,16620.656};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'2 [G]";
-						isPlayable=1;
-					};
-					id=50;
-					type="B_Soldier_GL_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=40;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Dragon'1";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item34
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=10;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14696.728,17.911438,16624.236};
-						angles[]={0,4.712389,0};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'0'A [SL]";
-						isPlayable=1;
-					};
-					id=52;
-					type="B_Soldier_SL_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14696.727,17.911438,16625.523};
-						angles[]={0,4.712389,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'0'M [Squad Medic]";
-						isPlayable=1;
-					};
-					id=53;
-					type="B_medic_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14698.698,17.911438,16623.721};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'1'A [FTL]";
-						isPlayable=1;
-					};
-					id=54;
-					type="B_Soldier_TL_F";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14700.724,17.911438,16623.686};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'1 [R]";
-						isPlayable=1;
-					};
-					id=55;
-					type="B_Soldier_F";
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14702.757,17.911438,16623.682};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'1'B [AR]";
-						isPlayable=1;
-					};
-					id=56;
-					type="B_soldier_AR_F";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14704.782,17.911438,16623.654};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'1 [G]";
-						isPlayable=1;
-					};
-					id=57;
-					type="B_Soldier_GL_F";
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14698.697,17.911438,16626.098};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'2'A [FTL]";
-						isPlayable=1;
-					};
-					id=58;
-					type="B_Soldier_TL_F";
-				};
-				class Item7
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14700.723,17.911438,16626.063};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'2 [R]";
-						isPlayable=1;
-					};
-					id=59;
-					type="B_Soldier_F";
-				};
-				class Item8
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14702.756,17.911438,16626.059};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'2'B [AR]";
-						isPlayable=1;
-					};
-					id=60;
-					type="B_soldier_AR_F";
-				};
-				class Item9
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14704.781,17.911438,16626.031};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'2 [G]";
-						isPlayable=1;
-					};
-					id=61;
-					type="B_Soldier_GL_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=51;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Dragon'2";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item35
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14696.438,17.911438,16630.264};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="nul = [this, ""grunt"", ""Dragon'3'2""] call zamf_fnc_team;";
-						description="Dragon'3'2'A [TL]";
-						isPlayable=1;
-					};
-					id=63;
-					type="B_soldier_AAT_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14698.464,17.911438,16630.229};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="nul = [this, ""grunt"", ""Dragon'3'2""] call zamf_fnc_team;";
-						description="Dragon'3'2 [ATGM]";
-						isPlayable=1;
-					};
-					id=64;
-					type="B_soldier_AT_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=62;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Dragon'3'2";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item36
+		class Item32
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14677.064,17.91,16609.211};
+				position[]={14676.897,17.91,16611.684};
 			};
 			id=65;
 			type="ModuleCurator_F";
@@ -2601,7 +2006,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item37
+		class Item33
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2862,7 +2267,7 @@ class Mission
 				nAttributes=13;
 			};
 		};
-		class Item38
+		class Item34
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2933,7 +2338,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item39
+		class Item35
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3061,7 +2466,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item40
+		class Item36
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3265,7 +2670,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item41
+		class Item37
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3355,7 +2760,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item42
+		class Item38
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3407,7 +2812,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item43
+		class Item39
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3478,7 +2883,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item44
+		class Item40
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3663,377 +3068,7 @@ class Mission
 				nAttributes=9;
 			};
 		};
-		class Item45
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14700.418,17.911438,16630.262};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="nul = [this, ""grunt"", ""Dragon'3'3""] call zamf_fnc_team;";
-						description="Dragon'3'3'A [TL]";
-						isPlayable=1;
-					};
-					id=75;
-					type="B_soldier_AAA_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14702.269,17.911438,16630.262};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="nul = [this, ""grunt"", ""Dragon'3'3""] call zamf_fnc_team;";
-						description="Dragon'3'3 [MANPAD]";
-						isPlayable=1;
-					};
-					id=76;
-					type="B_soldier_AA_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=74;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Dragon'3'3";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item46
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=3;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14696.569,17.911438,16628.506};
-						angles[]={0,4.712389,0};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="nul = [this, ""grunt"", ""Dragon'3'1""] call zamf_fnc_team;";
-						description="Dragon'3'1'A [TL]";
-						isPlayable=1;
-					};
-					id=78;
-					type="B_Soldier_TL_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14698.489,17.911438,16628.512};
-						angles[]={0,4.712389,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="nul = [this, ""grunt"", ""Dragon'3'1""] call zamf_fnc_team;";
-						description="Dragon'3'1 [LMG\CSW Gunner]";
-						isPlayable=1;
-					};
-					id=79;
-					type="B_HeavyGunner_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14700.41,17.911438,16628.506};
-						angles[]={0,4.712389,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="nul = [this, ""grunt"", ""Dragon'3'1""] call zamf_fnc_team;";
-						description="Dragon'3'1 [Ammo bearer\DM]";
-						isPlayable=1;
-					};
-					id=80;
-					type="B_Soldier_A_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=77;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Dragon'3'1";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item47
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=3;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14696.735,17.911438,16632.771};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="nul = [this, ""grunt"", ""Dragon'4""] call zamf_fnc_team;";
-						description="Dragon'4'A";
-						isPlayable=1;
-					};
-					id=82;
-					type="B_recon_TL_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14700.604,17.911438,16632.799};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="nul = [this, ""grunt"", ""Dragon'4""] call zamf_fnc_team;";
-						description="Dragon'4'W";
-						isPlayable=1;
-					};
-					id=83;
-					type="B_recon_JTAC_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14698.64,17.911438,16632.771};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="nul = [this, ""grunt"", ""Dragon'4""] call zamf_fnc_team;";
-						description="Dragon'4'U";
-						isPlayable=1;
-					};
-					id=84;
-					type="B_soldier_UAV_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=81;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Dragon'4";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item48
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=3;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14696.664,17.911438,16635.516};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="nul = [this, ""heli"", ""Ghostrider""] call zamf_fnc_team;";
-						name="eng_2";
-						description="Ghostrider'1 [Heli Pilot]";
-						isPlayable=1;
-					};
-					id=86;
-					type="B_Helipilot_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14698.676,17.911438,16635.506};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="nul = [this, ""heli"", ""Ghostrider""] call zamf_fnc_team;";
-						name="eng_3";
-						description="Ghostrider'2 [Heli Pilot]";
-						isPlayable=1;
-					};
-					id=87;
-					type="B_Helipilot_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14700.621,17.911438,16635.527};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="nul = [this, ""heli"", ""Ghostrider""] call zamf_fnc_team;";
-						name="eng_4";
-						description="Ghostrider'3 [Heli Pilot]";
-						isPlayable=1;
-					};
-					id=88;
-					type="B_Helipilot_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=85;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Ghostrider";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item49
+		class Item41
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4085,7 +3120,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item50
+		class Item42
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4137,7 +3172,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item51
+		class Item43
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4170,199 +3205,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item52
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=3;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14696.604,17.911438,16640.17};
-						angles[]={0,4.712389,0};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="nul = [this, ""crew"", ""Badger'1""] call zamf_fnc_team;";
-						description="Badger'1 [Commander]";
-						isPlayable=1;
-					};
-					id=93;
-					type="B_crew_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14698.63,17.911438,16640.17};
-						angles[]={0,4.712389,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="nul = [this, ""crew"", ""Badger'1""] call zamf_fnc_team;";
-						description="Badger'1 [Gunner]";
-						isPlayable=1;
-					};
-					id=94;
-					type="B_crew_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14700.62,17.911438,16640.17};
-						angles[]={0,4.712389,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="nul = [this, ""crew"", ""Badger'1""] call zamf_fnc_team;";
-						description="Badger'1 [Driver]";
-						isPlayable=1;
-					};
-					id=95;
-					type="B_crew_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=92;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Badger'1";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item53
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=3;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14696.604,17.911438,16641.809};
-						angles[]={0,4.712389,0};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="nul = [this, ""crew"", ""Badger'2""] call zamf_fnc_gear;";
-						description="Badger'2 [Commander]";
-						isPlayable=1;
-					};
-					id=97;
-					type="B_crew_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14698.63,17.911438,16641.809};
-						angles[]={0,4.712389,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="nul = [this, ""crew"", ""Badger'2""] call zamf_fnc_gear;";
-						description="Badger'2 [Gunner]";
-						isPlayable=1;
-					};
-					id=98;
-					type="B_crew_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14700.62,17.911438,16641.809};
-						angles[]={0,4.712389,0};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="nul = [this, ""crew"", ""Badger'2""] call zamf_fnc_gear;";
-						description="Badger'2 [Driver]";
-						isPlayable=1;
-					};
-					id=99;
-					type="B_crew_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=96;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Badger'2";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item54
+		class Item44
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4395,7 +3238,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item55
+		class Item45
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4580,7 +3423,7 @@ class Mission
 				nAttributes=9;
 			};
 		};
-		class Item56
+		class Item46
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4632,7 +3475,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item57
+		class Item47
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4684,7 +3527,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item58
+		class Item48
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4755,7 +3598,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item59
+		class Item49
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4826,7 +3669,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item60
+		class Item50
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5030,7 +3873,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item61
+		class Item51
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5101,65 +3944,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item62
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14696.603,17.911438,16637.602};
-						angles[]={0,4.7229133,0};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="nul = [this, ""jet"", ""Reaper""] call zamf_fnc_team;";
-						name="eng_5";
-						description="Reaper [Fixed Wing Pilot]";
-						isPlayable=1;
-					};
-					id=109;
-					type="B_Pilot_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=108;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Reaper";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item63
+		class Item52
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5228,6 +4013,1265 @@ class Mission
 					};
 				};
 				nAttributes=3;
+			};
+		};
+		class Item53
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14693,17.911438,16622.051};
+						angles[]={0,1.5707964,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						init="nul = [this, ""officer"", ""Dragon'0""] call zamf_fnc_team;";
+						description="Dragon'0'A [CO]";
+						isPlayable=1;
+					};
+					id=201;
+					type="B_officer_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14693,17.911438,16623.051};
+						angles[]={0,1.5707964,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this, ""grunt"", ""Dragon'0""] call zamf_fnc_team;";
+						description="Dragon'0'M [Platoon Medic]";
+						isPlayable=1;
+					};
+					id=202;
+					type="B_medic_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14693,17.911438,16621.051};
+						angles[]={0,1.5707964,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="nul = [this, ""grunt"", ""Dragon'0""] call zamf_fnc_team;";
+						name="eng_1";
+						description="Dragon'0'E [Engineer]";
+						isPlayable=1;
+					};
+					id=203;
+					type="B_engineer_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=200;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Dragon'0";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item54
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=10;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14697,17.911438,16621.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'0'A [SL]";
+						isPlayable=1;
+					};
+					id=205;
+					type="B_Soldier_SL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14697,17.911438,16622.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'0'M [Squad Medic]";
+						isPlayable=1;
+					};
+					id=206;
+					type="B_medic_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14699,17.911438,16621.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'1'A [FTL]";
+						isPlayable=1;
+					};
+					id=207;
+					type="B_Soldier_TL_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14701,17.911438,16621.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'1 [R]";
+						isPlayable=1;
+					};
+					id=208;
+					type="B_Soldier_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14703,17.911438,16621.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'1'B [AR]";
+						isPlayable=1;
+					};
+					id=209;
+					type="B_soldier_AR_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14705,17.911438,16621.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'1 [G]";
+						isPlayable=1;
+					};
+					id=210;
+					type="B_Soldier_GL_F";
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14699,17.911438,16623.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'2'A [FTL]";
+						isPlayable=1;
+					};
+					id=211;
+					type="B_Soldier_TL_F";
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14701,17.911438,16623.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'2 [R]";
+						isPlayable=1;
+					};
+					id=212;
+					type="B_Soldier_F";
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14703,17.911438,16623.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'2'B [AR]";
+						isPlayable=1;
+					};
+					id=213;
+					type="B_soldier_AR_F";
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14705,17.911438,16623.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
+						description="Dragon'1'2 [G]";
+						isPlayable=1;
+					};
+					id=214;
+					type="B_Soldier_GL_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=204;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Dragon'1";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item55
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=10;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14697,17.911438,16626.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'0'A [SL]";
+						isPlayable=1;
+					};
+					id=216;
+					type="B_Soldier_SL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14697,17.911438,16627.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'0'M [Squad Medic]";
+						isPlayable=1;
+					};
+					id=217;
+					type="B_medic_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14699,17.911438,16626.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'1'A [FTL]";
+						isPlayable=1;
+					};
+					id=218;
+					type="B_Soldier_TL_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14701,17.911438,16626.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'1 [R]";
+						isPlayable=1;
+					};
+					id=219;
+					type="B_Soldier_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14703,17.911438,16626.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'1'B [AR]";
+						isPlayable=1;
+					};
+					id=220;
+					type="B_soldier_AR_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14705,17.911438,16626.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'1 [G]";
+						isPlayable=1;
+					};
+					id=221;
+					type="B_Soldier_GL_F";
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14699,17.911438,16628.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'2'A [FTL]";
+						isPlayable=1;
+					};
+					id=222;
+					type="B_Soldier_TL_F";
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14701,17.911438,16628.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'2 [R]";
+						isPlayable=1;
+					};
+					id=223;
+					type="B_Soldier_F";
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14703,17.911438,16628.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'2'B [AR]";
+						isPlayable=1;
+					};
+					id=224;
+					type="B_soldier_AR_F";
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14705,17.911438,16628.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
+						description="Dragon'2'2 [G]";
+						isPlayable=1;
+					};
+					id=225;
+					type="B_Soldier_GL_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=215;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Dragon'2";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item56
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14699,17.911438,16631.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="nul = [this, ""grunt"", ""Dragon'3'1""] call zamf_fnc_team;";
+						description="Dragon'3'1'A [TL]";
+						isPlayable=1;
+					};
+					id=227;
+					type="B_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14701,17.911438,16631.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this, ""grunt"", ""Dragon'3'1""] call zamf_fnc_team;";
+						description="Dragon'3'1 [LMG\CSW Gunner]";
+						isPlayable=1;
+					};
+					id=228;
+					type="B_HeavyGunner_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14703,17.911438,16631.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this, ""grunt"", ""Dragon'3'1""] call zamf_fnc_team;";
+						description="Dragon'3'1 [Ammo bearer\DM]";
+						isPlayable=1;
+					};
+					id=229;
+					type="B_Soldier_A_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=226;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Dragon'3'1";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item57
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14699,17.911438,16633.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="nul = [this, ""grunt"", ""Dragon'3'2""] call zamf_fnc_team;";
+						description="Dragon'3'2'A [TL]";
+						isPlayable=1;
+					};
+					id=231;
+					type="B_soldier_AAT_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14701,17.911438,16633.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this, ""grunt"", ""Dragon'3'2""] call zamf_fnc_team;";
+						description="Dragon'3'2 [ATGM]";
+						isPlayable=1;
+					};
+					id=232;
+					type="B_soldier_AT_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=230;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Dragon'3'2";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item58
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14699,17.911438,16635.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="nul = [this, ""grunt"", ""Dragon'3'3""] call zamf_fnc_team;";
+						description="Dragon'3'3'A [TL]";
+						isPlayable=1;
+					};
+					id=234;
+					type="B_soldier_AAA_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14701,17.911438,16635.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this, ""grunt"", ""Dragon'3'3""] call zamf_fnc_team;";
+						description="Dragon'3'3 [MANPAD]";
+						isPlayable=1;
+					};
+					id=235;
+					type="B_soldier_AA_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=233;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Dragon'3'3";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item59
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14699,17.911438,16638.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="nul = [this, ""grunt"", ""Dragon'4""] call zamf_fnc_team;";
+						description="Dragon'4'A";
+						isPlayable=1;
+					};
+					id=237;
+					type="B_recon_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14703,17.911438,16638.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this, ""grunt"", ""Dragon'4""] call zamf_fnc_team;";
+						description="Dragon'4'W";
+						isPlayable=1;
+					};
+					id=238;
+					type="B_recon_JTAC_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14701,17.911438,16638.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="nul = [this, ""grunt"", ""Dragon'4""] call zamf_fnc_team;";
+						description="Dragon'4'U";
+						isPlayable=1;
+					};
+					id=239;
+					type="B_soldier_UAV_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=236;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Dragon'4";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item60
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14699,17.911438,16641.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="nul = [this, ""heli"", ""Ghostrider""] call zamf_fnc_team;";
+						name="eng_2";
+						description="Ghostrider'1 [Heli Pilot]";
+						isPlayable=1;
+					};
+					id=241;
+					type="B_Helipilot_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14701,17.911438,16641.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this, ""heli"", ""Ghostrider""] call zamf_fnc_team;";
+						name="eng_3";
+						description="Ghostrider'2 [Heli Pilot]";
+						isPlayable=1;
+					};
+					id=242;
+					type="B_Helipilot_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14703,17.911438,16641.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this, ""heli"", ""Ghostrider""] call zamf_fnc_team;";
+						name="eng_4";
+						description="Ghostrider'3 [Heli Pilot]";
+						isPlayable=1;
+					};
+					id=243;
+					type="B_Helipilot_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=240;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ghostrider";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item61
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14699,17.911438,16644.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="nul = [this, ""crew"", ""Badger'1""] call zamf_fnc_team;";
+						description="Badger'1 [Commander]";
+						isPlayable=1;
+					};
+					id=245;
+					type="B_crew_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14701,17.911438,16644.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this, ""crew"", ""Badger'1""] call zamf_fnc_team;";
+						description="Badger'1 [Gunner]";
+						isPlayable=1;
+					};
+					id=246;
+					type="B_crew_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14703,17.911438,16644.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="nul = [this, ""crew"", ""Badger'1""] call zamf_fnc_team;";
+						description="Badger'1 [Driver]";
+						isPlayable=1;
+					};
+					id=247;
+					type="B_crew_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=244;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Badger'1";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item62
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14699,17.911438,16646.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="nul = [this, ""crew"", ""Badger'2""] call zamf_fnc_team;";
+						description="Badger'2 [Commander]";
+						isPlayable=1;
+					};
+					id=249;
+					type="B_crew_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14701,17.911438,16646.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this, ""crew"", ""Badger'2""] call zamf_fnc_team;";
+						description="Badger'2 [Gunner]";
+						isPlayable=1;
+					};
+					id=250;
+					type="B_crew_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14703,17.911438,16646.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="nul = [this, ""crew"", ""Badger'2""] call zamf_fnc_team;";
+						description="Badger'2 [Driver]";
+						isPlayable=1;
+					};
+					id=251;
+					type="B_crew_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=248;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Badger'2";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item63
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14699,17.911438,16649.051};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						init="nul = [this, ""jet"", ""Reaper""] call zamf_fnc_team;";
+						name="eng_5";
+						description="Reaper";
+						isPlayable=1;
+					};
+					id=253;
+					type="B_Pilot_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=252;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Reaper";
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};
