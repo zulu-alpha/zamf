@@ -553,7 +553,7 @@ switch (_loadout) do {
 
 	};
 
-	case "mmg_team": {
+	case "mg_team": {
 
 		// Attire
 		_crate addBackpackCargoGlobal [(["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_kampat_transitional"] select _index), 3];
@@ -631,7 +631,7 @@ switch (_loadout) do {
 
 	};
 
-	case "mmg_team_resupply": {
+	case "mg_team_resupply": {
 
 		// Attire
 

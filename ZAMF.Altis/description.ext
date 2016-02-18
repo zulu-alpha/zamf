@@ -1,34 +1,9 @@
 // http://community.bistudio.com/wiki/Description.ext
 
-//// Mission details
-author = "Author";
-onLoadName = "Mission Name";
-onLoadMission = "Description";
-
 //// Put custom default parameters here:
 // (See /zamf/zamf_params.hpp for how to do this)
 // Eg: just uncomment (remove //) from the line below to chang the view distance to 2000m:
 //#define zamf_world_params_world_def_view_distance 2000
-
-//// Game Type
-class Header {
-	gameType = Coop;
-	// Coop 	  = Cooperative Mission
-	// DM         = Death Match
-	// TDM 	      = Team Deathmatch
-	// CTF        = Capture the Flag
-	// SC 	      = Sector Control
-	// FF         = Flag Fight
-	// CTI 	      = Capture The Island
-	// Coop       = Cooperative Mission
-	// Team       = Team Mission
-	// RPG 	      = Role-Playing Game
-	// Sandbox 	  = Sandbox
-	// Hold       = Hold Location
-	// Seize 	  = Seize
-	// Defend 	  = Defend
-	// Unknown    = Unknown - is used when no class header is defined.
-};
 
 
 //// Remove text channels
