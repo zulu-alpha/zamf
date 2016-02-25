@@ -99,7 +99,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_fieldDressing";};
 		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_morphine";};
 		_unit addItemToUniform "ACE_EarPlugs";
-		_unit addHeadgear "RHS_jetpilot_usaf";
+		_unit addHeadgear "H_PilotHelmetFighter_B";
 
 		comment "Add weapons";
 
