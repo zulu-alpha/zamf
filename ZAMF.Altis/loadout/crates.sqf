@@ -72,8 +72,6 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_bodyBag", 30];
 		_crate addItemCargoGlobal ["ACE_EarPlugs", 30];
 
-		_crate addItemCargoGlobal ["optic_DMS", 1]; // Prescription optics for Oxx
-
 	};
 
 	case "explosives": {
