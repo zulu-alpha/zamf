@@ -88,5 +88,8 @@ if ((isServer) && ("zeusify" in _input)) then {
 // Don't show ranks
 ZAM_showNames_ranks = false;
 
+// Kit out units here due to init field bug
+execVM "loadout\init_loadout.sqf";
+
 // Finish world initialization before mission is launched.
 finishMissionInit;

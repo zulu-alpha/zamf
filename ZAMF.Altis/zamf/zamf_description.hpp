@@ -57,3 +57,16 @@ class CfgFunctions
 
 // Cyro's spectator script
 #include "..\CSSA3\CSSA3_header.hpp"
+
+// Enabling remote execution
+class CfgRemoteExec
+{
+	// List of script commands allowed to be sent from client via remoteExec
+	class Commands
+	{
+		class hideObjectGlobal
+		{
+			allowedTargets=0; // can target anyone
+		};
+	};
+};
