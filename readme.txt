@@ -23,6 +23,7 @@ BASIC USAGE:
 CUSTOMIZE:
 
 1) Customize crates and gear loadouts by customizing loadout\crates.sqf and loadout\gear.sqf.
+	a) Note that you can no longer simply add the loadout command to the init field due to the init field breaking for JIP since Eden. Instead, name the unit and add that name to the init_loadout.sqf file in loadouts\
 2) To customize a default parameter setting, such as View Distance for example, un-comment the line: //#define zamf_world_params_world_def_view_distance 3000 
 in the description.ext so that it looks like this: #define zamf_world_params_world_def_view_distance 3000 and change the 3000 to whatever number you want.
 
