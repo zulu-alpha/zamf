@@ -265,7 +265,7 @@
 
     if !(isNil _x) then {
         _obj = missionNamespace getVariable _x;
-        nul = [_obj, "equipment", "Equipment", true] call zamf_fnc_crate;
+        nul = [_obj, "equipment", "Equipment", false] call zamf_fnc_crate;
     };
 
 } count ["zamf_object_crate_equip", "zamf_object_crate_equip_1"];
@@ -275,7 +275,7 @@
 
     if !(isNil _x) then {
         _obj = missionNamespace getVariable _x;
-        nul = [_obj, "med", "Medical", true] call zamf_fnc_crate;
+        nul = [_obj, "med", "Medical", false] call zamf_fnc_crate;
     };
 
 } count ["zamf_object_crate_med", "zamf_object_crate_med_1"];
@@ -285,7 +285,7 @@
 
     if !(isNil _x) then {
         _obj = missionNamespace getVariable _x;
-        nul = [_obj, "explosives", "Explosives", true] call zamf_fnc_crate;
+        nul = [_obj, "explosives", "Explosives", false] call zamf_fnc_crate;
     };
 
 } count ["zamf_object_crate_expl", "zamf_object_crate_expl_1"];
@@ -295,7 +295,7 @@
 
     if !(isNil _x) then {
         _obj = missionNamespace getVariable _x;
-        nul = [_obj, "para", "Paradrop", true] call zamf_fnc_crate;
+        nul = [_obj, "para", "Paradrop", false] call zamf_fnc_crate;
     };
 
 } count ["zamf_object_crate_para", "zamf_object_crate_para_1"];
