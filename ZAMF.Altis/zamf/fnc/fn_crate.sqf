@@ -69,7 +69,7 @@ if (_restrict) then {
 			_crate_name spawn {
 				waitUntil {!isnull (findDisplay 602)};
 				(findDisplay 602) closeDisplay 2;
-				hint format ["You must be a member of %1 to access this crate!, %2", _this];
+				hint format ["You must be a member of %1 to access this crate!", _this];
 			};
 
 		};
