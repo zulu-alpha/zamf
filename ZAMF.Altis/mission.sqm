@@ -8,7 +8,7 @@ class EditorData
 	toggles=69;
 	class ItemIDProvider
 	{
-		nextID=260;
+		nextID=441;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14674.041,42.91,16656.014};
-		dir[]={0.061424583,-0.73102355,0.67958421};
-		up[]={0.065805964,0.68235183,0.72805679};
-		aside[]={0.99594134,5.455513e-008,-0.09001869};
+		pos[]={14682.65,33.149925,16625.793};
+		dir[]={0.3624118,-0.69237685,-0.62409109};
+		up[]={0.34774017,0.72142541,-0.59883016};
+		aside[]={-0.86485559,1.0522781e-006,-0.50222391};
 	};
 };
 binarizationWanted=0;
@@ -172,7 +172,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_arsenal";
+				description="arsenal";
 			};
 			id=1;
 			type="B_CargoNet_01_ammo_F";
@@ -212,7 +212,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_d1";
+				description="squad_1";
 			};
 			id=2;
 			type="B_CargoNet_01_ammo_F";
@@ -252,7 +252,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_d4";
+				description="fst";
 			};
 			id=3;
 			type="B_CargoNet_01_ammo_F";
@@ -292,7 +292,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_expl";
+				description="explosives";
 			};
 			id=4;
 			type="B_CargoNet_01_ammo_F";
@@ -332,7 +332,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_para";
+				description="para";
 			};
 			id=5;
 			type="B_CargoNet_01_ammo_F";
@@ -372,7 +372,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_d31";
+				description="mg_team";
 			};
 			id=6;
 			type="B_CargoNet_01_ammo_F";
@@ -413,6 +413,7 @@ class Mission
 			{
 				skill=0.60000002;
 				name="repair_1";
+				description="repair";
 			};
 			id=7;
 			type="B_Truck_01_Repair_F";
@@ -445,14 +446,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14709,18.735302,16626};
+				position[]={14709,18.735302,16627};
 				angles[]={0,4.712389,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_d2";
+				description="squad_2";
 			};
 			id=8;
 			type="B_CargoNet_01_ammo_F";
@@ -492,7 +493,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_d0";
+				description="hq";
 			};
 			id=9;
 			type="B_CargoNet_01_ammo_F";
@@ -532,7 +533,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_med";
+				description="med";
 			};
 			id=10;
 			type="B_CargoNet_01_ammo_F";
@@ -572,7 +573,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_equip";
+				description="equipment";
 			};
 			id=11;
 			type="B_CargoNet_01_ammo_F";
@@ -612,7 +613,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_d33";
+				description="aa_team";
 			};
 			id=12;
 			type="B_CargoNet_01_ammo_F";
@@ -652,7 +653,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_d32";
+				description="atgm_team";
 			};
 			id=13;
 			type="B_CargoNet_01_ammo_F";
@@ -692,7 +693,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_g";
+				description="heli";
 			};
 			id=14;
 			type="B_CargoNet_01_ammo_F";
@@ -732,7 +733,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_r";
+				description="jet";
 			};
 			id=15;
 			type="B_CargoNet_01_ammo_F";
@@ -772,7 +773,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_b1";
+				description="crew_1";
 			};
 			id=16;
 			type="B_CargoNet_01_ammo_F";
@@ -812,7 +813,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_b2";
+				description="crew_2";
 			};
 			id=17;
 			type="B_CargoNet_01_ammo_F";
@@ -853,7 +854,7 @@ class Mission
 			{
 				skill=0.60000002;
 				init=" ";
-				name="zamf_object_crate_res_squad_1";
+				description="squad_resupply";
 			};
 			id=18;
 			type="B_supplyCrate_F";
@@ -893,7 +894,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_res_squad_2";
+				description="squad_resupply";
 			};
 			id=19;
 			type="B_supplyCrate_F";
@@ -934,7 +935,7 @@ class Mission
 			{
 				skill=0.60000002;
 				init=" ";
-				name="zamf_object_crate_res_aa";
+				description="atgm_team_resupply";
 			};
 			id=20;
 			type="B_supplyCrate_F";
@@ -974,7 +975,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_res_atgm";
+				description="aa_team_resupply";
 			};
 			id=21;
 			type="B_supplyCrate_F";
@@ -1014,7 +1015,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_res_mg";
+				description="mg_team_resupply";
 			};
 			id=22;
 			type="B_supplyCrate_F";
@@ -1054,7 +1055,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="zamf_object_crate_res_expl";
+				description="explosives";
 			};
 			id=23;
 			type="B_supplyCrate_F";
@@ -1101,7 +1102,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="zamf_object_spect_1";
 						description="Spectator";
 						isPlayable=1;
 					};
@@ -1120,7 +1120,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_spect_2";
 						description="Spectator";
 						isPlayable=1;
 					};
@@ -1139,7 +1138,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_spect_3";
 						description="Spectator";
 						isPlayable=1;
 					};
@@ -1158,7 +1156,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_spect_4";
 						description="Spectator";
 						isPlayable=1;
 					};
@@ -1379,7 +1376,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="zamf_object_zeus_1";
 						description="Zeus";
 						isPlayer=1;
 						isPlayable=1;
@@ -1544,7 +1540,6 @@ class Mission
 					flags=2;
 					class Attributes
 					{
-						name="zamf_object_veh_1D";
 					};
 					id=37;
 					type="B_UAV_AI";
@@ -1590,8 +1585,7 @@ class Mission
 			{
 				skill=0.60000002;
 				rank="CAPTAIN";
-				name="zamf_object_veh_1";
-				description="0-A [CO]";
+				description="ugv";
 			};
 			id=36;
 			type="B_UGV_01_F";
@@ -2508,8 +2502,8 @@ class Mission
 				};
 				class Attribute4
 				{
-					property="ACE_moduleMedicalSettings_remoteControlledAI";
-					expression="_this setVariable ['remoteControlledAI',_value,true];";
+					property="ACE_moduleMedicalSettings_increaseTrainingInLocations";
+					expression="_this setVariable ['increaseTrainingInLocations',_value,true];";
 					class Value
 					{
 						class data
@@ -2521,7 +2515,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -2546,6 +2540,25 @@ class Mission
 				};
 				class Attribute6
 				{
+					property="ACE_moduleMedicalSettings_remoteControlledAI";
+					expression="_this setVariable ['remoteControlledAI',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute7
+				{
 					property="ACE_moduleMedicalSettings_painCoefficient";
 					expression="_this setVariable ['painCoefficient',_value,true];";
 					class Value
@@ -2563,7 +2576,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute7
+				class Attribute8
 				{
 					property="ACE_moduleMedicalSettings_AIDamageThreshold";
 					expression="_this setVariable ['AIDamageThreshold',_value,true];";
@@ -2582,7 +2595,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute8
+				class Attribute9
 				{
 					property="ACE_moduleMedicalSettings_playerDamageThreshold";
 					expression="_this setVariable ['playerDamageThreshold',_value,true];";
@@ -2601,7 +2614,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute9
+				class Attribute10
 				{
 					property="ACE_moduleMedicalSettings_level";
 					expression="_this setVariable ['level',_value,true];";
@@ -2620,7 +2633,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute10
+				class Attribute11
 				{
 					property="ACE_moduleMedicalSettings_allowLitterCreation";
 					expression="_this setVariable ['allowLitterCreation',_value,true];";
@@ -2639,7 +2652,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute11
+				class Attribute12
 				{
 					property="ACE_moduleMedicalSettings_keepLocalSettingsSynced";
 					expression="_this setVariable ['keepLocalSettingsSynced',_value,true];";
@@ -2658,7 +2671,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute12
+				class Attribute13
 				{
 					property="ACE_moduleMedicalSettings_medicSetting";
 					expression="_this setVariable ['medicSetting',_value,true];";
@@ -2677,7 +2690,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=13;
+				nAttributes=14;
 			};
 		};
 		class Item34
@@ -2748,7 +2761,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="ace_mk6mortar_module_useAmmoHandling";
+					expression="_this setVariable ['useAmmoHandling',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item35
@@ -3862,7 +3894,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="eng_1,eng_2,eng_3,eng_4,eng_5,eng_6";
+							value="eng_1,eng_2,eng_3,eng_4,eng_5,eng_6,eng_7";
 						};
 					};
 				};
@@ -3933,7 +3965,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="repair_1, repair_2";
+							value="repair_1, repair_2, repair_3";
 						};
 					};
 				};
@@ -4449,7 +4481,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						name="zamf_object_d0_1";
 						description="Dragon'0'A [CO]";
 						isPlayable=1;
 					};
@@ -4469,7 +4500,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_d0_2";
 						description="Dragon'0'M [Platoon Medic]";
 						isPlayable=1;
 					};
@@ -4546,7 +4576,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						name="zamf_object_d1_1";
 						description="Dragon'1'0'A [SL]";
 						isPlayable=1;
 					};
@@ -4566,7 +4595,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_d1_2";
 						description="Dragon'1'0'M [Squad Medic]";
 						isPlayable=1;
 					};
@@ -4586,7 +4614,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						name="zamf_object_d1_3";
 						description="Dragon'1'1'A [FTL]";
 						isPlayable=1;
 					};
@@ -4605,7 +4632,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="zamf_object_d1_4";
 						description="Dragon'1'1 [R]";
 						isPlayable=1;
 					};
@@ -4625,7 +4651,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_d1_5";
 						description="Dragon'1'1'B [AR]";
 						isPlayable=1;
 					};
@@ -4644,7 +4669,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="zamf_object_d1_6";
 						description="Dragon'1'1 [G]";
 						isPlayable=1;
 					};
@@ -4664,7 +4688,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						name="zamf_object_d1_7";
 						description="Dragon'1'2'A [FTL]";
 						isPlayable=1;
 					};
@@ -4683,7 +4706,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="zamf_object_d1_8";
 						description="Dragon'1'2 [R]";
 						isPlayable=1;
 					};
@@ -4703,7 +4725,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_d1_9";
 						description="Dragon'1'2'B [AR]";
 						isPlayable=1;
 					};
@@ -4722,7 +4743,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="zamf_object_d1_10";
 						description="Dragon'1'2 [G]";
 						isPlayable=1;
 					};
@@ -4779,7 +4799,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						name="zamf_object_d2_1";
 						description="Dragon'2'0'A [SL]";
 						isPlayable=1;
 					};
@@ -4799,7 +4818,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_d2_2";
 						description="Dragon'2'0'M [Squad Medic]";
 						isPlayable=1;
 					};
@@ -4819,7 +4837,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						name="zamf_object_d2_3";
 						description="Dragon'2'1'A [FTL]";
 						isPlayable=1;
 					};
@@ -4838,7 +4855,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="zamf_object_d2_4";
 						description="Dragon'2'1 [R]";
 						isPlayable=1;
 					};
@@ -4858,7 +4874,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_d2_5";
 						description="Dragon'2'1'B [AR]";
 						isPlayable=1;
 					};
@@ -4877,7 +4892,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="zamf_object_d2_6";
 						description="Dragon'2'1 [G]";
 						isPlayable=1;
 					};
@@ -4897,7 +4911,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						name="zamf_object_d2_7";
 						description="Dragon'2'2'A [FTL]";
 						isPlayable=1;
 					};
@@ -4916,7 +4929,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="zamf_object_d2_8";
 						description="Dragon'2'2 [R]";
 						isPlayable=1;
 					};
@@ -4936,7 +4948,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_d2_9";
 						description="Dragon'2'2'B [AR]";
 						isPlayable=1;
 					};
@@ -4955,7 +4966,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="zamf_object_d2_10";
 						description="Dragon'2'2 [G]";
 						isPlayable=1;
 					};
@@ -5012,7 +5022,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						name="zamf_object_d31_1";
 						description="Dragon'3'1'A [TL]";
 						isPlayable=1;
 					};
@@ -5032,7 +5041,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_d31_2";
 						description="Dragon'3'1 [LMG\CSW Gunner]";
 						isPlayable=1;
 					};
@@ -5052,7 +5060,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_d31_3";
 						description="Dragon'3'1 [Ammo bearer\DM]";
 						isPlayable=1;
 					};
@@ -5109,7 +5116,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						name="zamf_object_d32_1";
 						description="Dragon'3'2'A [TL]";
 						isPlayable=1;
 					};
@@ -5129,7 +5135,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_d32_2";
 						description="Dragon'3'2 [ATGM]";
 						isPlayable=1;
 					};
@@ -5186,7 +5191,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						name="zamf_object_d33_1";
 						description="Dragon'3'3'A [TL]";
 						isPlayable=1;
 					};
@@ -5206,7 +5210,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_d33_2";
 						description="Dragon'3'3 [MANPAD]";
 						isPlayable=1;
 					};
@@ -5263,7 +5266,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						name="zamf_object_d4_1";
 						description="Dragon'4'A";
 						isPlayable=1;
 					};
@@ -5283,7 +5285,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_d4_3";
 						description="Dragon'4'W";
 						isPlayable=1;
 					};
@@ -5302,7 +5303,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="zamf_object_d4_2";
 						description="Dragon'4'U";
 						isPlayable=1;
 					};
@@ -5456,7 +5456,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						name="zamf_object_b1_1";
 						description="Badger'1 [Commander]";
 						isPlayable=1;
 					};
@@ -5476,7 +5475,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_b1_2";
 						description="Badger'1 [Gunner]";
 						isPlayable=1;
 					};
@@ -5495,7 +5493,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="zamf_object_b1_3";
 						description="Badger'1 [Driver]";
 						isPlayable=1;
 					};
@@ -5552,7 +5549,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						name="zamf_object_b2_1";
 						description="Badger'2 [Commander]";
 						isPlayable=1;
 					};
@@ -5572,7 +5568,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="zamf_object_b2_2";
 						description="Badger'2 [Gunner]";
 						isPlayable=1;
 					};
@@ -5591,7 +5586,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="zamf_object_b2_3";
 						description="Badger'2 [Driver]";
 						isPlayable=1;
 					};
