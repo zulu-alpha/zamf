@@ -243,6 +243,11 @@ switch (_loadout) do {
 
 		// Launcher
 		_crate addWeaponCargoGlobal ["CUP_launch_M136", 2];
+		_crate addWeaponCargoGlobal ["CUP_launch_Mk153Mod0", 2];
+		_crate addItemCargoGlobal ["CUP_optic_SMAW_Scope", 2];
+		_crate addMagazineCargoGlobal ["CUP_SMAW_HEAA_M", 7];
+		_crate addMagazineCargoGlobal ["CUP_SMAW_HEDP_M", 7];
+		_crate addMagazineCargoGlobal ["CUP_SMAW_Spotting", 4];
 
 		// Sidearm
 		_crate addWeaponCargoGlobal ["hgun_P07_F", 10];
@@ -304,6 +309,9 @@ switch (_loadout) do {
 
 		// Launcher
 		_crate addWeaponCargoGlobal ["CUP_launch_M136", 2];
+		_crate addMagazineCargoGlobal ["CUP_SMAW_HEAA_M", 7];
+		_crate addMagazineCargoGlobal ["CUP_SMAW_HEDP_M", 7];
+		_crate addMagazineCargoGlobal ["CUP_SMAW_Spotting", 4];
 
 		// Sidearm
 		_crate addMagazineCargoGlobal ["16Rnd_9x21_Mag", 40];
