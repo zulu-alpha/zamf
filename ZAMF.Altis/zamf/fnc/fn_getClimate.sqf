@@ -14,7 +14,7 @@
 */
 
 // World uniform type matching
-_arid = ["Altis", "Stratis", "Desert_E", "Shapur_BAF", "Takistan", "Zargabad", "IslaDuala3", "Porto", "Mountains_ACR", "Bornholm", "Kunduz"];
+_arid = ["Altis", "Stratis", "Desert_E", "Shapur_BAF", "Takistan", "Zargabad", "IslaDuala3", "Porto", "Mountains_ACR", "Bornholm", "Kunduz", "fata"];
 _tran = ["ProvingGrounds_PMC", "Sara", "SaraLite", "Sara_dbe1", "Intro"];
 _wood = ["Chernarus", "utes", "Woodland_ACR", "Bootcamp_ACR", "pja305", "VR", "Chernarus_Summer", "Panthera3", "anim_helvantis_v2"];
 
