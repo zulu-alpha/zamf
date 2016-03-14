@@ -8,7 +8,7 @@ class EditorData
 	toggles=69;
 	class ItemIDProvider
 	{
-		nextID=441;
+		nextID=443;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14689.062,43.816124,16592.227};
-		dir[]={-0.12613571,-0.62424415,0.77113891};
-		up[]={-0.10078907,0.78110605,0.61619973};
-		aside[]={0.98700225,2.0357402e-007,0.16144243};
+		pos[]={14666.354,189.74907,16644.641};
+		dir[]={0.022400612,-0.97218066,0.23368661};
+		up[]={0.092762947,0.23444554,0.96768618};
+		aside[]={0.99555439,1.4199613e-006,-0.095432714};
 	};
 };
 binarizationWanted=0;
@@ -52,7 +52,8 @@ addons[]=
 	"ace_vehiclelock",
 	"A3_Characters_F_BLUFOR",
 	"A3_Characters_F_Mark",
-	"A3_Characters_F_Gamma"
+	"A3_Characters_F_Gamma",
+	"ace_medical_menu"
 };
 randomSeed=8441238;
 class ScenarioData
@@ -68,6 +69,25 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
 		{
 			property="RespawnTemplates";
 			expression="true";
@@ -103,25 +123,6 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
 		nAttributes=2;
 	};
 };
@@ -151,7 +152,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=64;
+		items=66;
 		class Item0
 		{
 			dataType="Marker";
@@ -8175,6 +8176,91 @@ class Mission
 								};
 							};
 							value="Reaper";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item64
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14672,17.91,16677};
+			};
+			id=441;
+			type="ACE_moduleBasicMedicalSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleBasicMedicalSettings_medicSetting_basicEpi";
+					expression="_this setVariable ['medicSetting_basicEpi',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ACE_moduleBasicMedicalSettings_useLocation_basicEpi";
+					expression="_this setVariable ['useLocation_basicEpi',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item65
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14676,17.91,16677};
+			};
+			id=442;
+			type="ACE_moduleMedicalMenuSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleMedicalMenuSettings_allow";
+					expression="_this setVariable ['allow',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
 						};
 					};
 				};
