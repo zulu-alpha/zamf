@@ -773,8 +773,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["Laserbatteries", 1];
 
 		// UAV
-		_crate addBackpackCargoGlobal ["B_UAV_01_backpack_F", 1];
-		_crate addItemCargoGlobal ["ACE_UAVBattery", 2];
+		_crate addBackpackCargoGlobal ["B_MAV_B_BACKPACK", 1];
 
 		// Mortar
 		_crate addBackpackCargoGlobal ["B_Mortar_01_support_F", 1];

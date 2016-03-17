@@ -135,6 +135,7 @@ switch (_loadout) do {
 		comment "Add containers";
 		_unit forceAddUniform (["u_uniform1_kampat_arid", "u_uniform1_kampat_transitional", "u_uniform1_kampat_transitional"] select _index);
 		_unit addItemToUniform "ACE_EarPlugs";
+		_unit addItemToUniform "ACE_MapTools";
 
 	};
 
@@ -145,20 +146,44 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_NVG_Gen4";
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addItemToUniform "ACE_MapTools";
-		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_M84";};
+		_unit addItemToUniform "Laserbatteries";
 		_unit addItemToUniform "ACE_Flashlight_MX991";
-		_unit addHeadgear (["h_milcap_kampat_arid", "h_milcap_kampat_transitional", "h_milcap_kampat_transitional"] select _index);
+		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_M84";};
+		_unit addHeadgear "h_beret_kampat";
 		_unit addGoggles "G_Shades_Black";
 
 		comment "Add weapons";
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon "Laserdesignator";
 
 		comment "Add items";
 		_unit linkItem "ItemMap";
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
 		_unit linkItem "tf_anprc152";
-		_unit linkItem "ItemcTab";
+
+	};
+
+	case "ds_grunt": {
+
+		comment "Add containers";
+		_unit forceAddUniform (["u_uniform2_kampat_arid", "u_uniform2_kampat_transitional", "u_uniform2_kampat_transitional"] select _index);
+		_unit addItemToUniform "ACE_NVG_Gen4";
+		_unit addItemToUniform "ACE_EarPlugs";
+		_unit addItemToUniform "ACE_MapTools";
+		_unit addItemToUniform "Laserbatteries";
+		_unit addItemToUniform "ACE_Flashlight_MX991";
+		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_M84";};
+		_unit addHeadgear "h_beret_kampat";
+		_unit addGoggles "G_Shades_Black";
+
+		comment "Add weapons";
+		_unit addWeapon "Laserdesignator";
+
+		comment "Add items";
+		_unit linkItem "ItemMap";
+		_unit linkItem "ItemCompass";
+		_unit linkItem "ItemWatch";
+		_unit linkItem "tf_anprc152";
 
 	};
 
