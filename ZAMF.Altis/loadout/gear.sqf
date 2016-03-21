@@ -136,6 +136,7 @@ switch (_loadout) do {
 		_unit forceAddUniform (["u_uniform1_kampat_arid", "u_uniform1_kampat_transitional", "u_uniform1_kampat_transitional"] select _index);
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addItemToUniform "ACE_MapTools";
+		for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShellGreen";};
 
 	};
 
@@ -148,7 +149,13 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_MapTools";
 		_unit addItemToUniform "Laserbatteries";
 		_unit addItemToUniform "ACE_Flashlight_MX991";
-		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_M84";};
+		_unit addBackpack (["tf_rt1523g", "tf_rt1523g", "tf_rt1523g_bwmod"] select _index);
+		for "_i" from 1 to 10 do {_unit addItemToBackpack "ACE_fieldDressing";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_morphine";};
+		_unit addItemToBackpack "ACE_bloodIV";
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_epinephrine";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_M84";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 		_unit addHeadgear "h_beret_kampat";
 		_unit addGoggles "G_Shades_Black";
 
@@ -172,7 +179,13 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_MapTools";
 		_unit addItemToUniform "Laserbatteries";
 		_unit addItemToUniform "ACE_Flashlight_MX991";
-		for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_M84";};
+		_unit addBackpack (["tf_rt1523g", "tf_rt1523g", "tf_rt1523g_bwmod"] select _index);
+		for "_i" from 1 to 10 do {_unit addItemToBackpack "ACE_fieldDressing";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_morphine";};
+		_unit addItemToBackpack "ACE_bloodIV";
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_epinephrine";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_M84";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 		_unit addHeadgear "h_beret_kampat";
 		_unit addGoggles "G_Shades_Black";
 
@@ -209,6 +222,7 @@ switch (_loadout) do {
 	};
 
 };
+
 
 // For respawn support
 if (_unit == player) then {
