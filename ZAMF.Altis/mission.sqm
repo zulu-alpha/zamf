@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14713.199,33.40881,16643.139};
-		dir[]={-0.5510909,-0.73672998,-0.39215067};
-		up[]={-0.60026926,0.67615503,-0.42714441};
-		aside[]={-0.5798499,-5.5663986e-007,0.81486845};
+		pos[]={14696.852,30.787977,16605.658};
+		dir[]={-0.098155841,-0.52290535,0.84674454};
+		up[]={-0.060225133,0.85232049,0.51953417};
+		aside[]={0.99336576,-1.6554259e-007,0.11515021};
 	};
 };
 binarizationWanted=0;
@@ -70,25 +70,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -120,6 +101,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
 				};
 			};
 		};
@@ -257,7 +257,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="nul = [this, ""squad"", ""Dragon'1"", true] call zamf_fnc_crate;";
+				init="nul = [this, ""assault_squad"", ""Dragon'1"", true] call zamf_fnc_crate;";
 				description="squad_1";
 			};
 			id=2;
