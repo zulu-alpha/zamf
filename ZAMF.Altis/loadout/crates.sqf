@@ -50,6 +50,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_CableTie", 100];
 		_crate addItemCargoGlobal ["ACE_wirecutter", 6];
 		_crate addItemCargoGlobal ["ACE_Sandbag_empty", 100];
+		_crate addItemCargoGlobal ["ACE_EntrenchingTool", 10];
 		_crate addItemCargoGlobal ["ACE_Flashlight_XL50", 43];
 
 		_crate addItemCargoGlobal ["ACE_NVG_Wide", 43];
@@ -58,6 +59,9 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Green", 20];
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Red", 20];
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_White", 20];
+
+		_crate addItemCargoGlobal ["ACE_SpraypaintGreen", 10];
+		_crate addItemCargoGlobal ["ACE_SpraypaintRed", 10];
 
 		_crate addBackpackCargoGlobal ["ACE_TacticalLadder_Pack", 16];
 
@@ -77,13 +81,12 @@ switch (_loadout) do {
 	case "explosives": {
 
 		_crate addMagazineCargoGlobal ["SatchelCharge_Remote_Mag", 8];
-		_crate addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 16];
+		_crate addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 24];
 		_crate addMagazineCargoGlobal ["ATMine_Range_Mag", 8];
 		_crate addMagazineCargoGlobal ["SLAMDirectionalMine_Wire_Mag", 8];
+		_crate addMagazineCargoGlobal ["ClaymoreDirectionalMine_Remote_Mag", 8];
 		_crate addItemCargoGlobal ["ACE_Clacker", 4];
 		_crate addItemCargoGlobal ["ACE_M26_Clacker", 4];
-		_crate addItemCargoGlobal ["ACE_DefusalKit", 4];
-		_crate addItemCargoGlobal ["MineDetector", 4];
 
 	};
 
@@ -126,7 +129,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["SmokeShellRed", 2];
 		_crate addMagazineCargoGlobal ["Chemlight_blue", 6];
 		_crate addMagazineCargoGlobal ["Chemlight_green", 6];
-		_crate addMagazineCargoGlobal ["Chemlight_red", 8];
+		_crate addMagazineCargoGlobal ["Chemlight_red", 24];
 		_crate addMagazineCargoGlobal ["Chemlight_yellow", 8];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 3];
 		_crate addMagazineCargoGlobal ["B_IR_Grenade", 3];
@@ -159,13 +162,14 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_key_west", 1];
 		_crate addItemCargoGlobal ["ToolKit", 1];
 		_crate addItemCargoGlobal ["MineDetector", 1];
+		_crate addItemCargoGlobal ["Revo_mD_battery", 8];
+		_crate addItemCargoGlobal ["Revo_mD_flag", 20];
 		_crate addItemCargoGlobal ["ACE_DefusalKit", 1];
 		_crate addItemCargoGlobal ["ACE_wirecutter", 1];
 
 		// Marking
 		_crate addWeaponCargoGlobal ["Laserdesignator", 1];
 		_crate addMagazineCargoGlobal ["Laserbatteries", 1];
-
 
 	};
 
