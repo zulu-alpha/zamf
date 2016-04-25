@@ -224,8 +224,8 @@ switch (_loadout) do {
 
 		_crate addItemCargoGlobal ["bipod_01_F_blk", 2];
 
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 64];
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 16];
+		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 72];
+		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 18];
 		_crate addMagazineCargoGlobal ["CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 11];
 
 		_crate addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell", 36];
