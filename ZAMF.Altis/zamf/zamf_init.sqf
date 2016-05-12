@@ -52,7 +52,10 @@ if ("disable_playable_ai_speak" in _input) then {execVM "zamf\player\disable_ai_
 if ("leave_group" in _input) then {execVM "zamf\player\leave_grp.sqf"};
 
 // Spectate on death
-if ("spectate_on_death" in _input) then {[] execVM "CSSA3\CSSA3_init.sqf"};
+if ("spectate_on_death" in _input) then {[] execVM "zamf\spect\zamf_spect_init.sqf"};
+
+// Add a key binding to exit EG Specator
+[] execVM "zamf\spect\zamf_spect_key.sqf";
 
 // Handle enabling or disabling of ZA Mods
 zam_res_enabled = if ("zam_res" in _input) then {True} else {False};

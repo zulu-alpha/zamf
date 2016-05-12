@@ -52,9 +52,6 @@ class CfgFunctions
 // Paramaters are handled in the following file:
 #include "zamf_params.hpp"
 
-// Cyro's spectator script
-#include "..\CSSA3\CSSA3_header.hpp"
-
 // Enabling remote execution
 class CfgRemoteExec
 {

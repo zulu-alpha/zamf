@@ -16,10 +16,10 @@ private ["_unit"];
 
 _unit = _this select 0;
 
-waitUntil {!(isNull _unit) && {!(isNil "CSSA3_fnc_createSpectateDialog")}};
+waitUntil {!(isNull _unit)};
 
 // Make sure addactions only appear to the player themselves.
 if !(local _unit_) exitWith {};
 
 _unit addAction ["Freecam", "zamf\debug\freecam.sqf"];
-_unit addAction ["Spectate", {['forced', player] spawn CSSA3_fnc_createSpectateDialog}];
+_unit addAction ["Spectate", {["Initialize", [player, [], true]] call BIS_fnc_EGSpectator;}];
