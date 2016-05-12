@@ -1,7 +1,13 @@
+if !(hasInterface) exitWith{};
+waitUntil {!(isNull player)};
+
 // Start the spectator script if the respawn counter is suitably long
 player addEventHandler ["killed", {
-	if (playerRespawnTime > 30) then {
-		["Initialize", [player, [], true]] call BIS_fnc_EGSpectator;
+	[] spawn {
+		sleep 1;
+		if (playerRespawnTime > 30) then {
+			["Initialize", [player, [], true]] call BIS_fnc_EGSpectator;
+		};
 	};
 }];
 
