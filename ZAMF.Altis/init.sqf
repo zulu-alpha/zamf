@@ -1,6 +1,3 @@
-// Disable respawn by adjusting the tickets in the line further below.
-zamf_respawntimer = 30;
-
 // Adjust respawn via tickets here
 [player, 2] call BIS_fnc_respawnTickets; // https://community.bistudio.com/wiki/BIS_fnc_respawnTickets
 

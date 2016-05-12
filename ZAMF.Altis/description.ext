@@ -5,6 +5,8 @@
 // Eg: just uncomment (remove //) from the line below to chang the view distance to 2000m:
 //#define zamf_world_params_world_def_view_distance 2000
 
+// Disable respawn by adjusting the tickets in the init.sqf
+respawnDelay = 30;
 
 //// Remove text channels
 disableChannels[] = {0,1,2,5,6};

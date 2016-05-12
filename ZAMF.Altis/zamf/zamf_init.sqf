@@ -12,10 +12,9 @@
 "tfar_config",		     // ZA Specific config settings for TFAR, such as disabling auto microdagr and backpack radios.
 "mcc_limit",		     // Limit MCC to Admins.
 "zeusify",		     // Make sure that all units are detected by zeus.
-"logistics",		     // Enable a logistics script
 "zam_res"		     // Enable ZAM Resume
 
-] call compile preprocessfilelinenumbers "zamf\zamf_init.sqf";
+] call ZAMF_fnc_zamf_init;
 */
 
 // Shortens script calls
@@ -25,14 +24,6 @@
 
 private ["_input"];
 _input = _this;
-
-// Set Respawn timer
-if !(isNil "zamf_respawntimer") then {
-	[] spawn {
-		waitUntil {sleep 1; time > 1};
-		setPlayerRespawnTime zamf_respawntimer;
-	};
-};
 
 // Define Paramaters for editor
 if (isNil "paramsArray") then {

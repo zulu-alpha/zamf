@@ -6,9 +6,6 @@ respawnDialog=0;
 respawnButton=1;
 respawnTemplates[] = {"Base", "Tickets", "EndMission"};  // Hides respawn timer
 
-// Disable respawn by adjusting the tickets in the init.sqf
-respawnDelay = 25;
-
 respawn=3;
 // RespawnType     Description
 // 0 or "NONE"     No respawn
