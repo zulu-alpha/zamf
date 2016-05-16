@@ -53,7 +53,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_EntrenchingTool", 10];
 		_crate addItemCargoGlobal ["ACE_Flashlight_XL50", 43];
 
-		_crate addItemCargoGlobal ["ACE_NVG_Wide", 43];
+		_crate addItemCargoGlobal ["ACE_NVG_Wide", 37];
 
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 20];
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Green", 20];
@@ -62,6 +62,8 @@ switch (_loadout) do {
 
 		_crate addItemCargoGlobal ["ACE_SpraypaintGreen", 10];
 		_crate addItemCargoGlobal ["ACE_SpraypaintRed", 10];
+
+		_crate addItemCargoGlobal ["ItemcTabHCam", 43];
 
 		_crate addBackpackCargoGlobal ["ACE_TacticalLadder_Pack", 16];
 
