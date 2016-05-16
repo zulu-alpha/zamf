@@ -1901,6 +1901,7 @@ class Mission
 			{
 				position[]={14674.64,17.91,16611.684};
 			};
+			name="zamf_object_curator_zeus";
 			id=34;
 			type="ModuleCurator_F";
 			class CustomAttributes
@@ -2794,6 +2795,7 @@ class Mission
 			{
 				position[]={14676.897,17.91,16611.684};
 			};
+			name="zamf_object_curator_admin";
 			id=65;
 			type="ModuleCurator_F";
 			class CustomAttributes
