@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14697.951,21.064545,16631.98};
-		dir[]={-0.12783062,-0.32224858,-0.93810421};
-		up[]={-0.043532856,0.9464708,-0.31951743};
-		aside[]={-0.99097884,-2.4180335e-006,0.13504602};
+		pos[]={14679.051,35.39291,16589.834};
+		dir[]={-0.080461882,-0.59513772,0.79972637};
+		up[]={-0.059594814,0.80340749,0.59226495};
+		aside[]={0.99511445,8.9930836e-007,0.10010943};
 	};
 };
 binarizationWanted=0;
@@ -70,6 +70,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -101,25 +120,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
 				};
 			};
 		};
@@ -1815,6 +1815,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="this hideObjectGlobal true; this allowDamage False; nul = [this] spawn zamf_fnc_spectateOptions; nul = [this, ""zeus""] spawn zamf_fnc_gear;";
+						name="zamf_object_zeus_1";
 						description="Zeus";
 						isPlayer=1;
 						isPlayable=1;
