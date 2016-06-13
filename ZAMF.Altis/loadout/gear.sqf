@@ -133,7 +133,7 @@ switch (_loadout) do {
 	case "candidate": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["u_uniform1_kampat_arid", "u_uniform1_kampat_transitional", "u_uniform1_kampat_transitional"] select _index);
+		_unit forceAddUniform "u_uniform1_kampat_candidate";
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addItemToUniform "ACE_MapTools";
 		for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShellGreen";};
