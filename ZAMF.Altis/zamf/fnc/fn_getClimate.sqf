@@ -28,4 +28,4 @@ _index = call {
 	1
 };
 
-_index3", "anim_helvantis_v2"];
+_index
