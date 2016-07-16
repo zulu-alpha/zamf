@@ -43,6 +43,7 @@ _backpack = ["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_k
 _backpack_big = ["b_carryall_kampat_arid", "b_carryall_kampat_arid", "b_carryall_kampat_transitional"] select _index;
 
 
+
 switch (_loadout) do {
 
 	case "equipment": {
@@ -141,7 +142,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["ACE_M84", 6];
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["CUP_arifle_M4A1_black", 3];
+		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 3];
 
 		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 2];
 		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 2];
@@ -213,9 +214,9 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["ACE_M84", 16];
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["CUP_arifle_M4A1_black", 5];
+		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 5];
 		_crate addWeaponCargoGlobal ["CUP_lmg_m249_pip4", 2];
-		_crate addWeaponCargoGlobal ["CUP_arifle_M4A1_BUIS_GL", 3];
+		_crate addWeaponCargoGlobal ["arifle_SPAR_01_GL_blk_F", 3];
 
 		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 6];
 		_crate addItemCargoGlobal ["CUP_optic_ACOG", 4];
@@ -371,8 +372,8 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["ACE_M84", 22];
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["CUP_arifle_M4A1_black", 9];
-		_crate addWeaponCargoGlobal ["CUP_arifle_M4A1_BUIS_GL", 1];
+		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 9];
+		_crate addWeaponCargoGlobal ["arifle_SPAR_01_GL_blk_F", 1];
 
 		_crate addItemCargoGlobal ["CUP_optic_ACOG", 4];
 		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 6];
@@ -515,8 +516,8 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["ACE_M84", 6];
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["CUP_arifle_M16A4_GL", 1];
-		_crate addWeaponCargoGlobal ["CUP_arifle_M16A4_Base", 2];
+		_crate addWeaponCargoGlobal ["arifle_SPAR_01_GL_blk_F", 1];
+		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 2];
 
 		_crate addItemCargoGlobal ["CUP_optic_ACOG", 3];
 
@@ -602,7 +603,7 @@ switch (_loadout) do {
 
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["CUP_arifle_M4A1_black", 3];
+		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 3];
 
 		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 15];
 
@@ -713,7 +714,7 @@ switch (_loadout) do {
 
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["CUP_arifle_M4A1_black", 3];
+		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 3];
 
 		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 15];
 
