@@ -43,7 +43,6 @@ _backpack = ["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_k
 _backpack_big = ["b_carryall_kampat_arid", "b_carryall_kampat_arid", "b_carryall_kampat_transitional"] select _index;
 
 
-
 switch (_loadout) do {
 
 	case "equipment": {
@@ -219,7 +218,7 @@ switch (_loadout) do {
 		_crate addWeaponCargoGlobal ["arifle_SPAR_01_GL_blk_F", 3];
 
 		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 6];
-		_crate addItemCargoGlobal ["CUP_optic_ACOG", 4];
+		_crate addItemCargoGlobal ["optic_ERCO_blk_F", 4];
 
 		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 10];
 		_crate addItemCargoGlobal ["acc_flashlight", 10];
@@ -375,7 +374,7 @@ switch (_loadout) do {
 		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 9];
 		_crate addWeaponCargoGlobal ["arifle_SPAR_01_GL_blk_F", 1];
 
-		_crate addItemCargoGlobal ["CUP_optic_ACOG", 4];
+		_crate addItemCargoGlobal ["optic_ERCO_blk_F", 4];
 		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 6];
 		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 10];
 		_crate addItemCargoGlobal ["acc_flashlight", 10];
@@ -519,7 +518,7 @@ switch (_loadout) do {
 		_crate addWeaponCargoGlobal ["arifle_SPAR_01_GL_blk_F", 1];
 		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 2];
 
-		_crate addItemCargoGlobal ["CUP_optic_ACOG", 3];
+		_crate addItemCargoGlobal ["optic_ERCO_blk_F", 3];
 
 		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 3];
 		_crate addItemCargoGlobal ["acc_flashlight", 3];
@@ -840,8 +839,8 @@ switch (_loadout) do {
 		this addItemToBackpack "ACE_muzzle_mzls_smg_02";
 		this addItemToBackpack "ACE_muzzle_mzls_338";
 		this addItemToBackpack "ACE_muzzle_mzls_93mmg";
-		this addItemToBackpack "ACE_CUP_optic_ACOG_2D";
-		this addItemToBackpack "ACE_CUP_optic_ACOG_PIP";
+		this addItemToBackpack "ACE_optic_ERCO_blk_F_2D";
+		this addItemToBackpack "ACE_optic_ERCO_blk_F_PIP";
 		this addItemToBackpack "ACE_optic_Arco_2D";
 		this addItemToBackpack "ACE_optic_Arco_PIP";
 		this addItemToBackpack "ACE_optic_MRCO_2D";
