@@ -22,6 +22,12 @@ disableChannels[] = {0,1,2,5,6};
 // Force RotorLib
 forceRotorLibSimulation = 1;
 
+// CfgFunctions
+class CfgFunctions
+{
+	#include "zamf\zamf_cfgfunctions.hpp"
+};
+
 // ZAMF specific parts of the description.ext
 #include "zamf\zamf_description.hpp"
 

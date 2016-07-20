@@ -43,11 +43,6 @@ enableDebugConsole = 1;
 // 1 = Available in SP and for hosts / logged in admins
 // 2 = Available for everyone
 
-// CfgFunctions
-class CfgFunctions
-{
-	#include "zamf_cfgfunctions.hpp"
-};
 
 // Paramaters are handled in the following file:
 #include "zamf_params.hpp"
