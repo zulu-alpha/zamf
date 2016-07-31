@@ -62,6 +62,8 @@ switch (_loadout) do {
 
 		_crate addItemCargoGlobal ["ACE_SpraypaintGreen", 10];
 		_crate addItemCargoGlobal ["ACE_SpraypaintRed", 10];
+		_crate addItemCargoGlobal ["ACE_SpraypaintBlue", 10];
+		_crate addItemCargoGlobal ["ACE_SpraypaintBlack", 10];
 
 		_crate addItemCargoGlobal ["ItemcTabHCam", 43];
 
