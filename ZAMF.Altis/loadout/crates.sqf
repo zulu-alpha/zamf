@@ -215,9 +215,9 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["ACE_M84", 16];
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 5];
+		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 6];
 		_crate addWeaponCargoGlobal ["CUP_lmg_m249_pip4", 2];
-		_crate addWeaponCargoGlobal ["arifle_SPAR_01_GL_blk_F", 3];
+		_crate addWeaponCargoGlobal ["arifle_SPAR_01_GL_blk_F", 2];
 
 		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 6];
 		_crate addItemCargoGlobal ["optic_ERCO_blk_F", 4];
@@ -236,6 +236,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell", 8];
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeRed_Grenade_shell", 8];
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeBlue_Grenade_shell", 4];
+		_crate addMagazineCargoGlobal ["UGL_FlareCIR_F", 12];
 
 		_crate addWeaponCargoGlobal ["srifle_EBR_F", 1];
 		_crate addItemCargoGlobal ["optic_SOS", 1];
@@ -531,7 +532,7 @@ switch (_loadout) do {
 
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeRed_Grenade_shell", 4];
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeBlue_Grenade_shell", 4];
-		_crate addMagazineCargoGlobal ["UGL_FlareCIR_F", 2];
+		_crate addMagazineCargoGlobal ["UGL_FlareCIR_F", 6];
 
 		_crate addWeaponCargoGlobal ["srifle_EBR_F", 1];
 		_crate addItemCargoGlobal ["optic_SOS", 1];
