@@ -73,6 +73,32 @@ switch (_loadout) do {
 
 	};
 
+	case "medic": {
+
+		comment "Add containers";
+		_unit forceAddUniform (["u_uniform2_kampat_arid", "u_uniform2_kampat_transitional", "u_uniform1_kampat_transitional"] select _index);
+		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_fieldDressing";};
+		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_morphine";};
+		_unit addItemToUniform "ACE_EarPlugs";
+		_unit addVest (["v_platecarrier2_kampat_arid", "v_platecarrier2_kampat_transitional", "v_platecarrier2_kampat_transitional"] select _index);
+		_unit addBackpack "b_bergen_kampat_arid_MEDIC";
+		for "_i" from 1 to 24 do {_unit addItemToBackpack "ACE_fieldDressing";};
+		for "_i" from 1 to 16 do {_unit addItemToBackpack "ACE_morphine";};
+		for "_i" from 1 to 12 do {_unit addItemToBackpack "ACE_epinephrine";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_bloodIV";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_bodyBag";};
+		_unit addHeadgear (["h_canvashelmet_kampat_arid", "h_canvashelmet_kampat_transitional", "h_canvashelmet_kampat_transitional"] select _index);
+		_unit addGoggles "G_Combat";
+
+		comment "Add weapons";
+
+		comment "Add items";
+		_unit linkItem "ItemMap";
+		_unit linkItem "ItemCompass";
+		_unit linkItem "ItemWatch";
+
+	};
+
 	case "heli": {
 
 		comment "Add containers";

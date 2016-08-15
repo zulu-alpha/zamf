@@ -108,12 +108,11 @@ switch (_loadout) do {
 	case "hq": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["b_bergen_kampat_arid_MEDIC", "b_bergen_kampat_transitional_MEDIC", "b_bergen_kampat_transitional_MEDIC"] select _index), 1];
 		_crate addBackpackCargoGlobal [(["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_kampat_transitional"] select _index), 1];
 
 		// Vision
-		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 3];
-		_crate addItemCargoGlobal ["Binocular", 2];
+		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 2];
+		_crate addItemCargoGlobal ["Binocular", 1];
 		_crate addItemCargoGlobal ["ACE_Vector", 1];
 
 
@@ -121,50 +120,49 @@ switch (_loadout) do {
 
 
 		// Navigation\tracking\communication
-		_crate addItemCargoGlobal ["ACE_MapTools", 3];
-		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 3];
+		_crate addItemCargoGlobal ["ACE_MapTools", 2];
+		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 2];
 		_crate addBackpackCargoGlobal [(["tf_rt1523g", "tf_rt1523g", "tf_rt1523g_bwmod"] select _index), 1];
-		_crate addItemCargoGlobal ["tf_anprc152", 3];
+		_crate addItemCargoGlobal ["tf_anprc152", 2];
 		_crate addItemCargoGlobal ["ItemcTab", 1];
-		_crate addItemCargoGlobal ["ItemMicroDAGR", 1];
 		_crate addItemCargoGlobal ["ItemAndroid", 1];
 
 		// Signalling
-		_crate addMagazineCargoGlobal ["SmokeShell", 6];
-		_crate addMagazineCargoGlobal ["SmokeShellGreen", 8];
-		_crate addMagazineCargoGlobal ["SmokeShellBlue", 6];
+		_crate addMagazineCargoGlobal ["SmokeShell", 4];
+		_crate addMagazineCargoGlobal ["SmokeShellGreen", 4];
+		_crate addMagazineCargoGlobal ["SmokeShellBlue", 4];
 		_crate addMagazineCargoGlobal ["SmokeShellRed", 2];
-		_crate addMagazineCargoGlobal ["Chemlight_blue", 6];
-		_crate addMagazineCargoGlobal ["Chemlight_green", 6];
+		_crate addMagazineCargoGlobal ["Chemlight_blue", 4];
+		_crate addMagazineCargoGlobal ["Chemlight_green", 4];
 		_crate addMagazineCargoGlobal ["Chemlight_red", 24];
 		_crate addMagazineCargoGlobal ["Chemlight_yellow", 8];
-		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 3];
-		_crate addMagazineCargoGlobal ["B_IR_Grenade", 3];
+		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 2];
+		_crate addMagazineCargoGlobal ["B_IR_Grenade", 2];
 
 		// Grenades
-		_crate addMagazineCargoGlobal ["HandGrenade", 8];
-		_crate addMagazineCargoGlobal ["ACE_M84", 6];
+		_crate addMagazineCargoGlobal ["HandGrenade", 4];
+		_crate addMagazineCargoGlobal ["ACE_M84", 4];
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 3];
+		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 2];
 
-		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 2];
-		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 2];
-		_crate addItemCargoGlobal ["acc_flashlight", 2];
-		_crate addItemCargoGlobal ["ACE_acc_pointer_green", 2];
+		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 1];
+		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 1];
+		_crate addItemCargoGlobal ["acc_flashlight", 1];
+		_crate addItemCargoGlobal ["ACE_acc_pointer_green", 1];
 
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 20];
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 6];
+		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 12];
+		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 4];
 
 		// Launcher
 
 
 		// Sidearm
-		_crate addWeaponCargoGlobal ["hgun_P07_F", 3];
-		_crate addMagazineCargoGlobal ["16Rnd_9x21_Mag", 12];
+		_crate addWeaponCargoGlobal ["hgun_P07_F", 2];
+		_crate addMagazineCargoGlobal ["16Rnd_9x21_Mag", 8];
 
 		// Misc Equipment
-		_crate addItemCargoGlobal ["ACE_CableTie", 12];
+		_crate addItemCargoGlobal ["ACE_CableTie", 8];
 		_crate addItemCargoGlobal ["ALIVE_Tablet", 1];
 		_crate addItemCargoGlobal ["ACE_key_west", 1];
 		_crate addItemCargoGlobal ["ToolKit", 1];
@@ -183,56 +181,55 @@ switch (_loadout) do {
 	case "assault_squad": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["b_bergen_kampat_arid_MEDIC", "b_bergen_kampat_transitional_MEDIC", "b_bergen_kampat_transitional_MEDIC"] select _index), 1];
 		_crate addBackpackCargoGlobal [(["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_kampat_transitional"] select _index), 8];
 
 		// Vision
-		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 10];
-		_crate addItemCargoGlobal ["Binocular", 7];
+		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 9];
+		_crate addItemCargoGlobal ["Binocular", 6];
 		_crate addItemCargoGlobal ["ACE_Vector", 3];
 
 		// Medical
 
 
 		// Navigation\tracking\communication
-		_crate addItemCargoGlobal ["ACE_MapTools", 10];
-		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 10];
+		_crate addItemCargoGlobal ["ACE_MapTools", 9];
+		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 9];
 		_crate addBackpackCargoGlobal [(["tf_rt1523g_big", "tf_rt1523g_big", "tf_rt1523g_big_bwmod"] select _index), 1];
-		_crate addItemCargoGlobal ["tf_anprc152", 10];
+		_crate addItemCargoGlobal ["tf_anprc152", 9];
 		_crate addItemCargoGlobal ["ItemcTab", 1];
-		_crate addItemCargoGlobal ["ItemMicroDAGR", 7];
+		_crate addItemCargoGlobal ["ItemMicroDAGR", 6];
 		_crate addItemCargoGlobal ["ItemAndroid", 2];
 
 		// Signalling
-		_crate addMagazineCargoGlobal ["SmokeShell", 40];
-		_crate addMagazineCargoGlobal ["SmokeShellGreen", 22];
-		_crate addMagazineCargoGlobal ["SmokeShellBlue", 20];
-		_crate addMagazineCargoGlobal ["SmokeShellRed", 20];
-		_crate addMagazineCargoGlobal ["Chemlight_blue", 20];
-		_crate addMagazineCargoGlobal ["Chemlight_green", 20];
-		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 10];
-		_crate addMagazineCargoGlobal ["B_IR_Grenade", 10];
+		_crate addMagazineCargoGlobal ["SmokeShell", 36];
+		_crate addMagazineCargoGlobal ["SmokeShellGreen", 18];
+		_crate addMagazineCargoGlobal ["SmokeShellBlue", 18];
+		_crate addMagazineCargoGlobal ["SmokeShellRed", 18];
+		_crate addMagazineCargoGlobal ["Chemlight_blue", 18];
+		_crate addMagazineCargoGlobal ["Chemlight_green", 18];
+		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 9];
+		_crate addMagazineCargoGlobal ["B_IR_Grenade", 9];
 
 		// Grenades
-		_crate addMagazineCargoGlobal ["HandGrenade", 32];
-		_crate addMagazineCargoGlobal ["ACE_M84", 16];
+		_crate addMagazineCargoGlobal ["HandGrenade", 28];
+		_crate addMagazineCargoGlobal ["ACE_M84", 14];
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 6];
+		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 5];
 		_crate addWeaponCargoGlobal ["CUP_lmg_m249_pip4", 2];
 		_crate addWeaponCargoGlobal ["arifle_SPAR_01_GL_blk_F", 2];
 
-		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 6];
+		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 5];
 		_crate addItemCargoGlobal ["optic_ERCO_blk_F", 4];
 
-		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 10];
-		_crate addItemCargoGlobal ["acc_flashlight", 10];
-		_crate addItemCargoGlobal ["ACE_acc_pointer_green", 10];
+		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 9];
+		_crate addItemCargoGlobal ["acc_flashlight", 9];
+		_crate addItemCargoGlobal ["ACE_acc_pointer_green", 9];
 
 		_crate addItemCargoGlobal ["bipod_01_F_blk", 2];
 
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 72];
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 18];
+		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 66];
+		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 16];
 		_crate addMagazineCargoGlobal ["CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 11];
 
 		_crate addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell", 36];
@@ -261,11 +258,11 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["CUP_SMAW_Spotting", 4];
 
 		// Sidearm
-		_crate addWeaponCargoGlobal ["hgun_P07_F", 10];
-		_crate addMagazineCargoGlobal ["16Rnd_9x21_Mag", 40];
+		_crate addWeaponCargoGlobal ["hgun_P07_F", 9];
+		_crate addMagazineCargoGlobal ["16Rnd_9x21_Mag", 36];
 
 		// Misc Equipment
-		_crate addItemCargoGlobal ["ACE_CableTie", 40];
+		_crate addItemCargoGlobal ["ACE_CableTie", 36];
 		_crate addItemCargoGlobal ["ACE_HuntIR_monitor", 1];
 		_crate addItemCargoGlobal ["ACE_HuntIR_M203", 2];
 
@@ -284,37 +281,37 @@ switch (_loadout) do {
 
 
 		// Medical
-		_crate addItemCargoGlobal ["ACE_fieldDressing", 124];
-		_crate addItemCargoGlobal ["ACE_morphine", 56];
-		_crate addItemCargoGlobal ["ACE_epinephrine", 12];
-		_crate addItemCargoGlobal ["ACE_bloodIV", 4];
+		_crate addItemCargoGlobal ["ACE_fieldDressing", 90];
+		_crate addItemCargoGlobal ["ACE_morphine", 36];
+
 
 		// Navigation\tracking\communication
 
 
 		// Signalling
-		_crate addMagazineCargoGlobal ["SmokeShell", 40];
-		_crate addMagazineCargoGlobal ["SmokeShellGreen", 22];
-		_crate addMagazineCargoGlobal ["SmokeShellBlue", 20];
-		_crate addMagazineCargoGlobal ["SmokeShellRed", 20];
-		_crate addMagazineCargoGlobal ["Chemlight_blue", 20];
-		_crate addMagazineCargoGlobal ["Chemlight_green", 20];
-		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 10];
-		_crate addMagazineCargoGlobal ["B_IR_Grenade", 10];
+		_crate addMagazineCargoGlobal ["SmokeShell", 36];
+		_crate addMagazineCargoGlobal ["SmokeShellGreen", 18];
+		_crate addMagazineCargoGlobal ["SmokeShellBlue", 18];
+		_crate addMagazineCargoGlobal ["SmokeShellRed", 18];
+		_crate addMagazineCargoGlobal ["Chemlight_blue", 18];
+		_crate addMagazineCargoGlobal ["Chemlight_green", 18];
+		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 9];
+		_crate addMagazineCargoGlobal ["B_IR_Grenade", 9];
 
 		// Grenades
-		_crate addMagazineCargoGlobal ["HandGrenade", 32];
-		_crate addMagazineCargoGlobal ["ACE_M84", 16];
+		_crate addMagazineCargoGlobal ["HandGrenade", 28];
+		_crate addMagazineCargoGlobal ["ACE_M84", 14];
 
 		// Primary Weapon
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 64];
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 16];
+		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 56];
+		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 14];
 		_crate addMagazineCargoGlobal ["CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 12];
 
 		_crate addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell", 36];
 		_crate addMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell", 8];
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeRed_Grenade_shell", 8];
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeBlue_Grenade_shell", 4];
+		_crate addMagazineCargoGlobal ["UGL_FlareCIR_F", 12];
 
 		_crate addMagazineCargoGlobal ["20Rnd_762x51_Mag", 8];
 
@@ -328,7 +325,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["16Rnd_9x21_Mag", 40];
 
 		// Misc Equipment
-		_crate addItemCargoGlobal ["ACE_CableTie", 40];
+		_crate addItemCargoGlobal ["ACE_CableTie", 36];
 		_crate addItemCargoGlobal ["ACE_HuntIR_M203", 2];
 
 		// Marking
@@ -342,52 +339,51 @@ switch (_loadout) do {
 	case "weapons_squad": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["b_bergen_kampat_arid_MEDIC", "b_bergen_kampat_transitional_MEDIC", "b_bergen_kampat_transitional_MEDIC"] select _index), 1];
 		_crate addBackpackCargoGlobal [(["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_kampat_transitional"] select _index), 9];
 		_crate addBackpackCargoGlobal [(["b_carryall_kampat_arid", "b_carryall_kampat_arid", "b_carryall_kampat_transitional"] select _index), 1];
 
 		// Vision
-		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 11];
-		_crate addItemCargoGlobal ["Binocular", 5];
+		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 10];
+		_crate addItemCargoGlobal ["Binocular", 4];
 		_crate addItemCargoGlobal ["ACE_Vector", 6];
 
 		// Medical
 
 
 		// Navigation\tracking\communication
-		_crate addItemCargoGlobal ["ACE_MapTools", 11];
-		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 11];
-		_crate addItemCargoGlobal ["tf_anprc152", 11];
-		_crate addItemCargoGlobal ["ItemMicroDAGR", 6];
+		_crate addItemCargoGlobal ["ACE_MapTools", 10];
+		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 10];
+		_crate addItemCargoGlobal ["tf_anprc152", 10];
+		_crate addItemCargoGlobal ["ItemMicroDAGR", 5];
 		_crate addItemCargoGlobal ["ItemAndroid", 4];
 		_crate addItemCargoGlobal ["ItemcTab", 1];
 
 		// Signalling
-		_crate addMagazineCargoGlobal ["SmokeShell", 44];
-		_crate addMagazineCargoGlobal ["SmokeShellGreen", 24];
-		_crate addMagazineCargoGlobal ["SmokeShellBlue", 22];
-		_crate addMagazineCargoGlobal ["SmokeShellRed", 22];
-		_crate addMagazineCargoGlobal ["Chemlight_blue", 22];
-		_crate addMagazineCargoGlobal ["Chemlight_green", 22];
-		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 11];
-		_crate addMagazineCargoGlobal ["B_IR_Grenade", 11];
+		_crate addMagazineCargoGlobal ["SmokeShell", 40];
+		_crate addMagazineCargoGlobal ["SmokeShellGreen", 20];
+		_crate addMagazineCargoGlobal ["SmokeShellBlue", 20];
+		_crate addMagazineCargoGlobal ["SmokeShellRed", 20];
+		_crate addMagazineCargoGlobal ["Chemlight_blue", 20];
+		_crate addMagazineCargoGlobal ["Chemlight_green", 20];
+		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 10];
+		_crate addMagazineCargoGlobal ["B_IR_Grenade", 10];
 
 		// Grenades
-		_crate addMagazineCargoGlobal ["HandGrenade", 36];
-		_crate addMagazineCargoGlobal ["ACE_M84", 22];
+		_crate addMagazineCargoGlobal ["HandGrenade", 32];
+		_crate addMagazineCargoGlobal ["ACE_M84", 20];
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 9];
+		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 8];
 		_crate addWeaponCargoGlobal ["arifle_SPAR_01_GL_blk_F", 1];
 
 		_crate addItemCargoGlobal ["optic_ERCO_blk_F", 4];
-		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 6];
-		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 10];
-		_crate addItemCargoGlobal ["acc_flashlight", 10];
-		_crate addItemCargoGlobal ["ACE_acc_pointer_green", 10];
+		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 5];
+		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 9];
+		_crate addItemCargoGlobal ["acc_flashlight", 9];
+		_crate addItemCargoGlobal ["ACE_acc_pointer_green", 9];
 
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 68];
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 16];
+		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 60];
+		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 14];
 
 		_crate addWeaponCargoGlobal ["CUP_lmg_M240", 2];
 		_crate addItemCargoGlobal ["CUP_optic_ElcanM145", 2];
@@ -412,11 +408,11 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["CUP_Javelin_M", 3];
 
 		// Sidearm
-		_crate addWeaponCargoGlobal ["hgun_P07_F", 11];
-		_crate addMagazineCargoGlobal ["16Rnd_9x21_Mag", 44];
+		_crate addWeaponCargoGlobal ["hgun_P07_F", 10];
+		_crate addMagazineCargoGlobal ["16Rnd_9x21_Mag", 40];
 
 		// Misc Equipment
-		_crate addItemCargoGlobal ["ACE_CableTie", 44];
+		_crate addItemCargoGlobal ["ACE_CableTie", 40];
 		_crate addItemCargoGlobal ["ACE_HuntIR_monitor", 1];
 		_crate addItemCargoGlobal ["ACE_HuntIR_M203", 2];
 
@@ -444,22 +440,22 @@ switch (_loadout) do {
 
 
 		// Signalling
-		_crate addMagazineCargoGlobal ["SmokeShell", 44];
-		_crate addMagazineCargoGlobal ["SmokeShellGreen", 24];
-		_crate addMagazineCargoGlobal ["SmokeShellBlue", 22];
-		_crate addMagazineCargoGlobal ["SmokeShellRed", 22];
-		_crate addMagazineCargoGlobal ["Chemlight_blue", 22];
-		_crate addMagazineCargoGlobal ["Chemlight_green", 22];
-		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 11];
-		_crate addMagazineCargoGlobal ["B_IR_Grenade", 11];
+		_crate addMagazineCargoGlobal ["SmokeShell", 40];
+		_crate addMagazineCargoGlobal ["SmokeShellGreen", 20];
+		_crate addMagazineCargoGlobal ["SmokeShellBlue", 20];
+		_crate addMagazineCargoGlobal ["SmokeShellRed", 20];
+		_crate addMagazineCargoGlobal ["Chemlight_blue", 20];
+		_crate addMagazineCargoGlobal ["Chemlight_green", 20];
+		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 10];
+		_crate addMagazineCargoGlobal ["B_IR_Grenade", 10];
 
 		// Grenades
-		_crate addMagazineCargoGlobal ["HandGrenade", 36];
-		_crate addMagazineCargoGlobal ["ACE_M84", 22];
+		_crate addMagazineCargoGlobal ["HandGrenade", 32];
+		_crate addMagazineCargoGlobal ["ACE_M84", 20];
 
 		// Primary Weapon
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 68];
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 16];
+		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 60];
+		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 14];
 		_crate addMagazineCargoGlobal ["CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 22];
 		_crate addMagazineCargoGlobal ["20Rnd_762x51_Mag", 8];
 
@@ -471,7 +467,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["16Rnd_9x21_Mag", 44];
 
 		// Misc Equipment
-		_crate addItemCargoGlobal ["ACE_CableTie", 44];
+		_crate addItemCargoGlobal ["ACE_CableTie", 40];
 		_crate addItemCargoGlobal ["ACE_HuntIR_M203", 2];
 
 		// Marking
@@ -479,6 +475,109 @@ switch (_loadout) do {
 
 		// Ammo Bearing
 		_crate addBackpackCargoGlobal ["CUP_B_M2_Gun_Bag", 2];
+
+		// Destroy crate
+		_crate addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 1];
+
+	};
+
+	case "medical_team": {
+
+		// Attire
+		//_crate addBackpackCargoGlobal [(["b_bergen_kampat_arid_MEDIC", "b_bergen_kampat_transitional_MEDIC", "b_bergen_kampat_transitional_MEDIC"] select _index), 5];
+
+		// Vision
+		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 5];
+		_crate addItemCargoGlobal ["Binocular", 5];
+
+		// Medical
+		//_crate addItemCargoGlobal ["ACE_fieldDressing", 120];
+		//_crate addItemCargoGlobal ["ACE_morphine", 80];
+		//_crate addItemCargoGlobal ["ACE_epinephrine", 60];
+		//_crate addItemCargoGlobal ["ACE_bloodIV", 20];
+		//_crate addItemCargoGlobal ["ACE_bodyBag", 20];
+
+		// Navigation\tracking\communication
+		_crate addItemCargoGlobal ["ACE_MapTools", 5];
+		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 5];
+		_crate addItemCargoGlobal ["tf_anprc152", 5];
+		_crate addItemCargoGlobal ["ItemAndroid", 5];
+
+		// Signalling
+		_crate addMagazineCargoGlobal ["SmokeShell", 20];
+		_crate addMagazineCargoGlobal ["SmokeShellGreen", 20];
+		_crate addMagazineCargoGlobal ["SmokeShellBlue", 10];
+		_crate addMagazineCargoGlobal ["SmokeShellRed", 10];
+		_crate addMagazineCargoGlobal ["Chemlight_blue", 10];
+		_crate addMagazineCargoGlobal ["Chemlight_green", 10];
+		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 5];
+		_crate addMagazineCargoGlobal ["B_IR_Grenade", 5];
+
+		// Grenades
+		_crate addMagazineCargoGlobal ["HandGrenade", 10];
+		_crate addMagazineCargoGlobal ["ACE_M84", 10];
+
+		// Primary Weapon
+		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 5];
+
+		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 5];
+		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 5];
+		_crate addItemCargoGlobal ["acc_flashlight", 5];
+		_crate addItemCargoGlobal ["ACE_acc_pointer_green", 5];
+
+		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 25];
+		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 5];
+
+		// Sidearm
+		_crate addWeaponCargoGlobal ["hgun_P07_F", 5];
+		_crate addMagazineCargoGlobal ["16Rnd_9x21_Mag", 20];
+
+		// Misc Equipment
+		_crate addItemCargoGlobal ["ACE_CableTie", 20];
+
+	};
+
+	case "medical_team_resupply": {
+
+		// Attire
+
+
+		// Vision
+
+
+		// Medical
+		_crate addItemCargoGlobal ["ACE_fieldDressing", 120];
+		_crate addItemCargoGlobal ["ACE_morphine", 80];
+		_crate addItemCargoGlobal ["ACE_epinephrine", 60];
+		_crate addItemCargoGlobal ["ACE_bloodIV", 20];
+		_crate addItemCargoGlobal ["ACE_bodyBag", 20];
+
+		// Navigation\tracking\communication
+
+
+		// Signalling
+		_crate addMagazineCargoGlobal ["SmokeShell", 20];
+		_crate addMagazineCargoGlobal ["SmokeShellGreen", 20];
+		_crate addMagazineCargoGlobal ["SmokeShellBlue", 10];
+		_crate addMagazineCargoGlobal ["SmokeShellRed", 10];
+		_crate addMagazineCargoGlobal ["Chemlight_blue", 10];
+		_crate addMagazineCargoGlobal ["Chemlight_green", 10];
+		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 5];
+		_crate addMagazineCargoGlobal ["B_IR_Grenade", 5];
+
+		// Grenades
+		_crate addMagazineCargoGlobal ["HandGrenade", 10];
+		_crate addMagazineCargoGlobal ["ACE_M84", 10];
+
+		// Primary Weapon
+		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 25];
+		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 5];
+
+		// Sidearm
+		_crate addMagazineCargoGlobal ["16Rnd_9x21_Mag", 20];
+
+		// Misc Equipment
+		_crate addItemCargoGlobal ["ACE_CableTie", 20];
 
 		// Destroy crate
 		_crate addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 1];
