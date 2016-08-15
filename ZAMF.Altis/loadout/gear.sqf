@@ -35,13 +35,13 @@ switch (_loadout) do {
 	case "officer": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["u_uniform3_kampat_arid", "u_uniform3_kampat_transitional", "u_uniform3_kampat_transitional"] select _index);
+		_unit forceAddUniform (["u_uniform2_kampat_arid", "u_uniform2_kampat_transitional", "u_uniform1_kampat_transitional"] select _index);
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_fieldDressing";};
 		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_morphine";};
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addVest (["v_platecarrier1_kampat_arid", "v_platecarrier1_kampat_transitional", "v_platecarrier1_kampat_transitional"] select _index);
-		_unit addHeadgear (["h_milcap_kampat_arid", "h_milcap_kampat_transitional", "h_milcap_kampat_transitional"] select _index);
-		_unit addGoggles "G_Lowprofile";
+		_unit addHeadgear (["h_canvashelmet_kampat_arid", "h_canvashelmet_kampat_transitional", "h_canvashelmet_kampat_transitional"] select _index);
+		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
 
@@ -72,6 +72,7 @@ switch (_loadout) do {
 		_unit linkItem "ItemWatch";
 
 	};
+
 
 	case "medic": {
 
