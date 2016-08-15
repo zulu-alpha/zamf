@@ -69,6 +69,9 @@ switch (_loadout) do {
 
 		_crate addBackpackCargoGlobal ["ACE_TacticalLadder_Pack", 16];
 
+		_crate addItemCargoGlobal ["muzzle_snds_M", 20];
+		_crate addItemCargoGlobal ["muzzle_snds_L", 20];
+
 	};
 
 	case "med": {
