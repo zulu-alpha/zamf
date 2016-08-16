@@ -282,7 +282,6 @@ switch (_loadout) do {
 
 		// Medical
 		_crate addItemCargoGlobal ["ACE_fieldDressing", 90];
-		_crate addItemCargoGlobal ["ACE_morphine", 36];
 
 
 		// Navigation\tracking\communication
@@ -434,7 +433,7 @@ switch (_loadout) do {
 
 
 		// Medical
-
+		_crate addItemCargoGlobal ["ACE_fieldDressing", 100];
 
 		// Navigation\tracking\communication
 

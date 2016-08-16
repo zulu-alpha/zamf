@@ -37,7 +37,6 @@ switch (_loadout) do {
 		comment "Add containers";
 		_unit forceAddUniform (["u_uniform2_kampat_arid", "u_uniform2_kampat_transitional", "u_uniform1_kampat_transitional"] select _index);
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_fieldDressing";};
-		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_morphine";};
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addVest (["v_platecarrier1_kampat_arid", "v_platecarrier1_kampat_transitional", "v_platecarrier1_kampat_transitional"] select _index);
 		_unit addHeadgear (["h_canvashelmet_kampat_arid", "h_canvashelmet_kampat_transitional", "h_canvashelmet_kampat_transitional"] select _index);
@@ -58,7 +57,6 @@ switch (_loadout) do {
 		comment "Add containers";
 		_unit forceAddUniform (["u_uniform2_kampat_arid", "u_uniform2_kampat_transitional", "u_uniform1_kampat_transitional"] select _index);
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_fieldDressing";};
-		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_morphine";};
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addVest (["v_platecarrier2_kampat_arid", "v_platecarrier2_kampat_transitional", "v_platecarrier2_kampat_transitional"] select _index);
 		_unit addHeadgear (["h_canvashelmet_kampat_arid", "h_canvashelmet_kampat_transitional", "h_canvashelmet_kampat_transitional"] select _index);
@@ -105,7 +103,6 @@ switch (_loadout) do {
 		comment "Add containers";
 		_unit forceAddUniform (["u_uniform2_kampat_arid", "u_uniform2_kampat_transitional", "u_uniform1_kampat_transitional"] select _index);
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_fieldDressing";};
-		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_morphine";};
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addVest (["V_TacVestIR_blk", "V_TacVestIR_blk", "V_TacVestIR_blk"] select _index);
 		_unit addHeadgear (["H_PilotHelmetHeli_B", "H_PilotHelmetHeli_O", "H_PilotHelmetHeli_O"] select _index);
@@ -124,7 +121,6 @@ switch (_loadout) do {
 		comment "Add containers";
 		_unit forceAddUniform "U_B_PilotCoveralls";
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_fieldDressing";};
-		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_morphine";};
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addHeadgear "H_PilotHelmetFighter_B";
 
@@ -142,7 +138,6 @@ switch (_loadout) do {
 		comment "Add containers";
 		_unit forceAddUniform (["u_uniform1_kampat_arid", "u_uniform1_kampat_transitional", "u_uniform1_kampat_transitional"] select _index);
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_fieldDressing";};
-		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_morphine";};
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addVest (["v_tacticalvest_kampat_arid", "v_tacticalvest_kampat_transitional", "v_tacticalvest_kampat_transitional"] select _index);
 		_unit addHeadgear "h_crewhelmet_kampat";
