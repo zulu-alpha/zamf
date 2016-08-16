@@ -80,7 +80,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_morphine";};
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addVest (["v_platecarrier2_kampat_arid", "v_platecarrier2_kampat_transitional", "v_platecarrier2_kampat_transitional"] select _index);
-		_unit addBackpack "b_bergen_kampat_arid_MEDIC";
+		_unit addBackpack (["b_bergen_kampat_arid_MEDIC", "b_bergen_kampat_transitional_MEDIC", "b_bergen_kampat_transitional_MEDIC"] select _index);
 		for "_i" from 1 to 24 do {_unit addItemToBackpack "ACE_fieldDressing";};
 		for "_i" from 1 to 16 do {_unit addItemToBackpack "ACE_morphine";};
 		for "_i" from 1 to 12 do {_unit addItemToBackpack "ACE_epinephrine";};
