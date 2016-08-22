@@ -8,18 +8,18 @@ class EditorData
 	toggles=69;
 	class ItemIDProvider
 	{
-		nextID=526;
+		nextID=527;
 	};
 	class MarkerIDProvider
 	{
-		nextID=1;
+		nextID=2;
 	};
 	class Camera
 	{
-		pos[]={14690.109,90.843422,16468.578};
-		dir[]={-0.042850241,-0.63705224,0.76978594};
-		up[]={-0.035416059,0.77057171,0.63628644};
-		aside[]={0.99854839,1.5295227e-006,0.055575125};
+		pos[]={14710.081,49.844288,16568.836};
+		dir[]={0.092074968,-0.44078752,0.89289635};
+		up[]={0.045215733,0.8976025,0.43847555};
+		aside[]={0.99474114,-2.2747554e-007,-0.10258005};
 	};
 };
 binarizationWanted=0;
@@ -59,13 +59,14 @@ addons[]=
 	"ace_parachute",
 	"A3_Structures_F_Mil_Cargo",
 	"A3_Structures_F_Mil_Shelters",
-	"A3_Structures_F_Mil_Helipads"
+	"A3_Structures_F_Mil_Helipads",
+	"ace_map"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=30;
+		items=31;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -272,6 +273,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
+		class Item30
+		{
+			className="ace_map";
+			name="ACE3 - Map";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 	};
 };
 randomSeed=8441238;
@@ -395,7 +403,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=62;
+		items=63;
 		class Item0
 		{
 			dataType="Marker";
@@ -11357,7 +11365,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14750.679,18.610012,16640.477};
+				position[]={14748.679,18.610012,16651.477};
 			};
 			side="Empty";
 			flags=5;
@@ -11396,7 +11404,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14751,20.122673,16639};
+				position[]={14749,20.122673,16650};
 				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
@@ -11435,7 +11443,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14751,17.91,16620};
+				position[]={14749,17.91,16621};
 			};
 			side="Empty";
 			flags=4;
@@ -11450,7 +11458,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14763,20.122597,16620};
+				position[]={14732,20.122597,16639};
 			};
 			side="Empty";
 			flags=4;
@@ -12045,6 +12053,15 @@ class Mission
 				};
 				nAttributes=13;
 			};
+		};
+		class Item62
+		{
+			dataType="Marker";
+			position[]={14752,17.91,16640};
+			name="marker_1";
+			text="Field Hospital";
+			type="b_med";
+			id=526;
 		};
 	};
 };
