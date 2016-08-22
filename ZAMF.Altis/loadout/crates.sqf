@@ -74,7 +74,7 @@ switch (_loadout) do {
 
 	};
 
-	case "med": {
+	case "med": { // To be removed
 
 		_crate addItemCargoGlobal ["ACE_fieldDressing", 500];
 		_crate addItemCargoGlobal ["ACE_morphine", 100];
@@ -281,8 +281,12 @@ switch (_loadout) do {
 
 
 		// Medical
-		_crate addItemCargoGlobal ["ACE_fieldDressing", 90];
-
+		_crate addItemCargoGlobal ["ACE_elasticBandage", 45];
+		_crate addItemCargoGlobal ["ACE_packingBandage", 90];
+		_crate addItemCargoGlobal ["ACE_quikclot", 45];
+		_crate addItemCargoGlobal ["ACE_epinephrine", 9];
+		_crate addItemCargoGlobal ["ACE_morphine", 9];
+		_crate addItemCargoGlobal ["ACE_tourniquet", 9];
 
 		// Navigation\tracking\communication
 
@@ -433,7 +437,12 @@ switch (_loadout) do {
 
 
 		// Medical
-		_crate addItemCargoGlobal ["ACE_fieldDressing", 100];
+		_crate addItemCargoGlobal ["ACE_elasticBandage", 50];
+		_crate addItemCargoGlobal ["ACE_packingBandage", 100];
+		_crate addItemCargoGlobal ["ACE_quikclot", 50];
+		_crate addItemCargoGlobal ["ACE_epinephrine", 10];
+		_crate addItemCargoGlobal ["ACE_morphine", 10];
+		_crate addItemCargoGlobal ["ACE_tourniquet", 10];
 
 		// Navigation\tracking\communication
 
@@ -582,11 +591,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["Binocular", 5];
 
 		// Medical
-		//_crate addItemCargoGlobal ["ACE_fieldDressing", 120];
-		//_crate addItemCargoGlobal ["ACE_morphine", 80];
-		//_crate addItemCargoGlobal ["ACE_epinephrine", 60];
-		//_crate addItemCargoGlobal ["ACE_bloodIV", 20];
-		//_crate addItemCargoGlobal ["ACE_bodyBag", 20];
+
 
 		// Navigation\tracking\communication
 		_crate addItemCargoGlobal ["ACE_MapTools", 5];
@@ -637,11 +642,16 @@ switch (_loadout) do {
 
 
 		// Medical
-		_crate addItemCargoGlobal ["ACE_fieldDressing", 120];
-		_crate addItemCargoGlobal ["ACE_morphine", 80];
-		_crate addItemCargoGlobal ["ACE_epinephrine", 60];
-		_crate addItemCargoGlobal ["ACE_bloodIV", 20];
-		_crate addItemCargoGlobal ["ACE_bodyBag", 20];
+		_crate addItemCargoGlobal ["ACE_fieldDressing", 50];
+		_crate addItemCargoGlobal ["ACE_elasticBandage", 100];
+		_crate addItemCargoGlobal ["ACE_packingBandage", 100];
+		_crate addItemCargoGlobal ["ACE_quikclot", 50];
+		_crate addItemCargoGlobal ["ACE_atropine", 75];
+		_crate addItemCargoGlobal ["ACE_epinephrine", 75];
+		_crate addItemCargoGlobal ["ACE_morphine", 75];
+		_crate addItemCargoGlobal ["ACE_tourniquet", 25];
+		_crate addItemCargoGlobal ["ACE_salineIV_500", 25];
+		_crate addItemCargoGlobal ["ACE_personalAidKit", 25];
 
 		// Navigation\tracking\communication
 
