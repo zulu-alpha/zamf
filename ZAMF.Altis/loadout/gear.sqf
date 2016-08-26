@@ -201,7 +201,7 @@ switch (_loadout) do {
 	case "ds": {
 
 		comment "Add containers";
-		_unit forceAddUniform "za_fatigues2_brown";
+		_unit forceAddUniform "za_officerfatigues_brown";
 		_unit addItemToUniform "ACE_MapTools";
 		_unit addItemToUniform "ACE_Flashlight_MX991";
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
