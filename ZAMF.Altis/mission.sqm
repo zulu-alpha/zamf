@@ -8,7 +8,7 @@ class EditorData
 	toggles=69;
 	class ItemIDProvider
 	{
-		nextID=527;
+		nextID=530;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14710.081,49.844288,16568.836};
-		dir[]={0.092074968,-0.44078752,0.89289635};
-		up[]={0.045215733,0.8976025,0.43847555};
-		aside[]={0.99474114,-2.2747554e-007,-0.10258005};
+		pos[]={14689.137,21.677141,16620.518};
+		dir[]={0.83701432,-0.53605413,0.11010914};
+		up[]={0.53149509,0.84416795,0.069917642};
+		aside[]={0.130427,3.4943514e-007,-0.99149007};
 	};
 };
 binarizationWanted=0;
@@ -297,6 +297,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -328,25 +347,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
 				};
 			};
 		};
@@ -5096,7 +5096,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="LIEUTENANT";
+						rank="SERGEANT";
 						init="nul = [this, ""grunt"", ""Dragon'0""] call zamf_fnc_team;";
 						description="Dragon'0'E [Engineer]";
 						isPlayable=1;
@@ -5405,7 +5405,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};

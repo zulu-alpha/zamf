@@ -35,13 +35,6 @@ _cloth = 5;
 // Get the camo type needed
 _index = call zamf_fnc_getClimate;
 
-// backpacks
-_backpack_lr = ["tf_rt1523g", "tf_rt1523g", "tf_rt1523g_bwmod"] select _index;
-_backpack_lr_big = ["tf_rt1523g_big", "tf_rt1523g_big", "tf_rt1523g_big_bwmod"] select _index;
-
-_backpack = ["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_kampat_transitional"] select _index;
-_backpack_big = ["b_carryall_kampat_arid", "b_carryall_kampat_arid", "b_carryall_kampat_transitional"] select _index;
-
 
 switch (_loadout) do {
 
@@ -108,7 +101,7 @@ switch (_loadout) do {
 	case "hq": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_kampat_transitional"] select _index), 1];
+		_crate addBackpackCargoGlobal [(["za_bag_bergen_arid", "za_bag_bergen_trans", "za_bag_bergen_trans"] select _index), 1];
 
 		// Vision
 		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 2];
@@ -181,7 +174,7 @@ switch (_loadout) do {
 	case "assault_squad": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_kampat_transitional"] select _index), 8];
+		_crate addBackpackCargoGlobal [(["za_bag_bergen_arid", "za_bag_bergen_trans", "za_bag_bergen_trans"] select _index), 8];
 
 		// Vision
 		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 9];
@@ -196,9 +189,8 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 9];
 		_crate addBackpackCargoGlobal [(["tf_rt1523g_big", "tf_rt1523g_big", "tf_rt1523g_big_bwmod"] select _index), 1];
 		_crate addItemCargoGlobal ["tf_anprc152", 9];
-		_crate addItemCargoGlobal ["ItemcTab", 1];
 		_crate addItemCargoGlobal ["ItemMicroDAGR", 6];
-		_crate addItemCargoGlobal ["ItemAndroid", 2];
+		_crate addItemCargoGlobal ["ItemAndroid", 3];
 
 		// Signalling
 		_crate addMagazineCargoGlobal ["SmokeShell", 72];
@@ -342,8 +334,8 @@ switch (_loadout) do {
 	case "weapons_squad": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["b_bergen_kampat_arid", "b_bergen_kampat_transitional", "b_bergen_kampat_transitional"] select _index), 9];
-		_crate addBackpackCargoGlobal [(["b_carryall_kampat_arid", "b_carryall_kampat_arid", "b_carryall_kampat_transitional"] select _index), 1];
+		_crate addBackpackCargoGlobal [(["za_bag_bergen_arid", "za_bag_bergen_trans", "za_bag_bergen_trans"] select _index), 9];
+		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_trans"] select _index), 1];
 
 		// Vision
 		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 10];
@@ -584,7 +576,7 @@ switch (_loadout) do {
 	case "medical_team": {
 
 		// Attire
-		//_crate addBackpackCargoGlobal [(["b_bergen_kampat_arid_MEDIC", "b_bergen_kampat_transitional_MEDIC", "b_bergen_kampat_transitional_MEDIC"] select _index), 5];
+
 
 		// Vision
 		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 5];
@@ -688,7 +680,7 @@ switch (_loadout) do {
 	case "heli": {
 
 		// Attire
-		_crate addItemCargoGlobal [(["h_booniehat_kampat_arid", "h_booniehat_kampat_transitional", "h_booniehat_kampat_transitional"] select _index), 3];
+		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans", "za_hel_Boonie_trans"] select _index), 3];
 
 		// Vision
 		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 3];
@@ -745,7 +737,7 @@ switch (_loadout) do {
 	case "jet": {
 
 		// Attire
-		_crate addItemCargoGlobal [(["h_booniehat_kampat_arid", "h_booniehat_kampat_transitional", "h_booniehat_kampat_transitional"] select _index), 1];
+		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans", "za_hel_Boonie_trans"] select _index), 3];
 
 		// Vision
 		//_crate addItemCargoGlobal ["ACE_NVG_Gen4", 1];
@@ -864,7 +856,7 @@ switch (_loadout) do {
 	case "repair": {
 
 		_crate addItemCargoGlobal ["ToolKit", 2];
-		_crate addBackpackCargoGlobal [_backpack_big, 2];
+		_crate addBackpackCargoGlobal [["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_trans"] select _index, 2];
 
 	};
 
