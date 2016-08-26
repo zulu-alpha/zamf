@@ -350,8 +350,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 10];
 		_crate addItemCargoGlobal ["tf_anprc152", 10];
 		_crate addItemCargoGlobal ["ItemMicroDAGR", 5];
-		_crate addItemCargoGlobal ["ItemAndroid", 4];
-		_crate addItemCargoGlobal ["ItemcTab", 1];
+		_crate addItemCargoGlobal ["ItemAndroid", 5];
 
 		// Signalling
 		_crate addMagazineCargoGlobal ["SmokeShell", 80];
