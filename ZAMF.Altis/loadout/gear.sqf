@@ -35,7 +35,7 @@ switch (_loadout) do {
 	case "officer": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["za_fatigues2_arid", "za_fatigues1_trans", "za_fatigues2_trans"] select _index);
+		_unit forceAddUniform (["za_fat2_arid", "za_fat1_trans", "za_fat2_trans"] select _index);
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_packingBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_quikclot";};
@@ -60,7 +60,7 @@ switch (_loadout) do {
 	case "grunt": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["za_fatigues2_arid", "za_fatigues1_trans", "za_fatigues2_trans"] select _index);
+		_unit forceAddUniform (["za_fat2_arid", "za_fat1_trans", "za_fat2_trans"] select _index);
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_packingBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_quikclot";};
@@ -85,7 +85,7 @@ switch (_loadout) do {
 	case "medic": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["za_fatigues2_arid", "za_fatigues1_trans", "za_fatigues2_trans"] select _index);
+		_unit forceAddUniform (["za_fat2_arid", "za_fat1_trans", "za_fat2_trans"] select _index);
 		_unit addItemToUniform "ACE_EarPlugs";
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_fieldDressing";};
 		_unit addItemToUniform "ACE_epinephrine";
@@ -122,7 +122,7 @@ switch (_loadout) do {
 	case "heli": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["za_fatigues2_arid", "za_fatigues1_trans", "za_fatigues2_trans"] select _index);
+		_unit forceAddUniform (["za_fat2_arid", "za_fat1_trans", "za_fat2_trans"] select _index);
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_packingBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_quikclot";};
@@ -167,7 +167,7 @@ switch (_loadout) do {
 	case "crew": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["za_fatigues2_arid", "za_fatigues1_trans", "za_fatigues2_trans"] select _index);
+		_unit forceAddUniform (["za_fat2_arid", "za_fat1_trans", "za_fat2_trans"] select _index);
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_packingBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_quikclot";};
@@ -191,7 +191,7 @@ switch (_loadout) do {
 	case "candidate": {
 
 		comment "Add containers";
-		_unit forceAddUniform "za_fatigues1_brown";
+		_unit forceAddUniform "za_fat1_candidate";
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addItemToUniform "ACE_MapTools";
 		for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShellGreen";};
@@ -201,7 +201,7 @@ switch (_loadout) do {
 	case "ds": {
 
 		comment "Add containers";
-		_unit forceAddUniform "za_officerfatigues_brown";
+		_unit forceAddUniform "za_fat3_brown";
 		_unit addItemToUniform "ACE_MapTools";
 		_unit addItemToUniform "ACE_Flashlight_MX991";
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
@@ -237,7 +237,7 @@ switch (_loadout) do {
 	case "ds_grunt": {
 
 		comment "Add containers";
-		_unit forceAddUniform "za_fatigues2_brown";
+		_unit forceAddUniform "za_fat2_brown";
 		_unit addItemToUniform "ACE_MapTools";
 		_unit addItemToUniform "ACE_Flashlight_MX991";
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
