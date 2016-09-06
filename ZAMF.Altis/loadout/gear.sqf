@@ -44,7 +44,7 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_tourniquet";
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addVest (["za_vst_carrierlite_arid", "za_vst_carrierlite_trans", "za_vst_carrierlite_trans"] select _index);
-		_unit addHeadgear (["za_hel_canvas_arid", "za_hel_canvas_trans", "za_hel_canvas_trans"] select _index);
+		_unit addHeadgear (["H_HelmetB_sand", "H_HelmetB", "H_HelmetB"] select _index);
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
@@ -69,7 +69,7 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_tourniquet";
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addVest (["za_vst_carrier_arid", "za_vst_carrier_trans", "za_vst_carrier_trans"] select _index);
-		_unit addHeadgear (["za_hel_canvas_arid", "za_hel_canvas_trans", "za_hel_canvas_trans"] select _index);
+		_unit addHeadgear (["H_HelmetSpecB_sand", "H_HelmetSpecB", "H_HelmetSpecB"] select _index);
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
@@ -106,7 +106,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_personalAidKit";};
 		for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_fieldDressing";};
 		for "_i" from 1 to 10 do {_unit addItemToBackpack "ACE_packingBandage";};
-		_unit addHeadgear (["za_hel_canvas_arid", "za_hel_canvas_trans", "za_hel_canvas_trans"] select _index);
+		_unit addHeadgear (["H_HelmetSpecB_sand", "H_HelmetSpecB", "H_HelmetSpecB"] select _index);
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
