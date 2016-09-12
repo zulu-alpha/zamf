@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14653.991,53.308777,16649.854};
-		dir[]={0.60430479,-0.6710546,-0.42967185};
-		up[]={0.54694241,0.74135917,-0.38888538};
-		aside[]={-0.57950425,9.9928002e-007,-0.81503135};
+		pos[]={14671.717,50.584129,16655.975};
+		dir[]={0.01424175,-0.8259688,0.56355602};
+		up[]={0.02087176,0.56344384,0.82589114};
+		aside[]={0.99969262,-1.4538819e-007,-0.025263276};
 	};
 };
 binarizationWanted=0;
@@ -297,6 +297,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -328,25 +347,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
 				};
 			};
 		};
@@ -2214,7 +2214,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14668,17.91,16693};
+				position[]={14667,17.91,16693};
 			};
 			id=38;
 			type="ALiVE_SYS_playeroptions";
@@ -3233,7 +3233,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14668,17.91,16681};
+				position[]={14675,17.91,16685};
 			};
 			id=69;
 			type="ace_advanced_ballistics_ModuleSettings";
@@ -3292,7 +3292,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -3437,7 +3437,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14672,17.91,16681};
+				position[]={14679,17.91,16685};
 			};
 			id=70;
 			type="ace_winddeflection_ModuleSettings";
@@ -3527,7 +3527,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14668,17.91,16685};
+				position[]={14667,17.91,16685};
 			};
 			id=71;
 			type="ace_viewdistance_ModuleSettings";
@@ -3579,7 +3579,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14668,17.91,16677};
+				position[]={14667,17.91,16677};
 			};
 			id=72;
 			type="ACE_moduleReviveSettings";
@@ -3650,7 +3650,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14673,17.91,16693};
+				position[]={14672,17.91,16693};
 			};
 			id=73;
 			type="ALiVE_SYS_LOGISTICSDISABLE";
@@ -3835,7 +3835,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14672,17.91,16685};
+				position[]={14671,17.91,16685};
 			};
 			id=89;
 			type="ACE_ModuleRespawn";
@@ -3887,7 +3887,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14676,17.91,16685};
+				position[]={14671,17.91,16681};
 			};
 			id=90;
 			type="ace_finger_moduleSettings";
@@ -3939,7 +3939,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14680,17.91,16685};
+				position[]={14675,17.91,16681};
 			};
 			id=91;
 			type="ACE_ModuleSitting";
@@ -4005,7 +4005,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14668,17.91,16673};
+				position[]={14667,17.91,16673};
 			};
 			id=101;
 			type="ACE_moduleRepairSettings";
@@ -4190,7 +4190,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14672,17.91,16673};
+				position[]={14671,17.91,16673};
 			};
 			id=104;
 			type="ACE_moduleAddSpareParts";
@@ -4261,7 +4261,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14676,17.91,16673};
+				position[]={14675,17.91,16673};
 			};
 			id=105;
 			type="ACE_moduleAddSpareParts";
@@ -4536,7 +4536,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14684,17.91,16685};
+				position[]={14679,17.91,16681};
 			};
 			id=107;
 			type="ace_captives_moduleSettings";
@@ -4607,7 +4607,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14676,17.91,16681};
+				position[]={14667,17.91,16681};
 			};
 			id=110;
 			type="ACE_VehicleLock_ModuleSetup";
@@ -4678,7 +4678,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14676,17.91,16677};
+				position[]={14675,17.91,16677};
 			};
 			id=442;
 			type="ACE_moduleMedicalMenuSettings";
@@ -5265,7 +5265,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14672,17.91,16677};
+				position[]={14671,17.91,16677};
 				angles[]={0,4.6721592,0};
 			};
 			id=525;
@@ -5525,7 +5525,7 @@ class Mission
 		class Item50
 		{
 			dataType="Marker";
-			position[]={14752,17.91,16640};
+			position[]={14749,17.91,16651};
 			name="marker_1";
 			text="Field Hospital";
 			type="b_med";
