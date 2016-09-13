@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14666.082,80.196831,16613.988};
-		dir[]={0.037536066,-0.74370658,0.66756552};
-		up[]={0.041765776,0.66826093,0.74275583};
-		aside[]={0.99850434,6.0565071e-008,-0.056143664};
+		pos[]={14669.9,38.489109,16669.326};
+		dir[]={-0.0065332861,-0.90557307,0.42437443};
+		up[]={-0.013939409,0.42397243,0.90556067};
+		aside[]={0.9999876,-2.7231945e-006,0.015399336};
 	};
 };
 binarizationWanted=0;
@@ -304,25 +304,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -354,6 +335,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
 				};
 			};
 		};
@@ -3645,7 +3645,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=600;
+							value=1000;
 						};
 					};
 				};
