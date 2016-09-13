@@ -35,7 +35,7 @@ switch (_loadout) do {
 	case "officer": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["za_fat2_arid", "za_fat1_trans", "za_fat2_trans"] select _index);
+		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans", "za_fat2_soldier_trans"] select _index);
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_packingBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_quikclot";};
@@ -60,7 +60,7 @@ switch (_loadout) do {
 	case "grunt": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["za_fat2_arid", "za_fat1_trans", "za_fat2_trans"] select _index);
+		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans", "za_fat2_soldier_trans"] select _index);
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_packingBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_quikclot";};
@@ -85,7 +85,7 @@ switch (_loadout) do {
 	case "medic": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["za_fat2_arid", "za_fat1_trans", "za_fat2_trans"] select _index);
+		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans", "za_fat2_soldier_trans"] select _index);
 		_unit addItemToUniform "ACE_EarPlugs";
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_fieldDressing";};
 		_unit addItemToUniform "ACE_epinephrine";
@@ -122,7 +122,7 @@ switch (_loadout) do {
 	case "heli": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["za_fat2_arid", "za_fat1_trans", "za_fat2_trans"] select _index);
+		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans", "za_fat2_soldier_trans"] select _index);
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_packingBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_quikclot";};
@@ -167,7 +167,7 @@ switch (_loadout) do {
 	case "crew": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["za_fat2_arid", "za_fat1_trans", "za_fat2_trans"] select _index);
+		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans", "za_fat2_soldier_trans"] select _index);
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_packingBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_quikclot";};
@@ -191,7 +191,7 @@ switch (_loadout) do {
 	case "candidate": {
 
 		comment "Add containers";
-		_unit forceAddUniform "za_fat1_candidate";
+		_unit forceAddUniform "za_fat1_soldier_candidate";
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addItemToUniform "ACE_MapTools";
 		for "_i" from 1 to 2 do {_unit addItemToUniform "SmokeShellGreen";};
@@ -201,7 +201,7 @@ switch (_loadout) do {
 	case "ds": {
 
 		comment "Add containers";
-		_unit forceAddUniform "za_fat3_brown";
+		_unit forceAddUniform "za_fat3_officer_brown";
 		_unit addItemToUniform "ACE_MapTools";
 		_unit addItemToUniform "ACE_Flashlight_MX991";
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
@@ -213,7 +213,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_CableTie";};
 		_unit addItemToUniform "ACE_epinephrine";
 		_unit addItemToUniform "SmokeShell";
-		_unit addBackpack "tf_rt1523g_bwmod";
+		_unit addBackpack "tf_rt1523g";
 		_unit addItemToBackpack "ACE_NVG_Gen4";
 		_unit addItemToBackpack "ACE_SpraypaintGreen";
 		for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_M84";};
@@ -231,13 +231,12 @@ switch (_loadout) do {
 		_unit linkItem "tf_anprc152_4";
 		_unit linkItem "ItemAndroid";
 
-
 	};
 
 	case "ds_grunt": {
 
 		comment "Add containers";
-		_unit forceAddUniform "za_fat2_brown";
+		_unit forceAddUniform "za_fat2_soldier_brown";
 		_unit addItemToUniform "ACE_MapTools";
 		_unit addItemToUniform "ACE_Flashlight_MX991";
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
@@ -254,7 +253,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 		for "_i" from 1 to 5 do {_unit addItemToVest "30Rnd_556x45_Stanag";};
 		for "_i" from 1 to 3 do {_unit addItemToVest "16Rnd_9x21_Mag";};
-		_unit addBackpack "tf_rt1523g_bwmod";
+		_unit addBackpack "tf_rt1523g";
 		_unit addItemToBackpack "ACE_NVG_Gen4";
 		_unit addHeadgear "za_hel_Boonie_brown";
 		_unit addGoggles "G_Shades_Black";
@@ -278,7 +277,7 @@ switch (_loadout) do {
 		comment "Add containers";
 		_unit forceAddUniform "U_Competitor";
 		_unit addItemToUniform "ACE_Flashlight_MX991";
-		_unit addBackpack (["tf_rt1523g", "tf_rt1523g", "tf_rt1523g_bwmod"] select _index);
+		_unit addBackpack "tf_rt1523g";
 		_unit addHeadgear "H_MilCap_gry";
 		_unit addGoggles "G_Goggles_VR";
 
