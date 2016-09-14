@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14669.125,38.489109,16663.039};
-		dir[]={0.14263569,-0.74671632,0.6498239};
-		up[]={0.16014136,0.66488439,0.72956938};
-		aside[]={0.97685283,-1.5395926e-006,-0.21441299};
+		pos[]={14667.031,38.489109,16656.688};
+		dir[]={0.12540178,-0.71998221,0.68271577};
+		up[]={0.13011548,0.69373673,0.70836997};
+		aside[]={0.98365241,-1.3642712e-006,-0.18067305};
 	};
 };
 binarizationWanted=0;
@@ -59,14 +59,13 @@ addons[]=
 	"ace_gforces",
 	"ace_parachute",
 	"A3_Characters_F_Common",
-	"A3_Drones_F_Soft_F_Gamma_UGV_01",
-	"ace_sitting"
+	"A3_Drones_F_Soft_F_Gamma_UGV_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=31;
+		items=30;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -273,13 +272,6 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item30
-		{
-			className="ace_sitting";
-			name="ACE3 - Sitting";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
 	};
 };
 randomSeed=8441238;
@@ -403,7 +395,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=63;
+		items=62;
 		class Item0
 		{
 			dataType="Marker";
@@ -4503,7 +4495,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14679,17.91,16681};
+				position[]={14675,17.91,16681};
 			};
 			id=107;
 			type="ace_captives_moduleSettings";
@@ -11883,39 +11875,6 @@ class Mission
 								};
 							};
 							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item62
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={14675,17.91,16681};
-			};
-			id=91;
-			type="ACE_ModuleSitting";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ACE_ModuleSitting_enable";
-					expression="_this setVariable ['enable',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
 						};
 					};
 				};
