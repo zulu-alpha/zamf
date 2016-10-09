@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14690.741,31.416006,16603.693};
-		dir[]={0.25891808,-0.5180369,0.81537646};
-		up[]={0.15689461,0.85511971,0.49408621};
-		aside[]={0.9532218,-5.9045851e-007,-0.30267966};
+		pos[]={14683.123,42.91,16606.51};
+		dir[]={0.13792969,-0.71619523,0.68413579};
+		up[]={0.14154537,0.69789982,0.70206958};
+		aside[]={0.98027658,-1.2572855e-008,-0.19763514};
 	};
 };
 binarizationWanted=0;
@@ -305,6 +305,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -336,25 +355,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
 				};
 			};
 		};
@@ -415,7 +415,7 @@ class Mission
 		class Item0
 		{
 			dataType="Marker";
-			position[]={14699.055,17.91,16627.416};
+			position[]={14693,17.91,16635};
 			name="respawn_west";
 			type="Empty";
 			id=0;
