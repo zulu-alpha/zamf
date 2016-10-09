@@ -4,19 +4,8 @@ if (!isServer) exitWith {};
 _unit = _this select 0;
 
 {
-	_x disableAI "TARGET";
-	_x disableAI "AUTOTARGET";
-	_x disableAI "MOVE";
-	_x disableAI "ANIM";
-	_x disableAI "FSM";
-	_x disableAI "SUPPRESSION";
+	_x disableAI "ALL";
 	_X setunitpos "up";
-	//_x setBehaviour "CARELESS";
-	_x setCombatMode "BLUE"
+	_x setCombatMode "BLUE";
+	_x setBehaviour "CARELESS";
 } foreach crew _unit;
-
-//_unit disableAI "TARGET";
-//_unit disableAI "AUTOTARGET";
-//_unit disableAI "FSM";
-//_unit disableAI "MOVE";
-//_unit setBehaviour "CARELESS";
