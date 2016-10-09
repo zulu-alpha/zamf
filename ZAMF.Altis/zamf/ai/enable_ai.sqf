@@ -17,4 +17,4 @@ _unit enableAI "AUTOCOMBAT";
 _unit enableAI "PATH";
 _unit setBehaviour "AWARE";
 _unit setCombatMode "YELLOW";
-_unit setPos "AUTO";
+_unit setUnitPos "AUTO";
