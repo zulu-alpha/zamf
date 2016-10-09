@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14680.32,41.20311,16659.904};
-		dir[]={-0.028344817,-0.81615049,0.57732338};
-		up[]={-0.040029876,0.57757127,0.81535029};
-		aside[]={0.9989059,-2.2469612e-006,0.049048521};
+		pos[]={14690.301,26.463051,16624.617};
+		dir[]={0.7877422,-0.5820418,-0.20230979};
+		up[]={0.56405598,0.81291091,-0.14486304};
+		aside[]={-0.24877144,-1.6795238e-006,-0.96868855};
 	};
 };
 binarizationWanted=0;
@@ -305,6 +305,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -336,25 +355,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
 				};
 			};
 		};
@@ -1550,139 +1550,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="Enh_unitTraits_engineer";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Engineer',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Engineer',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_unitTrait_UAVHacker";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['UAVHacker',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['UAVHacker',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="Enh_taskPatrol_behaviour";
-							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="Enh_taskPatrol_speed";
-							expression="_this setVariable ['Enh_randomPatrol_speed',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="normal";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="Enh_animCombEquipment";
-							expression="_this setVariable ['Enh_animCombEquipment',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						class Attribute7
-						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
@@ -1700,45 +1567,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute8
-						{
-							property="Enh_animType";
-							expression="_this setVariable ['Enh_animType',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute10
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -1757,10 +1586,10 @@ class Mission
 								};
 							};
 						};
-						class Attribute11
+						class Attribute2
 						{
-							property="Enh_unitTrait_explosiveSpecialist";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['ExplosiveSpecialist',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['ExplosiveSpecialist',true]};			";
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -1769,71 +1598,14 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="noChange";
+									value=0;
 								};
 							};
 						};
-						class Attribute12
-						{
-							property="Enh_animCombType";
-							expression="_this setVariable ['Enh_animCombType',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute13
-						{
-							property="Enh_unitTraits_medic";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Medic',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Medic',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute14
-						{
-							property="Enh_animEquipment";
-							expression="_this setVariable ['Enh_animEquipment',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						nAttributes=15;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -2032,7 +1804,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupID [_value];";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -5537,139 +5309,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="Enh_unitTraits_engineer";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Engineer',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Engineer',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_unitTrait_UAVHacker";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['UAVHacker',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['UAVHacker',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="Enh_taskPatrol_behaviour";
-							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="Enh_taskPatrol_speed";
-							expression="_this setVariable ['Enh_randomPatrol_speed',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="normal";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="Enh_animCombEquipment";
-							expression="_this setVariable ['Enh_animCombEquipment',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						class Attribute7
-						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
@@ -5687,45 +5326,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute8
-						{
-							property="Enh_animType";
-							expression="_this setVariable ['Enh_animType',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute10
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -5744,10 +5345,10 @@ class Mission
 								};
 							};
 						};
-						class Attribute11
+						class Attribute2
 						{
-							property="Enh_unitTrait_explosiveSpecialist";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['ExplosiveSpecialist',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['ExplosiveSpecialist',true]};			";
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -5756,71 +5357,14 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="noChange";
+									value=0;
 								};
 							};
 						};
-						class Attribute12
-						{
-							property="Enh_animCombType";
-							expression="_this setVariable ['Enh_animCombType',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute13
-						{
-							property="Enh_unitTraits_medic";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Medic',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Medic',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute14
-						{
-							property="Enh_animEquipment";
-							expression="_this setVariable ['Enh_animEquipment',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						nAttributes=15;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -5847,44 +5391,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="Enh_animCombEquipment";
-							expression="_this setVariable ['Enh_animCombEquipment',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="Enh_unitTraits_engineer";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Engineer',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Engineer',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute2
-						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
@@ -5902,235 +5408,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
-						{
-							property="Enh_taskPatrol_speed";
-							expression="_this setVariable ['Enh_randomPatrol_speed',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="normal";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="Enh_unitTraits_medic";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Medic',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Medic',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="Enh_animCombType";
-							expression="_this setVariable ['Enh_animCombType',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="Enh_animEquipment";
-							expression="_this setVariable ['Enh_animEquipment',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="Enh_unitTrait_UAVHacker";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['UAVHacker',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['UAVHacker',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.03;
-								};
-							};
-						};
-						class Attribute10
-						{
-							property="Enh_taskPatrol_behaviour";
-							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute11
-						{
-							property="Enh_animType";
-							expression="_this setVariable ['Enh_animType',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute12
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute13
-						{
-							property="Enh_unitTrait_explosiveSpecialist";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['ExplosiveSpecialist',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['ExplosiveSpecialist',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute14
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						class Attribute15
+						class Attribute1
 						{
 							property="ace_isEngineer";
 							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
@@ -6149,7 +5427,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=16;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -6189,139 +5505,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="Enh_unitTraits_engineer";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Engineer',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Engineer',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_unitTrait_UAVHacker";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['UAVHacker',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['UAVHacker',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="Enh_taskPatrol_behaviour";
-							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="Enh_taskPatrol_speed";
-							expression="_this setVariable ['Enh_randomPatrol_speed',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="normal";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="Enh_animCombEquipment";
-							expression="_this setVariable ['Enh_animCombEquipment',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						class Attribute7
-						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
@@ -6339,45 +5522,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute8
-						{
-							property="Enh_animType";
-							expression="_this setVariable ['Enh_animType',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute10
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -6396,10 +5541,10 @@ class Mission
 								};
 							};
 						};
-						class Attribute11
+						class Attribute2
 						{
-							property="Enh_unitTrait_explosiveSpecialist";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['ExplosiveSpecialist',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['ExplosiveSpecialist',true]};			";
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -6408,71 +5553,14 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="noChange";
+									value=0;
 								};
 							};
 						};
-						class Attribute12
-						{
-							property="Enh_animCombType";
-							expression="_this setVariable ['Enh_animCombType',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute13
-						{
-							property="Enh_unitTraits_medic";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Medic',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Medic',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute14
-						{
-							property="Enh_animEquipment";
-							expression="_this setVariable ['Enh_animEquipment',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						nAttributes=15;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -6499,139 +5587,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="Enh_unitTraits_engineer";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Engineer',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Engineer',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_unitTrait_UAVHacker";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['UAVHacker',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['UAVHacker',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="Enh_taskPatrol_behaviour";
-							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="Enh_taskPatrol_speed";
-							expression="_this setVariable ['Enh_randomPatrol_speed',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="normal";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="Enh_animCombEquipment";
-							expression="_this setVariable ['Enh_animCombEquipment',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						class Attribute7
-						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
@@ -6649,45 +5604,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute8
-						{
-							property="Enh_animType";
-							expression="_this setVariable ['Enh_animType',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute10
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -6706,10 +5623,10 @@ class Mission
 								};
 							};
 						};
-						class Attribute11
+						class Attribute2
 						{
-							property="Enh_unitTrait_explosiveSpecialist";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['ExplosiveSpecialist',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['ExplosiveSpecialist',true]};			";
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -6718,71 +5635,14 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="noChange";
+									value=0;
 								};
 							};
 						};
-						class Attribute12
-						{
-							property="Enh_animCombType";
-							expression="_this setVariable ['Enh_animCombType',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute13
-						{
-							property="Enh_unitTraits_medic";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Medic',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Medic',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute14
-						{
-							property="Enh_animEquipment";
-							expression="_this setVariable ['Enh_animEquipment',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						nAttributes=15;
+						nAttributes=3;
 					};
 				};
 				class Item2
@@ -6808,139 +5668,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="Enh_unitTraits_engineer";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Engineer',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Engineer',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_unitTrait_UAVHacker";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['UAVHacker',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['UAVHacker',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="Enh_taskPatrol_behaviour";
-							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="Enh_taskPatrol_speed";
-							expression="_this setVariable ['Enh_randomPatrol_speed',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="normal";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="Enh_animCombEquipment";
-							expression="_this setVariable ['Enh_animCombEquipment',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						class Attribute7
-						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
@@ -6958,45 +5685,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute8
-						{
-							property="Enh_animType";
-							expression="_this setVariable ['Enh_animType',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute10
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -7015,10 +5704,10 @@ class Mission
 								};
 							};
 						};
-						class Attribute11
+						class Attribute2
 						{
-							property="Enh_unitTrait_explosiveSpecialist";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['ExplosiveSpecialist',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['ExplosiveSpecialist',true]};			";
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -7027,71 +5716,14 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="noChange";
+									value=0;
 								};
 							};
 						};
-						class Attribute12
-						{
-							property="Enh_animCombType";
-							expression="_this setVariable ['Enh_animCombType',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute13
-						{
-							property="Enh_unitTraits_medic";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Medic',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Medic',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute14
-						{
-							property="Enh_animEquipment";
-							expression="_this setVariable ['Enh_animEquipment',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						nAttributes=15;
+						nAttributes=3;
 					};
 				};
 				class Item3
@@ -8920,8 +7552,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="Enh_animCombEquipment";
-							expression="_this setVariable ['Enh_animCombEquipment',_value]";
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -8930,33 +7562,14 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"SCALAR"
 										};
 									};
-									value="ASIS";
+									value=2;
 								};
 							};
 						};
 						class Attribute1
-						{
-							property="Enh_unitTraits_engineer";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Engineer',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Engineer',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute2
 						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
@@ -8975,254 +7588,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
-						{
-							property="Enh_taskPatrol_speed";
-							expression="_this setVariable ['Enh_randomPatrol_speed',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="normal";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="Enh_unitTraits_medic";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Medic',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Medic',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="Enh_animCombType";
-							expression="_this setVariable ['Enh_animCombType',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="Enh_animEquipment";
-							expression="_this setVariable ['Enh_animEquipment',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="Enh_unitTrait_UAVHacker";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['UAVHacker',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['UAVHacker',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=2;
-								};
-							};
-						};
-						class Attribute10
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.95999998;
-								};
-							};
-						};
-						class Attribute11
-						{
-							property="Enh_taskPatrol_behaviour";
-							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute12
-						{
-							property="Enh_animType";
-							expression="_this setVariable ['Enh_animType',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute13
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute14
-						{
-							property="Enh_unitTrait_explosiveSpecialist";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['ExplosiveSpecialist',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['ExplosiveSpecialist',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute15
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						class Attribute16
+						class Attribute2
 						{
 							property="ace_isEngineer";
 							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
@@ -9241,7 +7607,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=17;
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 				class Item1
@@ -9266,8 +7670,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="Enh_animCombEquipment";
-							expression="_this setVariable ['Enh_animCombEquipment',_value]";
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -9276,33 +7680,14 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"SCALAR"
 										};
 									};
-									value="ASIS";
+									value=2;
 								};
 							};
 						};
 						class Attribute1
-						{
-							property="Enh_unitTraits_engineer";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Engineer',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Engineer',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute2
 						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
@@ -9321,254 +7706,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
-						{
-							property="Enh_taskPatrol_speed";
-							expression="_this setVariable ['Enh_randomPatrol_speed',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="normal";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="Enh_unitTraits_medic";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Medic',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Medic',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="Enh_animCombType";
-							expression="_this setVariable ['Enh_animCombType',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="Enh_animEquipment";
-							expression="_this setVariable ['Enh_animEquipment',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="Enh_unitTrait_UAVHacker";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['UAVHacker',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['UAVHacker',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=2;
-								};
-							};
-						};
-						class Attribute10
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.05;
-								};
-							};
-						};
-						class Attribute11
-						{
-							property="Enh_taskPatrol_behaviour";
-							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute12
-						{
-							property="Enh_animType";
-							expression="_this setVariable ['Enh_animType',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute13
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute14
-						{
-							property="Enh_unitTrait_explosiveSpecialist";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['ExplosiveSpecialist',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['ExplosiveSpecialist',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute15
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						class Attribute16
+						class Attribute2
 						{
 							property="ace_isEngineer";
 							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
@@ -9587,7 +7725,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=17;
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 				class Item2
@@ -9650,25 +7826,6 @@ class Mission
 						};
 						class Attribute2
 						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute3
-						{
 							property="ace_isEngineer";
 							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
 							class Value
@@ -9686,26 +7843,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						class Attribute5
+						class Attribute3
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
@@ -9724,7 +7862,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=4;
 					};
 				};
 				class Item3
@@ -9787,25 +7925,6 @@ class Mission
 						};
 						class Attribute2
 						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute3
-						{
 							property="ace_isEngineer";
 							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
 							class Value
@@ -9823,26 +7942,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						class Attribute5
+						class Attribute3
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
@@ -9861,7 +7961,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=4;
 					};
 				};
 				class Item4
@@ -9924,25 +8024,6 @@ class Mission
 						};
 						class Attribute2
 						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute3
-						{
 							property="ace_isEngineer";
 							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
 							class Value
@@ -9960,26 +8041,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						class Attribute5
+						class Attribute3
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
@@ -9998,7 +8060,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=4;
 					};
 				};
 			};
@@ -10038,8 +8100,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="Enh_animCombEquipment";
-							expression="_this setVariable ['Enh_animCombEquipment',_value]";
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -10048,33 +8110,14 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"SCALAR"
 										};
 									};
-									value="ASIS";
+									value=-1;
 								};
 							};
 						};
 						class Attribute1
-						{
-							property="Enh_unitTraits_engineer";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Engineer',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Engineer',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute2
 						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
@@ -10093,254 +8136,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
-						{
-							property="Enh_taskPatrol_speed";
-							expression="_this setVariable ['Enh_randomPatrol_speed',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="normal";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="Enh_unitTraits_medic";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Medic',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Medic',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="Enh_animCombType";
-							expression="_this setVariable ['Enh_animCombType',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="Enh_animEquipment";
-							expression="_this setVariable ['Enh_animEquipment',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="Enh_unitTrait_UAVHacker";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['UAVHacker',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['UAVHacker',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=-1;
-								};
-							};
-						};
-						class Attribute10
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.02;
-								};
-							};
-						};
-						class Attribute11
-						{
-							property="Enh_taskPatrol_behaviour";
-							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute12
-						{
-							property="Enh_animType";
-							expression="_this setVariable ['Enh_animType',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute13
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute14
-						{
-							property="Enh_unitTrait_explosiveSpecialist";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['ExplosiveSpecialist',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['ExplosiveSpecialist',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute15
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						class Attribute16
+						class Attribute2
 						{
 							property="ace_isEngineer";
 							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
@@ -10359,7 +8155,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=17;
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 				class Item1
@@ -10386,44 +8220,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="Enh_animCombEquipment";
-							expression="_this setVariable ['Enh_animCombEquipment',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="Enh_unitTraits_engineer";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Engineer',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Engineer',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute2
-						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
@@ -10441,235 +8237,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
-						{
-							property="Enh_taskPatrol_speed";
-							expression="_this setVariable ['Enh_randomPatrol_speed',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="normal";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="Enh_unitTraits_medic";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Medic',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Medic',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="Enh_animCombType";
-							expression="_this setVariable ['Enh_animCombType',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="Enh_animEquipment";
-							expression="_this setVariable ['Enh_animEquipment',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="Enh_unitTrait_UAVHacker";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['UAVHacker',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['UAVHacker',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute10
-						{
-							property="Enh_taskPatrol_behaviour";
-							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute11
-						{
-							property="Enh_animType";
-							expression="_this setVariable ['Enh_animType',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute12
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute13
-						{
-							property="Enh_unitTrait_explosiveSpecialist";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['ExplosiveSpecialist',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['ExplosiveSpecialist',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute14
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						class Attribute15
+						class Attribute1
 						{
 							property="ace_isEngineer";
 							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
@@ -10688,7 +8256,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=16;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 				class Item2
@@ -10715,44 +8321,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="Enh_animCombEquipment";
-							expression="_this setVariable ['Enh_animCombEquipment',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="Enh_unitTraits_engineer";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Engineer',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Engineer',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute2
-						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
@@ -10770,235 +8338,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
-						{
-							property="Enh_taskPatrol_speed";
-							expression="_this setVariable ['Enh_randomPatrol_speed',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="normal";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="Enh_unitTraits_medic";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Medic',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Medic',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="Enh_animCombType";
-							expression="_this setVariable ['Enh_animCombType',_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="Enh_animEquipment";
-							expression="_this setVariable ['Enh_animEquipment',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ASIS";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="Enh_unitTrait_UAVHacker";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['UAVHacker',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['UAVHacker',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.03;
-								};
-							};
-						};
-						class Attribute10
-						{
-							property="Enh_taskPatrol_behaviour";
-							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute11
-						{
-							property="Enh_animType";
-							expression="_this setVariable ['Enh_animType',_value];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="STAND";
-								};
-							};
-						};
-						class Attribute12
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute13
-						{
-							property="Enh_unitTrait_explosiveSpecialist";
-							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['ExplosiveSpecialist',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['ExplosiveSpecialist',true]};			";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="noChange";
-								};
-							};
-						};
-						class Attribute14
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						class Attribute15
+						class Attribute1
 						{
 							property="ace_isEngineer";
 							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
@@ -11017,7 +8357,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=16;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -11057,44 +8435,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute2
-						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -11112,10 +8452,10 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute1
 						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -11124,14 +8464,14 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="111thID";
+									value=0;
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -11158,44 +8498,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute2
-						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -11213,10 +8515,10 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute1
 						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -11225,14 +8527,14 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="111thID";
+									value=0;
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=2;
 					};
 				};
 				class Item2
@@ -11258,44 +8560,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute2
-						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -11313,10 +8577,10 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute1
 						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -11325,14 +8589,14 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="111thID";
+									value=0;
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=2;
 					};
 				};
 			};
@@ -11391,25 +8655,6 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute2
-						{
 							property="ace_isEngineer";
 							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
 							class Value
@@ -11427,7 +8672,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute2
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
@@ -11446,26 +8691,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						nAttributes=5;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -11511,25 +8737,6 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute2
-						{
 							property="ace_isEngineer";
 							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
 							class Value
@@ -11547,7 +8754,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute2
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
@@ -11566,26 +8773,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						nAttributes=5;
+						nAttributes=3;
 					};
 				};
 				class Item2
@@ -11630,25 +8818,6 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="Enh_unitPos";
-							expression="_this setUnitPos _value";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="auto";
-								};
-							};
-						};
-						class Attribute2
-						{
 							property="ace_isEngineer";
 							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
 							class Value
@@ -11666,7 +8835,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute2
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
@@ -11685,26 +8854,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
-						{
-							property="Enh_insignia";
-							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="111thID";
-								};
-							};
-						};
-						nAttributes=5;
+						nAttributes=3;
 					};
 				};
 			};
