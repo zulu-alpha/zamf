@@ -1,14 +1,14 @@
 version=52;
 class EditorData
 {
-	moveGridStep=1;
+	moveGridStep=0.5;
 	angleGridStep=0.2617994;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
 	toggles=101;
 	class ItemIDProvider
 	{
-		nextID=606;
+		nextID=609;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14683.123,42.91,16606.51};
-		dir[]={0.13792969,-0.71619523,0.68413579};
-		up[]={0.14154537,0.69789982,0.70206958};
-		aside[]={0.98027658,-1.2572855e-008,-0.19763514};
+		pos[]={14681.62,52.914116,16556.188};
+		dir[]={-0.080927238,-0.47960436,0.87375885};
+		up[]={-0.044233464,0.87747186,0.4775801};
+		aside[]={0.99574524,-3.2741809e-007,0.092225298};
 	};
 };
 binarizationWanted=0;
@@ -305,25 +305,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -358,12 +339,49 @@ class CustomAttributes
 				};
 			};
 		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
 		nAttributes=2;
 	};
 	class Category1
 	{
 		name="Scenario";
 		class Attribute0
+		{
+			property="Enh_randomMusic";
+			expression="if (!is3DEN && !(_value isEqualTo [])) then {playMusic (selectRandom _value)}";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
 		{
 			property="EnableDebugConsole";
 			expression="true";
@@ -382,14 +400,369 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=1;
+		class Attribute2
+		{
+			property="'Enh_line2'";
+			expression="missionNamespace setVariable ['Enh_introLine2',_value]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="by Phoenix";
+				};
+			};
+		};
+		class Attribute3
+		{
+			property="Enh_soundVolume";
+			expression="if (!is3DEN) then {0 fadeSound _value}";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute4
+		{
+			property="Enh_ambientFlyby_iterations";
+			expression="missionNamespace setVariable ['Enh_ambientFlyby_iterations',_value]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute5
+		{
+			property="Enh_ambientFlyby_startPos";
+			expression="missionNamespace setVariable ['Enh_ambientFlyby_startPos',_value]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=3;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0;
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0;
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute6
+		{
+			property="Enh_ambientFlyby_Delay";
+			expression="missionNamespace setVariable ['Enh_ambientFlyby_delay',_value]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=360;
+				};
+			};
+		};
+		class Attribute7
+		{
+			property="Enh_introDelay";
+			expression="				if (!is3DEN && _value > 0) then				{					_value spawn					{						waitUntil {time > _this};						private _text = parseText format						[							""<t align='right' size='1.6'><t font='PuristaBold' size='1.8'>%1<br/></t>%2<br/>%3</t>"",							missionNamespace getVariable 'Enh_introLine1',							missionNamespace getVariable 'Enh_introLine2',							missionNamespace getVariable 'Enh_introLine3'						];						[_text,true] spawn BIS_fnc_textTiles;					}				};			";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute8
+		{
+			property="Enh_ambientFlyby_altitude";
+			expression="missionNamespace setVariable ['Enh_ambientFlyby_altitude',_value]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=100;
+				};
+			};
+		};
+		class Attribute9
+		{
+			property="Enh_ambientFlyby_type";
+			expression="				if (isServer && !is3DEN && !(_value isEqualTo [])) then				{					_value spawn					{						waitUntil {time > 0.2};												private _startPos = missionNamespace getVariable 'Enh_ambientFlyby_startPos',						private _endPos = missionNamespace getVariable 'Enh_ambientFlyby_endPos',						private _alt = missionNamespace getVariable 'Enh_ambientFlyby_altitude',						private _speed = missionNamespace getVariable 'Enh_ambientFlyby_speed',						private _delay = missionNamespace getVariable 'Enh_ambientFlyby_delay';												for '_i' from 0 to (missionNamespace getVariable 'Enh_ambientFlyby_iterations') do						{							sleep _delay;							[_startPos,_endPos,_alt,_speed,selectRandom _this] call BIS_fnc_ambientFlyby;						};					};				};			";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute10
+		{
+			property="'Enh_line3'";
+			expression="missionNamespace setVariable ['Enh_introLine3',_value]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="12:00:00";
+				};
+			};
+		};
+		class Attribute11
+		{
+			property="Enh_ambientFlyby_speed";
+			expression="missionNamespace setVariable ['Enh_ambientFlyby_speed',_value]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="LIMITED";
+				};
+			};
+		};
+		class Attribute12
+		{
+			property="Enh_musicVolume";
+			expression="if (!is3DEN) then {0 fadeMusic _value}";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute13
+		{
+			property="Enh_firstLine";
+			expression="missionNamespace setVariable ['Enh_introLine1',_value]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="co@12_Example Name_v35_HC";
+				};
+			};
+		};
+		class Attribute14
+		{
+			property="Enh_ambientFlyby_endPos";
+			expression="missionNamespace setVariable ['Enh_ambientFlyby_endPos',_value]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=3;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1000;
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1000;
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute15
+		{
+			property="Enh_radioVolume";
+			expression="if (!is3DEN) then {0 fadeRadio _value}";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=16;
 	};
 };
 class Mission
 {
 	class Intel
 	{
-		briefingName="co@12_Example Name_v35_HC";
+		briefingName="co@16_Example Name_v1-0-0";
 		resistanceWest=0;
 		resistanceEast=1;
 		startWeather=0.29999998;
@@ -411,7 +784,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=64;
+		items=67;
 		class Item0
 		{
 			dataType="Marker";
@@ -1532,7 +1905,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14671.345,17.911438,16614.055};
+						position[]={14671.4,17.911438,16613.758};
 					};
 					side="Civilian";
 					flags=6;
@@ -1613,7 +1986,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14672.943,17.911438,16614.053};
+						position[]={14672.999,17.911438,16613.756};
 					};
 					side="Civilian";
 					flags=4;
@@ -1675,7 +2048,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14671.345,17.911438,16611.848};
+						position[]={14671.4,17.911438,16611.551};
 					};
 					side="Civilian";
 					flags=4;
@@ -1737,7 +2110,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14672.944,17.911438,16611.848};
+						position[]={14673,17.911438,16611.551};
 					};
 					side="Civilian";
 					flags=4;
@@ -2673,9 +3046,9 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14676.827,17.91,16614.051};
+				position[]={14677,17.91,16614};
 			};
-			name="HCSlot";
+			name="HCSlot_1";
 			isPlayable=1;
 			id=39;
 			type="HeadlessClient_F";
@@ -2685,7 +3058,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14676.897,17.91,16611.684};
+				position[]={14677,17.91,16611.5};
 			};
 			name="zamf_object_curator_admin";
 			id=65;
@@ -9264,6 +9637,42 @@ class Mission
 				};
 				nAttributes=5;
 			};
+		};
+		class Item64
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14678,17.91,16614};
+			};
+			name="HCSlot_2";
+			isPlayable=1;
+			id=606;
+			type="HeadlessClient_F";
+		};
+		class Item65
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14677,17.91,16613};
+			};
+			name="HCSlot_3";
+			isPlayable=1;
+			id=607;
+			type="HeadlessClient_F";
+		};
+		class Item66
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14678,17.91,16613};
+			};
+			name="HCSlot_4";
+			isPlayable=1;
+			id=608;
+			type="HeadlessClient_F";
 		};
 	};
 };
