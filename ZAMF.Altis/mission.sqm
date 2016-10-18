@@ -8,7 +8,7 @@ class EditorData
 	toggles=101;
 	class ItemIDProvider
 	{
-		nextID=616;
+		nextID=618;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14643.724,42.91,16662.918};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={14680.894,53.512943,16589.24};
+		dir[]={0.014266533,-0.60165405,0.79872811};
+		up[]={0.010746381,0.79870307,0.60160506};
+		aside[]={0.99992347,8.5899228e-007,-0.017861478};
 	};
 };
 binarizationWanted=0;
@@ -312,25 +312,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -362,6 +343,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
 				};
 			};
 		};
@@ -9944,7 +9944,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="DRAGON'1";
+							value="DRAGON-1";
 						};
 					};
 				};
@@ -9963,7 +9963,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="DRAGON'2";
+							value="DRAGON-2";
 						};
 					};
 				};
@@ -9982,7 +9982,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="DRAGON'3";
+							value="DRAGON-3";
 						};
 					};
 				};
@@ -10001,7 +10001,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="DRAGON'4";
+							value="DRAGON-4";
 						};
 					};
 				};
@@ -10039,7 +10039,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="DRAGON'5";
+							value="DRAGON-5";
 						};
 					};
 				};
