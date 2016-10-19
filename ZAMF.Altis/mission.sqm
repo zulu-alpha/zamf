@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14680.894,53.512943,16589.24};
-		dir[]={0.014266533,-0.60165405,0.79872811};
-		up[]={0.010746381,0.79870307,0.60160506};
-		aside[]={0.99992347,8.5899228e-007,-0.017861478};
+		pos[]={14678.542,53.512943,16652.199};
+		dir[]={-0.053750217,-0.76811665,0.63817799};
+		up[]={-0.064466231,0.64027387,0.76541805};
+		aside[]={0.99655652,1.1168304e-006,0.083933555};
 	};
 };
 binarizationWanted=0;
@@ -312,6 +312,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -343,25 +362,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
 				};
 			};
 		};
@@ -10077,7 +10077,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="GHOSTRIDER";
+							value="LOGISTICS";
 						};
 					};
 				};
