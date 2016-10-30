@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14678.542,53.512943,16652.199};
-		dir[]={-0.053750217,-0.76811665,0.63817799};
-		up[]={-0.064466231,0.64027387,0.76541805};
-		aside[]={0.99655652,1.1168304e-006,0.083933555};
+		pos[]={14703.269,26.14525,16641.768};
+		dir[]={-0.22663669,-0.60603946,0.76262712};
+		up[]={-0.17265111,0.79536748,0.58097661};
+		aside[]={0.95867753,9.2759728e-007,0.28489932};
 	};
 };
 binarizationWanted=0;
@@ -312,25 +312,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -365,15 +346,10 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=2;
-	};
-	class Category1
-	{
-		name="Scenario";
-		class Attribute0
+		class Attribute1
 		{
-			property="Enh_randomMusic";
-			expression="if (!is3DEN && !(_value isEqualTo [])) then {playMusic (selectRandom _value)}";
+			property="RespawnButton";
+			expression="true";
 			class Value
 			{
 				class data
@@ -382,13 +358,19 @@ class CustomAttributes
 					{
 						type[]=
 						{
-							"ARRAY"
+							"SCALAR"
 						};
 					};
+					value=1;
 				};
 			};
 		};
-		class Attribute1
+		nAttributes=2;
+	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
 		{
 			property="EnableDebugConsole";
 			expression="true";
@@ -407,362 +389,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute2
-		{
-			property="'Enh_line2'";
-			expression="missionNamespace setVariable ['Enh_introLine2',_value]";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"STRING"
-						};
-					};
-					value="by Phoenix";
-				};
-			};
-		};
-		class Attribute3
-		{
-			property="Enh_soundVolume";
-			expression="if (!is3DEN) then {0 fadeSound _value}";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute4
-		{
-			property="Enh_ambientFlyby_iterations";
-			expression="missionNamespace setVariable ['Enh_ambientFlyby_iterations',_value]";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute5
-		{
-			property="Enh_ambientFlyby_startPos";
-			expression="missionNamespace setVariable ['Enh_ambientFlyby_startPos',_value]";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-					class value
-					{
-						items=3;
-						class Item0
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0;
-							};
-						};
-						class Item1
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0;
-							};
-						};
-						class Item2
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-				};
-			};
-		};
-		class Attribute6
-		{
-			property="Enh_ambientFlyby_Delay";
-			expression="missionNamespace setVariable ['Enh_ambientFlyby_delay',_value]";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=360;
-				};
-			};
-		};
-		class Attribute7
-		{
-			property="Enh_introDelay";
-			expression="				if (!is3DEN && _value > 0) then				{					_value spawn					{						waitUntil {time > _this};						private _text = parseText format						[							""<t align='right' size='1.6'><t font='PuristaBold' size='1.8'>%1<br/></t>%2<br/>%3</t>"",							missionNamespace getVariable 'Enh_introLine1',							missionNamespace getVariable 'Enh_introLine2',							missionNamespace getVariable 'Enh_introLine3'						];						[_text,true] spawn BIS_fnc_textTiles;					}				};			";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
-				};
-			};
-		};
-		class Attribute8
-		{
-			property="Enh_ambientFlyby_altitude";
-			expression="missionNamespace setVariable ['Enh_ambientFlyby_altitude',_value]";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=100;
-				};
-			};
-		};
-		class Attribute9
-		{
-			property="Enh_ambientFlyby_type";
-			expression="				if (isServer && !is3DEN && !(_value isEqualTo [])) then				{					_value spawn					{						waitUntil {time > 0.2};												private _startPos = missionNamespace getVariable 'Enh_ambientFlyby_startPos',						private _endPos = missionNamespace getVariable 'Enh_ambientFlyby_endPos',						private _alt = missionNamespace getVariable 'Enh_ambientFlyby_altitude',						private _speed = missionNamespace getVariable 'Enh_ambientFlyby_speed',						private _delay = missionNamespace getVariable 'Enh_ambientFlyby_delay';												for '_i' from 0 to (missionNamespace getVariable 'Enh_ambientFlyby_iterations') do						{							sleep _delay;							[_startPos,_endPos,_alt,_speed,selectRandom _this] call BIS_fnc_ambientFlyby;						};					};				};			";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute10
-		{
-			property="'Enh_line3'";
-			expression="missionNamespace setVariable ['Enh_introLine3',_value]";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"STRING"
-						};
-					};
-					value="12:00:00";
-				};
-			};
-		};
-		class Attribute11
-		{
-			property="Enh_ambientFlyby_speed";
-			expression="missionNamespace setVariable ['Enh_ambientFlyby_speed',_value]";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"STRING"
-						};
-					};
-					value="LIMITED";
-				};
-			};
-		};
-		class Attribute12
-		{
-			property="Enh_musicVolume";
-			expression="if (!is3DEN) then {0 fadeMusic _value}";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute13
-		{
-			property="Enh_firstLine";
-			expression="missionNamespace setVariable ['Enh_introLine1',_value]";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"STRING"
-						};
-					};
-					value="co@12_Example Name_v35_HC";
-				};
-			};
-		};
-		class Attribute14
-		{
-			property="Enh_ambientFlyby_endPos";
-			expression="missionNamespace setVariable ['Enh_ambientFlyby_endPos',_value]";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-					class value
-					{
-						items=3;
-						class Item0
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1000;
-							};
-						};
-						class Item1
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1000;
-							};
-						};
-						class Item2
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-				};
-			};
-		};
-		class Attribute15
-		{
-			property="Enh_radioVolume";
-			expression="if (!is3DEN) then {0 fadeRadio _value}";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		nAttributes=16;
+		nAttributes=1;
 	};
 };
 class Mission

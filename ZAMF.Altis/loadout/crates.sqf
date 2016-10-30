@@ -683,6 +683,7 @@ switch (_loadout) do {
 
 		// Attire
 		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans", "za_hel_Boonie_trans"] select _index), 3];
+		_crate addBackpackCargoGlobal ["B_AssaultPack_blk", 3];
 
 		// Vision
 		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 3];
@@ -695,6 +696,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_MapTools", 3];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 3];
 		_crate addItemCargoGlobal ["ACRE_PRC152", 3];
+		_crate addItemCargoGlobal ["ACRE_PRC117F", 3];
 		_crate addItemCargoGlobal ["ItemGPS", 3];
 
 		// Signalling
@@ -739,7 +741,8 @@ switch (_loadout) do {
 	case "jet": {
 
 		// Attire
-		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans", "za_hel_Boonie_trans"] select _index), 3];
+		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans", "za_hel_Boonie_trans"] select _index), 1];
+		_crate addBackpackCargoGlobal ["B_AssaultPack_sgg", 1];
 
 		// Vision
 		//_crate addItemCargoGlobal ["ACE_NVG_Gen4", 1];
@@ -752,6 +755,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_MapTools", 1];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 1];
 		_crate addItemCargoGlobal ["ACRE_PRC152", 1];
+		_crate addItemCargoGlobal ["ACRE_PRC117F", 1];
 		_crate addItemCargoGlobal ["ItemGPS", 1];
 
 		// Signalling
@@ -793,7 +797,7 @@ switch (_loadout) do {
 	case "crew": {
 
 		// Attire
-
+		_crate addBackpackCargoGlobal [(["B_AssaultPack_ocamo", "B_AssaultPack_rgr", "B_AssaultPack_rgr"] select _index), 3];
 
 		// Vision
 		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 3];
@@ -806,6 +810,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_MapTools", 3];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 3];
 		_crate addItemCargoGlobal ["ACRE_PRC152", 3];
+		_crate addItemCargoGlobal ["ACRE_PRC117F", 3];
 		_crate addItemCargoGlobal ["ItemGPS", 3];
 
 		// Signalling
