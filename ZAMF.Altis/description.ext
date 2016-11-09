@@ -28,20 +28,6 @@ class CfgFunctions
     #include "zamf\zamf_cfgfunctions.hpp"
 };
 
-// Enabling remote execution
-class CfgRemoteExec
-{
-    // List of script commands allowed to be sent from client via remoteExec
-    class Commands
-    {
-        class hideObjectGlobal
-        {
-            allowedTargets=0; // can target anyone
-        };
-    };
-};
-
-
 // Enabling remote execution: https://community.bistudio.com/wiki/CfgRemoteExec
 class CfgRemoteExec
 {
