@@ -46,16 +46,3 @@ enableDebugConsole = 1;
 
 // Paramaters are handled in the following file:
 #include "zamf_params.hpp"
-
-// Enabling remote execution
-class CfgRemoteExec
-{
-	// List of script commands allowed to be sent from client via remoteExec
-	class Commands
-	{
-		class hideObjectGlobal
-		{
-			allowedTargets=0; // can target anyone
-		};
-	};
-};

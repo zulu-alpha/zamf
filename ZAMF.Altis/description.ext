@@ -25,8 +25,47 @@ forceRotorLibSimulation = 1;
 // CfgFunctions
 class CfgFunctions
 {
-	#include "zamf\zamf_cfgfunctions.hpp"
+    #include "zamf\zamf_cfgfunctions.hpp"
 };
+
+// Enabling remote execution
+class CfgRemoteExec
+{
+    // List of script commands allowed to be sent from client via remoteExec
+    class Commands
+    {
+        class hideObjectGlobal
+        {
+            allowedTargets=0; // can target anyone
+        };
+    };
+};
+
+
+// Enabling remote execution: https://community.bistudio.com/wiki/CfgRemoteExec
+class CfgRemoteExec
+{
+    // List of script functions allowed to be sent from client via remoteExec
+    class Functions
+    {
+        // State of remoteExec: 0-turned off, 1-turned on, taking whitelist into account, 2-turned on, however, ignoring whitelists (default because of backward compatibility)
+        mode = 2;
+        // Ability to send jip messages: 0-disabled, 1-enabled (default)
+        jip = 1;
+        /*your functions here*/
+
+    };
+
+    // List of script commands allowed to be sent from client via remoteExec
+    class Commands
+    {
+        class hideObjectGlobal
+        {
+            allowedTargets = 0; // can target anyone
+        };
+    };
+};
+
 
 // ZAMF specific parts of the description.ext
 #include "zamf\zamf_description.hpp"
