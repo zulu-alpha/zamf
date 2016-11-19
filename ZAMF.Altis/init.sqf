@@ -9,10 +9,11 @@
 "disable_playable_ai_speak", // Prevent the avatar that the player controls from shouting in game.
 //"leave_group",             // Makes the player leave whatever group he/she starts in and join a new one alone.
 "spectate_on_death",         // As soon as a player dies, he/she spectates (even if respawn is enabled).
-"tfar_config",		     // ZA Specific config settings for TFAR, such as disabling auto microdagr and backpack radios.
-"mcc_limit",		     // Limit MCC to Admins.
-"zeusify",		     // Make sure that all units are detected by zeus.
-"zam_res"		     // Enable ZAM Resume
+"tfar_config",               // ZA Specific config settings for TFAR, such as disabling auto microdagr and backpack radios.
+"mcc_limit",                 // Limit MCC to Admins.
+"zeusify",                   // Make sure that all units are detected by zeus.
+"zam_res",                   // Enable ZAM Resume
+"disable_chat_channels"      // Disables chat channels. Used here instead of description to allow them in map screen.
 
 ] call ZAMF_fnc_zamf_init;
 

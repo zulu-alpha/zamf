@@ -8,17 +8,6 @@
 // Disable respawn by adjusting the tickets in the init.sqf
 respawnDelay = 5;
 
-//// Remove text channels
-disableChannels[] = {0,1,2,5,6};
-// Disable global, side, command and system chat. MOTD and admin say have exception and will show in global. Introduced in BETA 1.60.93398.
-// 0 = Global
-// 1 = Side
-// 2 = Command
-// 3 = Group
-// 4 = Vehicle
-// 5 = Direct
-// 6 = System
-
 // Force RotorLib
 forceRotorLibSimulation = 1;
 

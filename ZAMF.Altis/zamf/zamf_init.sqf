@@ -9,10 +9,11 @@
 "disable_playable_ai_speak", // Prevent the avatar that the player controls from shouting in game.
 //"leave_group",             // Makes the player leave whatever group he/she starts in and join a new one alone.
 "spectate_on_death",         // As soon as a player dies, he/she spectates (even if respawn is enabled).
-"tfar_config",		     // ZA Specific config settings for TFAR, such as disabling auto microdagr and backpack radios.
-"mcc_limit",		     // Limit MCC to Admins.
-"zeusify",		     // Make sure that all units are detected by zeus.
-"zam_res"		     // Enable ZAM Resume
+"tfar_config",               // ZA Specific config settings for TFAR, such as disabling auto microdagr and backpack radios.
+"mcc_limit",                 // Limit MCC to Admins.
+"zeusify",                   // Make sure that all units are detected by zeus.
+"zam_res",                   // Enable ZAM Resume
+"disable_chat_channels"      // Disables chat channels. Used here instead of description to allow them in map screen.
 
 ] call ZAMF_fnc_zamf_init;
 */
@@ -27,7 +28,7 @@ _input = _this;
 
 // Define Paramaters for editor
 if (isNil "paramsArray") then {
-	execNow "zamf\params\params_editor.sqf";
+    execNow "zamf\params\params_editor.sqf";
 };
 
 // Name Paramaters for easy use
@@ -62,8 +63,25 @@ zam_res_enabled = if ("zam_res" in _input) then {True} else {False};
 
 // TFAR Config
 if ("tfar_config" in _input) then {
-	tf_no_auto_long_range_radio = true;
-	TF_give_microdagr_to_soldier = false;
+    tf_no_auto_long_range_radio = true;
+    TF_give_microdagr_to_soldier = false;
+};
+
+// Disable radio channels
+// 0 = Global
+// 1 = Side
+// 2 = Command
+// 3 = Group (can't disable)
+// 4 = Vehicle
+// 5 = Direct
+// 6 = System
+if ("disable_chat_channels" in _input) then {
+    [] spawn {
+        waitUntil {sleep 0.1; time > 1};
+        {
+            _x enableChannel false;
+        } count [0,1,2,5,6];
+    };
 };
 
 // MCC Limits
@@ -74,11 +92,11 @@ if ("mcc_limit" in _input) then {MCC_allowedPlayers = [];};
 
 // Zeusify all units
 if ((isServer) && ("zeusify" in _input)) then {
-	{
-		if (count (curatorAddons _x) > 0 ) then {
-			nul = [_x, true] execVM "zamf\zeus\ADV_zeus.sqf";
-		};
-	} count allCurators;
+    {
+        if (count (curatorAddons _x) > 0 ) then {
+            nul = [_x, true] execVM "zamf\zeus\ADV_zeus.sqf";
+        };
+    } count allCurators;
 };
 
 // Don't show ranks
