@@ -92,11 +92,14 @@ if ("mcc_limit" in _input) then {MCC_allowedPlayers = [];};
 
 // Zeusify all units
 if ((isServer) && ("zeusify" in _input)) then {
-    {
-        if (count (curatorAddons _x) > 0 ) then {
-            nul = [_x, true] execVM "zamf\zeus\ADV_zeus.sqf";
-        };
-    } count allCurators;
+    [] spawn {
+        waitUntil {time > 1};
+        {
+            if (count (curatorAddons _x) > 0 ) then {
+                nul = [_x, true] execVM "zamf\zeus\ADV_zeus.sqf";
+            };
+        } count allCurators;
+    };
 };
 
 // Don't show ranks
