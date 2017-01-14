@@ -23,7 +23,7 @@ _save_array = _this select 0;	// Where player data is stored
 _save_index = _this select 1;	// An index to locate where player data is stored in _save_array using UID
 
 // Main loop
-for "" from 0 to 1 step 0 do {
+for "_i" from 0 to 1 step 0 do {
 
 	private "_save_index_size";
 	_save_index_size = count _save_index;
