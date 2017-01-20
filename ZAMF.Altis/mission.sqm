@@ -1,14 +1,14 @@
 version=52;
 class EditorData
 {
-	moveGridStep=2;
+	moveGridStep=0.5;
 	angleGridStep=0.2617994;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=101;
+	toggles=229;
 	class ItemIDProvider
 	{
-		nextID=618;
+		nextID=621;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14666.497,65.693222,16667.535};
-		dir[]={0.011582962,-0.91063082,0.41334078};
-		up[]={0.025509771,0.41329646,0.91022497};
-		aside[]={0.99972409,4.6256064e-006,-0.02802174};
+		pos[]={14670.471,46.751087,16686.949};
+		dir[]={0.00058760069,-0.99988449,0.015225526};
+		up[]={0.038559996,0.015154361,0.99914157};
+		aside[]={0.99925685,6.5483619e-011,-0.038564451};
 	};
 };
 binarizationWanted=0;
@@ -292,8 +292,9 @@ class AddonsMetaData
 		class Item32
 		{
 			className="acre_api";
-			name="acre_api";
-			author="ACRE2 Team";
+			name="ACRE2 - API";
+			author="ACRE2Team";
+			url="https://github.com/IDI-Systems/acre2";
 		};
 	};
 };
@@ -311,25 +312,6 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
 		{
 			property="RespawnTemplates";
 			expression="true";
@@ -362,6 +344,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
 				};
 			};
 		};
@@ -9315,7 +9316,7 @@ class Mission
 			{
 				position[]={14663,17.91,16689};
 			};
-			id=612;
+			id=618;
 			type="acre_api_basicMissionSetup";
 			class CustomAttributes
 			{
@@ -9443,7 +9444,7 @@ class Mission
 			{
 				position[]={14667,17.91,16689};
 			};
-			id=613;
+			id=619;
 			type="acre_api_DifficultySettings";
 			class CustomAttributes
 			{
@@ -9462,7 +9463,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -9481,7 +9482,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -9519,7 +9520,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -9533,7 +9534,7 @@ class Mission
 			{
 				position[]={14671,17.91,16689};
 			};
-			id=614;
+			id=620;
 			type="acre_api_nameChannels";
 			class CustomAttributes
 			{
