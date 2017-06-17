@@ -19,7 +19,7 @@ _unit = _this select 0;
 waitUntil {!(isNull _unit)};
 
 // Make sure addactions only appear to the player themselves.
-if !(local _unit_) exitWith {};
+if !(local _unit) exitWith {};
 
 _unit addAction ["Freecam", "zamf\debug\freecam.sqf"];
 _unit addAction ["Spectate", {["Initialize", [player, [], true]] call BIS_fnc_EGSpectator;}];
