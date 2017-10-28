@@ -61,13 +61,16 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ItemcTabHCam", 43];
 
 		_crate addBackpackCargoGlobal ["ACE_TacticalLadder_Pack", 16];
+		
+		_crate addItemCargoGlobal ["SMA_supp1BB_556", 40];
+		_crate addItemCargoGlobal ["sma_gemtech_one_blk", 20];
 
 	};
 
 	case "suppressors": {
 
-		_crate addItemCargoGlobal ["muzzle_snds_M", 20];
-		_crate addItemCargoGlobal ["muzzle_snds_L", 20];
+		_crate addItemCargoGlobal ["SMA_supp1BB_556", 40];
+		_crate addItemCargoGlobal ["sma_gemtech_one_blk", 20];
 
 	};
 
@@ -141,15 +144,14 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["ACE_M84", 4];
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 2];
+		_crate addWeaponCargoGlobal ["SMA_M4afg_SM", 2];
 
-		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 1];
-		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 1];
-		_crate addItemCargoGlobal ["acc_flashlight", 1];
-		_crate addItemCargoGlobal ["ACE_acc_pointer_green", 1];
-
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 12];
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 4];
+		_crate addItemCargoGlobal ["sma_spitfire_01_black", 2];
+		_crate addItemCargoGlobal ["sma_spitfire_03_rds_black", 2];
+		_crate addItemCargoGlobal ["SMA_SFPEQ_M4TOP_BLK", 2];
+		
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1", 12];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1_Tracer", 4];
 
 		// Launcher
 
@@ -192,7 +194,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_MapTools", 9];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 9];
 		_crate addItemCargoGlobal ["ACRE_PRC117F",1];
-		_crate addItemCargoGlobal ["ACRE_PRC152", 9];
+		_crate addItemCargoGlobal ["ACRE_PRC152", 11];
 		_crate addItemCargoGlobal ["ItemMicroDAGR", 6];
 		_crate addItemCargoGlobal ["ItemAndroid", 3];
 
@@ -211,22 +213,19 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["ACE_M84", 14];
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 5];
-		_crate addWeaponCargoGlobal ["CUP_lmg_m249_pip4", 2];
-		_crate addWeaponCargoGlobal ["arifle_SPAR_01_GL_blk_F", 2];
+		_crate addWeaponCargoGlobal ["SMA_M4afg_SM", 5];
+		_crate addWeaponCargoGlobal ["LMG_03_F", 2];
+		_crate addWeaponCargoGlobal ["SMA_M4_GL_SM", 2];
 
-		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 5];
-		_crate addItemCargoGlobal ["optic_ERCO_blk_F", 4];
+		_crate addItemCargoGlobal ["sma_spitfire_01_black", 9];
+		_crate addItemCargoGlobal ["sma_spitfire_03_rds_black", 9];
 
-		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 9];
-		_crate addItemCargoGlobal ["acc_flashlight", 9];
-		_crate addItemCargoGlobal ["ACE_acc_pointer_green", 9];
+		_crate addItemCargoGlobal ["SMA_SFPEQ_M4TOP_BLK", 7];
+		_crate addItemCargoGlobal ["SMA_ANPEQ15_BLK", 2];
 
-		_crate addItemCargoGlobal ["bipod_01_F_blk", 2];
-
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 66];
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 16];
-		_crate addMagazineCargoGlobal ["CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 11];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1", 66];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1_Tracer", 16];
+		_crate addMagazineCargoGlobal ["200Rnd_556x45_Box_Red_F", 16];
 
 		_crate addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell", 36];
 		_crate addMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell", 8];
@@ -246,12 +245,12 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_RangeCard", 1];
 
 		// Launcher
-		_crate addWeaponCargoGlobal ["CUP_launch_M136", 2];
-		_crate addWeaponCargoGlobal ["CUP_launch_Mk153Mod0", 2];
-		_crate addItemCargoGlobal ["CUP_optic_SMAW_Scope", 2];
-		_crate addMagazineCargoGlobal ["CUP_SMAW_HEAA_M", 7];
-		_crate addMagazineCargoGlobal ["CUP_SMAW_HEDP_M", 7];
-		_crate addMagazineCargoGlobal ["CUP_SMAW_Spotting", 4];
+		_crate addWeaponCargoGlobal ["tf47_at4_heat", 2];
+		_crate addWeaponCargoGlobal ["tf47_smaw_green", 2];
+		_crate addItemCargoGlobal ["tf47_optic_smaw", 2];
+		_crate addMagazineCargoGlobal ["tf47_smaw_HEAA", 7];
+		_crate addMagazineCargoGlobal ["tf47_smaw_HEDP", 7];
+		_crate addMagazineCargoGlobal ["tf47_smaw_SR", 4];
 
 		// Sidearm
 		_crate addWeaponCargoGlobal ["hgun_P07_F", 9];
@@ -302,9 +301,9 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["ACE_M84", 14];
 
 		// Primary Weapon
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 56];
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 14];
-		_crate addMagazineCargoGlobal ["CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 12];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1", 56];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1_Tracer", 14];
+		_crate addMagazineCargoGlobal ["200Rnd_556x45_Box_Red_F", 12];
 
 		_crate addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell", 36];
 		_crate addMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell", 8];
@@ -315,10 +314,10 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["20Rnd_762x51_Mag", 8];
 
 		// Launcher
-		_crate addWeaponCargoGlobal ["CUP_launch_M136", 2];
-		_crate addMagazineCargoGlobal ["CUP_SMAW_HEAA_M", 7];
-		_crate addMagazineCargoGlobal ["CUP_SMAW_HEDP_M", 7];
-		_crate addMagazineCargoGlobal ["CUP_SMAW_Spotting", 4];
+		_crate addWeaponCargoGlobal ["tf47_at4_heat", 2];
+		_crate addMagazineCargoGlobal ["tf47_smaw_HEAA", 7];
+		_crate addMagazineCargoGlobal ["tf47_smaw_HEDP", 7];
+		_crate addMagazineCargoGlobal ["tf47_smaw_SR", 4];
 
 		// Sidearm
 		_crate addMagazineCargoGlobal ["16Rnd_9x21_Mag", 40];
@@ -352,7 +351,7 @@ switch (_loadout) do {
 		// Navigation\tracking\communication
 		_crate addItemCargoGlobal ["ACE_MapTools", 10];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 10];
-		_crate addItemCargoGlobal ["ACRE_PRC152", 10];
+		_crate addItemCargoGlobal ["ACRE_PRC152", 12];
 		_crate addItemCargoGlobal ["ACRE_PRC117F",1];
 		_crate addItemCargoGlobal ["ItemMicroDAGR", 5];
 		_crate addItemCargoGlobal ["ItemAndroid", 5];
@@ -372,17 +371,17 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["ACE_M84", 20];
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 8];
-		_crate addWeaponCargoGlobal ["arifle_SPAR_01_GL_blk_F", 1];
+		_crate addWeaponCargoGlobal ["SMA_M4afg_SM", 8];
+		_crate addWeaponCargoGlobal ["SMA_M4_GL_SM", 1];
 
-		_crate addItemCargoGlobal ["optic_ERCO_blk_F", 4];
-		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 5];
-		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 9];
+		_crate addItemCargoGlobal ["sma_spitfire_03_rds_black", 10];
+		_crate addItemCargoGlobal ["sma_spitfire_01_black", 10];
+		_crate addItemCargoGlobal ["SMA_SFPEQ_M4TOP_BLK", 9];
 		_crate addItemCargoGlobal ["acc_flashlight", 9];
 		_crate addItemCargoGlobal ["ACE_acc_pointer_green", 9];
 
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 60];
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 14];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1", 60];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1_Tracer", 14];
 
 		_crate addWeaponCargoGlobal ["CUP_lmg_M240", 2];
 		_crate addItemCargoGlobal ["CUP_optic_ElcanM145", 2];
@@ -405,6 +404,13 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["CUP_Stinger_M", 3];
 		_crate addWeaponCargoGlobal ["CUP_launch_Javelin", 1];
 		_crate addMagazineCargoGlobal ["CUP_Javelin_M", 3];
+		_crate addWeaponCargoGlobal ["tf47_m3maaws", 1];
+		_crate addItemCargoGlobal ["tf47_optic_m3maaws", 1];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_HEAT", 4];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_HEDP", 4];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_HE", 4];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_SMOKE", 4];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_ILLUM", 4];
 
 		// Sidearm
 		_crate addWeaponCargoGlobal ["hgun_P07_F", 10];
@@ -458,14 +464,19 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["ACE_M84", 20];
 
 		// Primary Weapon
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 60];
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 14];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1", 60];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1_Tracer", 14];
 		_crate addMagazineCargoGlobal ["CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 22];
 		_crate addMagazineCargoGlobal ["20Rnd_762x51_Mag", 8];
 
 		// Launcher
 		_crate addMagazineCargoGlobal ["CUP_Stinger_M", 3];
 		_crate addMagazineCargoGlobal ["CUP_Javelin_M", 3];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_HEAT", 4];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_HEDP", 4];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_HE", 4];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_SMOKE", 4];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_ILLUM", 4];
 
 		// Sidearm
 		_crate addMagazineCargoGlobal ["16Rnd_9x21_Mag", 44];
@@ -503,7 +514,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_MapTools", 3];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 3];
 		_crate addItemCargoGlobal ["ACRE_PRC117F",2];
-		_crate addItemCargoGlobal ["ACRE_PRC152", 3];
+		_crate addItemCargoGlobal ["ACRE_PRC152", 5];
 		_crate addItemCargoGlobal ["ItemcTab", 2];
 		_crate addItemCargoGlobal ["ItemAndroid", 1];
 
@@ -522,17 +533,18 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["ACE_M84", 6];
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["arifle_SPAR_01_GL_blk_F", 1];
-		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 2];
+		_crate addWeaponCargoGlobal ["SMA_M4_GL_SM", 1];
+		_crate addWeaponCargoGlobal ["SMA_M4afg_SM", 2];
 
-		_crate addItemCargoGlobal ["optic_ERCO_blk_F", 3];
+		_crate addItemCargoGlobal ["sma_spitfire_03_rds_black", 3];
+		_crate addItemCargoGlobal ["sma_spitfire_01_black", 3];
 
-		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 3];
+		_crate addItemCargoGlobal ["SMA_SFPEQ_M4TOP_BLK", 3];
 		_crate addItemCargoGlobal ["acc_flashlight", 3];
 		_crate addItemCargoGlobal ["ACE_acc_pointer_green", 3];
 
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 18];
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 6];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1", 18];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1_Tracer", 6];
 
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeRed_Grenade_shell", 4];
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeBlue_Grenade_shell", 4];
@@ -612,15 +624,17 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["ACE_M84", 10];
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 5];
+		_crate addWeaponCargoGlobal ["SMA_M4afg_SM", 5];
 
-		_crate addItemCargoGlobal ["CUP_optic_HoloBlack", 5];
-		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 5];
+		_crate addItemCargoGlobal ["sma_spitfire_03_rds_black", 5];
+		_crate addItemCargoGlobal ["sma_spitfire_01_black", 5];
+		
+		_crate addItemCargoGlobal ["SMA_SFPEQ_M4TOP_BLK", 5];
 		_crate addItemCargoGlobal ["acc_flashlight", 5];
 		_crate addItemCargoGlobal ["ACE_acc_pointer_green", 5];
 
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 25];
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 5];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1", 25];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1_Tracer", 5];
 
 		// Sidearm
 		_crate addWeaponCargoGlobal ["hgun_P07_F", 5];
@@ -669,8 +683,8 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["ACE_M84", 10];
 
 		// Primary Weapon
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 25];
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 5];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1", 25];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1_Tracer", 5];
 
 		// Sidearm
 		_crate addMagazineCargoGlobal ["16Rnd_9x21_Mag", 20];
@@ -717,9 +731,9 @@ switch (_loadout) do {
 
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 3];
+		_crate addWeaponCargoGlobal ["SMA_M4afg_SM", 3];
 
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 15];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1", 15];
 
 
 		// Launcher
@@ -758,7 +772,7 @@ switch (_loadout) do {
 		// Navigation\tracking\communication
 		_crate addItemCargoGlobal ["ACE_MapTools", 1];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 1];
-		_crate addItemCargoGlobal ["ACRE_PRC152", 1];
+		_crate addItemCargoGlobal ["ACRE_PRC152", 2];
 		_crate addItemCargoGlobal ["ACRE_PRC117F", 1];
 		_crate addItemCargoGlobal ["ItemGPS", 1];
 
@@ -813,7 +827,7 @@ switch (_loadout) do {
 		// Navigation\tracking\communication
 		_crate addItemCargoGlobal ["ACE_MapTools", 3];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 3];
-		_crate addItemCargoGlobal ["ACRE_PRC152", 3];
+		_crate addItemCargoGlobal ["ACRE_PRC152", 6];
 		_crate addItemCargoGlobal ["ACRE_PRC117F", 3];
 		_crate addItemCargoGlobal ["ItemGPS", 3];
 
@@ -831,9 +845,9 @@ switch (_loadout) do {
 
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["arifle_SPAR_01_blk_F", 3];
+		_crate addWeaponCargoGlobal ["SMA_M4afg_SM", 3];
 
-		_crate addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 15];
+		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1", 15];
 
 
 		// Launcher
@@ -970,5 +984,6 @@ switch (_loadout) do {
 
 		this addBackpack "ACE_NonSteerableParachute";
 		this linkItem "ACE_Altimeter";
+		
 
 */
