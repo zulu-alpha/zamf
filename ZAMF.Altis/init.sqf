@@ -17,4 +17,35 @@
 
 ] call ZAMF_fnc_zamf_init;
 
+// ACRE
+["ACRE_PRC152", "default", 1, "label", "DRAGON"] call acre_api_fnc_setPresetChannelField;
+["ACRE_PRC117F", "default", 1, "label", "DRAGON"] call acre_api_fnc_setPresetChannelField;
+
+["ACRE_PRC152", "default", 2, "label", "DRAGON-1"] call acre_api_fnc_setPresetChannelField;
+["ACRE_PRC117F", "default", 2, "label", "DRAGON-1"] call acre_api_fnc_setPresetChannelField;
+
+["ACRE_PRC152", "default", 3, "label", "DRAGON-2"] call acre_api_fnc_setPresetChannelField;
+["ACRE_PRC117F", "default", 3, "label", "DRAGON-2"] call acre_api_fnc_setPresetChannelField;
+
+["ACRE_PRC152", "default", 4, "label", "DRAGON-3"] call acre_api_fnc_setPresetChannelField;
+["ACRE_PRC117F", "default", 4, "label", "DRAGON-3"] call acre_api_fnc_setPresetChannelField;
+
+["ACRE_PRC152", "default", 5, "label", "DRAGON-4"] call acre_api_fnc_setPresetChannelField;
+["ACRE_PRC117F", "default", 5, "label", "DRAGON-4"] call acre_api_fnc_setPresetChannelField;
+
+["ACRE_PRC152", "default", 6, "label", "DRAGON-5"] call acre_api_fnc_setPresetChannelField;
+["ACRE_PRC117F", "default", 6, "label", "DRAGON-5"] call acre_api_fnc_setPresetChannelField;
+
+["ACRE_PRC152", "default", 7, "label", "BADGER"] call acre_api_fnc_setPresetChannelField;
+["ACRE_PRC117F", "default", 7, "label", "BADGER"] call acre_api_fnc_setPresetChannelField;
+
+["ACRE_PRC152", "default", 8, "label", "LOGISTICS"] call acre_api_fnc_setPresetChannelField;
+["ACRE_PRC117F", "default", 8, "label", "LOGISTICS"] call acre_api_fnc_setPresetChannelField;
+
+["ACRE_PRC152", "default", 9, "label", "CAS"] call acre_api_fnc_setPresetChannelField;
+["ACRE_PRC117F", "default", 9, "label", "CAS"] call acre_api_fnc_setPresetChannelField;
+
+["ACRE_PRC152", "default", 10, "label", "FIRES"] call acre_api_fnc_setPresetChannelField;
+["ACRE_PRC117F", "default", 10, "label", "FIRES"] call acre_api_fnc_setPresetChannelField;
+
 //// Youre code here
