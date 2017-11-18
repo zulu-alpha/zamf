@@ -61,9 +61,6 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ItemcTabHCam", 43];
 
 		_crate addBackpackCargoGlobal ["ACE_TacticalLadder_Pack", 16];
-		
-		_crate addItemCargoGlobal ["SMA_supp1BB_556", 40];
-		_crate addItemCargoGlobal ["sma_gemtech_one_blk", 20];
 
 	};
 
@@ -72,6 +69,13 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["SMA_supp1BB_556", 40];
 		_crate addItemCargoGlobal ["sma_gemtech_one_blk", 20];
 
+	};
+	
+	case "surveillance": {
+
+		_crate addBackpackCargoGlobal ["B_UAV_01_backpack_F", 1];
+		_crate addItemCargoGlobal ["ACE_UAVBattery", 5];
+		
 	};
 
 	case "med": { // To be removed
@@ -195,7 +199,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 9];
 		_crate addItemCargoGlobal ["ACRE_PRC117F",1];
 		_crate addItemCargoGlobal ["ACRE_PRC152", 11];
-		_crate addItemCargoGlobal ["ItemMicroDAGR", 6];
+		//_crate addItemCargoGlobal ["ItemMicroDAGR", 6];
 		_crate addItemCargoGlobal ["ItemAndroid", 3];
 
 		// Signalling
@@ -233,24 +237,26 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeBlue_Grenade_shell", 4];
 		_crate addMagazineCargoGlobal ["UGL_FlareCIR_F", 12];
 
-		_crate addWeaponCargoGlobal ["srifle_EBR_F", 1];
-		_crate addItemCargoGlobal ["optic_SOS", 1];
-		_crate addItemCargoGlobal ["optic_NVS", 1];
-		//_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 1];
+		_crate addWeaponCargoGlobal ["SMA_Mk17_16_black", 1];
+		_crate addItemCargoGlobal ["SMA_ELCAN_SPECTER_RDS", 1];
+		_crate addItemCargoGlobal ["CUP_optic_AN_PVS_10", 1];
+		_crate addItemCargoGlobal ["SMA_ANPEQ15_BLK", 1];
 		_crate addItemCargoGlobal ["bipod_01_F_blk", 1];
-		_crate addItemCargoGlobal ["muzzle_snds_B", 1];
-		_crate addMagazineCargoGlobal ["20Rnd_762x51_Mag", 8];
+		_crate addItemCargoGlobal ["SMA_supp_762", 1];
+		_crate addMagazineCargoGlobal ["SMA_20Rnd_762x51mm_Mk316_Mod_0_Special_Long_Range", 10];
 		_crate addItemCargoGlobal ["ACE_Tripod", 1];
 		_crate addItemCargoGlobal ["ACE_Kestrel4500", 1];
 		_crate addItemCargoGlobal ["ACE_RangeCard", 1];
 
 		// Launcher
 		_crate addWeaponCargoGlobal ["tf47_at4_heat", 2];
-		_crate addWeaponCargoGlobal ["tf47_smaw_green", 2];
-		_crate addItemCargoGlobal ["tf47_optic_smaw", 2];
-		_crate addMagazineCargoGlobal ["tf47_smaw_HEAA", 7];
-		_crate addMagazineCargoGlobal ["tf47_smaw_HEDP", 7];
-		_crate addMagazineCargoGlobal ["tf47_smaw_SR", 4];
+		_crate addWeaponCargoGlobal ["tf47_m3maaws", 2];
+		_crate addItemCargoGlobal ["tf47_optic_m3maaws", 2];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_HEAT", 6];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_HEDP", 6];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_HE", 6];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_SMOKE", 6];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_ILLUM", 6];
 
 		// Sidearm
 		_crate addWeaponCargoGlobal ["hgun_P07_F", 9];
@@ -258,8 +264,8 @@ switch (_loadout) do {
 
 		// Misc Equipment
 		_crate addItemCargoGlobal ["ACE_CableTie", 36];
-		_crate addItemCargoGlobal ["ACE_HuntIR_monitor", 1];
-		_crate addItemCargoGlobal ["ACE_HuntIR_M203", 2];
+		//_crate addItemCargoGlobal ["ACE_HuntIR_monitor", 1];
+		//_crate addItemCargoGlobal ["ACE_HuntIR_M203", 2];
 
 		// Marking
 		_crate addWeaponCargoGlobal ["Laserdesignator", 1];
@@ -311,20 +317,22 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeBlue_Grenade_shell", 4];
 		_crate addMagazineCargoGlobal ["UGL_FlareCIR_F", 12];
 
-		_crate addMagazineCargoGlobal ["20Rnd_762x51_Mag", 8];
+		_crate addMagazineCargoGlobal ["SMA_20Rnd_762x51mm_Mk316_Mod_0_Special_Long_Range", 10];
 
 		// Launcher
 		_crate addWeaponCargoGlobal ["tf47_at4_heat", 2];
-		_crate addMagazineCargoGlobal ["tf47_smaw_HEAA", 7];
-		_crate addMagazineCargoGlobal ["tf47_smaw_HEDP", 7];
-		_crate addMagazineCargoGlobal ["tf47_smaw_SR", 4];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_HEAT", 6];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_HEDP", 6];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_HE", 6];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_SMOKE", 6];
+		_crate addMagazineCargoGlobal ["tf47_m3maaws_ILLUM", 6];
 
 		// Sidearm
 		_crate addMagazineCargoGlobal ["16Rnd_9x21_Mag", 40];
 
 		// Misc Equipment
 		_crate addItemCargoGlobal ["ACE_CableTie", 36];
-		_crate addItemCargoGlobal ["ACE_HuntIR_M203", 2];
+		//_crate addItemCargoGlobal ["ACE_HuntIR_M203", 2];
 
 		// Marking
 		_crate addMagazineCargoGlobal ["Laserbatteries", 1];
@@ -353,7 +361,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 10];
 		_crate addItemCargoGlobal ["ACRE_PRC152", 12];
 		_crate addItemCargoGlobal ["ACRE_PRC117F",1];
-		_crate addItemCargoGlobal ["ItemMicroDAGR", 5];
+		//_crate addItemCargoGlobal ["ItemMicroDAGR", 5];
 		_crate addItemCargoGlobal ["ItemAndroid", 5];
 
 		// Signalling
@@ -384,17 +392,17 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["SMA_30Rnd_556x45_M855A1_Tracer", 14];
 
 		_crate addWeaponCargoGlobal ["CUP_lmg_M240", 2];
-		_crate addItemCargoGlobal ["CUP_optic_ElcanM145", 2];
+		_crate addItemCargoGlobal ["SMA_ELCAN_SPECTER_RDS", 2];
 		_crate addMagazineCargoGlobal ["CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 22];
 		_crate addItemCargoGlobal ["ACE_SpareBarrel", 2];
 
-		_crate addWeaponCargoGlobal ["srifle_EBR_F", 1];
-		_crate addItemCargoGlobal ["optic_SOS", 1];
-		_crate addItemCargoGlobal ["optic_NVS", 1];
-		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 1];
+		_crate addWeaponCargoGlobal ["SMA_Mk17_16_black", 1];
+		_crate addItemCargoGlobal ["SMA_ELCAN_SPECTER_RDS", 1];
+		_crate addItemCargoGlobal ["CUP_optic_AN_PVS_10", 1];
+		_crate addItemCargoGlobal ["SMA_ANPEQ15_BLK", 1];
 		_crate addItemCargoGlobal ["bipod_01_F_blk", 1];
-		_crate addItemCargoGlobal ["muzzle_snds_B", 1];
-		_crate addMagazineCargoGlobal ["20Rnd_762x51_Mag", 8];
+		_crate addItemCargoGlobal ["SMA_supp_762", 1];
+		_crate addMagazineCargoGlobal ["SMA_20Rnd_762x51mm_Mk316_Mod_0_Special_Long_Range", 10];
 		_crate addItemCargoGlobal ["ACE_Tripod", 1];
 		_crate addItemCargoGlobal ["ACE_Kestrel4500", 1];
 		_crate addItemCargoGlobal ["ACE_RangeCard", 1];
@@ -418,8 +426,8 @@ switch (_loadout) do {
 
 		// Misc Equipment
 		_crate addItemCargoGlobal ["ACE_CableTie", 40];
-		_crate addItemCargoGlobal ["ACE_HuntIR_monitor", 1];
-		_crate addItemCargoGlobal ["ACE_HuntIR_M203", 2];
+		//_crate addItemCargoGlobal ["ACE_HuntIR_monitor", 1];
+		//_crate addItemCargoGlobal ["ACE_HuntIR_M203", 2];
 
 		// Marking
 
@@ -483,7 +491,7 @@ switch (_loadout) do {
 
 		// Misc Equipment
 		_crate addItemCargoGlobal ["ACE_CableTie", 40];
-		_crate addItemCargoGlobal ["ACE_HuntIR_M203", 2];
+		//_crate addItemCargoGlobal ["ACE_HuntIR_M203", 2];
 
 		// Marking
 
@@ -549,6 +557,9 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeRed_Grenade_shell", 4];
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeBlue_Grenade_shell", 4];
 		_crate addMagazineCargoGlobal ["UGL_FlareCIR_F", 6];
+		_crate addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell", 8];
+		_crate addMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell", 8];
+		_crate addMagazineCargoGlobal ["UGL_FlareCIR_F", 12];
 
 		_crate addWeaponCargoGlobal ["srifle_EBR_F", 1];
 		_crate addItemCargoGlobal ["optic_SOS", 1];
@@ -572,16 +583,15 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_CableTie", 12];
 		_crate addItemCargoGlobal ["B_UavTerminal", 2];
 		_crate addItemCargoGlobal ["ALIVE_Tablet", 1];
-		_crate addItemCargoGlobal ["ACE_HuntIR_monitor", 1];
-		_crate addItemCargoGlobal ["ACE_HuntIR_M203", 2];
+		//_crate addItemCargoGlobal ["ACE_HuntIR_monitor", 1];
+		//_crate addItemCargoGlobal ["ACE_HuntIR_M203", 2];
 
 		// Marking
 		_crate addWeaponCargoGlobal ["Laserdesignator", 1];
 		_crate addMagazineCargoGlobal ["Laserbatteries", 1];
 
 		// UAV
-		_crate addBackpackCargoGlobal ["B_UAV_01_backpack_F", 1];
-		_crate addItemCargoGlobal ["ACE_UAVBattery", 5];
+
 
 		// Mortar
 		_crate addBackpackCargoGlobal ["B_Mortar_01_support_F", 1];
