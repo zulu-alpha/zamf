@@ -15,16 +15,11 @@
 		(NUL)
 */
 
-private ["_crate", "_gear", "_nam", "_restrict", "_check", "_crate_name", "_player_gid"];
-
-_crate = _this select 0;
-_gear = _this select 1;
-_nam = _this select 2;
-_restrict = _this select 3;
+params ["_crate", "_gear", "_name", "_restrict"];
 
 
 [_crate, _gear] spawn zamf_fnc_crates;
-[_crate, true, _nam] call ZAM_fnc_showNames_addDiscoverable;
+[_crate, true, _name] call ZAM_fnc_showNames_addDiscoverable;
 
 // Add option to save loadout for respawn
 // Only add it if the right crate (not strictly necessary)
@@ -54,6 +49,9 @@ _crate addAction [
 
 // Apply restriction
 if (_restrict) then {
+	// Don't rely on ZAMF Shownames for crate access.
+	_crate setVariable ["group_name_restriction", _name];
+
 	_crate addEventHandler ["ContainerOpened", {
 
 		private ["_crate", "_player", "_crate_name", "_player_gid"];
@@ -61,7 +59,7 @@ if (_restrict) then {
 		_crate = _this select 0;
 		_player = _this select 1;
 
-		_crate_name = _crate getVariable ["zam_showNames_name", ""];
+		_crate_name = _crate getVariable ["group_name_restriction", ""];
 		_player_gid = groupId (group _player);
 
 		if (_crate_name != _player_gid) then {
