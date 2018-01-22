@@ -305,25 +305,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -355,6 +336,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
 				};
 			};
 		};
@@ -3045,8 +3045,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ace_weather_ModuleSettings_useACEWeather";
-					expression="_this setVariable ['useACEWeather',_value,true];";
+					property="ace_weather_ModuleSettings_enabled";
+					expression="_this setVariable ['enabled',_value,true];";
 					class Value
 					{
 						class data
@@ -3064,8 +3064,27 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="ace_weather_ModuleSettings_serverUpdateInterval";
-					expression="_this setVariable ['serverUpdateInterval',_value,true];";
+					property="ace_weather_ModuleSettings_windSimulation";
+					expression="_this setVariable ['windSimulation',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_weather_ModuleSettings_updateInterval";
+					expression="_this setVariable ['updateInterval',_value,true];";
 					class Value
 					{
 						class data
@@ -3081,64 +3100,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="ace_weather_ModuleSettings_syncMisc";
-					expression="_this setVariable ['syncMisc',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_weather_ModuleSettings_syncWind";
-					expression="_this setVariable ['syncWind',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ace_weather_ModuleSettings_enableServerController";
-					expression="_this setVariable ['enableServerController',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=5;
+				nAttributes=3;
 			};
 		};
 		class Item26
@@ -3154,8 +3116,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ace_advanced_ballistics_ModuleSettings_simulationRadius";
-					expression="_this setVariable ['simulationRadius',_value,true];";
+					property="ace_advanced_ballistics_ModuleSettings_bulletTraceEnabled";
+					expression="_this setVariable ['bulletTraceEnabled',_value,true];";
 					class Value
 					{
 						class data
@@ -3164,17 +3126,17 @@ class Mission
 							{
 								type[]=
 								{
-									"SCALAR"
+									"BOOL"
 								};
 							};
-							value=2000;
+							value=1;
 						};
 					};
 				};
 				class Attribute1
 				{
-					property="ace_advanced_ballistics_ModuleSettings_barrelLengthInfluenceEnabled";
-					expression="_this setVariable ['barrelLengthInfluenceEnabled',_value,true];";
+					property="ace_advanced_ballistics_ModuleSettings_enabled";
+					expression="_this setVariable ['enabled',_value,true];";
 					class Value
 					{
 						class data
@@ -3192,8 +3154,8 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="ace_advanced_ballistics_ModuleSettings_bulletTraceEnabled";
-					expression="_this setVariable ['bulletTraceEnabled',_value,true];";
+					property="ace_advanced_ballistics_ModuleSettings_barrelLengthInfluenceEnabled";
+					expression="_this setVariable ['barrelLengthInfluenceEnabled',_value,true];";
 					class Value
 					{
 						class data
@@ -3230,46 +3192,8 @@ class Mission
 				};
 				class Attribute4
 				{
-					property="ace_advanced_ballistics_ModuleSettings_disabledInFullAutoMode";
-					expression="_this setVariable ['disabledInFullAutoMode',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ace_advanced_ballistics_ModuleSettings_simulateForEveryone";
-					expression="_this setVariable ['simulateForEveryone',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="ace_advanced_ballistics_ModuleSettings_simulateForSnipers";
-					expression="_this setVariable ['simulateForSnipers',_value,true];";
+					property="ace_advanced_ballistics_ModuleSettings_muzzleVelocityVariationEnabled";
+					expression="_this setVariable ['muzzleVelocityVariationEnabled',_value,true];";
 					class Value
 					{
 						class data
@@ -3285,26 +3209,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute7
-				{
-					property="ace_advanced_ballistics_ModuleSettings_simulateForGroupMembers";
-					expression="_this setVariable ['simulateForGroupMembers',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute8
+				class Attribute5
 				{
 					property="ace_advanced_ballistics_ModuleSettings_ammoTemperatureEnabled";
 					expression="_this setVariable ['ammoTemperatureEnabled',_value,true];";
@@ -3323,26 +3228,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute9
-				{
-					property="ace_advanced_ballistics_ModuleSettings_enabled";
-					expression="_this setVariable ['enabled',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=10;
+				nAttributes=6;
 			};
 		};
 		class Item27
@@ -3396,25 +3282,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="ace_winddeflection_ModuleSettings_simulationRadius";
-					expression="_this setVariable ['simulationRadius',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3000;
-						};
-					};
-				};
-				class Attribute3
-				{
 					property="ace_winddeflection_ModuleSettings_vehicleEnabled";
 					expression="_this setVariable ['vehicleEnabled',_value,true];";
 					class Value
@@ -3432,7 +3299,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item28
