@@ -46,12 +46,15 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_EntrenchingTool", 10];
 		_crate addItemCargoGlobal ["ACE_Flashlight_XL50", 43];
 
-		_crate addItemCargoGlobal ["ACE_NVG_Wide", 37];
+		//_crate addItemCargoGlobal ["ACE_NVG_Wide", 37];
 
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 20];
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Green", 20];
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_Red", 20];
 		_crate addMagazineCargoGlobal ["ACE_HandFlare_White", 20];
+		_crate addMagazineCargoGlobal ["Chemlight_blue", 50];
+		_crate addMagazineCargoGlobal ["Chemlight_green", 50];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_IR", 50];
 
 		_crate addItemCargoGlobal ["ACE_SpraypaintGreen", 10];
 		_crate addItemCargoGlobal ["ACE_SpraypaintRed", 10];
@@ -136,10 +139,10 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["SmokeShellGreen", 4];
 		_crate addMagazineCargoGlobal ["SmokeShellBlue", 4];
 		_crate addMagazineCargoGlobal ["SmokeShellRed", 2];
-		_crate addMagazineCargoGlobal ["Chemlight_blue", 4];
-		_crate addMagazineCargoGlobal ["Chemlight_green", 4];
-		_crate addMagazineCargoGlobal ["Chemlight_red", 24];
-		_crate addMagazineCargoGlobal ["Chemlight_yellow", 8];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiWhite", 4];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiOrange", 4];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiRed", 24];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiYellow", 8];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 2];
 		_crate addMagazineCargoGlobal ["B_IR_Grenade", 2];
 
@@ -207,8 +210,8 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["SmokeShellGreen", 18];
 		_crate addMagazineCargoGlobal ["SmokeShellBlue", 18];
 		_crate addMagazineCargoGlobal ["SmokeShellRed", 18];
-		_crate addMagazineCargoGlobal ["Chemlight_blue", 18];
-		_crate addMagazineCargoGlobal ["Chemlight_green", 18];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiWhite", 18];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiOrange", 18];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 9];
 		_crate addMagazineCargoGlobal ["B_IR_Grenade", 9];
 
@@ -297,8 +300,8 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["SmokeShellGreen", 18];
 		_crate addMagazineCargoGlobal ["SmokeShellBlue", 18];
 		_crate addMagazineCargoGlobal ["SmokeShellRed", 18];
-		_crate addMagazineCargoGlobal ["Chemlight_blue", 18];
-		_crate addMagazineCargoGlobal ["Chemlight_green", 18];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiOrange", 18];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiWhite", 18];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 9];
 		_crate addMagazineCargoGlobal ["B_IR_Grenade", 9];
 
@@ -369,8 +372,8 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["SmokeShellGreen", 20];
 		_crate addMagazineCargoGlobal ["SmokeShellBlue", 20];
 		_crate addMagazineCargoGlobal ["SmokeShellRed", 20];
-		_crate addMagazineCargoGlobal ["Chemlight_blue", 20];
-		_crate addMagazineCargoGlobal ["Chemlight_green", 20];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiOrange", 20];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiWhite", 20];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 10];
 		_crate addMagazineCargoGlobal ["B_IR_Grenade", 10];
 
@@ -462,8 +465,8 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["SmokeShellGreen", 20];
 		_crate addMagazineCargoGlobal ["SmokeShellBlue", 20];
 		_crate addMagazineCargoGlobal ["SmokeShellRed", 20];
-		_crate addMagazineCargoGlobal ["Chemlight_blue", 20];
-		_crate addMagazineCargoGlobal ["Chemlight_green", 20];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiWhite", 20];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiOrange", 20];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 10];
 		_crate addMagazineCargoGlobal ["B_IR_Grenade", 10];
 
@@ -531,8 +534,8 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["SmokeShellGreen", 6];
 		_crate addMagazineCargoGlobal ["SmokeShellBlue", 6];
 		_crate addMagazineCargoGlobal ["SmokeShellRed", 6];
-		_crate addMagazineCargoGlobal ["Chemlight_blue", 6];
-		_crate addMagazineCargoGlobal ["Chemlight_green", 6];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiWhite", 6];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiOrange", 6];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 3];
 		_crate addMagazineCargoGlobal ["B_IR_Grenade", 3];
 
@@ -624,8 +627,8 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["SmokeShellGreen", 20];
 		_crate addMagazineCargoGlobal ["SmokeShellBlue", 10];
 		_crate addMagazineCargoGlobal ["SmokeShellRed", 10];
-		_crate addMagazineCargoGlobal ["Chemlight_blue", 10];
-		_crate addMagazineCargoGlobal ["Chemlight_green", 10];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiOrange", 10];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiWhite", 10];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 5];
 		_crate addMagazineCargoGlobal ["B_IR_Grenade", 5];
 
@@ -683,8 +686,8 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["SmokeShellGreen", 20];
 		_crate addMagazineCargoGlobal ["SmokeShellBlue", 10];
 		_crate addMagazineCargoGlobal ["SmokeShellRed", 10];
-		_crate addMagazineCargoGlobal ["Chemlight_blue", 10];
-		_crate addMagazineCargoGlobal ["Chemlight_green", 10];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiOrange", 10];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiWhite", 10];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 5];
 		_crate addMagazineCargoGlobal ["B_IR_Grenade", 5];
 
@@ -732,8 +735,8 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["SmokeShellGreen", 6];
 		_crate addMagazineCargoGlobal ["SmokeShellBlue", 6];
 		_crate addMagazineCargoGlobal ["SmokeShellRed", 6];
-		_crate addMagazineCargoGlobal ["Chemlight_blue", 6];
-		_crate addMagazineCargoGlobal ["Chemlight_green", 6];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiWhite", 6];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiOrange", 6];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 3];
 		_crate addMagazineCargoGlobal ["B_IR_Grenade", 3];
 
@@ -790,8 +793,8 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["SmokeShell", 1];
 		_crate addMagazineCargoGlobal ["SmokeShellGreen", 1];
 		_crate addMagazineCargoGlobal ["SmokeShellBlue", 1];
-		_crate addMagazineCargoGlobal ["Chemlight_blue", 1];
-		_crate addMagazineCargoGlobal ["Chemlight_green", 1];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiWhite", 1];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiOrange", 1];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 1];
 		_crate addMagazineCargoGlobal ["B_IR_Grenade", 1];
 
@@ -846,8 +849,8 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["SmokeShellGreen", 6];
 		_crate addMagazineCargoGlobal ["SmokeShellBlue", 6];
 		_crate addMagazineCargoGlobal ["SmokeShellRed", 6];
-		_crate addMagazineCargoGlobal ["Chemlight_blue", 6];
-		_crate addMagazineCargoGlobal ["Chemlight_green", 6];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiWhite", 6];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiOrange", 6];
 		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 3];
 		_crate addMagazineCargoGlobal ["B_IR_Grenade", 3];
 
