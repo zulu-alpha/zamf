@@ -12,7 +12,8 @@
 "tfar_config",               // ZA Specific config settings for TFAR, such as disabling auto microdagr and backpack radios.
 "mcc_limit",                 // Limit MCC to Admins.
 "zam_res",                   // Enable ZAM Resume
-"disable_chat_channels"      // Disables chat channels. Used here instead of description to allow them in map screen.
+"disable_chat_channels",     // Disables chat channels. Used here instead of description to allow them in map screen.
+"vcom"                       // Enables VCOM AI.
 
 ] call ZAMF_fnc_zamf_init;
 

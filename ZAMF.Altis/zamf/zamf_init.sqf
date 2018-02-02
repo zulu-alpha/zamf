@@ -13,7 +13,8 @@
 "mcc_limit",                 // Limit MCC to Admins.
 "zeusify",                   // Make sure that all units are detected by zeus.
 "zam_res",                   // Enable ZAM Resume
-"disable_chat_channels"      // Disables chat channels. Used here instead of description to allow them in map screen.
+"disable_chat_channels",     // Disables chat channels. Used here instead of description to allow them in map screen.
+"vcom"                       // Enables VCOM AI.
 
 ] call ZAMF_fnc_zamf_init;
 */
@@ -92,6 +93,8 @@ if ("mcc_limit" in _input) then {MCC_allowedPlayers = [];};
 
 // Don't show ranks
 ZAM_showNames_ranks = false;
+
+if ("vcom" in _input) then {[] execVM "VCOMAI\init.sqf"};
 
 // Finish world initialization before mission is launched.
 finishMissionInit;
