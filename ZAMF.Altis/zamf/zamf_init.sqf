@@ -10,8 +10,7 @@
 //"leave_group",             // Makes the player leave whatever group he/she starts in and join a new one alone.
 "spectate_on_death",         // As soon as a player dies, he/she spectates (even if respawn is enabled).
 "zam_res",                   // Enable ZAM Resume
-"disable_chat_channels",     // Disables chat channels. Used here instead of description to allow them in map screen.
-"vcom"                       // Enables VCOM AI.
+"disable_chat_channels"     // Disables chat channels. Used here instead of description to allow them in map screen.
 
 ] call ZAMF_fnc_zamf_init;
 */
