@@ -223,5 +223,4 @@ force acre_sys_core_ts3ChannelSwitch = true;
 force ZAM_showNames_fade = true;
 force ZAM_showNames_fog = true;
 force ZAM_showNames_magn = true;
-ZAM_showNames_ranks = false;
 force ZAM_showNames_voice = true;
