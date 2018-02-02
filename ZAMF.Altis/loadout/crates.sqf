@@ -618,7 +618,7 @@ switch (_loadout) do {
 		// Navigation\tracking\communication
 		_crate addItemCargoGlobal ["ACE_MapTools", 5];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 5];
-		_crate addItemCargoGlobal ["ACRE_PRC152", 9];
+		_crate addItemCargoGlobal ["ACRE_PRC152", 10];
 		_crate addItemCargoGlobal ["ACRE_PRC117F",1];
 		_crate addItemCargoGlobal ["ItemAndroid", 5];
 
