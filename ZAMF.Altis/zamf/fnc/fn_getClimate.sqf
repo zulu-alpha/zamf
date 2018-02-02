@@ -14,11 +14,12 @@
 */
 
 // World uniform type matching
-_arid = ["Altis", "Stratis", "Desert_E", "Shapur_BAF", "Takistan", "Zargabad", "IslaDuala3", "Porto", "Mountains_ACR", "Bornholm", "Kunduz", "fata"];
-_tran = ["ProvingGrounds_PMC", "Sara", "SaraLite", "Sara_dbe1", "Intro"];
-_wood = ["Chernarus", "utes", "Woodland_ACR", "Bootcamp_ACR", "pja305", "VR", "Chernarus_Summer", "Panthera3", "anim_helvantis_v2", "Tanoa"];
+// Make sure you add new terrains in lower-case
+_arid = ["farkhar", "mcn_aliabad", "clafghan", "desert_e", "desert_island", "dya", "fallujah", "mcn_hazarkot", "isladuala3", "kidal", "lythium", "porto", "reshmaan", "shapur_baf", "takistan", "mountains_acr", "zargabad", "kunduz", "fata"];
+_tran = ["altis", "abel", "malden", "provinggrounds_pmc", "intro", "sara", "saralite", "stratis", "uhao", "sara_dbe1"];
+_wood = ["bootcamp_acr", "cain", "woodland_acr", "chernarus", "eden", "noe", "kapaulio", "chernarus_summer", "tanoa", "utes", "bornholm", "pja305", "panthera3", "anim_helvantis_v2"];
 
-_world = worldName;
+_world = toLower worldName;
 
 // Index number representing unifrom choice is determined by world type
 _index = call {

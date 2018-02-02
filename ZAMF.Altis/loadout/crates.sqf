@@ -34,6 +34,8 @@ _cloth = 5;
 
 // Get the camo type needed
 _index = call zamf_fnc_getClimate;
+// Correct for arid camo being used for transitional terrain and there being no woodland camo.
+if (_index > 0) then {_index = _index - 1};
 
 
 switch (_loadout) do {
@@ -115,7 +117,7 @@ switch (_loadout) do {
 	case "hq": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["za_bag_bergen_arid", "za_bag_bergen_trans", "za_bag_bergen_trans"] select _index), 2];
+		_crate addBackpackCargoGlobal [(["za_bag_bergen_arid", "za_bag_bergen_trans"] select _index), 2];
 
 		// Vision
 		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 2];
@@ -187,7 +189,7 @@ switch (_loadout) do {
 	case "assault_squad": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["za_bag_bergen_arid", "za_bag_bergen_trans", "za_bag_bergen_trans"] select _index), 9];
+		_crate addBackpackCargoGlobal [(["za_bag_bergen_arid", "za_bag_bergen_trans"] select _index), 9];
 
 		// Vision
 		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 9];
@@ -348,8 +350,8 @@ switch (_loadout) do {
 	case "weapons_squad": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["za_bag_bergen_arid", "za_bag_bergen_trans", "za_bag_bergen_trans"] select _index), 9];
-		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_trans"] select _index), 1];
+		_crate addBackpackCargoGlobal [(["za_bag_bergen_arid", "za_bag_bergen_trans"] select _index), 9];
+		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans"] select _index), 1];
 
 		// Vision
 		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 10];
@@ -510,7 +512,7 @@ switch (_loadout) do {
 	case "fst": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["za_bag_bergen_arid", "za_bag_bergen_trans", "za_bag_bergen_trans"] select _index), 2];
+		_crate addBackpackCargoGlobal [(["za_bag_bergen_arid", "za_bag_bergen_trans"] select _index), 2];
 
 
 		// Vision
@@ -713,7 +715,7 @@ switch (_loadout) do {
 	case "heli": {
 
 		// Attire
-		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans", "za_hel_Boonie_trans"] select _index), 3];
+		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans"] select _index), 3];
 		_crate addBackpackCargoGlobal ["B_AssaultPack_blk", 3];
 
 		// Vision
@@ -772,7 +774,7 @@ switch (_loadout) do {
 	case "jet": {
 
 		// Attire
-		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans", "za_hel_Boonie_trans"] select _index), 1];
+		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans"] select _index), 1];
 		_crate addBackpackCargoGlobal ["B_AssaultPack_sgg", 1];
 
 		// Vision
@@ -828,7 +830,7 @@ switch (_loadout) do {
 	case "crew": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["B_AssaultPack_ocamo", "B_AssaultPack_rgr", "B_AssaultPack_rgr"] select _index), 3];
+		_crate addBackpackCargoGlobal [(["B_AssaultPack_ocamo", "B_AssaultPack_rgr"] select _index), 3];
 
 		// Vision
 		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 3];
@@ -894,7 +896,7 @@ switch (_loadout) do {
 	case "repair": {
 
 		_crate addItemCargoGlobal ["ToolKit", 2];
-		_crate addBackpackCargoGlobal [["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_trans"] select _index, 2];
+		_crate addBackpackCargoGlobal [["za_bag_carryall_arid", "za_bag_carryall_trans"] select _index, 2];
 
 	};
 
