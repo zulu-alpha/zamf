@@ -9,9 +9,6 @@
 "disable_playable_ai_speak", // Prevent the avatar that the player controls from shouting in game.
 //"leave_group",             // Makes the player leave whatever group he/she starts in and join a new one alone.
 "spectate_on_death",         // As soon as a player dies, he/she spectates (even if respawn is enabled).
-"tfar_config",               // ZA Specific config settings for TFAR, such as disabling auto microdagr and backpack radios.
-"mcc_limit",                 // Limit MCC to Admins.
-"zeusify",                   // Make sure that all units are detected by zeus.
 "zam_res",                   // Enable ZAM Resume
 "disable_chat_channels",     // Disables chat channels. Used here instead of description to allow them in map screen.
 "vcom"                       // Enables VCOM AI.
@@ -62,12 +59,6 @@ if ("spectate_on_death" in _input) then {[] execVM "zamf\spect\zamf_spect_init.s
 // Handle enabling or disabling of ZA Mods
 zam_res_enabled = if ("zam_res" in _input) then {True} else {False};
 
-// TFAR Config
-if ("tfar_config" in _input) then {
-    tf_no_auto_long_range_radio = true;
-    TF_give_microdagr_to_soldier = false;
-};
-
 // Disable radio channels
 // 0 = Global
 // 1 = Side
@@ -84,12 +75,6 @@ if ("disable_chat_channels" in _input) then {
         } count [0,1,2,5,6];
     };
 };
-
-// MCC Limits
-//--------------------- Who can access MCC leave "all" for everbody --------------------------------
-// Should be MCC_allowedPlayers = ["12321","1321123"];
-// Host or server admin will always have access
-if ("mcc_limit" in _input) then {MCC_allowedPlayers = [];};
 
 // Don't show ranks
 ZAM_showNames_ranks = false;
