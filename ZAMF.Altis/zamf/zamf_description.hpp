@@ -49,8 +49,3 @@ enableDebugConsole = 1;
 
 // CBA Settings
 cba_settings_hasSettingsFile = 1;
-
-// VCOM AI
-#include "VCOMAI\defines.hpp"
-#include "VCOMAI\DialogDefines.hpp"
-#include "VCOMAI\dialogs.hpp"

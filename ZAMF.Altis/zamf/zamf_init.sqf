@@ -79,7 +79,5 @@ if ("disable_chat_channels" in _input) then {
 // Don't show ranks
 ZAM_showNames_ranks = false;
 
-if ("vcom" in _input) then {[] execVM "VCOMAI\init.sqf"};
-
 // Finish world initialization before mission is launched.
 finishMissionInit;
