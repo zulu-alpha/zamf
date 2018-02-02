@@ -47,6 +47,9 @@ enableDebugConsole = 1;
 // Paramaters are handled in the following file:
 #include "zamf_params.hpp"
 
+// CBA Settings
+cba_settings_hasSettingsFile = 1;
+
 // VCOM AI
 #include "VCOMAI\defines.hpp"
 #include "VCOMAI\DialogDefines.hpp"
