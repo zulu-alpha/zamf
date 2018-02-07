@@ -19,6 +19,9 @@ force ace_captives_allowSurrender = true;
 force ace_captives_requireSurrender = 1;
 force ace_captives_requireSurrenderAi = false;
 
+// ACE Common
+force ace_parachute_hideAltimeter = true;
+
 // ACE Cook off
 force ace_cookoff_ammoCookoffDuration = 1;
 force ace_cookoff_enable = true;
@@ -202,7 +205,6 @@ force ace_winddeflection_simulationInterval = 0.05;
 force ace_winddeflection_vehicleEnabled = true;
 
 // ACE Zeus
-force ace_zeus_autoAddObjects = true;
 force ace_zeus_radioOrdnance = false;
 force ace_zeus_remoteWind = false;
 force ace_zeus_revealMines = 0;

@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14665.844,45.654701,16662.115};
-		dir[]={0.15221074,-0.82280803,0.5477708};
-		up[]={0.22029105,0.56828851,0.79278058};
-		aside[]={0.96361125,-1.308279e-006,-0.26776442};
+		pos[]={14696.113,25.730553,16606.404};
+		dir[]={-0.81097525,-0.12775737,0.5709675};
+		up[]={-0.10451792,0.99179542,0.073585927};
+		aside[]={0.57568395,-2.2072345e-007,0.81767386};
 	};
 };
 binarizationWanted=0;
@@ -201,25 +201,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -251,6 +232,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
 				};
 			};
 		};
@@ -14289,7 +14289,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14663,17.91,16689};
-				angles[]={-0,0.077837944,0};
+				angles[]={0,0.077837944,0};
 			};
 			id=623;
 			type="acre_api_basicMissionSetup";
@@ -14418,7 +14418,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14666.5,17.91,16689};
-				angles[]={-0,0.077837944,0};
+				angles[]={0,0.077837944,0};
 			};
 			id=625;
 			type="acre_api_nameChannels";
