@@ -11,7 +11,8 @@
 "spectate_on_death",         // As soon as a player dies, he/she spectates (even if respawn is enabled).
 "zam_res",                   // Enable ZAM Resume.
 "zeusify",                   // Make sure that all units are detected by zeus.
-"disable_chat_channels"      // Disables chat channels. Used here instead of description to allow them in map screen.
+"disable_chat_channels",     // Disables chat channels. Used here instead of description to allow them in map screen.
+"towing"                     // Advanced towing.
 
 ] call ZAMF_fnc_zamf_init;
 */
@@ -78,6 +79,9 @@ if ("disable_chat_channels" in _input) then {
 
 // Zeusify all units
 if ("zeusify" in _input) then {[] execVM "zamf\zeus\init.sqf"};
+
+// Advanced Towing
+if (("towing" in _input) and (isServer)) then {[] execVM "zamf\towing\fn_advancedTowingInit.sqf"};
 
 // Finish world initialization before mission is launched.
 finishMissionInit;
