@@ -47,5 +47,8 @@ enableDebugConsole = 1;
 // Paramaters are handled in the following file:
 #include "zamf_params.hpp"
 
+// ORBAT
+#include "..\orbat.hpp"
+
 // CBA Settings
 cba_settings_hasSettingsFile = 1;
