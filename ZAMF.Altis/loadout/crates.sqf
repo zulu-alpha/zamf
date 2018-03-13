@@ -174,7 +174,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ALIVE_Tablet", 1];
 		_crate addItemCargoGlobal ["ACE_key_west", 1];
 		_crate addItemCargoGlobal ["ToolKit", 1];
-		_crate addWeaponCargoGlobal ["ACE_VMM3", 1];
+		_crate addItemCargoGlobal ["MineDetector", 1];
 		_crate addItemCargoGlobal ["ACE_DefusalKit", 1];
 		_crate addItemCargoGlobal ["ACE_wirecutter", 1];
 
