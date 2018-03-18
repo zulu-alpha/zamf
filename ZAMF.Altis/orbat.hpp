@@ -24,6 +24,7 @@ class CfgORBAT
 			text = "Dragon";
 			textShort = "%1 %2 %3";
 			description= "Light infantry company";
+			assets[] = {CUP_B_M1133_MEV_Desert_Slat, CUP_B_M1130_CV_M2_Desert_Slat};
 
 			class dragon_0
 			{
@@ -109,33 +110,263 @@ class CfgORBAT
 			text = "Badger";
 			textShort = "%1 %2 Section";
 			description= "Fire support and transport for Alpha Platoon";
-			assets[] = {CUP_B_M2A3Bradley_USA_D, CUP_B_M2A3Bradley_USA_D};
+			assets[] = {CUP_B_M1128_MGS_Desert_Slat};
 		};
 
-		class ghostrider
+		class stag
 		{
-			id = 3;
+			id = 4;
 			idType = 2;
 			side = "West";
 			size = "Section";
-			type = "Helicopter";
-			text = "Ghost-Rider";
-			textShort = "%1 %2";
-			description= "Organic lift and CAS for Zulu Coy";
-			assets[] = {CUP_B_MH60L_DAP_4x_US, CUP_B_MH60L_DAP_4x_US};
+			type = "Service";
+			text = "Stag";
+			textShort = "%1 %2 Section";
+			description= "Ream and reapair";
+			assets[] = {CUP_B_MTVR_Repair_USA, CUP_B_MTVR_Ammo_USA};
 		};
 	};
 
-	class reaper
+	// Iraqi Army
+	class Iraqi15thInfDiv
+	{
+		id = 15;
+		IdType = 0;
+		side = "Resistance";
+		size = "Division";
+		type = "Infantry";
+		text = "Iraqi %1 %2 %3";
+		textShort = "%1 %2 %3";
+
+		class 23Reg
 		{
-			id = 1;
-			idType = 2;
-			side = "West";
-			size = "Section";
-			type = "Fighter";
-			text = "Reaper";
-			textShort = "Reaper";
-			description= "CAS";
-			assets[] = {CUP_B_A10_DYN_USA};
+			id = 23;
+			IdType = 0;
+			side = "Resistance";
+			type = "Infantry"
+			size = "Regiment";
+			text = "%1 %3";
+			textShort = "%1 %3";
+
+			class 4Bat
+			{
+				id = 23;
+				IdType = 0;
+				side = "Resistance";
+				type = "Infantry"
+				size = "Battalion";
+				text = "%1 %3";
+				textShort = "%1 %3";
+
+				class 1coy
+				{
+					id = 1;
+					IdType = 0;
+					side = "Resistance";
+					size = "Company";
+					type = "Infantry"
+					text = "%1 %2 %3";
+					textShort = "%1 %2 %3";
+
+					class 1plat
+					{
+						id = 1;
+						IdType = 0;
+						side = "Resistance";
+						type = "Infantry";
+						size = "Platoon"
+						text = "%1 %2 %3";
+						textShort = "%1 %2 %3";
+						assets[] = {CUP_I_M113_RACS, CUP_I_M113_RACS, CUP_I_M113_RACS};
+					}
+
+					class 2plat
+					{
+						id = 2;
+						IdType = 0;
+						side = "Resistance";
+						size = "Section"
+						type = "MechanizedInfantry";
+						text = "%1 %2 %3";
+						textShort = "%1 %2 %3";
+						assets[] = {CUP_I_AAV_RACS, CUP_I_AAV_RACS};
+					}
+
+					class 3plat
+					{
+						id = 3;
+						IdType = 0;
+						side = "Resistance";
+						size = "Section"
+						type = "Medical";
+						text = "%1 %2 %3";
+						textShort = "%1 %2 %3";
+						assets[] = {CUP_I_M113_Med_RACS};
+					}
+				};
+				class 2coy
+				{
+					id = 2;
+					IdType = 0;
+					side = "Resistance";
+					size = "Company";
+					type = "Infantry"
+					text = "%1 %2 %3";
+					textShort = "%1 %2 %3";
+				};
+				class 3coy
+				{
+					id = 3;
+					IdType = 0;
+					side = "Resistance";
+					size = "Company";
+					type = "MechanizedInfantry"
+					text = "%1 %2 %3";
+					textShort = "%1 %2 %3";
+				};
+				class 4coy
+				{
+					id = 4;
+					IdType = 0;
+					side = "Resistance";
+					size = "Company";
+					type = "Support"
+					text = "%1 %2 %3";
+					textShort = "%1 %2 %3";
+				};
+			};
 		};
+	};
+
+	// Peshmerga
+	class PeshRGB
+	{
+		side = "Resistance";
+		type = "Infantry";
+		text = "Peshmerga Regional Guard Brigades";
+		textShort = "Peshmerga RGB";
+
+		class Arjin
+		{
+			side = "Resistance";
+			type = "Infantry";
+			text = "Arjin Brigade";
+			textShort = "Arjin";
+		};
+		class Daran
+		{
+			side = "Resistance";
+			type = "Infantry";
+			text = "Daran Brigade";
+			textShort = "Daran";
+		};
+		class Muhaha
+		{
+			side = "Resistance";
+			type = "Infantry";
+			text = "Muhaha Brigade";
+			textShort = "Muhaha";
+		};
+		class Yezdanser
+		{
+			side = "Resistance";
+			type = "Infantry";
+			text = "Yezdanser Brigade";
+			textShort = "Yezdanser";
+		};
+		class Sozan
+		{
+			side = "Resistance";
+			type = "Infantry";
+			text = "Sozan Brigade";
+			textShort = "Sozan";
+		};
+		class Gorkem
+		{
+			side = "Resistance";
+			type = "Infantry";
+			text = "Gorkem Brigade";
+			textShort = "Gorkem";
+		};
+		class Eylo
+		{
+			side = "Resistance";
+			type = "Infantry";
+			text = "Eylo Brigade";
+			textShort = "Eylo";
+		};
+		class Azwer
+		{
+			side = "Resistance";
+			type = "Infantry";
+			text = "Azwer Brigade";
+			textShort = "Azwer";
+		};
+	};
+
+	// ISIS
+	class ISIS
+	{
+		side = "East";
+		type = "Infantry";
+		text = "ISIS Regional Command";
+		textShort = "ISIS RC";
+
+		class AbdalJabbar
+		{
+			side = "East";
+			type = "Infantry";
+			text = "Abd al Jabbar Cell";
+			textShort = "Abd al Jabbar";
+		};
+		class AbdalBari
+		{
+			side = "East";
+			type = "Infantry";
+			text = "Abd al Bari Cell";
+			textShort = "Abd al Bari";
+		};
+		class Almira
+		{
+			side = "East";
+			type = "Infantry";
+			text = "Almira Cell";
+			textShort = "Almira";
+		};
+		class Azzam
+		{
+			side = "East";
+			type = "Infantry";
+			text = "Azzam Cell";
+			textShort = "Azzam";
+		};
+		class Aswad
+		{
+			side = "East";
+			type = "Infantry";
+			text = "Aswad Cell";
+			textShort = "Aswad";
+		};
+		class Kadar
+		{
+			side = "East";
+			type = "Infantry";
+			text = "Kadar Cell";
+			textShort = "Kadar";
+		};
+		class Khalid
+		{
+			side = "East";
+			type = "Infantry";
+			text = "Khalid Cell";
+			textShort = "Khalid";
+		};
+		class Nasser
+		{
+			side = "East";
+			type = "Infantry";
+			text = "Nasser Cell";
+			textShort = "Nasser";
+		};
+	};
 }; 
