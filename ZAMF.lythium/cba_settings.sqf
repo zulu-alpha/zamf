@@ -147,10 +147,10 @@ force ace_mk6mortar_useAmmoHandling = false;
 force ace_nametags_playerNamesViewDistance = 5;
 
 // ACE Nightvision
-force ace_nightvision_aimDownSightsBlur = 0.7;
+force ace_nightvision_aimDownSightsBlur = 0.6;
 force ace_nightvision_disableNVGsWithSights = false;
-force ace_nightvision_effectScaling = 0.7;
-force ace_nightvision_fogScaling = 0.7;
+force ace_nightvision_effectScaling = 0.6;
+force ace_nightvision_fogScaling = 0.6;
 
 // ACE Overheating
 force ace_overheating_displayTextOnJam = true;
