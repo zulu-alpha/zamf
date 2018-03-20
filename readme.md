@@ -44,7 +44,7 @@ Mission template for rapid development of Zulu-Alpha missions and events. The ZA
 
 * To change settings such as `View Distance` edit the `cba_settings.sqf` file.
 
-##NOTES:
+## NOTES:
 
 * When saving the mission with a new file name from the Arma 3 ED3N editor, a new folder is created and only the *mission.sqm* is copied to the new folder. **Make sure to copy over the rest of the ZAMF files ++(NOT THE OLD MISSION.SQM)++ from the previous mission folder**
 * Keep mission files as small as possible.
