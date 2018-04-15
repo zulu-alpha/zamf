@@ -11,6 +11,9 @@ respawnDelay = 5;
 // Force RotorLib
 forceRotorLibSimulation = 1;
 
+//Display Image during mission moad screen
+loadScreen 		= "Img\zaflag.jpg";
+
 // CfgFunctions
 class CfgFunctions
 {
