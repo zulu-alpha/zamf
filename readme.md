@@ -1,5 +1,4 @@
 # Zulu-Alpha Mission Framework (ZAMF)
-> Custom Branch for the **Operation Inherent** campaign
 
 Mission template for rapid development of Zulu-Alpha missions and events. The ZAMF automatically manages all gear and crates for the Zulu-Alpha units. This is managed with the `init` field of the ZAMF units and crates. See ***CUSTOMIZE*** for more.
 
