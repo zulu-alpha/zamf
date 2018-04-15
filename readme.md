@@ -53,7 +53,7 @@ When you what to upload a new version of your mission:
 
 > Editing the Script files can be made a LOT simpler by using the right tools. Have a look at [Visual Studio Code](https://code.visualstudio.com/) with the [SQF Launguage](https://marketplace.visualstudio.com/items?itemName=Armitxes.sqf) and [SQF Lint](https://marketplace.visualstudio.com/items?itemName=skacekachna.sqflint) addons.
 
-> If you would like to use the ED3N editor to edit the loadouts of players, then change `"grunt"` in the script call of player's init field to `False` in order to preserve the team settings but not use ZAMF loadouts.
+> If you would like to use the ED3N editor to edit the loadouts of players, then in the player unit's **init** field, change `"grunt"`, `"officer"`, `"medic"` or whatever else it may be in the `nul = [this, "grunt", "Dragon'1"] call zamf_fnc_team;` line to `false` in order to preserve the team settings but not use ZAMF loadouts. It should look something like `nul = [this, false, "Dragon'1"] call zamf_fnc_team;`
 
 >**NOTE:** You will need the classnames of the objects you wish to place into the scripts. These can be found by using the *Arma 3 Aresnal* tool (Under Bootcamp) from the Arma 3 Main Menu. Create a loadout containing the gear you want and click the `Copy` button at the bottom of the *Arsenal* window. Then `Alt+Tab` out of game and open Notepad or other equivalent text editor. Use `CTRL+V` to paste the text description of your loadout, from which you can find the classnames you need to use.
 
