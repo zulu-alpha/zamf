@@ -138,10 +138,10 @@ force ace_medical_useLocation_PAK = 0;
 force ace_medical_useLocation_SurgicalKit = 3;
 
 // ACE Mk6 Mortar
-force ace_mk6mortar_airResistanceEnabled = false;
+force ace_mk6mortar_airResistanceEnabled = true;
 force ace_mk6mortar_allowCompass = true;
 force ace_mk6mortar_allowComputerRangefinder = false;
-force ace_mk6mortar_useAmmoHandling = false;
+force ace_mk6mortar_useAmmoHandling = true;
 
 // ACE Name Tags
 force ace_nametags_playerNamesViewDistance = 5;

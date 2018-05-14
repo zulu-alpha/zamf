@@ -8,14 +8,14 @@ class EditorData
 	toggles=101;
 	class ItemIDProvider
 	{
-		nextID=107;
+		nextID=114;
 	};
 	class Camera
 	{
-		pos[]={7481.3838,55.211273,7294.3926};
-		dir[]={0.15958212,-0.61203194,0.77463055};
-		up[]={0.12349314,0.79082716,0.59944761};
-		aside[]={0.97948462,1.2680102e-006,-0.20178746};
+		pos[]={7484.1797,22.723038,7336.2354};
+		dir[]={0.13393235,-0.57188362,0.80947953};
+		up[]={0.093353622,0.82031143,0.56421411};
+		aside[]={0.98669958,2.9902003e-006,-0.16326456};
 	};
 };
 binarizationWanted=0;
@@ -191,6 +191,33 @@ class AddonsMetaData
 	};
 };
 randomSeed=6017543;
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
 class Mission
 {
 	class Intel

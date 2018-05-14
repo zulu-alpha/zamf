@@ -600,6 +600,10 @@ switch (_loadout) do {
 		_crate addBackpackCargoGlobal ["B_Mortar_01_support_F", 1];
 		_crate addBackpackCargoGlobal ["B_Mortar_01_weapon_F", 1];
 		_crate addItemCargoGlobal ["ACE_RangeTable_82mm", 1];
+		_crate addItemCargoGlobal ["ACE_Kestrel4500", 1];
+		_crate addItemCargoGlobal ["ACE_1Rnd_82mm_Mo_HE", 16];
+		_crate addItemCargoGlobal ["ACE_1Rnd_82mm_Mo_Smoke", 16];
+		_crate addItemCargoGlobal ["ACE_1Rnd_82mm_Mo_Illum", 16];
 
 	};
 
