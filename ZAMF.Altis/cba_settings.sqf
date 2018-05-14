@@ -229,3 +229,5 @@ force ZAM_showNames_fade = true;
 force ZAM_showNames_fog = true;
 force ZAM_showNames_magn = true;
 force ZAM_showNames_voice = true;
+ace_nametags_showPlayerRanks = false;
+
