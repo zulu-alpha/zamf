@@ -224,6 +224,15 @@ force acre_sys_core_ts3ChannelName = "ACRE";
 force acre_sys_core_ts3ChannelPassword = "";
 force acre_sys_core_ts3ChannelSwitch = true;
 
+// ADV - ACE CPR
+adv_aceCPR_addTime = 20;
+adv_aceCPR_chance_0 = 5;
+adv_aceCPR_chance_1 = 15;
+adv_aceCPR_chance_2 = 40;
+adv_aceCPR_chance_aed = 85;
+adv_aceCPR_enable = true;
+adv_aceCPR_maxTime = 1200;
+
 // ZAM ShowNames
 force ZAM_showNames_fade = true;
 force ZAM_showNames_fog = true;
