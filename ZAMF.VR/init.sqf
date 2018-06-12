@@ -17,6 +17,6 @@
 ] call ZAMF_fnc_zamf_init;
 
 // VCOM AI
-[] execVM "VCOMAI\init.sqf"
+[] execVM "Vcom\VcomInit.sqf";
 
 //// Youre code here

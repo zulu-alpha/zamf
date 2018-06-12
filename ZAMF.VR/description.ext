@@ -15,6 +15,7 @@ forceRotorLibSimulation = 1;
 class CfgFunctions
 {
     #include "zamf\zamf_cfgfunctions.hpp"
+    #include "vcom\cfgFunctions.hpp"  // VCOM AI
 };
 
 // Enabling remote execution: https://community.bistudio.com/wiki/CfgRemoteExec
@@ -41,14 +42,13 @@ class CfgRemoteExec
     };
 };
 
+// VCOM AI
+class Extended_PreInit_EventHandlers {
+	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
+};
 
 // ZAMF specific parts of the description.ext
 #include "zamf\zamf_description.hpp"
-
-// VCOM AI
-#include "VCOMAI\defines.hpp"
-#include "VCOMAI\DialogDefines.hpp"
-#include "VCOMAI\dialogs.hpp"
 
 
 //// Put custom code under here:

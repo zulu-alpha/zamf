@@ -263,10 +263,30 @@ force adv_aceSplint_reopenChance = 20;
 force adv_aceSplint_reopenTime = 600;
 force adv_aceSplint_reuseChance = 80;
 
+// VCOM SETTINGS
+Vcm_ActivateAI = true;
+VCM_ADVANCEDMOVEMENT = true;
+VCM_AIDISTANCEVEHPATH = 100;
+VCM_AIMagLimit = 5;
+VCM_ARTYDELAY = 300;
+VCM_ARTYENABLE = true;
+VCM_ARTYSPREAD = 400;
+VCM_Debug = false;
+VCM_FRMCHANGE = true;
+VCM_HEARINGDISTANCE = 800;
+VCM_MINECHANCE = 75;
+VCM_RAGDOLL = true;
+VCM_RAGDOLLCHC = 50;
+VCM_SIDEENABLED = [WEST,EAST,GUER];
+VCM_SKILLCHANGE = true;
+VCM_STATICARMT = 300;
+VCM_StealVeh = true;
+VCM_WARNDELAY = 30;
+VCM_WARNDIST = 1000;
+
 // ZAM ShowNames
 force ZAM_showNames_fade = true;
 force ZAM_showNames_fog = true;
 force ZAM_showNames_magn = true;
 force ZAM_showNames_voice = true;
 ace_nametags_showPlayerRanks = false;
-
