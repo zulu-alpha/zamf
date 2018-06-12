@@ -38,8 +38,8 @@ force ace_explosives_requireSpecialist = false;
 force ace_frag_enabled = true;
 force ace_frag_maxTrack = 10;
 force ace_frag_maxTrackPerFrame = 10;
-force ace_frag_reflectionsEnabled = false;
-force ace_frag_spallEnabled = false;
+force ace_frag_reflectionsEnabled = true;
+force ace_frag_spallEnabled = true;
 
 // ACE Goggles
 force ace_goggles_effects = 2;
