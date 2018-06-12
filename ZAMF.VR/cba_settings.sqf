@@ -103,15 +103,15 @@ force ace_medical_allowUnconsciousAnimationOnTreatment = true;
 force ace_medical_amountOfReviveLives = 1;
 force ace_medical_bleedingCoefficient = 1;
 force ace_medical_blood_enabledFor = 2;
-force ace_medical_consumeItem_PAK = 1;
+force ace_medical_consumeItem_PAK = 0;
 force ace_medical_consumeItem_SurgicalKit = 0;
 force ace_medical_delayUnconCaptive = 3;
-force ace_medical_enableAdvancedWounds = false;
+force ace_medical_enableAdvancedWounds = true;
 force ace_medical_enableFor = 1;
 force ace_medical_enableOverdosing = true;
-force ace_medical_enableRevive = 1;
+force ace_medical_enableRevive = 0;
 force ace_medical_enableScreams = true;
-force ace_medical_enableUnconsciousnessAI = 1;
+force ace_medical_enableUnconsciousnessAI = 2;
 force ace_medical_enableVehicleCrashes = true;
 force ace_medical_healHitPointAfterAdvBandage = false;
 force ace_medical_increaseTrainingInLocations = true;
@@ -120,7 +120,7 @@ force ace_medical_level = 2;
 force ace_medical_litterCleanUpDelay = 1200;
 force ace_medical_litterSimulationDetail = 3;
 force ace_medical_maxReviveTime = 1000;
-force ace_medical_medicSetting_PAK = 1;
+force ace_medical_medicSetting_PAK = 2;
 force ace_medical_medicSetting_SurgicalKit = 2;
 force ace_medical_menu_allow = 1;
 force ace_medical_menu_maxRange = 3;
@@ -130,12 +130,12 @@ force ace_medical_painCoefficient = 1;
 force ace_medical_painEffectType = 0;
 force ace_medical_painIsOnlySuppressed = true;
 force ace_medical_playerDamageThreshold = 1;
-force ace_medical_preventInstaDeath = false;
+force ace_medical_preventInstaDeath = true;
 force ace_medical_remoteControlledAI = true;
 force ace_medical_useCondition_PAK = 1;
 force ace_medical_useCondition_SurgicalKit = 1;
-force ace_medical_useLocation_PAK = 0;
-force ace_medical_useLocation_SurgicalKit = 3;
+force ace_medical_useLocation_PAK = 3;
+force ace_medical_useLocation_SurgicalKit = 0;
 
 // ACE Mk6 Mortar
 force ace_mk6mortar_airResistanceEnabled = true;
@@ -214,6 +214,30 @@ force ace_zeus_revealMines = 0;
 force ace_zeus_zeusAscension = false;
 force ace_zeus_zeusBird = false;
 
+// ACEX Headless
+force acex_headless_delay = 15;
+force acex_headless_enabled = true;
+force acex_headless_endMission = 0;
+force acex_headless_log = true;
+
+// ACEX Sitting
+force acex_sitting_enable = true;
+
+// ACEX View Restriction
+force acex_viewrestriction_mode = 0;
+force acex_viewrestriction_modeSelectiveAir = 0;
+force acex_viewrestriction_modeSelectiveFoot = 0;
+force acex_viewrestriction_modeSelectiveLand = 0;
+force acex_viewrestriction_modeSelectiveSea = 0;
+
+// ACEX Volume
+acex_volume_enabled = false;
+acex_volume_fadeDelay = 1;
+acex_volume_lowerInVehicles = false;
+acex_volume_reduction = 5;
+acex_volume_remindIfLowered = false;
+acex_volume_showNotification = true;
+
 // ACRE2
 force acre_sys_core_fullDuplex = true;
 force acre_sys_core_ignoreAntennaDirection = true;
@@ -230,8 +254,14 @@ adv_aceCPR_chance_0 = 5;
 adv_aceCPR_chance_1 = 15;
 adv_aceCPR_chance_2 = 40;
 adv_aceCPR_chance_aed = 85;
-adv_aceCPR_enable = true;
+adv_aceCPR_enable = false;
 adv_aceCPR_maxTime = 1200;
+
+// ADV - ACE Splint
+force adv_aceSplint_enable = true;
+force adv_aceSplint_reopenChance = 20;
+force adv_aceSplint_reopenTime = 600;
+force adv_aceSplint_reuseChance = 80;
 
 // ZAM ShowNames
 force ZAM_showNames_fade = true;
