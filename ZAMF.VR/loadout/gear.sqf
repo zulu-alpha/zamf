@@ -20,8 +20,6 @@ _loadout = _this select 1;
 
 // Get the camo type needed
 _index = call zamf_fnc_getClimate;
-// Correct for arid camo being used for transitional terrain and there being no woodland camo.
-if (_index > 0) then {_index = _index - 1};
 
 removeAllWeapons _unit;
 removeAllItems _unit;
@@ -37,7 +35,7 @@ switch (_loadout) do {
 	case "officer": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans"] select _index);
+		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans", "za_fat1_soldier_wood"] select _index);
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_packingBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_quikclot";};
@@ -48,8 +46,8 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addItemToUniform "ACE_salineIV_500";
 		_unit addItemToUniform "adv_aceSplint_splint";
-		_unit addVest (["za_vst_carrierlite_arid", "za_vst_carrierlite_trans"] select _index);
-		_unit addHeadgear (["H_HelmetB_sand", "H_HelmetB"] select _index);
+		_unit addVest (["za_vst_carrierlite_arid", "za_vst_carrierlite_trans", "za_vst_carrierlite_wood"] select _index);
+		_unit addHeadgear (["H_HelmetB_desert", "H_HelmetB_snakeskin", "H_HelmetB_tna_F"] select _index);
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
@@ -65,7 +63,7 @@ switch (_loadout) do {
 	case "grunt": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans"] select _index);
+		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans", "za_fat1_soldier_wood"] select _index);
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_packingBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_quikclot";};
@@ -76,8 +74,8 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_salineIV_500";
 		_unit addItemToUniform "adv_aceSplint_splint";
 		_unit addItemToUniform "ACE_EarPlugs";
-		_unit addVest (["za_vst_carrier_arid", "za_vst_carrier_trans"] select _index);
-		_unit addHeadgear (["H_HelmetSpecB_sand", "H_HelmetSpecB"] select _index);
+		_unit addVest (["za_vst_carrier_arid", "za_vst_carrier_trans", "za_vst_carrier_wood"] select _index);
+		_unit addHeadgear (["H_HelmetSpecB_paint2", "H_HelmetSpecB_snakeskin", "H_HelmetB_Enh_tna_F"] select _index);
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
@@ -93,7 +91,7 @@ switch (_loadout) do {
 	case "medic": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans"] select _index);
+		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans","za_fat1_soldier_wood"] select _index);
 		_unit addItemToUniform "ACE_EarPlugs";
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_fieldDressing";};
 		_unit addItemToUniform "ACE_epinephrine";
@@ -102,8 +100,8 @@ switch (_loadout) do {
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_quikclot";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_packingBandage";};
-		_unit addVest (["za_vst_carrier_arid", "za_vst_carrier_trans"] select _index);
-		_unit addBackpack (["za_bag_carryall_arid", "za_bag_carryall_trans"] select _index);
+		_unit addVest (["za_vst_carrier_arid", "za_vst_carrier_trans", "za_vst_carrier_wood"] select _index);
+		_unit addBackpack (["za_bag_carryallmedic_arid", "za_bag_carryallmedic_trans", "za_bag_carryallmedic_wood"] select _index);
 		for "_i" from 1 to 15 do {_unit addItemToBackpack "ACE_elasticBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_quikclot";};
 		for "_i" from 1 to 15 do {_unit addItemToBackpack "ACE_atropine";};
@@ -115,7 +113,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 10 do {_unit addItemToBackpack "ACE_packingBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToBackpack "adv_aceSplint_splint";};
 		_unit addItemToBackpack "ACE_surgicalKit";
-		_unit addHeadgear (["H_HelmetSpecB_sand", "H_HelmetSpecB"] select _index);
+		_unit addHeadgear (["H_HelmetSpecB_paint2", "H_HelmetSpecB_snakeskin", "H_HelmetB_Enh_tna_F"] select _index);
 		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
@@ -131,7 +129,7 @@ switch (_loadout) do {
 	case "heli": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans"] select _index);
+		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans", "za_fat1_soldier_wood"] select _index);
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_packingBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_quikclot";};
@@ -142,7 +140,7 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addItemToUniform "ACE_salineIV_500";
 		_unit addItemToUniform "adv_aceSplint_splint";
-		_unit addVest (["V_TacVestIR_blk", "V_TacVestIR_blk"] select _index);
+		_unit addVest "V_TacVestIR_blk";
 		_unit addHeadgear "za_hel_helihelmet_ghostrider";
 
 		comment "Add weapons";
@@ -182,7 +180,7 @@ switch (_loadout) do {
 	case "crew": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans"] select _index);
+		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans", "za_fat1_soldier_wood"] select _index);
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_packingBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_quikclot";};
@@ -193,7 +191,7 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addItemToUniform "ACE_salineIV_500";
 		_unit addItemToUniform "adv_aceSplint_splint";
-		_unit addVest (["za_vst_modularlite_arid", "za_vst_modularlite_tran"] select _index);
+		_unit addVest (["za_vst_modularlite_arid", "za_vst_modularlite_tran", "za_vst_modularlite_wood"] select _index);
 		_unit addHeadgear "za_hel_crewhelmet_brown";
 		_unit addGoggles "G_Balaclava_combat";
 
