@@ -21,5 +21,11 @@ waitUntil {!(isNull _unit)};
 // Make sure addactions only appear to the player themselves.
 if !(local _unit) exitWith {};
 
+_teleport_map_click = {
+	onMapSingleClick "player setPos _pos; onMapSingleClick ''; hint ''";
+	hintSilent "Open your map and left click on where you want to teleport to.";
+};
+
 _unit addAction ["Freecam", "zamf\debug\freecam.sqf"];
 _unit addAction ["Spectate", {["Initialize", [player, [], true]] call BIS_fnc_EGSpectator;}];
+_unit addAction ["Teleport", _teleport_map_click];
