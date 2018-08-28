@@ -239,8 +239,8 @@ acex_volume_remindIfLowered = false;
 acex_volume_showNotification = true;
 
 // ACRE2
-force acre_sys_core_fullDuplex = true;
-force acre_sys_core_ignoreAntennaDirection = true;
+force acre_sys_core_fullDuplex = false;
+force acre_sys_core_ignoreAntennaDirection = false;
 force acre_sys_core_interference = false;
 force acre_sys_core_revealToAI = true;
 force acre_sys_core_terrainLoss = 0.5;
