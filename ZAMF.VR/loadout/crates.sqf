@@ -129,8 +129,9 @@ switch (_loadout) do {
 		// Navigation\tracking\communication
 		_crate addItemCargoGlobal ["ACE_MapTools", 2];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 2];
-		_crate addItemCargoGlobal ["ACRE_PRC117F",1];
+		_crate addItemCargoGlobal ["ACRE_PRC117F", 1];
 		_crate addItemCargoGlobal ["ACRE_PRC152", 2];
+		_crate addItemCargoGlobal ["ACRE_PRC343", 2];
 		_crate addItemCargoGlobal ["ItemcTab", 1];
 		_crate addItemCargoGlobal ["ItemAndroid", 1];
 
@@ -199,7 +200,8 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_MapTools", 9];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 9];
 		_crate addItemCargoGlobal ["ACRE_PRC117F",1];
-		_crate addItemCargoGlobal ["ACRE_PRC152", 11];
+		_crate addItemCargoGlobal ["ACRE_PRC152", 3];
+		_crate addItemCargoGlobal ["ACRE_PRC343", 9];
 		//_crate addItemCargoGlobal ["ItemMicroDAGR", 6];
 		_crate addItemCargoGlobal ["ItemAndroid", 3];
 
@@ -363,7 +365,8 @@ switch (_loadout) do {
 		// Navigation\tracking\communication
 		_crate addItemCargoGlobal ["ACE_MapTools", 10];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 10];
-		_crate addItemCargoGlobal ["ACRE_PRC152", 12];
+		_crate addItemCargoGlobal ["ACRE_PRC152", 3];
+		_crate addItemCargoGlobal ["ACRE_PRC343", 10];
 		_crate addItemCargoGlobal ["ACRE_PRC117F",1];
 		//_crate addItemCargoGlobal ["ItemMicroDAGR", 5];
 		_crate addItemCargoGlobal ["ItemAndroid", 5];
@@ -528,8 +531,9 @@ switch (_loadout) do {
 		// Navigation\tracking\communication
 		_crate addItemCargoGlobal ["ACE_MapTools", 3];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 3];
-		_crate addItemCargoGlobal ["ACRE_PRC117F",2];
-		_crate addItemCargoGlobal ["ACRE_PRC152", 5];
+		_crate addItemCargoGlobal ["ACRE_PRC117F", 2];
+		_crate addItemCargoGlobal ["ACRE_PRC152", 6];
+		_crate addItemCargoGlobal ["ACRE_PRC343", 3];
 		_crate addItemCargoGlobal ["ItemcTab", 2];
 		_crate addItemCargoGlobal ["ItemAndroid", 1];
 
@@ -627,8 +631,9 @@ switch (_loadout) do {
 		// Navigation\tracking\communication
 		_crate addItemCargoGlobal ["ACE_MapTools", 5];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 5];
-		_crate addItemCargoGlobal ["ACRE_PRC152", 10];
-		_crate addItemCargoGlobal ["ACRE_PRC117F",1];
+		_crate addItemCargoGlobal ["ACRE_PRC152", 5];
+		_crate addItemCargoGlobal ["ACRE_PRC343", 5];
+		_crate addItemCargoGlobal ["ACRE_PRC117F", 1];
 		_crate addItemCargoGlobal ["ItemAndroid", 5];
 
 		// Signalling
@@ -737,7 +742,6 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_MapTools", 3];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 3];
 		_crate addItemCargoGlobal ["ACRE_PRC152", 3];
-		_crate addItemCargoGlobal ["ACRE_PRC117F", 3];
 		_crate addItemCargoGlobal ["ItemGPS", 3];
 
 		// Signalling
@@ -795,8 +799,7 @@ switch (_loadout) do {
 		// Navigation\tracking\communication
 		_crate addItemCargoGlobal ["ACE_MapTools", 1];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 1];
-		_crate addItemCargoGlobal ["ACRE_PRC152", 2];
-		_crate addItemCargoGlobal ["ACRE_PRC117F", 1];
+		_crate addItemCargoGlobal ["ACRE_PRC152", 1];
 		_crate addItemCargoGlobal ["ItemGPS", 1];
 
 		// Signalling
@@ -838,7 +841,6 @@ switch (_loadout) do {
 	case "crew": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood"] select _index), 3];
 
 		// Vision
 		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 3];
@@ -851,7 +853,6 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_MapTools", 3];
 		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 3];
 		_crate addItemCargoGlobal ["ACRE_PRC152", 6];
-		_crate addItemCargoGlobal ["ACRE_PRC117F", 3];
 		_crate addItemCargoGlobal ["ItemGPS", 3];
 
 		// Signalling
