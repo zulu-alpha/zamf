@@ -23,5 +23,6 @@
 
 // VCOM AI
 [] execVM "VCOMAI\init.sqf"
+[] execVM "vcom_settings.sqf";
 
 //// Youre code here
