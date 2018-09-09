@@ -1,3 +1,6 @@
+// Adjust respawn via tickets here
+[player, 1] call BIS_fnc_respawnTickets;  // https://community.bistudio.com/wiki/BIS_fnc_respawnTickets
+
 //// Process ZAMF init
 [
 // Remove any of these strings to disable a feature. All of these must be in lowercase but can be in any order.
@@ -12,14 +15,6 @@
 "towing"                     // Advanced towing.
 
 ] call ZAMF_fnc_zamf_init;
-
-// Adjust respawn via tickets here
-[] spawn {
-	if !(hasinterface) exitWith {};
-	waitUntil {!(isNull player)};
-	// Change number here
-	[player, 1] call BIS_fnc_respawnTickets;  // https://community.bistudio.com/wiki/BIS_fnc_respawnTickets
-};
 
 // VCOM AI
 [] execVM "VCOMAI\init.sqf";
