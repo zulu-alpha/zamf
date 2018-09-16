@@ -1,5 +1,5 @@
 // Adjust respawn via tickets here
-[player, 1] call BIS_fnc_respawnTickets;  // https://community.bistudio.com/wiki/BIS_fnc_respawnTickets
+[player, 2] call BIS_fnc_respawnTickets;  // https://community.bistudio.com/wiki/BIS_fnc_respawnTickets
 
 //// Process ZAMF init
 [
