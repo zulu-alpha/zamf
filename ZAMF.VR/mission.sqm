@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7487.0571,26.531601,7330.8022};
-		dir[]={-0.3121767,-0.66683346,0.67684764};
-		up[]={-0.27939489,0.74492997,0.60577232};
-		aside[]={0.90817052,2.5086338e-006,0.41886187};
+		pos[]={7487.9819,14.67311,7351.3833};
+		dir[]={0.062031526,-0.74981505,0.65891719};
+		up[]={0.070297778,0.6613633,0.74672371};
+		aside[]={0.99569416,3.3421766e-006,-0.093739323};
 	};
 };
 binarizationWanted=0;
@@ -1480,7 +1480,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7459.9004,5.0014391,7343.7578};
+						position[]={7459.8999,5.0014391,7343.7578};
 					};
 					side="Civilian";
 					flags=6;
@@ -1488,7 +1488,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="this hideObjectGlobal true; this allowDamage False; nul = [this] spawn zamf_fnc_spectateOptions; nul = [this, ""zeus""] spawn zamf_fnc_gear;";
-						description="Spectator";
+						description="Spectator@Spectators";
 						isPlayer=1;
 						isPlayable=1;
 					};
@@ -1497,6 +1497,25 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
@@ -1515,7 +1534,26 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute3
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -1534,7 +1572,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute4
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
@@ -1553,7 +1591,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						nAttributes=5;
 					};
 				};
 				class Item1
@@ -1570,7 +1608,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="this hideObjectGlobal true; this allowDamage False; nul = [this] spawn zamf_fnc_spectateOptions; nul = [this, ""zeus""] spawn zamf_fnc_gear;";
-						description="Spectator";
+						description="Spectator@Spectators";
 						isPlayable=1;
 					};
 					id=21;
@@ -1579,8 +1617,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
 							class Value
 							{
 								class data
@@ -1615,7 +1653,64 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 				class Item2
@@ -1623,7 +1718,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7459.9004,5.0014391,7341.5508};
+						position[]={7459.8999,5.0014391,7341.5508};
 					};
 					side="Civilian";
 					flags=4;
@@ -1632,7 +1727,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="this hideObjectGlobal true; this allowDamage False; nul = [this] spawn zamf_fnc_spectateOptions; nul = [this, ""zeus""] spawn zamf_fnc_gear;";
-						description="Spectator";
+						description="Spectator@Spectators";
 						isPlayable=1;
 					};
 					id=22;
@@ -1641,8 +1736,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
 							class Value
 							{
 								class data
@@ -1677,7 +1772,64 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 				class Item3
@@ -1694,7 +1846,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="this hideObjectGlobal true; this allowDamage False; nul = [this] spawn zamf_fnc_spectateOptions; nul = [this, ""zeus""] spawn zamf_fnc_gear;";
-						description="Spectator";
+						description="Spectator@Spectators";
 						isPlayable=1;
 					};
 					id=23;
@@ -1703,8 +1855,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
 							class Value
 							{
 								class data
@@ -1739,7 +1891,64 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 			};
@@ -3522,7 +3731,7 @@ class Mission
 						skill=0.60000002;
 						rank="CAPTAIN";
 						init="nul = [this, ""officer"", ""Dragon'0""] call zamf_fnc_team;";
-						description="Dragon'0'A [CO]";
+						description="A [CO]@Dragon'0";
 						isPlayable=1;
 					};
 					id=38;
@@ -3642,7 +3851,7 @@ class Mission
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="nul = [this, ""grunt"", ""Dragon'0""] call zamf_fnc_team;";
-						description="Dragon'0'E [Engineer]";
+						description="E [Engineer]@Dragon'0";
 						isPlayable=1;
 					};
 					id=39;
@@ -3807,7 +4016,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7485.5,5.0014391,7352.0508};
+						position[]={7485.5,5.0014391,7352.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -3816,8 +4025,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'0'A [SL]";
+						init="call{nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;}";
+						description="0 [SL]@Dragon'1";
 						isPlayable=1;
 					};
 					id=41;
@@ -3883,6 +4092,25 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -3900,7 +4128,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
@@ -3919,7 +4147,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item1
@@ -3927,7 +4155,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7487.5,5.0014391,7351.0508};
+						position[]={7487.5,5.0014391,7351.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -3937,7 +4165,7 @@ class Mission
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'1'A [FTL]";
+						description="1 [FTL]@Dragon'1";
 						isPlayable=1;
 					};
 					id=42;
@@ -4003,6 +4231,25 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -4020,7 +4267,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
@@ -4039,7 +4286,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item2
@@ -4047,7 +4294,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7489.5,5.0014391,7351.0508};
+						position[]={7489.5,5.0014391,7351.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -4056,7 +4303,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'1 [R]";
+						description="1 [R]@Dragon'1";
 						isPlayable=1;
 					};
 					id=43;
@@ -4122,6 +4369,25 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -4139,7 +4405,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
@@ -4158,7 +4424,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item3
@@ -4166,7 +4432,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7491.5,5.0014391,7351.0508};
+						position[]={7491.5,5.0014391,7351.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -4176,7 +4442,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'1'B [AR]";
+						description="1 [AR]@Dragon'1";
 						isPlayable=1;
 					};
 					id=44;
@@ -4242,6 +4508,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -4259,7 +4563,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item4
@@ -4267,7 +4571,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7493.5,5.0014391,7351.0508};
+						position[]={7493.5,5.0014391,7351.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -4276,7 +4580,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'1 [G]";
+						description="1 [G]@Dragon'1";
 						isPlayable=1;
 					};
 					id=45;
@@ -4342,6 +4646,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -4359,7 +4701,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item5
@@ -4367,7 +4709,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7487.5,5.0014391,7353.0508};
+						position[]={7487.5,5.0014391,7353.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -4377,7 +4719,7 @@ class Mission
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'2'A [FTL]";
+						description="2 [FTL]@Dragon'1";
 						isPlayable=1;
 					};
 					id=46;
@@ -4443,6 +4785,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -4460,7 +4840,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item6
@@ -4468,7 +4848,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7489.5,5.0014391,7353.0508};
+						position[]={7489.5,5.0014391,7353.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -4477,7 +4857,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'2 [R]";
+						description="2 [R]@Dragon'1";
 						isPlayable=1;
 					};
 					id=47;
@@ -4543,6 +4923,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -4560,7 +4978,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item7
@@ -4568,7 +4986,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7491.5,5.0014391,7353.0508};
+						position[]={7491.5,5.0014391,7353.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -4578,7 +4996,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'2'B [AR]";
+						description="2 [AR]@Dragon'1";
 						isPlayable=1;
 					};
 					id=48;
@@ -4644,6 +5062,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -4661,7 +5117,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item8
@@ -4669,7 +5125,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7493.5,5.0014391,7353.0508};
+						position[]={7493.5,5.0014391,7353.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -4678,7 +5134,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="nul = [this, ""grunt"", ""Dragon'1""] call zamf_fnc_team;";
-						description="Dragon'1'2 [G]";
+						description="2 [G]@Dragon'1";
 						isPlayable=1;
 					};
 					id=49;
@@ -4744,6 +5200,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -4761,7 +5255,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 			};
@@ -4805,7 +5299,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7485.5,5.0014391,7357.0508};
+						position[]={7485.5,5.0014391,7357.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -4815,7 +5309,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'0'A [SL]";
+						description="0 [SL]@Dragon'2";
 						isPlayable=1;
 					};
 					id=51;
@@ -4881,6 +5375,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -4898,7 +5430,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item1
@@ -4906,7 +5438,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7487.5,5.0014391,7356.0508};
+						position[]={7487.5,5.0014391,7356.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -4916,7 +5448,7 @@ class Mission
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'1'A [FTL]";
+						description="1 [FTL]@Dragon'2";
 						isPlayable=1;
 					};
 					id=52;
@@ -4982,6 +5514,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -4999,7 +5569,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item2
@@ -5007,7 +5577,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7489.5,5.0014391,7356.0508};
+						position[]={7489.5,5.0014391,7356.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -5016,7 +5586,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'1 [R]";
+						description="1 [R]@Dragon'2";
 						isPlayable=1;
 					};
 					id=53;
@@ -5082,6 +5652,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -5099,7 +5707,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item3
@@ -5107,7 +5715,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7491.5,5.0014391,7356.0508};
+						position[]={7491.5,5.0014391,7356.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -5117,7 +5725,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'1'B [AR]";
+						description="1 [AR]@Dragon'2";
 						isPlayable=1;
 					};
 					id=54;
@@ -5183,6 +5791,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -5200,7 +5846,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item4
@@ -5208,7 +5854,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7493.5,5.0014391,7356.0508};
+						position[]={7493.5,5.0014391,7356.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -5217,7 +5863,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'1 [G]";
+						description="1 [G]@Dragon'2";
 						isPlayable=1;
 					};
 					id=55;
@@ -5283,6 +5929,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -5300,7 +5984,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item5
@@ -5308,7 +5992,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7487.5,5.0014391,7358.0508};
+						position[]={7487.5,5.0014391,7358.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -5318,7 +6002,7 @@ class Mission
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'2'A [FTL]";
+						description="2 [FTL]@Dragon'2";
 						isPlayable=1;
 					};
 					id=56;
@@ -5384,6 +6068,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -5401,7 +6123,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item6
@@ -5409,7 +6131,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7489.5,5.0014391,7358.0508};
+						position[]={7489.5,5.0014391,7358.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -5418,7 +6140,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'2 [R]";
+						description="2 [R]@Dragon'2";
 						isPlayable=1;
 					};
 					id=57;
@@ -5484,6 +6206,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -5501,7 +6261,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item7
@@ -5509,7 +6269,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7491.5,5.0014391,7358.0508};
+						position[]={7491.5,5.0014391,7358.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -5519,7 +6279,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'2'B [AR]";
+						description="2 [AR]@Dragon'2";
 						isPlayable=1;
 					};
 					id=58;
@@ -5585,6 +6345,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -5602,7 +6400,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item8
@@ -5610,7 +6408,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7493.5,5.0014391,7358.0508};
+						position[]={7493.5,5.0014391,7358.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -5619,7 +6417,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="nul = [this, ""grunt"", ""Dragon'2""] call zamf_fnc_team;";
-						description="Dragon'2'2 [G]";
+						description="2 [G]@Dragon'2";
 						isPlayable=1;
 					};
 					id=59;
@@ -5685,6 +6483,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -5702,7 +6538,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 			};
@@ -5746,7 +6582,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7485.5,5.0014391,7361.0508};
+						position[]={7485.5,5.0014391,7361.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -5756,7 +6592,7 @@ class Mission
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="nul = [this, ""grunt"", ""Dragon'3""] call zamf_fnc_team;";
-						description="Dragon'3'0'A [SL]";
+						description="0 [SL]@Dragon'3";
 						isPlayable=1;
 					};
 					id=61;
@@ -5822,6 +6658,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -5839,7 +6713,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item1
@@ -5847,7 +6721,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7485.5,5.0014391,7363.0508};
+						position[]={7485.5,5.0014391,7363.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -5857,7 +6731,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="nul = [this, ""grunt"", ""Dragon'3""] call zamf_fnc_team;";
-						description="Dragon'3'0'D [DM]";
+						description="0 [DM]@Dragon'3";
 						isPlayable=1;
 					};
 					id=62;
@@ -5923,6 +6797,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -5940,7 +6852,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item2
@@ -5948,7 +6860,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7487.5,5.0014391,7361.0508};
+						position[]={7487.5,5.0014391,7361.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -5958,7 +6870,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="nul = [this, ""grunt"", ""Dragon'3""] call zamf_fnc_team;";
-						description="Dragon'3'1'G [MG Gunner]";
+						description="1 [MG Gunner]@Dragon'3";
 						isPlayable=1;
 					};
 					id=63;
@@ -6024,6 +6936,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -6041,7 +6991,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item3
@@ -6049,7 +6999,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7489.5,5.0014391,7361.0508};
+						position[]={7489.5,5.0014391,7361.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -6058,7 +7008,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="nul = [this, ""grunt"", ""Dragon'3""] call zamf_fnc_team;";
-						description="Dragon'3'1 [Ammo Bearer]";
+						description="1 [Ammo Bearer]@Dragon'3";
 						isPlayable=1;
 					};
 					id=64;
@@ -6124,6 +7074,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -6141,7 +7129,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item4
@@ -6149,7 +7137,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7491.5,5.0014391,7361.0508};
+						position[]={7491.5,5.0014391,7361.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -6159,7 +7147,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="nul = [this, ""grunt"", ""Dragon'3""] call zamf_fnc_team;";
-						description="Dragon'3'2'G [MG Gunner]";
+						description="2 [MG Gunner]@Dragon'3";
 						isPlayable=1;
 					};
 					id=65;
@@ -6225,6 +7213,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -6242,7 +7268,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item5
@@ -6250,7 +7276,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7493.5,5.0014391,7361.0508};
+						position[]={7493.5,5.0014391,7361.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -6259,7 +7285,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="nul = [this, ""grunt"", ""Dragon'3""] call zamf_fnc_team;";
-						description="Dragon'3'2 [Ammo Bearer]";
+						description="2 [Ammo Bearer]@Dragon'3";
 						isPlayable=1;
 					};
 					id=66;
@@ -6325,6 +7351,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -6342,7 +7406,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item6
@@ -6350,7 +7414,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7487.5,5.0014391,7363.0508};
+						position[]={7487.5,5.0014391,7363.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -6360,7 +7424,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="nul = [this, ""grunt"", ""Dragon'3""] call zamf_fnc_team;";
-						description="Dragon'3'3'G [ATGM Gunner]";
+						description="3 [ATGM Gunner]@Dragon'3";
 						isPlayable=1;
 					};
 					id=67;
@@ -6426,6 +7490,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -6443,7 +7545,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item7
@@ -6451,7 +7553,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7489.5,5.0014391,7363.0508};
+						position[]={7489.5,5.0014391,7363.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -6460,7 +7562,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="nul = [this, ""grunt"", ""Dragon'3""] call zamf_fnc_team;";
-						description="Dragon'3'3 [Ammo Bearer]";
+						description="3 [Ammo Bearer]@Dragon'3";
 						isPlayable=1;
 					};
 					id=68;
@@ -6526,6 +7628,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -6543,7 +7683,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item8
@@ -6551,7 +7691,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7491.5,5.0014391,7363.0508};
+						position[]={7491.5,5.0014391,7363.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -6561,7 +7701,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="nul = [this, ""grunt"", ""Dragon'3""] call zamf_fnc_team;";
-						description="Dragon'3'4'G [MANPAD Gunner]";
+						description="4 [MANPAD Gunner]@Dragon'3";
 						isPlayable=1;
 					};
 					id=69;
@@ -6627,6 +7767,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -6644,7 +7822,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item9
@@ -6652,7 +7830,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7493.5,5.0014391,7363.0508};
+						position[]={7493.5,5.0014391,7363.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -6661,7 +7839,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="nul = [this, ""grunt"", ""Dragon'3""] call zamf_fnc_team;";
-						description="Dragon'3'4 [Ammo Bearer]";
+						description="4 [Ammo Bearer]@Dragon'3";
 						isPlayable=1;
 					};
 					id=70;
@@ -6727,6 +7905,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -6744,7 +7960,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 			};
@@ -6788,7 +8004,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7485.5,5.0014391,7366.0508};
+						position[]={7485.5,5.0014391,7366.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -6798,7 +8014,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						init="nul = [this, ""grunt"", ""Dragon'4""] call zamf_fnc_team;";
-						description="Dragon'4'A";
+						description="[TL]@Dragon'4";
 						isPlayable=1;
 					};
 					id=72;
@@ -6864,6 +8080,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -6881,7 +8135,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item1
@@ -6889,7 +8143,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7489.5,5.0014391,7366.0508};
+						position[]={7489.5,5.0014391,7366.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -6899,7 +8153,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="nul = [this, ""grunt"", ""Dragon'4""] call zamf_fnc_team;";
-						description="Dragon'4'W";
+						description="[DM]@Dragon'4";
 						isPlayable=1;
 					};
 					id=73;
@@ -6965,6 +8219,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -6982,7 +8274,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 				class Item2
@@ -6990,7 +8282,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7487.5,5.0014391,7366.0508};
+						position[]={7487.5,5.0014391,7366.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -6999,7 +8291,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="nul = [this, ""grunt"", ""Dragon'4""] call zamf_fnc_team;";
-						description="Dragon'4'U";
+						description="[UAV Operator]@Dragon'4";
 						isPlayable=1;
 					};
 					id=74;
@@ -7065,6 +8357,44 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -7082,7 +8412,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 			};
@@ -7134,7 +8464,7 @@ class Mission
 					class Attributes
 					{
 						init="nul = [this, ""medic"", ""Dragon'5""] call zamf_fnc_team;";
-						description="Dragon'5'A [PM]";
+						description="A [PM]@Dragon'5";
 						isPlayable=1;
 					};
 					id=76;
@@ -7271,7 +8601,7 @@ class Mission
 					class Attributes
 					{
 						init="nul = [this, ""medic"", ""Dragon'5""] call zamf_fnc_team;";
-						description="Dragon'5 [CMT]";
+						description="[CMT]@Dragon'5";
 						isPlayable=1;
 					};
 					id=77;
@@ -7408,7 +8738,7 @@ class Mission
 					class Attributes
 					{
 						init="nul = [this, ""medic"", ""Dragon'5""] call zamf_fnc_team;";
-						description="Dragon'5 [CMT]";
+						description="[CMT]@Dragon'5";
 						isPlayable=1;
 					};
 					id=78;
@@ -7526,7 +8856,7 @@ class Mission
 					class Attributes
 					{
 						init="nul = [this, ""medic"", ""Dragon'5""] call zamf_fnc_team;";
-						description="Dragon'5 [CMT]";
+						description="[CMT]@Dragon'5";
 						isPlayable=1;
 					};
 					id=79;
@@ -7644,7 +8974,7 @@ class Mission
 					class Attributes
 					{
 						init="nul = [this, ""medic"", ""Dragon'5""] call zamf_fnc_team;";
-						description="Dragon'5 [CMT]";
+						description="[CMT]@Dragon'5";
 						isPlayable=1;
 					};
 					id=80;
@@ -7800,7 +9130,7 @@ class Mission
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="nul = [this, ""heli"", ""Ghostrider""] call zamf_fnc_team;";
-						description="Ghostrider'1 [Heli Pilot]";
+						description="1 [Heli Pilot]@Ghostrider";
 						isPlayable=1;
 					};
 					id=82;
@@ -7939,7 +9269,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="nul = [this, ""heli"", ""Ghostrider""] call zamf_fnc_team;";
-						description="Ghostrider'2 [Heli Pilot]";
+						description="2 [Heli Pilot]@Ghostrider";
 						isPlayable=1;
 					};
 					id=83;
@@ -8078,7 +9408,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="nul = [this, ""heli"", ""Ghostrider""] call zamf_fnc_team;";
-						description="Ghostrider'3 [Heli Pilot]";
+						description="3 [Heli Pilot]@Ghostrider";
 						isPlayable=1;
 					};
 					id=84;
@@ -8253,7 +9583,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						init="nul = [this, ""crew"", ""Badger'1""] call zamf_fnc_team;";
-						description="Badger'1 [Commander]";
+						description="[Commander]@Badger'1";
 						isPlayable=1;
 					};
 					id=86;
@@ -8354,7 +9684,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="nul = [this, ""crew"", ""Badger'1""] call zamf_fnc_team;";
-						description="Badger'1 [Gunner]";
+						description="[Gunner]@Badger'1";
 						isPlayable=1;
 					};
 					id=87;
@@ -8454,7 +9784,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="nul = [this, ""crew"", ""Badger'1""] call zamf_fnc_team;";
-						description="Badger'1 [Driver]";
+						description="[Driver]@Badger'1";
 						isPlayable=1;
 					};
 					id=88;
@@ -8591,7 +9921,7 @@ class Mission
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="nul = [this, ""crew"", ""Badger'2""] call zamf_fnc_team;";
-						description="Badger'2 [Commander]";
+						description="[Commander]@Badger'2";
 						isPlayable=1;
 					};
 					id=90;
@@ -8711,7 +10041,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="nul = [this, ""crew"", ""Badger'2""] call zamf_fnc_team;";
-						description="Badger'2 [Gunner]";
+						description="[Gunner]@Badger'2";
 						isPlayable=1;
 					};
 					id=91;
@@ -8830,7 +10160,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="nul = [this, ""crew"", ""Badger'2""] call zamf_fnc_team;";
-						description="Badger'2 [Driver]";
+						description="[Driver]@Badger'2";
 						isPlayable=1;
 					};
 					id=92;
@@ -8976,7 +10306,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7485.5,5.0014391,7380.0508};
+						position[]={7485.5,5.0014391,7380.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -8985,7 +10315,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						init="nul = [this, ""jet"", ""Reaper""] call zamf_fnc_team;";
-						description="Reaper";
+						description="[Pilot]@Reaper";
 						isPlayable=1;
 					};
 					id=94;
@@ -8994,27 +10324,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -9027,6 +10338,25 @@ class Mission
 										};
 									};
 									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isEngineer";
+							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
 								};
 							};
 						};
@@ -9051,8 +10381,46 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="ace_isEngineer";
-							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ace_isMedic";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -9068,10 +10436,10 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute6
 						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
 							class Value
 							{
 								class data
@@ -9087,7 +10455,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=7;
 					};
 				};
 			};
