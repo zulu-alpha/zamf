@@ -19,7 +19,14 @@ params ["_crate", "_gear", "_name", "_restrict"];
 
 
 [_crate, _gear] spawn zamf_fnc_crates;
-[_crate, true, _name] call ZAM_fnc_showNames_addDiscoverable;
+_crate setVariable ["group_name_restriction", _name];
+// Some issues with getting shownames function to execute, so attempting start delay.
+[_crate, _name] spawn {
+	params ["_crate", "_name"];
+	waitUntil {time > 1};
+	sleep 5;
+	[_crate, true, _name] call ZAM_fnc_showNames_addDiscoverable;
+};
 
 // Add option to save loadout for respawn
 // Only add it if the right crate (not strictly necessary)
@@ -44,14 +51,11 @@ _crate addAction [
 	true,
 	true,
 	"",
-	"(_target getVariable [""zam_showNames_name"", """"]) == (groupId (group _this))"
+	"(_target getVariable [""group_name_restriction"", """"]) == (groupId (group _this))"
 ];
 
 // Apply restriction
 if (_restrict) then {
-	// Don't rely on ZAMF Shownames for crate access.
-	_crate setVariable ["group_name_restriction", _name];
-
 	_crate addEventHandler ["ContainerOpened", {
 
 		private ["_crate", "_player", "_crate_name", "_player_gid"];
