@@ -13,16 +13,10 @@
         (NUL)
 */
 
-private ["_unit", "_gear", "_gid"];
-
-_unit = _this select 0;
-_gear = _this select 1;
-_gid = _this select 2;
+params ["_unit", "_gear", "_gid"];
 
 _unit setGroupId [_gid];
 
-if (typeName _gear == (typeName "")) then {
-    if !(_gear in ["arsenal", "custom"]) then {
-        [_unit, _gear] spawn zamf_fnc_gear;
-    };
+if (typeName _gear == (typeName "") and !(_gear in ["arsenal", "custom"])) then {
+    [_unit, _gear] spawn zamf_fnc_gear;
 };
