@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7487.9819,14.67311,7351.3833};
-		dir[]={0.062031526,-0.74981505,0.65891719};
-		up[]={0.070297778,0.6613633,0.74672371};
-		aside[]={0.99569416,3.3421766e-006,-0.093739323};
+		pos[]={7479.25,20.098242,7320.606};
+		dir[]={0.01924482,-0.44416559,0.89587557};
+		up[]={0.0095469756,0.89572144,0.44444394};
+		aside[]={0.99989128,2.8271736e-006,-0.021483153};
 	};
 };
 binarizationWanted=0;
@@ -8456,7 +8456,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7485.5,5.0014391,7369.0508};
+						position[]={7485.5,5.0014391,7369.0498};
 						angles[]={0,4.712389,0};
 					};
 					side="West";
@@ -8464,7 +8464,7 @@ class Mission
 					class Attributes
 					{
 						init="nul = [this, ""medic"", ""Dragon'5""] call zamf_fnc_team;";
-						description="A [PM]@Dragon'5";
+						description="[PM]@Dragon'5";
 						isPlayable=1;
 					};
 					id=76;
@@ -8473,27 +8473,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=2;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -8506,6 +8487,25 @@ class Mission
 										};
 									};
 									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isEngineer";
+							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=-1;
 								};
 							};
 						};
@@ -8529,25 +8529,6 @@ class Mission
 							};
 						};
 						class Attribute3
-						{
-							property="ace_isEngineer";
-							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=-1;
-								};
-							};
-						};
-						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -8566,10 +8547,10 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute4
 						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							property="speaker";
+							expression="_this setspeaker _value;";
 							class Value
 							{
 								class data
@@ -8578,37 +8559,14 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="Male11ENG";
 								};
 							};
 						};
-						nAttributes=6;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7487.5,5.0014391,7369.0508};
-						angles[]={0,4.712389,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="nul = [this, ""medic"", ""Dragon'5""] call zamf_fnc_team;";
-						description="[CMT]@Dragon'5";
-						isPlayable=1;
-					};
-					id=77;
-					type="B_medic_F";
-					class CustomAttributes
-					{
-						class Attribute0
+						class Attribute5
 						{
 							property="ace_isMedic";
 							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
@@ -8627,7 +8585,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute6
 						{
 							property="acex_headless_blacklist";
 							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
@@ -8643,6 +8601,67 @@ class Mission
 										};
 									};
 									value=0;
+								};
+							};
+						};
+						nAttributes=7;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7487.5,5.0014391,7369.0498};
+						angles[]={0,4.712389,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="nul = [this, ""medic"", ""Dragon'5""] call zamf_fnc_team;";
+						description="[CMT]@Dragon'5";
+						isPlayable=1;
+					};
+					id=77;
+					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isEngineer";
+							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=-1;
 								};
 							};
 						};
@@ -8667,25 +8686,6 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="ace_isEngineer";
-							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=-1;
-								};
-							};
-						};
-						class Attribute4
-						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -8703,10 +8703,48 @@ class Mission
 								};
 							};
 						};
+						class Attribute4
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
 						class Attribute5
 						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							property="ace_isMedic";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=2;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
 							class Value
 							{
 								class data
@@ -8722,7 +8760,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=7;
 					};
 				};
 				class Item2
