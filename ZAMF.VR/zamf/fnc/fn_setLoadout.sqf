@@ -274,7 +274,7 @@ clearAllItemsFromBackpack _target;
 _outfit = _data select 7;  
 if(_outfit != "") then {
 	if(isClass(configFile>>"CfgWeapons">>_outfit)) then {			
-		_target addUniform _outfit;
+		_target forceAddUniform _outfit;
 		_target addItem PLACEHOLDER_ITEM;
 		if(loadUniform _target > 0) then {
 			_placeholderCount = _placeholderCount + 1;
