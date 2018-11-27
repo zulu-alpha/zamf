@@ -231,7 +231,7 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_epinephrine";
 		_unit addItemToUniform "SmokeShell";
 		_unit addBackpack "za_bag_bergen_brown";
-		_unit addItemToBackpack "ACRE_PRC117F";
+		_unit addItemToBackpack "ACRE_PRC343";
 		_unit addItemToBackpack "ACE_NVG_Gen4";
 		_unit addItemToBackpack "ACE_SpraypaintGreen";
 		for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_M84";};
@@ -272,7 +272,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 5 do {_unit addItemToVest "30Rnd_556x45_Stanag";};
 		for "_i" from 1 to 3 do {_unit addItemToVest "16Rnd_9x21_Mag";};
 		_unit addBackpack "za_bag_bergen_brown";
-		_unit addItemToBackpack "ACRE_PRC117F";
+		_unit addItemToBackpack "ACRE_PRC343";
 		_unit addItemToBackpack "ACE_NVG_Gen4";
 		_unit addHeadgear "za_hel_Boonie_brown";
 		_unit addGoggles "G_Shades_Black";
@@ -294,7 +294,7 @@ switch (_loadout) do {
 
 		comment "Add containers";
 		_unit forceAddUniform "U_Competitor";
-		_unit addItemToUniform "ACRE_PRC152";
+		_unit addItemToUniform "ACRE_PRC343";
 		_unit addItemToUniform "ACE_Flashlight_MX991";
 		_unit addBackpack "za_bag_bergen_brown";
 		_unit addItemToBackpack "ACRE_PRC117F";
