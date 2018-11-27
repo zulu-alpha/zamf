@@ -191,7 +191,7 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addItemToUniform "ACE_salineIV_500";
 		_unit addItemToUniform "adv_aceSplint_splint";
-		_unit addVest (["za_vst_modularlite_arid", "za_vst_modularlite_tran", "za_vst_modularlite_wood"] select _index);
+		_unit addVest (["za_vst_modularlite_arid", "za_vst_modularlite_trans", "za_vst_modularlite_wood"] select _index);
 		_unit addHeadgear "za_hel_crewhelmet_brown";
 		_unit addGoggles "G_Balaclava_combat";
 
