@@ -20,6 +20,7 @@ _loadout = _this select 1;
 
 // Get the camo type needed
 _index = call zamf_fnc_getClimate;
+_index = if (_index == 2) then {1} else {_index};  // No woodland camo
 
 removeAllWeapons _unit;
 removeAllItems _unit;
