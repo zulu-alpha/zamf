@@ -30,7 +30,7 @@ class CfgRemoteExec
         // Ability to send jip messages: 0-disabled, 1-enabled (default)
         jip = 1;
         // VCOMAI 3
-        class vcm_serverask { allowedTargets = 0;jip = 1; };
+		class vcm_serverask { allowedTargets = 0;jip = 1; };
 		class VCM_PublicScript { allowedTargets = 0;jip = 1; };
 		class BIS_fnc_debugConsoleExec { allowedTargets = 0;jip = 1; };
 		class SpawnScript { allowedTargets = 0;jip = 1; };
@@ -52,7 +52,9 @@ class CfgRemoteExec
 
 class Extended_PreInit_EventHandlers {
     // VCOMAI 3
-	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
+	class VCM_CBASettings {
+		init = "call VCM_fnc_CBA_Settings";
+	};
 };
 
 // ZAMF specific parts of the description.ext

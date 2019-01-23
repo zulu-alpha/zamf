@@ -275,24 +275,45 @@ force RydFFE_OnePhase = false;
 force RydFFE_Safe = 100;
 force RydFFE_ShellView = false;
 
+// VCOM DRIVING
+force VCM_DRIVERLIMIT = 4;
+force VCM_DrivingActivated = false;
+force VCM_DrivingDelay = 0.75;
+force VCM_DrivingDist = 10;
+
 // VCOM SETTINGS
-force Vcm_ActivateAI = true;
+force VCM_ActivateAI = true;
 force VCM_ADVANCEDMOVEMENT = true;
 force VCM_AIDISTANCEVEHPATH = 100;
-force VCM_AIMagLimit = 5;
+force VCM_AIHEALING = true;
+force VCM_AIMagLimit = 2;
 force VCM_ARTYDELAY = 300;
 force VCM_ARTYENABLE = false;
+force VCM_ARTYSIDES = [WEST,EAST,GUER];
 force VCM_ARTYSPREAD = 400;
 force VCM_Debug = false;
 force VCM_ForceSpeed = true;
 force VCM_FRMCHANGE = true;
 force VCM_HEARINGDISTANCE = 800;
-force VCM_MINECHANCE = 75;
+force VCM_LGARRISONCHANCE = 20;
+force VCM_MINECHANCE = 10;
 force VCM_RAGDOLL = true;
 force VCM_RAGDOLLCHC = 50;
 force VCM_SIDEENABLED = [WEST,EAST,GUER];
-force VCM_SKILLCHANGE = true;
 force VCM_STATICARMT = 300;
 force VCM_StealVeh = true;
 force VCM_WARNDELAY = 30;
 force VCM_WARNDIST = 1000;
+
+// VCOM SKILL SETTINGS
+force VCM_AISKILL_AIMINGACCURACY_E = 0.25;
+force VCM_AISKILL_AIMINGACCURACY_R = 0.25;
+force VCM_AISKILL_AIMINGACCURACY_W = 0.25;
+force VCM_AISKILL_AIMINGSHAKE_E = 0.15;
+force VCM_AISKILL_AIMINGSHAKE_R = 0.15;
+force VCM_AISKILL_AIMINGSHAKE_W = 0.15;
+force VCM_AISKILL_AIMINGSPEED_E = 0.35;
+force VCM_AISKILL_AIMINGSPEED_R = 0.35;
+force VCM_AISKILL_AIMINGSPEED_W = 0.35;
+force VCM_SIDESPECIFICSKILL = true;
+force VCM_SKILLCHANGE = true;
