@@ -277,7 +277,7 @@ force RydFFE_ShellView = false;
 
 // VCOM DRIVING
 force VCM_DRIVERLIMIT = 4;
-force VCM_DrivingActivated = false;
+force VCM_DrivingActivated = true;
 force VCM_DrivingDelay = 0.75;
 force VCM_DrivingDist = 10;
 
