@@ -14,11 +14,11 @@ Mission template for rapid development of Zulu-Alpha missions and events. The ZA
     * **Example:** `co@16_OperationAwesome_V1-0-0.Tanoa`
 
 2. Copy the ***ZAMF.VR*** folder into your Arma 3 missions folder, located in `
-"C:\Users\< YOUR USERNAME >\Documents\Arma 3 - Other Profiles\zeMuppet\mpmissions"`
+"C:\Users\< YOUR USERNAME >\Documents\Arma 3 - Other Profiles\< YOUR GAME USERNAME >\missions"`
 
 3. Copy all the contents of the ***ZAMF.VR*** folder into your new mission, except for the ***mission.sqm*** file
 
-4. Open the ***ZAMF.VR*** folder the Eden editor, select all the objects in marker mode so as to make sure to also select any hidden markers, press ***Ctrl+c*** for copy on your keyboard, open your new mission in the eden editor, move your mouse where you want to the players to start from and then press ***Ctrl+v*** for paste on your keyboard.
+4. Open the ***ZAMF.VR*** folder and load up the ZAMF mission in the Eden editor, select all the objects in marker mode so as to make sure to also select any hidden markers, press ***Ctrl+c*** for copy on your keyboard, open your new mission in the eden editor, move your mouse where you want to the players to start from and then press ***Ctrl+v*** for paste on your keyboard.
 
 4. Using ED3N's Toolbar, set the Mission name, Description and Mission Author fields. These will be shown at the mission selection screen (and not the mission folder name).
     * You can use the exact same mission name format as above, except to make it look nicer in the mission selection screen, do these differently:
