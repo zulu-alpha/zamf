@@ -8,14 +8,14 @@ class EditorData
 	toggles=101;
 	class ItemIDProvider
 	{
-		nextID=398;
+		nextID=399;
 	};
 	class Camera
 	{
-		pos[]={7442.9023,60.09095,7271.3682};
-		dir[]={0.47463271,-0.45945913,0.75076789};
-		up[]={0.24556957,0.88814962,0.38843837};
-		aside[]={0.84526426,7.8529411e-008,-0.53437388};
+		pos[]={7444.9189,63.56723,7255.313};
+		dir[]={0.31317374,-0.63731712,0.70413613};
+		up[]={0.25903371,0.77052099,0.58240896};
+		aside[]={0.91373014,-1.8973151e-007,-0.40639266};
 	};
 };
 binarizationWanted=0;
@@ -253,7 +253,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=55;
+		items=54;
 		class Item0
 		{
 			dataType="Marker";
@@ -2015,6 +2015,25 @@ class Mission
 				};
 				class Attribute2
 				{
+					property="ALiVE_sys_profile_pathfinding";
+					expression="_this setVariable ['pathfinding',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute3
+				{
 					property="ALiVE_sys_profile_seaTransport";
 					expression="_this setVariable ['seaTransport',_value,true];";
 					class Value
@@ -2032,7 +2051,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute4
 				{
 					property="ALiVE_sys_profile_activeLimiter";
 					expression="_this setVariable ['activeLimiter',_value,true];";
@@ -2051,7 +2070,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute4
+				class Attribute5
 				{
 					property="ALiVE_sys_profile_spawnTypeJetRadius";
 					expression="_this setVariable ['spawnTypeJetRadius',_value,true];";
@@ -2070,7 +2089,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute5
+				class Attribute6
 				{
 					property="ALiVE_sys_profile_speedModifier";
 					expression="_this setVariable ['speedModifier',_value,true];";
@@ -2089,7 +2108,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute6
+				class Attribute7
 				{
 					property="ALiVE_sys_profile_spawnTypeHeliRadius";
 					expression="_this setVariable ['spawnTypeHeliRadius',_value,true];";
@@ -2108,7 +2127,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute7
+				class Attribute8
 				{
 					property="ALiVE_sys_profile_debug";
 					expression="_this setVariable ['debug',_value,true];";
@@ -2127,7 +2146,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute8
+				class Attribute9
 				{
 					property="ALiVE_sys_profile_persistent";
 					expression="_this setVariable ['persistent',_value,true];";
@@ -2146,7 +2165,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute9
+				class Attribute10
 				{
 					property="ALiVE_sys_profile_syncronised";
 					expression="_this setVariable ['syncronised',_value,true];";
@@ -2165,7 +2184,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute10
+				class Attribute11
 				{
 					property="ALiVE_sys_profile_virtualcombat_speedmodifier";
 					expression="_this setVariable ['virtualcombat_speedmodifier',_value,true];";
@@ -2184,7 +2203,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=11;
+				nAttributes=12;
 			};
 		};
 		class Item21
@@ -2890,10 +2909,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7465.5,5,7344};
+				position[]={7464.5,5,7344};
 			};
 			name="HCSlot_1";
 			isPlayable=1;
+			description="HCSlot_1";
 			id=26;
 			type="HeadlessClient_F";
 		};
@@ -10680,10 +10700,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7466.5,5,7344};
+				position[]={7465.5,5,7344};
 			};
 			name="HCSlot_2";
 			isPlayable=1;
+			description="HCSlot_2";
 			id=98;
 			type="HeadlessClient_F";
 		};
@@ -10692,26 +10713,15 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7465.5,5,7343};
+				position[]={7466.5,5,7344};
 			};
 			name="HCSlot_3";
 			isPlayable=1;
+			description="HCSlot_3";
 			id=99;
 			type="HeadlessClient_F";
 		};
 		class Item47
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={7466.5,5,7343};
-			};
-			name="HCSlot_4";
-			isPlayable=1;
-			id=100;
-			type="HeadlessClient_F";
-		};
-		class Item48
 		{
 			dataType="Object";
 			class PositionInfo
@@ -10772,7 +10782,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item49
+		class Item48
 		{
 			dataType="Object";
 			class PositionInfo
@@ -10833,7 +10843,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item50
+		class Item49
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -10962,7 +10972,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item51
+		class Item50
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -11186,7 +11196,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item52
+		class Item51
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -11276,7 +11286,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item53
+		class Item52
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -11366,7 +11376,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item54
+		class Item53
 		{
 			dataType="Logic";
 			class PositionInfo
