@@ -2,3 +2,6 @@
 max-line-length = 90
 extend-ignore = W503,E203
 select = C,E,F,W,B,B9
+per-file-ignores =
+    armaclass/*:C,E,F,W,B
+    tests/test_armaclass.py:C,E,F,W,B

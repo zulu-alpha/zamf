@@ -2,7 +2,7 @@
 
 Mission template for rapid development of Zulu-Alpha missions and events. The ZAMF automatically manages all gear and crates for the Zulu-Alpha units. This is managed with the `init` field of the ZAMF units and crates. See ***CUSTOMIZE*** for more.
 
-## BASIC USAGE:
+## BASIC USAGE
 
 1. Create a new mission in the eden editor and save before doing anything else with the following mission name format:
 `co@<NUMBER OF PLAYERS>_<MISSION NAME>_V<VERSION NUMBER>.<TERRAIN>`
@@ -20,17 +20,17 @@ Mission template for rapid development of Zulu-Alpha missions and events. The ZA
 
 4. Open the ***ZAMF.VR*** mission in the Eden editor, select all the objects in marker mode so as to make sure to also select any hidden markers, press ***Ctrl+c*** for copy on your keyboard, open your new mission in the eden editor, move your mouse where you want to the players to start from and then press ***Ctrl+v*** for paste on your keyboard.
 
-4. Using ED3N's Toolbar, set the Mission name, Description and Mission Author fields. These will be shown at the mission selection screen (and not the mission folder name).
+5. Using ED3N's Toolbar, set the Mission name, Description and Mission Author fields. These will be shown at the mission selection screen (and not the mission folder name).
     * You can use the exact same mission name format as above, except to make it look nicer in the mission selection screen, do these differently:
     * **< MISSION NAME >**: You can use spaces between the words. You didn't use spaces before as Arma does not save folder names with spaces.
     * **< VERSION NUMBER >**: Version of format `v#.#.#`. You did not use `.` before for safety with regards to file name extensions.
 
-5. Make your mission as you would any other ED3N mission by placing assets, objectives, markers and triggers.
+6. Make your mission as you would any other ED3N mission by placing assets, objectives, markers and triggers.
 
 ## DEPLOY YOUR MISSION
 
 1. Make sure that the mission is saved and that the Mission parameters such as *Independant* allegiance, mission name and author have been set.
-2. Save the mission. Make 
+2. Save the mission.
 3. Using the ED3N Toolbar, click `File -> Export -> To MP Mission`
 4. You can now `ALT+TAB` out of game and navigate to your Arma 3 Installation directory. Default:`C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MPMissions`
 5. Use the FTP server (Details in the Missions Office) to transfer the mission **PBO** file to the Zulu-Alpha server.
@@ -48,18 +48,16 @@ When you what to upload a new version of your mission:
 ## CUSTOMIZE:
 
 * To customize all ZAMF crates and gear loadouts, edit the following files respectively:
- * `loadout\crates.sqf`
- * `loadout\gear.sqf`
+* `loadout\crates.sqf`
+* `loadout\gear.sqf`
 
 > Editing the Script files can be made a LOT simpler by using the right tools. Have a look at [Visual Studio Code](https://code.visualstudio.com/) with the [SQF Launguage](https://marketplace.visualstudio.com/items?itemName=Armitxes.sqf) and [SQF Lint](https://marketplace.visualstudio.com/items?itemName=skacekachna.sqflint) addons.
-
 > If you would like to use the ED3N editor to edit the loadouts of players, then in the player unit's **init** field, change `"grunt"`, `"officer"`, `"medic"` or whatever else it may be in the `nul = [this, "grunt", "Dragon'1"] call zamf_fnc_team;` line to `false` in order to preserve the team settings but not use ZAMF loadouts. It should look something like `nul = [this, false, "Dragon'1"] call zamf_fnc_team;`
-
 >**NOTE:** You will need the classnames of the objects you wish to place into the scripts. These can be found by using the *Arma 3 Aresnal* tool (Under Bootcamp) from the Arma 3 Main Menu. Create a loadout containing the gear you want and click the `Copy` button at the bottom of the *Arsenal* window. Then `Alt+Tab` out of game and open Notepad or other equivalent text editor. Use `CTRL+V` to paste the text description of your loadout, from which you can find the classnames you need to use.
 
 * To change settings such as Night Vision settings, edit the `cba_settings.sqf` file.
 
-## NOTES:
+## NOTES
 
 * Keep mission files as small as possible.
 
