@@ -69,7 +69,7 @@ Saves all the usable and desirable kit and their relevant information to a DB fi
 
 ### Dev
 
-1. Install [Python 3.5.7](https://www.python.org/downloads/release/python-354/), or newer.
+1. Install [Python 3.7](https://www.python.org/downloads/), or newer.
 2. Install [Pipenv](https://pipenv.readthedocs.io/en/latest/install/#pragmatic-installation-of-pipenv)
 3. In the repo, execute `pipenv install --dev`.
 4. Activate the shell (`pipenv shell`) and run `pre-commit install`.
