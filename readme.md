@@ -63,5 +63,14 @@ When you what to upload a new version of your mission:
 
 * Keep mission files as small as possible.
 
+## ZAKM (Zulu-Alpha Kit Manager)
 
+Saves all the usable and desirable kit and their relevant information to a DB file for use in the ZAMF.
 
+### Dev
+
+1. Install [Python 3.5.7](https://www.python.org/downloads/release/python-354/), or newer.
+2. Install [Pipenv](https://pipenv.readthedocs.io/en/latest/install/#pragmatic-installation-of-pipenv)
+3. In the repo, execute `pipenv install --dev`.
+4. Activate the shell (`pipenv shell`) and run `pre-commit install`.
+5. You will now have [pytest](https://docs.pytest.org/en/latest/). Every time you commit, your code will be linted with black, flake8, bugbear and mypy.
