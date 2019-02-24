@@ -240,10 +240,10 @@ acex_volume_showNotification = true;
 
 // ACRE2
 force acre_sys_core_fullDuplex = false;
-force acre_sys_core_ignoreAntennaDirection = false;
+force acre_sys_core_ignoreAntennaDirection = true;
 force acre_sys_core_interference = false;
 force acre_sys_core_revealToAI = true;
-force acre_sys_core_terrainLoss = 0.5;
+force acre_sys_core_terrainLoss = 0.4;
 force acre_sys_core_ts3ChannelName = "ACRE";
 force acre_sys_core_ts3ChannelPassword = "";
 force acre_sys_core_ts3ChannelSwitch = true;
