@@ -9,8 +9,8 @@ steps:
   - pip install pipenv
   - pipenv install --dev --ignore-pipfile
   - pipenv run pytest
-  - pre-commit install
-  - pre-commit run --all-files
+  - pipenv run pre-commit install
+  - pipenv run pre-commit run --all-files
 
 - name: notify
   image: appleboy/drone-discord
