@@ -44,7 +44,7 @@ if !(isMultiplayer) exitWith {};
 	// Run on client
 	if (hasInterface) then {
 		// Set the player to dead when killed, as the object disappears from playableUnits and even allUnits.
-		player addMPEventHandler ["mpkilled", { if (isServer) then {_this call zamf_fnc_res_killed} }];
+		player addMPEventHandler ["mpkilled", { if (isServer) then {private "_this"; _this call zamf_fnc_res_killed} }];
 
 		// Run if joining midgame (so probably need to resume)
 		if (time > 30) then {

@@ -1,7 +1,7 @@
 //Disable AI
 if (!isServer) exitWith {};
 
-_unit = _this select 0;
+params ["_unit"];
 
 {
 

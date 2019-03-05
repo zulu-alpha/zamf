@@ -12,16 +12,14 @@
 		(NUL)
 */
 
-private ["_unit"];
-
-_unit = _this select 0;
+params ["_unit"];
 
 waitUntil {!(isNull _unit)};
 
 // Make sure addactions only appear to the player themselves.
 if !(local _unit) exitWith {};
 
-_teleport_map_click = {
+private _teleport_map_click = {
 	onMapSingleClick "player setPos _pos; onMapSingleClick ''; hint ''";
 	hintSilent "Open your map and left click on where you want to teleport to.";
 };

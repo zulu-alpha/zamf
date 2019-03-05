@@ -68,10 +68,11 @@ if (_restrict) then {
 
 		if (_crate_name != _player_gid) then {
 
-			_crate_name spawn {
+			[_crate_name] spawn {
+				params ["_crate_name"];
 				waitUntil {!isnull (findDisplay 602)};
 				(findDisplay 602) closeDisplay 2;
-				hint format ["You must be a member of %1 to access this crate!", _this];
+				hint format ["You must be a member of %1 to access this crate!", _crate_name];
 			};
 
 		};

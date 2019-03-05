@@ -22,9 +22,6 @@
 #define execNow call compile preprocessfilelinenumbers
 #endif
 
-private ["_input"];
-_input = _this;
-
 // Define Paramaters for editor
 if (isNil "paramsArray") then {
     execNow "zamf\params\params_editor.sqf";
@@ -43,22 +40,22 @@ PARAMS_def_view_distance execNow "zamf\world\world_view_distance.sqf";
 [PARAMS_clouds, PARAMS_fogValue, PARAMS_fogDecay, PARAMS_fogBase] execVM "zamf\world\world_weather.sqf";
 
 // Disable AI for all playable units
-if ("disable_playable_ai" in _input) then {execVM "zamf\player\disable_playable.sqf"};
+if ("disable_playable_ai" in _this) then {execVM "zamf\player\disable_playable.sqf"};
 
 // Disable Ai Speak for playable characters
-if ("disable_playable_ai_speak" in _input) then {execVM "zamf\player\disable_ai_speak.sqf"};
+if ("disable_playable_ai_speak" in _this) then {execVM "zamf\player\disable_ai_speak.sqf"};
 
 // Player automatically leaves group at start
-if ("leave_group" in _input) then {execVM "zamf\player\leave_grp.sqf"};
+if ("leave_group" in _this) then {execVM "zamf\player\leave_grp.sqf"};
 
 // Spectate on death
-if ("spectate_on_death" in _input) then {[] execVM "zamf\spect\zamf_spect_init.sqf"};
+if ("spectate_on_death" in _this) then {[] execVM "zamf\spect\zamf_spect_init.sqf"};
 
 // Add a key binding to exit EG Specator
 [] execVM "zamf\spect\zamf_spect_key.sqf";
 
 // Handle enabling or disabling of ZA Mods
-zam_res_enabled = if ("zam_res" in _input) then {True} else {False};
+zam_res_enabled = if ("zam_res" in _this) then {True} else {False};
 
 // Disable radio channels
 // 0 = Global
@@ -68,7 +65,7 @@ zam_res_enabled = if ("zam_res" in _input) then {True} else {False};
 // 4 = Vehicle
 // 5 = Direct
 // 6 = System
-if ("disable_chat_channels" in _input) then {
+if ("disable_chat_channels" in _this) then {
     [] spawn {
         waitUntil {sleep 0.1; time > 1};
         {
@@ -78,10 +75,10 @@ if ("disable_chat_channels" in _input) then {
 };
 
 // Zeusify all units
-if ("zeusify" in _input) then {[] execVM "zamf\zeus\init.sqf"};
+if ("zeusify" in _this) then {[] execVM "zamf\zeus\init.sqf"};
 
 // Advanced Towing
-if (("towing" in _input) and (isServer)) then {[] execVM "zamf\towing\fn_advancedTowingInit.sqf"};
+if (("towing" in _this) and (isServer)) then {[] execVM "zamf\towing\fn_advancedTowingInit.sqf"};
 
 // Finish world initialization before mission is launched.
 finishMissionInit;

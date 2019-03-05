@@ -1,7 +1,7 @@
 //Enable AI
 //if (!isServer) exitWith {};
 
-_unit = _this select 0;
+params ["_unit"];
 
 _unit enableAI "TARGET";
 _unit enableAI "AUTOTARGET";

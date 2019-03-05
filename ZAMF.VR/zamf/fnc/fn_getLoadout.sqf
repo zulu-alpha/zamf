@@ -145,19 +145,19 @@ if(_saveMagsAmmo) then {
 };
 
 // get backpack items
-_cargo = getbackpackcargo (unitbackpack _target);
-_backpacks = [];
+private _cargo = getbackpackcargo (unitbackpack _target);
+private _backpacks = [];
 {
 	for "_i" from 1 to ((_cargo select 1) select _foreachindex) do {
 		_backpacks set [count _backpacks, _x];
 	};
 } foreach (_cargo select 0);	
-_backPackItems = (backpackitems _target) + _backpacks;
+private _backPackItems = (backpackitems _target) + _backpacks;
 
 // get assigned items, headgear and goggles is not part of assignedItems
-_assignedItems = assignedItems _target;
-_headgear = headgear _target;
-_goggles = goggles _target;
+private _assignedItems = assignedItems _target;
+private _headgear = headgear _target;
+private _goggles = goggles _target;
 if((_headgear != "") && !(_headgear in _assignedItems)) then {
 	_assignedItems set [count _assignedItems, _headgear];
 };
@@ -194,12 +194,12 @@ if(!_isRepetitive) then {
 	_weaponHasChanged = false;
 
 	// get magazines of all assigned items
-	_magazines = [];
+	private _magazines = [];
 	{
 		_target selectWeapon _x;
 		if(currentWeapon _target==_x) then {
 			_weaponHasChanged = true;
-			_magazine = currentMagazine _target;
+			private _magazine = currentMagazine _target;
 			if(_magazine != "") then {
 				if(_saveMagsAmmo) then {
 					_magazines set[count _magazines, [_magazine, _target ammo _x]];
@@ -215,7 +215,7 @@ if(!_isRepetitive) then {
 	if(_weaponHasChanged) then {
 		if(_isOnFoot) then {
 			if(_currentWeapon != "" && _currentMode != "") then {
-				_muzzles = 0;
+				private _muzzles = 0;
 				while{ (_currentWeapon != currentMuzzle _target || _currentMode != currentWeaponMode _target ) && _muzzles < 200 } do {
 					_target action ["SWITCHWEAPON", _target, _target, _muzzles];
 					_muzzles = _muzzles + 1;

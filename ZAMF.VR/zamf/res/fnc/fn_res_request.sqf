@@ -16,10 +16,9 @@
 	Nothing
 
 */
+params ["_player"];
 
-private ["_player", "_player_uid", "_save_array", "_save_index", "_index"];
-
-_player = _this select 0;
+private ["_player_uid", "_save_array", "_save_index", "_index"];
 
 _player_uid = getPlayerUID _player;
 
@@ -31,7 +30,7 @@ _index = _save_index find _player_uid;
 // If player uid in the index, then begin restore attempt
 if (_index != -1) then {
 
-	private ["_data", "_side", "_alive", "_type"];
+	private ["_data", "_side", "_alive"];
 
 	// Player data
 	_data = _save_array select _index;
@@ -39,7 +38,6 @@ if (_index != -1) then {
 	// Check if the connected player is still on the same side and has the same type
 	_side = _data select 0;
 	_alive = _data select 1;
-	_type = _data select 9;
 	if ( (side _player == _side) && (_alive) ) then {
 
 		// Execute restore function on player machine

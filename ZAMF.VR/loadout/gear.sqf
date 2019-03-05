@@ -7,19 +7,19 @@
 	@usage nul = [_unit, "west"] execVM "loadout\gear.sqf";
 */
 
+params ["_unit", "_loadout"];
+
 if !(hasInterface) then {
 	waitUntil {time > 5};
 } else {
 	waitUntil {(time > 0) && !(isNull player) && {name player != "Error: No vehicle"}};
 };
 
-_unit = _this select 0;
 if !(local _unit) exitWith {};
 this = _unit; // Ease compatibility with BIS Arsenal export
-_loadout = _this select 1;
 
 // Get the camo type needed
-_index = call zamf_fnc_getClimate;
+private _index = call zamf_fnc_getClimate;
 _index = if (_index == 2) then {1} else {_index};  // No woodland camo
 
 removeAllWeapons _unit;

@@ -28,10 +28,10 @@ waitUntil {
 if (player in (call bis_fnc_listcuratorplayers)) then {
 	addMissionEventHandler ["Draw3D", {
 		{
-			_distance = position curatorCamera distance _x;
+			private _distance = position curatorCamera distance _x;
 			//if zeus camera is farther than 1200 meters away from the targets the text will not display
 			if (_distance < 1200) then {
-				_playerFPS = _x getVariable ["DNI_PlayerFPS",50];
+				private _playerFPS = _x getVariable ["DNI_PlayerFPS",50];
 				//if the FPS is below 20 it turns red and becomes more visible for zeus to see so they are aware
 				if (_playerFPS  <20) then 
 				{

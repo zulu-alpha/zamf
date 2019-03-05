@@ -2,38 +2,38 @@
 	if !(isPlayer _x) then {
 		//_x = _this;
 
-		_a = _x skillFinal "aimingAccuracy";
-		_a_o = _x skill "aimingAccuracy";
+		private _a = _x skillFinal "aimingAccuracy";
+		private _a_o = _x skill "aimingAccuracy";
 
-		_b = _x skillFinal "aimingShake";
-		_b_o = _x skill "aimingShake";
+		private _b = _x skillFinal "aimingShake";
+		private _b_o = _x skill "aimingShake";
 
-		_c = _x skillFinal "aimingSpeed";
-		_c_o = _x skill "aimingSpeed";
+		private _c = _x skillFinal "aimingSpeed";
+		private _c_o = _x skill "aimingSpeed";
 
-		_d = _x skillFinal "endurance";
-		_d_o = _x skill "endurance";
+		private _d = _x skillFinal "endurance";
+		private _d_o = _x skill "endurance";
 
-		_e = _x skillFinal "spotDistance";
-		_e_o = _x skill "spotDistance";
+		private _e = _x skillFinal "spotDistance";
+		private _e_o = _x skill "spotDistance";
 
-		_f = _x skillFinal "spotTime";
-		_f_o = _x skill "spotTime";
+		private _f = _x skillFinal "spotTime";
+		private _f_o = _x skill "spotTime";
 
-		_g = _x skillFinal "courage";
-		_g_o = _x skill "courage";
+		private _g = _x skillFinal "courage";
+		private _g_o = _x skill "courage";
 
-		_h = _x skillFinal "reloadSpeed";
-		_h_o = _x skill "reloadSpeed";
+		private _h = _x skillFinal "reloadSpeed";
+		private _h_o = _x skill "reloadSpeed";
 
-		_i = _x skillFinal "commanding";
-		_i_o = _x skill "commanding";
+		private _i = _x skillFinal "commanding";
+		private _i_o = _x skill "commanding";
 
-		_j = _x skillFinal "general";
-		_j_o = _x skill "general";
+		private _j = _x skillFinal "general";
+		private _j_o = _x skill "general";
 
-		_k = _x getvariable ["tpwcas_originalaccuracy", "None"];
-		_l = local _x;
+		private _k = _x getvariable ["tpwcas_originalaccuracy", "None"];
+		private _l = local _x;
 
 		/*
 		hint format ["
@@ -54,9 +54,10 @@
 		diag_log text format ["*** ZA Skill settings ***"];
 		diag_log text format [" Skill values for %1:" , _x];
 		diag_log text format [" (Original, Final)"];
-		diag_log text format ["    aimingAccuracy  : %1, %2", _a_o, _a];
+		diag_log text format ["    aimingAccuracy  : %1, %2" , _a_o, _a];
 		diag_log text format ["    aimingShake     : %1, %2" , _b_o, _b];
 		diag_log text format ["    aimingSpeed     : %1, %2" , _c_o, _c];
+		diag_log text format ["    endurance       : %1, %2" , _d_o, _d];
 		diag_log text format ["    spotDistance    : %1, %2" , _e_o, _e];
 		diag_log text format ["    spotTime        : %1, %2" , _f_o, _f];
 		diag_log text format ["    courage         : %1, %2" , _g_o, _g];

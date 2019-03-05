@@ -6,7 +6,7 @@
 	@usage Put in loadout folder with crates.sqf
 */
 
-_target = _this select 0;
-_loadout = _this select 3;
+private _target = _this select 0;
+private _loadout = _this select 3;
 
 [[_target, _loadout], "zamf_fnc_crates", false, false] spawn BIS_fnc_MP;

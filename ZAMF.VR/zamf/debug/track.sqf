@@ -23,14 +23,14 @@ while {"BIS_DEBUG_CAM_MARKER" in allMapMarkers} do {
 	{
 
 		// String representation of object
-		_object_str = str _x;
+		private _object_str = str _x;
 
 		// Create the marker and set it's type using the string reper of the object it's tracking
 		createMarkerLocal [_object_str, getPosAtl _x];
 		_object_str setMarkerTypeLocal "mil_dot";
 
 		// Decide marker color depending on side
-		_color = call {
+		private _color = call {
 			if (side group _x == east) exitWith {"colorRed"};
 			if (side group _x == west) exitWith {"colorBlue"};
 			if (side group _x == civilian) exitWith {"colorCivilian"};

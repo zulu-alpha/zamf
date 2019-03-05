@@ -48,7 +48,7 @@ if hasInterface then {
    // Make sure ACRE initializes
    waitUntil {
       sleep 1;
-      _radios = [] call acre_api_fnc_getCurrentRadioList;
+      private _radios = [] call acre_api_fnc_getCurrentRadioList;
       (count _radios) > 0
    };
 

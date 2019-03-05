@@ -18,7 +18,7 @@
 
 */
 
-private ["_player","_save_array","_pos","_dir","_damage","_loadout","_captive","_anim","_vehicle","_role","_type","_earplugs"];
+private ["_player","_save_array","_pos","_dir","_damage","_loadout","_captive","_anim","_vehicle","_role","_earplugs"];
 
 _player = _this select 0;
 _save_array = _this select 1;
@@ -47,7 +47,6 @@ _captive = _save_array select 6;
 _anim = _save_array select 7;
 _vehicle = (_save_array select 8) select 0;
 _role = (_save_array select 8) select 1;
-_type = _save_array select 9;
 _earplugs = _save_array select 10;
 
 

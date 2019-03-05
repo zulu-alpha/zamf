@@ -8,7 +8,7 @@
 	@usage Or: nul = [this, "nato_guns", "refill"] call compile preprocessfilelinenumbers "loadout\crates.sqf";
 */
 
-private ["_crate","_loadout","_opt","_numWeapon","_numAmmo","_numMod","_numItem","_numBag","_cloth"];
+private ["_crate","_loadout","_opt"];
 
 _crate = _this select 0;
 _loadout = _this select 1;
@@ -25,15 +25,8 @@ clearmagazinecargoGlobal _crate;
 clearItemCargoGlobal _crate;
 clearBackpackCargoGlobal _crate;
 
-_numWeapon = 5;
-_numAmmo = 15;
-_numMod = 5;
-_numItem = 20;
-_numBag = 1;
-_cloth = 5;
-
 // Get the camo type needed
-_index = call zamf_fnc_getClimate;
+private _index = call zamf_fnc_getClimate;
 _index = if (_index == 2) then {1} else {_index};  // No woodland camo
 
 

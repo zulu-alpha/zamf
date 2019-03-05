@@ -1,8 +1,7 @@
 //View Distance
 
-setViewDistance (_this);
-
-_this spawn {
+[_this] spawn {
+	params ["_distance"];
 	waitUntil {time > 10};
-	setViewDistance (_this);
+	setViewDistance _distance;
 };
