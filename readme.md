@@ -1,3 +1,5 @@
+[![Build Status](https://cloud.drone.io/api/badges/zulu-alpha/ZAMF/status.svg)](https://cloud.drone.io/zulu-alpha/ZAMF)
+
 # Zulu-Alpha Mission Framework (ZAMF)
 
 Mission template for rapid development of Zulu-Alpha missions and events. The ZAMF automatically manages all gear and crates for the Zulu-Alpha units. This is managed with the `init` field of the ZAMF units and crates. See ***CUSTOMIZE*** for more.

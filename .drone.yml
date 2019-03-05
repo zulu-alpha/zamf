@@ -1,0 +1,27 @@
+---
+kind: pipeline
+name: default
+
+steps:
+- name: tests
+  image: python:3.7
+  commands:
+  - pip install pipenv
+  - pipenv install --dev --ignore-pipfile
+  - pipenv run pytest
+  - pre-commit install
+  - pre-commit run --all-files
+
+- name: notify
+  image: appleboy/drone-discord
+  settings:
+    webhook_id:
+      from_secret: DISCORD_WEBHOOK_ID
+    webhook_token:
+      from_secret: DISCORD_WEBHOOK_TOKEN
+  when:
+    status:
+    - success
+    - failure
+
+...
