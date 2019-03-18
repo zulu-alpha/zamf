@@ -1,9 +1,5 @@
 //Time
-private ["_hour", "_minute", "_day"];
-
-_hour = _this select 0;
-_minute = _this select 1;
-_day = _this select 2;
+params ["_hour", "_minute", "_day"];
 
 if ((_hour <= -1) && {_minute <= -1} && {_day <= -1}) exitWith {};
 

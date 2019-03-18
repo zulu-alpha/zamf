@@ -38,9 +38,6 @@ def find_all_sqf(root_path: Path, ignore: list) -> Generator[Path, None, None]:
             if file_name.endswith(".sqf"):
                 full_path = Path(root, file_name)
                 if not to_ignore(full_path.relative_to(root_path), ignore):
-                    print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
-                    print(full_path)
-                    print("")
                     yield full_path
 
 
