@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=107;
+		nextID=108;
 	};
 	class Camera
 	{
-		pos[]={1062.3307,28.185755,2630.9058};
-		dir[]={0.9257521,-0.36119038,-0.11232673};
-		up[]={0.35855931,0.93247819,-0.04350641};
-		aside[]={-0.12045524,-1.7730054e-007,-0.99275523};
+		pos[]={1043.1897,14.891915,2648.7156};
+		dir[]={0.91181564,-0.35022026,-0.21479188};
+		up[]={0.34090385,0.93663716,-0.0803065};
+		aside[]={-0.22930913,7.0245733e-007,-0.97343558};
 	};
 };
 binarizationWanted=0;
@@ -260,7 +260,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=54;
+		items=55;
 		class Item0
 		{
 			dataType="Marker";
@@ -11518,6 +11518,67 @@ class Mission
 					};
 				};
 				nAttributes=6;
+			};
+		};
+		class Item54
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1078.026,8.1453028,2642.761};
+				angles[]={-0,1.5707964,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="call{[this, true, ""Wetworks""] call ZAM_fnc_showNames_addDiscoverable;}";
+				description="wetworks";
+			};
+			id=107;
+			type="B_CargoNet_01_ammo_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[""U_B_survival_uniform"",""U_B_Wetsuit"",""G_B_Diving"",""V_RebreatherB""],[20,20,20,20]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 	};
