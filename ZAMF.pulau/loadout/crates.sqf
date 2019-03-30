@@ -121,7 +121,7 @@ switch (_loadout) do {
 		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood"] select _index), 2];
 
 		// Vision
-		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 2];
+		_crate addItemCargoGlobal ["CUP_NVG_GPNVG_green", 2];
 		_crate addItemCargoGlobal ["Binocular", 1];
 		_crate addItemCargoGlobal ["ACE_Vector", 1];
 
@@ -192,7 +192,7 @@ switch (_loadout) do {
 		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood"] select _index), 9];
 
 		// Vision
-		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 9];
+		_crate addItemCargoGlobal ["CUP_NVG_GPNVG_green", 9];
 		_crate addItemCargoGlobal ["Binocular", 6];
 		_crate addItemCargoGlobal ["ACE_Vector", 3];
 
@@ -358,7 +358,7 @@ switch (_loadout) do {
 		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood"] select _index), 1];
 
 		// Vision
-		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 10];
+		_crate addItemCargoGlobal ["CUP_NVG_GPNVG_green", 10];
 		_crate addItemCargoGlobal ["Binocular", 4];
 		_crate addItemCargoGlobal ["ACE_Vector", 6];
 
@@ -524,7 +524,7 @@ switch (_loadout) do {
 
 
 		// Vision
-		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 3];
+		_crate addItemCargoGlobal ["CUP_NVG_GPNVG_green", 3];
 		_crate addItemCargoGlobal ["ACE_Vector", 3];
 
 
@@ -624,7 +624,7 @@ switch (_loadout) do {
 
 
 		// Vision
-		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 5];
+		_crate addItemCargoGlobal ["CUP_NVG_GPNVG_green", 5];
 		_crate addItemCargoGlobal ["Binocular", 5];
 
 		// Medical
@@ -735,7 +735,7 @@ switch (_loadout) do {
 		_crate addBackpackCargoGlobal ["B_AssaultPack_blk", 3];
 
 		// Vision
-		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 3];
+		_crate addItemCargoGlobal ["CUP_NVG_GPNVG_green", 3];
 
 
 		// Medical
@@ -793,7 +793,7 @@ switch (_loadout) do {
 		_crate addBackpackCargoGlobal ["B_AssaultPack_sgg", 1];
 
 		// Vision
-		//_crate addItemCargoGlobal ["ACE_NVG_Gen4", 1];
+		//_crate addItemCargoGlobal ["CUP_NVG_GPNVG_green", 1];
 
 
 		// Medical
@@ -846,7 +846,7 @@ switch (_loadout) do {
 		// Attire
 
 		// Vision
-		_crate addItemCargoGlobal ["ACE_NVG_Gen4", 3];
+		_crate addItemCargoGlobal ["CUP_NVG_GPNVG_green", 3];
 		_crate addItemCargoGlobal ["Binocular", 3];
 
 		// Medical
@@ -947,7 +947,7 @@ switch (_loadout) do {
 		this linkItem "ACE_NVG_Gen1";
 		this linkItem "ACE_NVG_Gen2";
 		this linkItem "NVGoggles";
-		this linkItem "ACE_NVG_Gen4";
+		this linkItem "CUP_NVG_GPNVG_green";
 		this linkItem "ACE_NVG_Wide";
 
 		this addItemToBackpack "ACE_Clacker";
