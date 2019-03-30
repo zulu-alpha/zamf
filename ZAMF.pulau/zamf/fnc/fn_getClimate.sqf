@@ -17,7 +17,7 @@
 // Make sure you add new terrains in lower-case
 _arid = ["farkhar", "mcn_aliabad", "clafghan", "desert_e", "desert_island", "dya", "fallujah", "mcn_hazarkot", "isladuala3", "kidal", "lythium", "porto", "reshmaan", "shapur_baf", "takistan", "mountains_acr", "zargabad", "kunduz", "fata"];
 _tran = ["altis", "abel", "malden", "provinggrounds_pmc", "intro", "sara", "saralite", "stratis", "uhao", "sara_dbe1", "vr"];
-_wood = ["bootcamp_acr", "cain", "woodland_acr", "chernarus", "eden", "noe", "kapaulio", "chernarus_summer", "tanoa", "utes", "bornholm", "pja305", "panthera3", "anim_helvantis_v2", "tem_ihantala"];
+_wood = ["bootcamp_acr", "cain", "woodland_acr", "chernarus", "eden", "noe", "kapaulio", "chernarus_summer", "tanoa", "utes", "bornholm", "pja305", "panthera3", "anim_helvantis_v2", "tem_ihantala", "pulau"];
 
 _world = toLower worldName;
 
