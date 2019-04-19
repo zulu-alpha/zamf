@@ -38,6 +38,14 @@ class ZAMF
 		};
 	};
 
+	class world
+	{
+		file = "zamf\world\fnc";
+		class setDateTime {description = "Sets date and time. Designed for use with params."};
+		class setViewDistance {description = "Sets view distance. Designed for use with params."};
+		class setWeather {description = "Sets weather settings. Designed for use with params."};
+	};
+
 	class res
 	{
 		file = "zamf\res\fnc";

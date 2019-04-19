@@ -1,10 +1,30 @@
+#ifndef zamf_world_params_month
+	#define zamf_world_params_month -1
+#endif
+class month {
+	title="    Month";
+	values[]={-1,1,2,3,4,5,6,7,8,9,10,11,12};
+	texts[]={"No change","1","2","3","4","5","6","7","8","9","10","11","12"};
+	default = zamf_world_params_month;
+};
+
+#ifndef zamf_world_params_day
+	#define zamf_world_params_day -1
+#endif
+class day {
+	title="    Day of Month";
+	values[]={-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31};
+	texts[]={"No change","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"};
+	default = zamf_world_params_day;
+};
+
 #ifndef zamf_world_params_hour
 	#define zamf_world_params_hour -1
 #endif
 class hour {
 	title="    Hour";
 	values[]={-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23};
-	texts[]={"Default","00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"};
+	texts[]={"No change","00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"};
 	default = zamf_world_params_hour;
 };
 
@@ -14,18 +34,8 @@ class hour {
 class minute {
 	title="    Minute";
 	values[]={-1,0,5,10,15,20,25,30,35,40,45,50,55};
-	texts[]={"Default","00","05","10","15","20","25","30","35","40","45","50","55"};
+	texts[]={"No change","00","05","10","15","20","25","30","35","40","45","50","55"};
 	default = zamf_world_params_minute;
-};
-
-#ifndef zamf_world_params_day
-	#define zamf_world_params_day -1
-#endif
-class day {
-	title="    Day of Month";
-	values[]={-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31};
-	texts[]={"Default","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"};
-	default = zamf_world_params_day;
 };
 
 #ifndef zamf_world_params_world_def_view_distance
@@ -38,14 +48,44 @@ class def_view_distance {
 	default = zamf_world_params_world_def_view_distance;
 };
 
-#ifndef zamf_world_params_clouds
-	#define zamf_world_params_clouds -1
+#ifndef zamf_world_params_overcast
+	#define zamf_world_params_overcast -1
 #endif
-class clouds {
-	title="    Clouds";
-	values[]={-1,0,1,2};
-	texts[]={"Default","Clear","Overcast","Stormy"};
-	default = zamf_world_params_clouds;
+class overcast {
+	title="    Overcast";
+	values[]={-1,0,1,2,3,4,5,6,7,8,9,10};
+	texts[]={"No change","0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"};
+	default = zamf_world_params_overcast;
+};
+
+#ifndef zamf_world_params_rain
+	#define zamf_world_params_rain -1
+#endif
+class rain {
+	title="    Rain";
+	values[]={-1,0,1,2,3,4,5,6,7,8,9,10};
+	texts[]={"No change","0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"};
+	default = zamf_world_params_rain;
+};
+
+#ifndef zamf_world_params_waves
+	#define zamf_world_params_waves -1
+#endif
+class waves {
+	title="    Waves";
+	values[]={-1,0,1,2,3,4,5,6,7,8,9,10};
+	texts[]={"No change","0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"};
+	default = zamf_world_params_waves;
+};
+
+#ifndef zamf_world_params_lightning
+	#define zamf_world_params_lightning -1
+#endif
+class lightning {
+	title="    Lightning";
+	values[]={-1,0,1,2,3,4,5,6,7,8,9,10};
+	texts[]={"No change","0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"};
+	default = zamf_world_params_lightning;
 };
 
 #ifndef zamf_world_params_fogValue
@@ -54,7 +94,7 @@ class clouds {
 class fogValue {
 	title="    Value for fog at base level";
 	values[]={-1,0,1,2,3,4,5,6,7,8,9,10};
-	texts[]={"Default","0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"};
+	texts[]={"No change","0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"};
 	default = zamf_world_params_fogValue;
 };
 

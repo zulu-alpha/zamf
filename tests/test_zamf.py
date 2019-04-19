@@ -12,8 +12,6 @@ IGNORE = [
     "Vcom",
     "zamf/fnc/fn_getLoadout.sqf",  # Confused by advanced pre-processor
     "zamf/fnc/fn_setLoadout.sqf",  # TODO: Report incapability to parse
-    "zamf/params/params_editor.sqf",  # Not accepting select for configs
-    "zamf/params/params_name.sqf",  # Not accepting select for configs
     "zamf/towing/fn_advancedTowingInit.sqf",  # TODO: Report parsing problem
 ]
 

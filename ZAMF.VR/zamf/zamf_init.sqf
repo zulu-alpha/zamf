@@ -17,27 +17,29 @@
 ] call ZAMF_fnc_zamf_init;
 */
 
-// Shortens script calls
-#ifndef execNow
-#define execNow call compile preprocessfilelinenumbers
-#endif
-
-// Define Paramaters for editor
-if (isNil "paramsArray") then {
-    execNow "zamf\params\params_editor.sqf";
-};
-
-// Name Paramaters for easy use
-execNow "zamf\params\params_name.sqf";
-
 // Time Parameter
-[PARAMS_hour, PARAMS_minute, PARAMS_day] execVM "zamf\world\world_time.sqf";
+[
+    "month" call BIS_fnc_getParamValue,
+    "day" call BIS_fnc_getParamValue,
+    "hour" call BIS_fnc_getParamValue,
+    "minute" call BIS_fnc_getParamValue
+]  call zamf_fnc_setDateTime;
 
 // View Distance Parameter
-PARAMS_def_view_distance execNow "zamf\world\world_view_distance.sqf";
+[
+    "def_view_distance" call BIS_fnc_getParamValue
+]  call zamf_fnc_setViewDistance;
 
 // Weather Parameter
-[PARAMS_clouds, PARAMS_fogValue, PARAMS_fogDecay, PARAMS_fogBase] execVM "zamf\world\world_weather.sqf";
+[
+    "overcast" call BIS_fnc_getParamValue,
+    "rain" call BIS_fnc_getParamValue,
+    "waves" call BIS_fnc_getParamValue,
+    "lightning" call BIS_fnc_getParamValue,
+    "fogValue" call BIS_fnc_getParamValue,
+    "fogDecay" call BIS_fnc_getParamValue,
+    "fogBase" call BIS_fnc_getParamValue
+] call zamf_fnc_setWeather;
 
 // Disable AI for all playable units
 if ("disable_playable_ai" in _this) then {execVM "zamf\player\disable_playable.sqf"};
