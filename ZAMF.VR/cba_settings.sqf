@@ -250,9 +250,11 @@ force acre_sys_core_ts3ChannelSwitch = true;
 
 // ADV - ACE Splint
 force adv_aceSplint_enable = true;
-force adv_aceSplint_reopenChance = 20;
-force adv_aceSplint_reopenTime = 600;
-force adv_aceSplint_reuseChance = 80;
+force adv_aceSplint_patientCondition = 0;
+force adv_aceSplint_reopenChance_medic = 20;
+force adv_aceSplint_reopenChance_regular = 40;
+force adv_aceSplint_reopenTime = 300;
+force adv_aceSplint_reuseChance = 70;
 
 // ZAM ShowNames
 force ZAM_showNames_fade = true;
