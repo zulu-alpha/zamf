@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=651;
+		nextID=653;
 	};
 	class MarkerIDProvider
 	{
@@ -348,7 +348,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=91;
+		items=93;
 		class Item0
 		{
 			dataType="Marker";
@@ -11973,6 +11973,26 @@ class Mission
 			};
 			id=610;
 			atlOffset=3.8146973e-006;
+		};
+		class Item91
+		{
+			dataType="Marker";
+			position[]={6201.2051,41.966,5803.4409};
+			name="marker_9";
+			text="4th Inf Plt";
+			type="o_mech_inf";
+			alpha=0.3396351;
+			id=651;
+			atlOffset=0.00045776367;
+		};
+		class Item92
+		{
+			dataType="Marker";
+			position[]={6199.5659,51.969002,5880.876};
+			name="marker_25";
+			type="group_3";
+			id=652;
+			atlOffset=-0.00011825562;
 		};
 	};
 	class VehicleInVehicleLinks
