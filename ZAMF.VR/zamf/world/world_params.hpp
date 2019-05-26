@@ -1,3 +1,10 @@
+class world_header {
+	title = ":: World";
+	values[]= {0};
+	texts[]= {" "};
+	default = 0;
+};
+
 #ifndef zamf_world_params_month
 	#define zamf_world_params_month -1
 #endif

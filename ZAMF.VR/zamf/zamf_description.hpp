@@ -43,10 +43,6 @@ enableDebugConsole = 1;
 // 1 = Available in SP and for hosts / logged in admins
 // 2 = Available for everyone
 
-
-// Paramaters are handled in the following file:
-#include "zamf_params.hpp"
-
 // ORBAT
 #include "..\orbat.hpp"
 

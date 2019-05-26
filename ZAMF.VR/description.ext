@@ -60,5 +60,9 @@ class Extended_PreInit_EventHandlers {
 // ZAMF specific parts of the description.ext
 #include "zamf\zamf_description.hpp"
 
+// Misison paramaters
+class Params {
+    #include "zamf\world\world_params.hpp"
+};
 
 //// Put custom code under here:
