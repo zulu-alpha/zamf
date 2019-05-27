@@ -16,8 +16,7 @@ if (!isServer) exitWith {};
 _this spawn {
 	params ["_month", "_day", "_hour", "_minute"];
 
-	private _old_date = date;
-	private _new_date = _old_date;
+	private _new_date = date;
 
 	if (_month > -1) then {
 		_new_date set [1, _month];
@@ -35,8 +34,8 @@ _this spawn {
 		_new_date set [4, _minute];
 	};
 
-	if (_new_date isEqualTo _old_date) then {
-		waitUntil {time > 2};
+	waitUntil {time > 2};
+	if !(_new_date isEqualTo date) then {
 		[_new_date, true, false] call BIS_fnc_setDate;
 	};
 };
