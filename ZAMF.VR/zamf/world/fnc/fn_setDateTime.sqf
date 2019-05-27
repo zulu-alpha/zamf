@@ -3,10 +3,10 @@
 	Sets date and time. Designed for use with params. 
 
 	Parameter(s):
-	0: NUMBER - Month. -1 for no change.
-	0: NUMBER - Day. -1 for no change.
-	0: NUMBER - Hour. -1 for no change.
-	0: NUMBER - Minute. -1 for no change.
+	0: STRING - Params class name for the Month.
+	1: STRING - Params class name for the Day.
+	2: STRING - Params class name for the Hour.
+	3: STRING - Params class name for the Minute.
 
 	Returns:
 	Nothing
@@ -14,7 +14,13 @@
 if (!isServer) exitWith {};
 
 _this spawn {
-	params ["_month", "_day", "_hour", "_minute"];
+	params ["_month_name", "_day_name", "_hour_name", "_minute_name"];
+	private _month = [_month_name, -1] call BIS_fnc_getParamValue;
+	private _day = [_day_name, -1] call BIS_fnc_getParamValue;
+	private _hour = [_hour_name, -1] call BIS_fnc_getParamValue;
+	private _minute = [_minute_name, -1] call BIS_fnc_getParamValue;
+
+	if (_month + _day + _hour + _minute == -4) exitWith {};
 
 	private _new_date = date;
 
@@ -34,8 +40,6 @@ _this spawn {
 		_new_date set [4, _minute];
 	};
 
-	waitUntil {time > 2};
-	if !(_new_date isEqualTo date) then {
-		[_new_date, true, false] call BIS_fnc_setDate;
-	};
+	waitUntil {time > 1};
+	[_new_date, true, false] call BIS_fnc_setDate;
 };

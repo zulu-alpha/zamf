@@ -18,12 +18,7 @@
 */
 
 // Time Parameter
-[
-    "month" call BIS_fnc_getParamValue,
-    "day" call BIS_fnc_getParamValue,
-    "hour" call BIS_fnc_getParamValue,
-    "minute" call BIS_fnc_getParamValue
-]  call zamf_fnc_setDateTime;
+["month", "day", "hour", "minute"] call zamf_fnc_setDateTime;
 
 // View Distance Parameter
 [
