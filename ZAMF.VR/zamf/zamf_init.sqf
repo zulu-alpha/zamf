@@ -25,13 +25,13 @@
 
 // Weather Parameter
 [
-    "overcast" call BIS_fnc_getParamValue,
-    "rain" call BIS_fnc_getParamValue,
-    "waves" call BIS_fnc_getParamValue,
-    "lightning" call BIS_fnc_getParamValue,
-    "fogValue" call BIS_fnc_getParamValue,
-    "fogDecay" call BIS_fnc_getParamValue,
-    "fogBase" call BIS_fnc_getParamValue
+    "overcast",
+    "rain",
+    "waves",
+    "lightning",
+    "fogValue",
+    "fogDecay",
+    "fogBase"
 ] call zamf_fnc_setWeather;
 
 // Disable AI for all playable units
