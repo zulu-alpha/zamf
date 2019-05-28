@@ -21,9 +21,7 @@
 ["month", "day", "hour", "minute"] call zamf_fnc_setDateTime;
 
 // View Distance Parameter
-[
-    "def_view_distance" call BIS_fnc_getParamValue
-]  call zamf_fnc_setViewDistance;
+["def_view_distance"] call zamf_fnc_setViewDistance;
 
 // Weather Parameter
 [
