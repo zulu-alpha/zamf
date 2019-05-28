@@ -4,7 +4,7 @@ class ZAMF
 	class init
 	{
 		class preInit {
-			file = "zamf\zamf_preInit.sqf";
+			file = "preInit.sqf";
 			preInit = 1;
 			description = "Runs code that needs to be executed extremely early";
 		};
