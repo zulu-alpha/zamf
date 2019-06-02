@@ -56,4 +56,10 @@ class ZAMF
 		class res_request{description = "This checks to see if the player is in the save data and restores if so.";};
 		class res_killed{description = "Sets the save data to killed for the given player object.";};
 	};
+
+	class spectate
+	{
+		file = "zamf\spectate\fnc";
+		class startSpectate {description = "Initiates the respawn script with ZA settings and enhancements.";};
+	};
 };
