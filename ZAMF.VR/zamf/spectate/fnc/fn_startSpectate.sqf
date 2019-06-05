@@ -12,15 +12,14 @@
 	Returns:
 	Nothing
 */
-params ["_player", "_doAcreSpectate", "_force"];
-if !(local _player) exitWith {};
-
 _this spawn {
 	params ["_player", "_doAcreSpectate", "_force"];
+	if !(hasInterface) exitWith{};
+	if !(local _player) exitWith {};
 
 	// https://ace3mod.com/wiki/framework/spectator-framework.html#41-change-the-local-players-spectator-status
 	// If ACRE spectating is disbled, then stay visible
-	[true, _force, false] call ace_spectator_fnc_setSpectator; //!_doAcreSpectate
+	[true, _force, !_doAcreSpectate] call ace_spectator_fnc_setSpectator;
 	// https://ace3mod.com/wiki/framework/spectator-framework.html#42-whitelistblacklist-units-available-to-spectate
 	[allUnits, [_player]] call ace_spectator_fnc_updateUnits;
 	// https://ace3mod.com/wiki/framework/spectator-framework.html#43-addremove-sides-available-to-spectate

@@ -61,5 +61,6 @@ class ZAMF
 	{
 		file = "zamf\spectate\fnc";
 		class startSpectate {description = "Initiates the respawn script with ZA settings and enhancements.";};
+		class spectateOnDeath {description = "Initiates spectator on death if respawn timer is long enough (and ends it).";};
 	};
 };
