@@ -31,9 +31,9 @@ class ZAMF
 		class disableAI {description = "Disables the AI for all the crew of a specified unit."; file = "zamf\ai\disable_ai.sqf";};
 		class team {description = "Sets the gear and group ID of a unit.";};
 		class crate {description = "Sets the gear and group restrictions of a crate.";};
-		class spectateOptions {description = "Gives the target player local only action menu options to spectate. Must be spawned.";};
-		class zamf_init {
-			file = "zamf\zamf_init.sqf";
+		class forceHide {description = "Make sure the given object is hidden perpetually and can never be un-hidden.";};
+		class init {
+			file = "zamf\init.sqf";
 			description = "Initializes many ZAMF functionality in their correct order.";
 		};
 	};
@@ -62,5 +62,7 @@ class ZAMF
 		file = "zamf\spectate\fnc";
 		class startSpectate {description = "Initiates the respawn script with ZA settings and enhancements.";};
 		class spectateOnDeath {description = "Initiates spectator on death if respawn timer is long enough (and ends it).";};
+		class spectateOptions {description = "Gives the target player local only action menu options to spectate.";};
+		class trackingMarkers {description = "Creates and keeps up to date local markers for all units";};
 	};
 };

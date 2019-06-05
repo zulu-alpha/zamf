@@ -14,7 +14,7 @@
 "disable_chat_channels",     // Disables chat channels. Used here instead of description to allow them in map screen.
 "towing"                     // Advanced towing.
 
-] call ZAMF_fnc_zamf_init;
+] call ZAMF_fnc_init;
 
 // VCOM AI
 [] execVM "Vcom\VcomInit.sqf";

@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7486.4766,17.252016,7330.6079};
-		dir[]={-0.14164072,-0.39178166,0.90920335};
-		up[]={-0.060312606,0.92001963,0.38714653};
-		aside[]={0.9881835,4.8807124e-008,0.15394111};
+		pos[]={7478.9878,35.882915,7296.9834};
+		dir[]={0.034582525,-0.46722004,0.8835808};
+		up[]={0.01827272,0.88410389,0.46688518};
+		aside[]={0.99933672,4.679614e-007,-0.039117504};
 	};
 };
 binarizationWanted=0;
@@ -1503,7 +1503,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this hideObjectGlobal true; this allowDamage False; nul = [this] spawn zamf_fnc_spectateOptions; nul = [this, ""zeus""] spawn zamf_fnc_gear;";
+						init="call{this allowDamage False;" \n "nul = [this] call zamf_fnc_forceHide;" \n "nul = [this] spawn zamf_fnc_spectateOptions; " \n "nul = [this, ""zeus""] spawn zamf_fnc_gear;}";
 						description="Spectator@Spectators";
 						isPlayer=1;
 						isPlayable=1;
@@ -1623,7 +1623,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="this hideObjectGlobal true; this allowDamage False; nul = [this] spawn zamf_fnc_spectateOptions; nul = [this, ""zeus""] spawn zamf_fnc_gear;";
+						init="call{this allowDamage False;" \n "nul = [this] call zamf_fnc_forceHide;" \n "nul = [this] spawn zamf_fnc_spectateOptions; " \n "nul = [this, ""zeus""] spawn zamf_fnc_gear;}";
 						description="Spectator@Spectators";
 						isPlayable=1;
 					};
@@ -1742,7 +1742,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="this hideObjectGlobal true; this allowDamage False; nul = [this] spawn zamf_fnc_spectateOptions; nul = [this, ""zeus""] spawn zamf_fnc_gear;";
+						init="call{this allowDamage False;" \n "nul = [this] call zamf_fnc_forceHide;" \n "nul = [this] spawn zamf_fnc_spectateOptions; " \n "nul = [this, ""zeus""] spawn zamf_fnc_gear;}";
 						description="Spectator@Spectators";
 						isPlayable=1;
 					};
@@ -1861,7 +1861,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="this hideObjectGlobal true; this allowDamage False; nul = [this] spawn zamf_fnc_spectateOptions; nul = [this, ""zeus""] spawn zamf_fnc_gear;";
+						init="call{this allowDamage False;" \n "nul = [this] call zamf_fnc_forceHide;" \n "nul = [this] spawn zamf_fnc_spectateOptions; " \n "nul = [this, ""zeus""] spawn zamf_fnc_gear;}";
 						description="Spectator@Spectators";
 						isPlayable=1;
 					};
