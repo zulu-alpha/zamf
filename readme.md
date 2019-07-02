@@ -1,4 +1,4 @@
-[![Build Status](https://cloud.drone.io/api/badges/zulu-alpha/ZAMF/status.svg)](https://cloud.drone.io/zulu-alpha/ZAMF)
+[![Build Status](https://cloud.drone.io/api/badges/zulu-alpha/zamf/status.svg)](https://cloud.drone.io/zulu-alpha/zamf)
 
 # Zulu-Alpha Mission Framework (ZAMF)
 
