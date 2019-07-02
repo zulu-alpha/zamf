@@ -220,7 +220,7 @@ switch (_loadout) do {
 
 		// Grenades
 		_crate addMagazineCargoGlobal ["HandGrenade", 28];
-		_crate addMagazineCargoGlobal ["ACE_M84", 14];
+		_crate addMagazineCargoGlobal ["ACE_M84", 36];
 
 		// Primary Weapon
 		_crate addWeaponCargoGlobal ["hlc_rifle_M4", 5];
@@ -320,7 +320,7 @@ switch (_loadout) do {
 
 		// Grenades
 		_crate addMagazineCargoGlobal ["HandGrenade", 28];
-		_crate addMagazineCargoGlobal ["ACE_M84", 14];
+		_crate addMagazineCargoGlobal ["ACE_M84", 36];
 
 		// Primary Weapon
 		_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_SOST", 56];
@@ -398,7 +398,7 @@ switch (_loadout) do {
 
 		// Grenades
 		_crate addMagazineCargoGlobal ["HandGrenade", 32];
-		_crate addMagazineCargoGlobal ["ACE_M84", 20];
+		_crate addMagazineCargoGlobal ["ACE_M84", 40];
 
 		// Primary Weapon
 		_crate addWeaponCargoGlobal ["hlc_rifle_M4", 8];
@@ -498,7 +498,7 @@ switch (_loadout) do {
 
 		// Grenades
 		_crate addMagazineCargoGlobal ["HandGrenade", 32];
-		_crate addMagazineCargoGlobal ["ACE_M84", 20];
+		_crate addMagazineCargoGlobal ["ACE_M84", 40];
 
 		// Primary Weapon
 		_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_SOST", 60];
