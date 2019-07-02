@@ -31,7 +31,7 @@ Mission template for rapid development of Zulu-Alpha missions and events. The ZA
 
 ## DEPLOY YOUR MISSION
 
-1. Make sure that the mission is saved and that the Mission parameters such as *Independant* allegiance, mission name and author have been set.
+1. Make sure that the mission is saved and that the Mission parameters such as *Independent* allegiance, mission name and author have been set.
 2. Save the mission.
 3. Using the ED3N Toolbar, click `File -> Export -> To MP Mission`
 4. You can now `ALT+TAB` out of game and navigate to your Arma 3 Installation directory. Default:`C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MPMissions`
@@ -45,17 +45,17 @@ When you what to upload a new version of your mission:
 3. Rename the exported mission **PBO** file in order to as you did in the first step.
 4. Upload via FTP as you normally do.
 
-> You rename themission **PBO** instead of the mission folder name in the ED3N editor, because when you do it in the editor, it creates a brand new folder with nothing in it other than the *mission.sqm* file. If you do want to rename the folder this way, then **Make sure to copy over the rest of the ZAMF files ++(NOT THE OLD MISSION.SQM)++ from the previous mission folder**
+> You rename the mission **PBO** instead of the mission folder name in the ED3N editor, because when you do it in the editor, it creates a brand new folder with nothing in it other than the *mission.sqm* file. If you do want to rename the folder this way, then **Make sure to copy over the rest of the ZAMF files ++(NOT THE OLD MISSION.SQM)++ from the previous mission folder**
 
-## CUSTOMIZE:
+## CUSTOMIZE
 
 * To customize all ZAMF crates and gear loadouts, edit the following files respectively:
 * `loadout\crates.sqf`
 * `loadout\gear.sqf`
 
-> Editing the Script files can be made a LOT simpler by using the right tools. Have a look at [Visual Studio Code](https://code.visualstudio.com/) with the [SQF Launguage](https://marketplace.visualstudio.com/items?itemName=Armitxes.sqf) and [SQF Lint](https://marketplace.visualstudio.com/items?itemName=skacekachna.sqflint) addons.
+> Editing the Script files can be made a LOT simpler by using the right tools. Have a look at [Visual Studio Code](https://code.visualstudio.com/) with the [SQF Language](https://marketplace.visualstudio.com/items?itemName=Armitxes.sqf) and [SQF Lint](https://marketplace.visualstudio.com/items?itemName=skacekachna.sqflint) addons.
 > If you would like to use the ED3N editor to edit the loadouts of players, then in the player unit's **init** field, change `"grunt"`, `"officer"`, `"medic"` or whatever else it may be in the `nul = [this, "grunt", "Dragon'1"] call zamf_fnc_team;` line to `false` in order to preserve the team settings but not use ZAMF loadouts. It should look something like `nul = [this, false, "Dragon'1"] call zamf_fnc_team;`
->**NOTE:** You will need the classnames of the objects you wish to place into the scripts. These can be found by using the *Arma 3 Aresnal* tool (Under Bootcamp) from the Arma 3 Main Menu. Create a loadout containing the gear you want and click the `Copy` button at the bottom of the *Arsenal* window. Then `Alt+Tab` out of game and open Notepad or other equivalent text editor. Use `CTRL+V` to paste the text description of your loadout, from which you can find the classnames you need to use.
+>**NOTE:** You will need the classnames of the objects you wish to place into the scripts. These can be found by using the *Arma 3 Arsenal* tool (Under Bootcamp) from the Arma 3 Main Menu. Create a loadout containing the gear you want and click the `Copy` button at the bottom of the *Arsenal* window. Then `Alt+Tab` out of game and open Notepad or other equivalent text editor. Use `CTRL+V` to paste the text description of your loadout, from which you can find the classnames you need to use.
 
 * To change settings such as Night Vision settings, edit the `cba_settings.sqf` file.
 
@@ -63,10 +63,10 @@ When you what to upload a new version of your mission:
 
 * Keep mission files as small as possible.
 
-## Dev
+## DEV
 
 1. Install [Python 3.7](https://www.python.org/downloads/), or newer.
 2. Install [Pipenv](https://pipenv.readthedocs.io/en/latest/install/#pragmatic-installation-of-pipenv)
 3. In the repo, execute `pipenv install --dev`.
 4. Activate the shell (`pipenv shell`) and run `pre-commit install`.
-5. Now, every time you commit, your code will be linted wiht sqflint as executed by PyTest.
+5. Now, every time you commit, your code will be linted with sqflint as executed by PyTest.
