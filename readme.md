@@ -63,10 +63,10 @@ When you what to upload a new version of your mission:
 
 * Keep mission files as small as possible.
 
-### Dev
+## Dev
 
 1. Install [Python 3.7](https://www.python.org/downloads/), or newer.
 2. Install [Pipenv](https://pipenv.readthedocs.io/en/latest/install/#pragmatic-installation-of-pipenv)
 3. In the repo, execute `pipenv install --dev`.
 4. Activate the shell (`pipenv shell`) and run `pre-commit install`.
-5. Now, every time you commit, your code will be linted with black, flake8, bugbear and mypy and tested with PyTest.
+5. Now, every time you commit, your code will be linted wiht sqflint as executed by PyTest.
