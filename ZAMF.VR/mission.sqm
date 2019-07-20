@@ -8,14 +8,14 @@ class EditorData
 	toggles=101;
 	class ItemIDProvider
 	{
-		nextID=441;
+		nextID=442;
 	};
 	class Camera
 	{
-		pos[]={7478.9878,35.882915,7296.9834};
-		dir[]={0.034582525,-0.46722004,0.8835808};
-		up[]={0.01827272,0.88410389,0.46688518};
-		aside[]={0.99933672,4.679614e-007,-0.039117504};
+		pos[]={7469.0996,57.019386,7335.833};
+		dir[]={-0.069058314,-0.56745124,0.82063651};
+		up[]={-0.047585934,0.82336926,0.56546706};
+		aside[]={0.99658269,1.004868e-006,0.08386071};
 	};
 };
 binarizationWanted=0;
@@ -10987,230 +10987,6 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7455,5,7419};
-				angles[]={0,0.077837944,0};
-			};
-			id=104;
-			type="acre_api_nameChannels";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="acre_api_nameChannels_Channel_1";
-					expression="_this setVariable ['Channel_1',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="DRAGON";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="acre_api_nameChannels_Channel_2";
-					expression="_this setVariable ['Channel_2',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="DRAGON-1";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="acre_api_nameChannels_Channel_3";
-					expression="_this setVariable ['Channel_3',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="DRAGON-2";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="acre_api_nameChannels_Channel_4";
-					expression="_this setVariable ['Channel_4',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="DRAGON-3";
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="acre_api_nameChannels_Channel_5";
-					expression="_this setVariable ['Channel_5',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="DRAGON-4";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="acre_api_nameChannels_SideSelect";
-					expression="_this setVariable ['SideSelect',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=2;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="acre_api_nameChannels_Channel_6";
-					expression="_this setVariable ['Channel_6',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="DRAGON-5";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="acre_api_nameChannels_Channel_7";
-					expression="_this setVariable ['Channel_7',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="BADGER";
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="acre_api_nameChannels_Channel_8";
-					expression="_this setVariable ['Channel_8',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="LOGISTICS";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="acre_api_nameChannels_Channel_9";
-					expression="_this setVariable ['Channel_9',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CAS";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="acre_api_nameChannels_Channel_10";
-					expression="_this setVariable ['Channel_10',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="FIRES";
-						};
-					};
-				};
-				nAttributes=11;
-			};
-		};
-		class Item51
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
 				position[]={7487.5,5,7309};
 			};
 			id=105;
@@ -11296,7 +11072,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item52
+		class Item51
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -11386,7 +11162,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item53
+		class Item52
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -11512,6 +11288,230 @@ class Mission
 					};
 				};
 				nAttributes=6;
+			};
+		};
+		class Item53
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7455,5,7419};
+				angles[]={-0,0.077841684,0};
+			};
+			id=441;
+			type="acre_api_nameChannels";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="acre_api_nameChannels_Channel_1";
+					expression="_this setVariable ['Channel_1',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="DRAGON";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="acre_api_nameChannels_Channel_2";
+					expression="_this setVariable ['Channel_2',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BADGER";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="acre_api_nameChannels_Channel_3";
+					expression="_this setVariable ['Channel_3',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="LOGISTICS";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="acre_api_nameChannels_Channel_4";
+					expression="_this setVariable ['Channel_4',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="CAS";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="acre_api_nameChannels_Channel_5";
+					expression="_this setVariable ['Channel_5',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="FIRES";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="acre_api_nameChannels_SideSelect";
+					expression="_this setVariable ['SideSelect',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="acre_api_nameChannels_Channel_6";
+					expression="_this setVariable ['Channel_6',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="acre_api_nameChannels_Channel_7";
+					expression="_this setVariable ['Channel_7',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="acre_api_nameChannels_Channel_8";
+					expression="_this setVariable ['Channel_8',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="acre_api_nameChannels_Channel_9";
+					expression="_this setVariable ['Channel_9',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="acre_api_nameChannels_Channel_10";
+					expression="_this setVariable ['Channel_10',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=11;
 			};
 		};
 	};
