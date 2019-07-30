@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7469.0996,57.019386,7335.833};
-		dir[]={-0.069058314,-0.56745124,0.82063651};
-		up[]={-0.047585934,0.82336926,0.56546706};
-		aside[]={0.99658269,1.004868e-006,0.08386071};
+		pos[]={7465.354,47.929508,7289.3164};
+		dir[]={0.32165527,-0.49855763,0.80511445};
+		up[]={0.18497773,0.86680162,0.4630062};
+		aside[]={0.92873198,2.1322921e-007,-0.37104264};
 	};
 };
 binarizationWanted=0;
@@ -3638,7 +3638,7 @@ class Mission
 			};
 			id=33;
 			type="CamoNet_BLUFOR_open_F";
-			atlOffset=0.75053215;
+			atlOffset=0.70536327;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11296,7 +11296,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7455,5,7419};
-				angles[]={-0,0.077841684,0};
+				angles[]={0,0.077841684,0};
 			};
 			id=441;
 			type="acre_api_nameChannels";

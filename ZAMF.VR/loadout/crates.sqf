@@ -244,7 +244,9 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell", 8];
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeRed_Grenade_shell", 8];
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeBlue_Grenade_shell", 4];
-		_crate addMagazineCargoGlobal ["UGL_FlareCIR_F", 12];
+		_crate addMagazineCargoGlobal ["CUP_1Rnd_StarCluster_White_M203", 12];
+		_crate addMagazineCargoGlobal ["ACE_40mm_Flare_ir", 12];
+		_crate addMagazineCargoGlobal ["CUP_1Rnd_StarFlare_White_M203", 12];
 
 		_crate addWeaponCargoGlobal ["hlc_rifle_m14sopmod", 1];
 		_crate addItemCargoGlobal ["hlc_optic_LeupoldM3A", 1];
@@ -333,7 +335,9 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell", 8];
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeRed_Grenade_shell", 8];
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeBlue_Grenade_shell", 4];
-		_crate addMagazineCargoGlobal ["UGL_FlareCIR_F", 12];
+		_crate addMagazineCargoGlobal ["CUP_1Rnd_StarCluster_White_M203", 12];
+		_crate addMagazineCargoGlobal ["ACE_40mm_Flare_ir", 12];
+		_crate addMagazineCargoGlobal ["CUP_1Rnd_StarFlare_White_M203", 12];
 
 		_crate addMagazineCargoGlobal ["hlc_20Rnd_762x51_barrier_M14", 10];
 		_crate addMagazineCargoGlobal ["hlc_20Rnd_762x51_Tdim_M14", 10];
@@ -592,10 +596,11 @@ switch (_loadout) do {
 
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeRed_Grenade_shell", 4];
 		_crate addMagazineCargoGlobal ["1Rnd_SmokeBlue_Grenade_shell", 4];
-		_crate addMagazineCargoGlobal ["UGL_FlareCIR_F", 6];
+		_crate addMagazineCargoGlobal ["CUP_1Rnd_StarCluster_White_M203", 6];
+		_crate addMagazineCargoGlobal ["ACE_40mm_Flare_ir", 6];
+		_crate addMagazineCargoGlobal ["CUP_1Rnd_StarFlare_White_M203", 6];
 		_crate addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell", 8];
 		_crate addMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell", 8];
-		_crate addMagazineCargoGlobal ["UGL_FlareCIR_F", 12];
 
 		_crate addWeaponCargoGlobal ["srifle_EBR_F", 1];
 		_crate addItemCargoGlobal ["optic_SOS", 1];
