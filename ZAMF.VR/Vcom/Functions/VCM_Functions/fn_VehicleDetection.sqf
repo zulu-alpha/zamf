@@ -78,12 +78,12 @@
 			{
 				if ([_hlprArray, _x, true,"Driving"] call VCM_fnc_ClstObj distance2D _x > 1) then
 				{
-					private _hlpObj = "Steel_Plate_S_F" createVehicleLocal _x;
+					private _hlpObj = "Land_Wrench_F" createVehicleLocal _x;
 					_hlpObj setVariable ["VCM_AVOID", true];
 					_hlpObj setPos _x;
-					_hlpObj setDamage 1;
-					_hlpObj setObjectTextureGlobal [0, ""];
+					//_hlpObj setObjectTextureGlobal [0, ""];
 					_hlprArray pushBack _hlpObj;
+					_hlpObj setVelocity [0,0,0];
 				};
 			} forEach _hlpPosArray;
 			
@@ -130,15 +130,23 @@
 	private _Livingobstacles = _predictPos nearObjects ["MAN", 25];
 	private _Unit = _x;
 	_LivingObstacles deleteAt (_Livingobstacles findIf {_x isEqualTo _Unit}); 
+	private _Remove = [];
+	{if !(_x isEqualTo (vehicle _x)) then {_Remove pushback _x};} foreach _Livingobstacles;
+	
+	//We do this method to avoid indexing errors.
+	{
+		private _Obj = _x;
+		private _Index = _Livingobstacles findIf {_x isEqualTo _Obj};
+		_Livingobstacles deleteAt _Index;
+	} foreach _Remove;
 	
 	private _NearestUnit = [_Livingobstacles, _x, true,"Driving"] call VCM_fnc_ClstObj;
 	if (_NearestUnit distance2D _x < 50) then
 	{
-		private _hlpObj = "Steel_Plate_S_F" createVehicleLocal [0,0,0];
-		_hlpObj setDamage 1;
+		private _hlpObj = "Land_Wrench_F" createVehicleLocal [0,0,0];
 		_hlpObj setVariable ["VCM_AVOID", true];
 		_hlpObj setPos (getpos _NearestUnit);
-		_hlpObj setObjectTextureGlobal [0, ""];
+		//_hlpObj setObjectTextureGlobal [0, ""];
 		_hlpObj spawn {sleep 2; deletevehicle _this};
 	};
 	

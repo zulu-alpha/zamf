@@ -2,24 +2,6 @@ class VCOM
 {
 	tag = "VCM";
 	
-	class Init
-	{
-		class VcomInit
-		{
-			file = "Vcom\VcomInit.sqf";
-			postInit = 1;
-		};
-		class VcomInitClient
-		{
-			file = "Vcom\VcomInitClient.sqf";
-			postInit = 1;
-		};
-		class CBA_Settings
-		{
-			file = "Vcom\Functions\VCM_CBASettings.sqf";
-		};
-	};
-	
 	class FSM
 	{
 		file = "Vcom\FSMS";
@@ -34,13 +16,14 @@ class VCOM
 		class AIDRIVEBEHAVIOR
 		{
 			ext = ".fsm";
-		};
+		};		
 		
-		// [] spawn VCM_fnc_HANDLECURATORS
-		class HANDLECURATORS
+		// [] spawn VCM_fnc_PLAYERSQUAD
+		class PLAYERSQUAD
 		{
 			ext = ".fsm";
-		};
+		};		
+		
 	};
 	
 	class Functions 
@@ -128,7 +111,7 @@ class VCOM
 		// group call VCM_fnc_KitChk;
 		class KitChk {};
 		
-		// [array, unitToReveal, revealAmount, _revealLimit] call VCM_fnc_KnowAbout;
+		// [array, unitToReveal, revealAmount] call VCM_fnc_KnowAbout;
 		class KnowAbout {};
 		
 		// group call VCM_fnc_MedicalHandler
@@ -164,6 +147,36 @@ class VCOM
 		// group call VCM_fnc_WyptChk;
 		class WyptChk {};	
 		
+		//group call VCM_fnc_VehicleCommandeer;
+		class vehiclecommandeer {};
+		
+		//group call VCM_fnc_VehicleCheck;
+		class VehicleCheck {};
+
+		//group call VCM_fnc_VehicleMove;
+		class VehicleMove {};	
+
+		//group call VCM_fnc_IsTransport;
+		class IsTransport {};
+
+		//[_pos,_dist,_params] call VCM_fnc_isFlatEmpty;
+		class isFlatEmpty {};	
+
+		//[] call VCM_fnc_CBASettings;
+		class CBASettings {};
+		
+		//[] call VCM_fnc_SniperList
+		class SniperList {};
+		
+		//[] spawn VCM_fnc_SniperEngage;
+		class SniperEngage;
+		
+		//[] spawn VCM_fnc_RangeEngage;
+		class RangeEngage;
+
+		//[] call VCM_fnc_ClstKnwnEnmy;
+		class ClstKnwnEnmy;
+
 		// unit call VCM_fnc_IsDriver;
 		class IsDriver {};			
 
@@ -175,31 +188,7 @@ class VCOM
 		
 		//[] call VCM_fnc_UpdateDrivers;
 		class UpdateDrivers {};
+		
 	};		
 
-};
-
-
-class RYD
-{
-	// Fire For Effect: The God of War
-	class FFE_Functions
-	{
-		file = "Vcom\Functions\FFE_Functions";
-		class AngTowards {};
-		class ArtyMission {};
-		class ArtyPrep {};
-		class AutoConfig {};
-		class CFF {};
-		class CFF_FFE {};
-		class CFF_Fire {};
-		class CFF_TGT {};
-		class PosTowards2D {};
-		class ShellsInRadius {};
-	};
-	class FFE_Shellview
-	{
-		file = "Vcom\Functions\FFE_Shellview";
-		class Shellview {};
-	};
 };

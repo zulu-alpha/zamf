@@ -29,10 +29,20 @@ if (isNull _nearestEnemy) then
 if (isNil "_nearestEnemy" || _nearestEnemy isEqualTo [0,0,0]) exitWith {};
 if ((vehicle _nearestEnemy) isKindOf "Air") exitWith {};
 
-if ((count (waypoints _grp)) >= 3) exitWith {};
+//If they don't know about the enemy position, then just exit the function
+private _knows = _grp knowsAbout _nearestEnemy;
+if (_knows < 2) exitwith 
+{
+	sleep 10;
+	[_leader] spawn VCM_fnc_FlankMove;
+};
 
-private _wType = waypointType [_grp, (currentWaypoint _grp)];
-if !(_wType isEqualTo "MOVE" || _wType isEqualTo "") exitWith {};
+
+if ((count (waypoints _grp)) >= 3) exitWith {};
+//If first waypoint is DESTROY, DO NOT change waypoints.
+private _index = currentWaypoint _grp;
+private _wType = waypointType [_grp,_index];
+if (_wType isEqualTo "DESTROY" || _wType isEqualTo "SAD" || _wType isEqualTo "SCRIPTED") exitWith {};
 
 while {(count (waypoints _grp)) > 1} do
 {
@@ -46,10 +56,12 @@ switch (_wayPointType) do {
 			private _waypoint0 = _grp addwaypoint [(getpos _nearestEnemy),0];
 			_waypoint0 setwaypointtype "MOVE";
 			_waypoint0 setWaypointSpeed "FULL";
-			_grp setCurrentWaypoint [_grp,(_waypoint0 select 1)];			
+			_grp setCurrentWaypoint [_grp,(_waypoint0 select 1)];		
+			[_grp, (_waypoint0 select 1)] setWaypointCompletionRadius 25;	
 			private _waypoint0 = _grp addwaypoint [(getpos _nearestEnemy),0];
 			_waypoint0 setwaypointtype "MOVE";			
 			_waypoint0 setWaypointSpeed "FULL";
+			[_grp, (_waypoint0 select 1)] setWaypointCompletionRadius 25;	
 		};
     case "High": 
 		{
@@ -59,10 +71,12 @@ switch (_wayPointType) do {
 			private _waypoint0 = _grp addwaypoint [_finalP,0];
 			_waypoint0 setwaypointtype "MOVE";
 			_waypoint0 setWaypointSpeed "FULL";
-			_grp setCurrentWaypoint [_grp,(_waypoint0 select 1)];			
+			_grp setCurrentWaypoint [_grp,(_waypoint0 select 1)];		
+			[_grp, (_waypoint0 select 1)] setWaypointCompletionRadius 25;		
 			private _waypoint0 = _grp addwaypoint [_finalP,0];
 			_waypoint0 setwaypointtype "MOVE";	
 			_waypoint0 setWaypointSpeed "FULL";
+			[_grp, (_waypoint0 select 1)] setWaypointCompletionRadius 25;	
 		}; 
     case "Low": 
 		{
@@ -72,10 +86,12 @@ switch (_wayPointType) do {
 			private _waypoint0 = _grp addwaypoint [_finalP,0];
 			_waypoint0 setwaypointtype "MOVE";
 			_waypoint0 setWaypointSpeed "FULL";
+			[_grp, (_waypoint0 select 1)] setWaypointCompletionRadius 25;	
 			_grp setCurrentWaypoint [_grp,(_waypoint0 select 1)];			
 			private _waypoint0 = _grp addwaypoint [_finalP,0];
 			_waypoint0 setwaypointtype "MOVE";	
-			_waypoint0 setWaypointSpeed "FULL";			
+_waypoint0 setWaypointSpeed "FULL";	
+[_grp, (_waypoint0 select 1)] setWaypointCompletionRadius 25;			
 		}; 
     case "Retreat": 
 		{
@@ -85,15 +101,18 @@ switch (_wayPointType) do {
 			private _waypoint0 = _grp addwaypoint [_finalP,0];
 			_waypoint0 setwaypointtype "MOVE";
 			_waypoint0 setWaypointSpeed "FULL";
+			[_grp, (_waypoint0 select 1)] setWaypointCompletionRadius 25;	
 			_grp setCurrentWaypoint [_grp,(_waypoint0 select 1)];			
 			private _waypoint0 = _grp addwaypoint [_finalP,0];
 			_waypoint0 setwaypointtype "MOVE";	
 			_waypoint0 setWaypointSpeed "FULL";
+			[_grp, (_waypoint0 select 1)] setWaypointCompletionRadius 25;	
 		}; 
     case "Flank": 
 		{
 			private _myEnemyPos = getpos _nearestEnemy;
-			private _dist = ((random 100) + 100);
+			private _rnd = random 100;
+			private _dist = (_rnd + 100);
 			private _dir = random 360;
 			private _positions = [(_myEnemyPos select 0) + (sin _dir) * _dist, (_myEnemyPos select 1) + (cos _dir) * _dist, 0];
 			private _myPlaces = selectBestPlaces [_myEnemyPos, 250,"((6*hills + 2*forest + 4*houses + 2*meadow) - sea + (2*trees)) - (1000*deadbody)", 100, 5];
@@ -105,14 +124,17 @@ switch (_wayPointType) do {
 			_finalP set [2,0];
 			_waypoint0 = _grp addwaypoint [_finalP,0];	
 			_waypoint0 setWaypointSpeed "FULL";
+			[_grp, (_waypoint0 select 1)] setWaypointCompletionRadius 25;	
 			_grp setCurrentWaypoint [_grp,(_waypoint0 select 1)];
 			_waypoint0 = _grp addwaypoint [_myEnemyPos,0];	
-			_waypoint0 setWaypointSpeed "FULL";			
+			_waypoint0 setWaypointSpeed "FULL";	
+			[_grp, (_waypoint0 select 1)] setWaypointCompletionRadius 25;			
 		}; 
     case "FlankL": 
 		{
 			private _myEnemyPos = getpos _nearestEnemy;
-			private _dist = ((random 100) + 100);
+			private _rnd = random 100;
+			private _dist = (_rnd + 100);
 			private _dir = random 360;
 			private _leaderPos = getpos _leader;
 			private _positions = [(_myEnemyPos select 0) + (sin _dir) * _dist, (_myEnemyPos select 1) + (cos _dir) * _dist, 0];
@@ -132,11 +154,14 @@ switch (_wayPointType) do {
 			_finalP set [2,0];
 			_finalP2 set [2,0];
 			_waypoint0 = _grp addwaypoint [_finalP,0];	
-			_waypoint0 setWaypointSpeed "FULL";			
+			_waypoint0 setWaypointSpeed "FULL";		
+			[_grp, (_waypoint0 select 1)] setWaypointCompletionRadius 25;		
 			_waypoint0 = _grp addwaypoint [_finalP2,0];	
 			_waypoint0 setWaypointSpeed "FULL";
+			[_grp, (_waypoint0 select 1)] setWaypointCompletionRadius 25;	
 			_grp setCurrentWaypoint [_grp,(_waypoint0 select 1)];
 			_waypoint0 = _grp addwaypoint [_myEnemyPos,0];	
-			_waypoint0 setWaypointSpeed "FULL";			
+			_waypoint0 setWaypointSpeed "FULL";		
+			[_grp, (_waypoint0 select 1)] setWaypointCompletionRadius 25;		
 		}; 
 };

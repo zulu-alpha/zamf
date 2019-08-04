@@ -14,9 +14,7 @@
 
 params ["_unit", "_mineArray"];
 
-if ((lifeState _unit != "HEALTHY") || {isPlayer _unit}) exitWith {};
-
-if (VCM_Debug) then {systemchat format ["VCOM: %1 PLACING MINE", _unit];};
+if (VCM_MINECHANCE > (round (random 100)) || {isPlayer _unit}) exitWith {};
 
 private _mineType = _mineArray select 0;
 
@@ -84,7 +82,7 @@ _unitSide = (side _unit);
 
 if (_mine isEqualTo "") exitWith {};
 
-VCOM_mineArray pushBack [_mine,_unitSide];
+VCOM_mineArray pushBack [_Mine,_unitSide];
 [_Mine, false] remoteExecCall ["enableSimulationGlobal",2];
 
 /*

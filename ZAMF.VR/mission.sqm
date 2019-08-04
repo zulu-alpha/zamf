@@ -8,7 +8,7 @@ class EditorData
 	toggles=101;
 	class ItemIDProvider
 	{
-		nextID=442;
+		nextID=446;
 	};
 	class Camera
 	{
@@ -262,7 +262,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=54;
+		items=55;
 		class Item0
 		{
 			dataType="Marker";
@@ -11513,6 +11513,34 @@ class Mission
 				};
 				nAttributes=11;
 			};
+		};
+		class Item54
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7483.376,5.0014391,7371.5249};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=443;
+					type="B_soldier_AT_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=442;
 		};
 	};
 };
