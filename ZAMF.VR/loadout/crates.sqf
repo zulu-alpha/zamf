@@ -59,6 +59,8 @@ switch (_loadout) do {
 
 		_crate addBackpackCargoGlobal ["ACE_TacticalLadder_Pack", 16];
 
+		_crate addItemCargoGlobal ["ACRE_VHF30108SPIKE", 5];
+
 	};
 
 	case "suppressors": {

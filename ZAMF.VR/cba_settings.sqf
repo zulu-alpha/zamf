@@ -239,14 +239,17 @@ acex_volume_remindIfLowered = false;
 acex_volume_showNotification = true;
 
 // ACRE2
+acre_sys_core_automaticAntennaDirection = false;
 force acre_sys_core_fullDuplex = false;
 force acre_sys_core_ignoreAntennaDirection = true;
-force acre_sys_core_interference = false;
-force acre_sys_core_revealToAI = true;
+force acre_sys_core_interference = true;
+force acre_sys_core_revealToAI = 1;
 force acre_sys_core_terrainLoss = 0.4;
-force acre_sys_core_ts3ChannelName = "ACRE";
-force acre_sys_core_ts3ChannelPassword = "";
-force acre_sys_core_ts3ChannelSwitch = true;
+acre_sys_core_ts3ChannelName = "ACRE";
+acre_sys_core_ts3ChannelPassword = "";
+acre_sys_core_ts3ChannelSwitch = true;
+force acre_sys_core_unmuteClients = true;
+force acre_sys_signal_signalModel = 2;
 
 // ADV - ACE Splint
 force adv_aceSplint_enable = true;
