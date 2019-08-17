@@ -25,8 +25,10 @@ if (_index != -1) then {
 
 	// Player data
 	private _data = _save_array select _index;
-	_data params ["_side", "_alive", "_pos", "_dir", "_damage", "_loadout", "_captive",
-                  "_anim", "_crew", "_type", "_earplugs", "_description"];
+	private _side = _data select 0;
+	private _alive = _data select 1;
+	private _type = _data select 9;
+	Private _description = _data select 11;
 
 	// Check if the connected player is still on the same side, is fo the same type and 
 	// description.

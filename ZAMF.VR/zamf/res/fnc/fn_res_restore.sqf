@@ -16,8 +16,15 @@
 */
 
 params ["_player", "_save_array"];
-_save_array params ["_side", "_alive", "_pos", "_dir", "_damage", "_loadout", "_captive",
-                    "_anim", "_crew", "_type", "_earplugs", "_description"];
+
+private _pos = _save_array select 2;
+private _dir = _save_array select 3;
+private _damage = _save_array select 4;
+private _loadout = _save_array select 5;
+private _captive = _save_array select 6;
+private _anim = _save_array select 7;
+private _crew = _save_array select 8;
+private _earplugs = _save_array select 10;
 _crew params ["_vehicle", "_role"];
 
 //// Do restoring

@@ -29,7 +29,7 @@ for "_i" from 0 to 1 step 0 do {
 	{
 
 		// If a player, should be saved and is not null then save in _save_array
-		if ( (isPlayer _x) && (_x getVariable ["zamf_res_saveMe", false]) ) then {
+		if ( (isPlayer _x) and (_x getVariable ["zamf_res_saveMe", false]) ) then {
 			private ["_x_uid", "_x_save", "_index"];
 			_x_uid = getPlayerUID _x;							// Get UID (for index).
 			_x_save = [_x] call zamf_fnc_res_getData;			// Get data.
