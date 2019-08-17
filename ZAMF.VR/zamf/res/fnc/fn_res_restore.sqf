@@ -53,7 +53,7 @@ _earplugs = _save_array select 10;
 //// Do restoring
 
 // Restore loadout
-[_player, _loadout, ["ammo"]] call zamf_fnc_setLoadout;
+_player setUnitLoadout _loadout;
 
 // Restore captive
 _player setCaptive _captive;

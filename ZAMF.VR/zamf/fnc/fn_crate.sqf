@@ -34,7 +34,7 @@ _crate addAction [
 	("<t color=""#0000FF"">" + ("Save loadout") + "</t>"),
 	{
 		// Save kit
-		zamf_var_gear_loadout_saved = [player, ["ammo"]] call zamf_fnc_getLoadout;
+		zamf_var_gear_loadout_saved = getUnitLoadout player;
 		// Save earplugs
 		if ([player] call ace_Hearing_fnc_hasEarPlugsIn) then {
 			zamf_var_gear_loadout_saved_earplugs = true;

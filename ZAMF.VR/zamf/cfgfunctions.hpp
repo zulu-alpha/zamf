@@ -25,8 +25,6 @@ class ZAMF
 	class functions
 	{
 		file = "zamf\fnc";
-		class getLoadout {description = "Uses aeroson's get_loadout function.";};
-		class setLoadout {description = "Uses aeroson's set_loadout function.";};
 		class getClimate {description = "Returns the climate type as an int, increasing with the intensity of green";};
 		class disableAI {description = "Disables the AI for all the crew of a specified unit."; file = "zamf\ai\disable_ai.sqf";};
 		class team {description = "Sets the gear and group ID of a unit.";};

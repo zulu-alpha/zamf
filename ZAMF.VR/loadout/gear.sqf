@@ -328,7 +328,7 @@ if (_unit == player) then {
 		player addEventHandler ["respawn", {
 			if !(isNil "zamf_var_gear_loadout_saved") then {
 				// Restore saved kit
-				[_this select 0, zamf_var_gear_loadout_saved, ["ammo"]] call zamf_fnc_setLoadout;
+				(_this select 0) setUnitLoadout zamf_var_gear_loadout_saved;
 				// Restore earplugs if installed
 				if ( !(isNil "zamf_var_gear_loadout_saved_earplugs") and {zamf_var_gear_loadout_saved_earplugs} ) then {
 					player setVariable ["ace_hasEarPlugsIn", true, true];
