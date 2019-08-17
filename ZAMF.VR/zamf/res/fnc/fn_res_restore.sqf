@@ -3,55 +3,24 @@
 	AUTHOR: Phoenix
 	NAME: res_restore.sqf
 
-	DOWNLOAD & PARTICIPATE:
-	https://bitbucket.org/zulualpha/
-
 	DESCRIPTION:
 	This restores the player's state
 
 	PARAMETER(S):
 	0 : target unit
-	1 : Save array, containint all the details of the unit.
+	1 : Save array, containins all the details of the unit.
 
 	RETURNS:
 	Nothing
 
 */
 
-private ["_player","_save_array","_pos","_dir","_damage","_loadout","_captive","_anim","_vehicle","_role","_earplugs"];
-
-_player = _this select 0;
-_save_array = _this select 1;
-
-/* From res_save.sqf
-[
-		side _player,
-		alive _player,
-		getPosASL _player,
-		getDir _player,
-		getDammage _player,
-		if (alive _player) then {[_player, ["ammo","repetitive"]] call zamf_fnc_Res_getLoadout} else {[]},
-		captiveNum _player,
-		animationState _player,
-		_crew,
-		typeOf _player
-]
-*/
-
-// Vars
-_pos = _save_array select 2;
-_dir = _save_array select 3;
-_damage = _save_array select 4;
-_loadout = _save_array select 5;
-_captive = _save_array select 6;
-_anim = _save_array select 7;
-_vehicle = (_save_array select 8) select 0;
-_role = (_save_array select 8) select 1;
-_earplugs = _save_array select 10;
-
+params ["_player", "_save_array"];
+_save_array params ["_side", "_alive", "_pos", "_dir", "_damage", "_loadout", "_captive",
+                    "_anim", "_crew", "_type", "_earplugs", "_description"];
+_crew params ["_vehicle", "_role"];
 
 //// Do restoring
-
 // Restore loadout
 _player setUnitLoadout _loadout;
 
@@ -68,7 +37,6 @@ if (_earplugs) then {
 
 
 //// Restore positional information
-
 // Was in a vehicle that still exists
 if ( (_role != "") && {!(isNil {_vehicle})} && {!(isNull _vehicle)} && {!(_vehicle isKindOf "Man")} ) then {
 

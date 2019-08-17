@@ -3,9 +3,6 @@
 	AUTHOR: Phoenix
 	NAME: res_init.sqf
 
-	DOWNLOAD & PARTICIPATE:
-	https://bitbucket.org/zulualpha/
-
 	DESCRIPTION:
 	Initializes zamf_res and checks if there wasnt a previous save state and if its legal to use.
 
@@ -33,7 +30,6 @@ if !(isMultiplayer) exitWith {};
 	if (isNil "zamf_res_enabled") then {
 		zamf_res_enabled = if !(isNil "zamf_res_conf_enabled") then {zamf_res_conf_enabled} else {true}
 	};
-
 
 	// Allow mod to be disabled
 	if (!(isNil "zamf_res_enabled") && {!(zamf_res_enabled)}) exitwith {/*diag_log "res_init.sqf - Finished (disabled)";*/};

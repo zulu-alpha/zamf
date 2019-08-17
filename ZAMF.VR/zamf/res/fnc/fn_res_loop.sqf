@@ -3,9 +3,6 @@
 	AUTHOR: Phoenix
 	NAME: res_loop.sqf
 
-	DOWNLOAD & PARTICIPATE:
-	https://bitbucket.org/zulualpha/
-
 	DESCRIPTION:
 	Loops to continually save the player's state.
 

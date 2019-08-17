@@ -3,9 +3,6 @@
 	AUTHOR: Phoenix
 	NAME: res_killed.sqf
 
-	DOWNLOAD & PARTICIPATE:
-	https://bitbucket.org/zulualpha/
-
 	DESCRIPTION:
 	Sets the save data to killed for the given player object.
 
