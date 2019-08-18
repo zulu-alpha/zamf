@@ -24,13 +24,6 @@ if !(isMultiplayer) exitWith {};
 	// Check for alive player persistance and quit if found
 	//if (count (allMissionObjects "ALiVE_sys_player") > 0) exitWith {diag_log "ZAM - Resume detected alive player persistance and halted."};
 
-
-	//// Setting config settings if not defined by mission maker to userconfig setting if it exists, else hardcoded default.
-	// Config defaults
-	if (isNil "zamf_res_enabled") then {
-		zamf_res_enabled = if !(isNil "zamf_res_conf_enabled") then {zamf_res_conf_enabled} else {true}
-	};
-
 	// Allow mod to be disabled
 	if (!(isNil "zamf_res_enabled") && {!(zamf_res_enabled)}) exitwith {/*diag_log "res_init.sqf - Finished (disabled)";*/};
 

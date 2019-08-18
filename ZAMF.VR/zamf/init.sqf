@@ -47,7 +47,7 @@ if ("leave_group" in _this) then {execVM "zamf\player\leave_grp.sqf"};
 if ("spectate_on_death" in _this) then {[30] call zamf_fnc_spectateOnDeath};
 
 // Handle enabling or disabling of ZA Mods
-zam_res_enabled = if ("zam_res" in _this) then {True} else {False};
+zamf_res_enabled = if ("zam_res" in _this) then {True} else {False};
 
 // Disable radio channels
 // 0 = Global
