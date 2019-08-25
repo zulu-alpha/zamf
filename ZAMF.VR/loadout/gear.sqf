@@ -325,17 +325,24 @@ if (_unit == player) then {
 		// Restore loadout from saved one on respawn, otherwise use base loadout defined in this file.
 		// Global variables are used so that the var is in the scope of the respawn event.
 		zamf_var_gear_loadout = _loadout;
-		player addEventHandler ["respawn", {
+		private _eh = player addEventHandler ["respawn", {
+			diag_log "ZAMF gear.sqf: respawn event handler started.";
 			if !(isNil "zamf_var_gear_loadout_saved") then {
 				// Restore saved kit
 				(_this select 0) setUnitLoadout zamf_var_gear_loadout_saved;
+				diag_log "ZAMF gear.sqf: restored saved kit!";
 				// Restore earplugs if installed
 				if ( !(isNil "zamf_var_gear_loadout_saved_earplugs") and {zamf_var_gear_loadout_saved_earplugs} ) then {
 					player setVariable ["ace_hasEarPlugsIn", true, true];
 				};
 			} else {
-				[_this select 0, zamf_var_gear_loadout] spawn zamf_fnc_gear
+				[_this select 0, zamf_var_gear_loadout] spawn zamf_fnc_gear;
+				diag_log format [
+					"ZAMF gear.sqf: no saved loadout, so restoring using gear type: %1.",
+					zamf_var_gear_loadout
+				];
 			};
 		}];
+		diag_log format ["ZAMF gear.sqf: respawn event handler added, ID: %1.", _eh];
 	};
 };
