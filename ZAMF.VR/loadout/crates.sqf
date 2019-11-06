@@ -97,10 +97,10 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["SatchelCharge_Remote_Mag", 8];
 		_crate addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 24];
 		_crate addMagazineCargoGlobal ["ATMine_Range_Mag", 8];
-		_crate addMagazineCargoGlobal ["SLAMDirectionalMine_Wire_Mag", 8];
-		_crate addMagazineCargoGlobal ["ClaymoreDirectionalMine_Remote_Mag", 8];
+		_crate addMagazineCargoGlobal ["SLAMDirectionalMine_Wire_Mag", 16];
+		_crate addMagazineCargoGlobal ["ClaymoreDirectionalMine_Remote_Mag", 16];
 		_crate addMagazineCargoGlobal ["APERSTripMine_Wire_Mag", 8];
-		_crate addMagazineCargoGlobal ["APERSBoundingMine_Range_Mag", 8];
+		_crate addMagazineCargoGlobal ["ACE_FlareTripMine_Mag", 8];
 		_crate addItemCargoGlobal ["ACE_Clacker", 4];
 		_crate addItemCargoGlobal ["ACE_M26_Clacker", 4];
 
