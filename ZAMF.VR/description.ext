@@ -65,4 +65,15 @@ class Params {
     #include "zamf\world\world_params.hpp"
 };
 
+class CfgSounds
+{
+	sounds[] = {Devas_click};
+	class Devas_click
+	{
+		name = "Devas_click";
+		sound[] = {"\AutoPilot\Sound\Devas_click.ogg", db+15, 1.0};
+		titles[] = {};
+	};
+};
+
 //// Put custom code under here:

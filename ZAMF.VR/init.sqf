@@ -19,4 +19,7 @@
 // VCOM AI
 [] execVM "Vcom\VcomInit.sqf";
 
+// Devas Autopilot
+[] execVM "AutoPilot\AutoPilotInit.sqf";
+
 //// Youre code here
