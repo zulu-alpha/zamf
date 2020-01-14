@@ -258,14 +258,6 @@ acre_sys_core_ts3ChannelSwitch = true;
 force acre_sys_core_unmuteClients = true;
 force acre_sys_signal_signalModel = 2;
 
-// ADV - ACE Splint
-force adv_aceSplint_enable = true;
-force adv_aceSplint_patientCondition = 0;
-force adv_aceSplint_reopenChance_medic = 20;
-force adv_aceSplint_reopenChance_regular = 40;
-force adv_aceSplint_reopenTime = 300;
-force adv_aceSplint_reuseChance = 70;
-
 // VCOM SETTINGS
 force VCM_ActivateAI = true;
 force VCM_ADVANCEDMOVEMENT = true;
