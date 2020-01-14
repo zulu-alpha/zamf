@@ -306,7 +306,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_epinephrine", 9];
 		_crate addItemCargoGlobal ["ACE_morphine", 9];
 		_crate addItemCargoGlobal ["ACE_tourniquet", 9];
-		_crate addItemCargoGlobal ["adv_aceSplint_splint", 9];
+		_crate addItemCargoGlobal ["ACE_splint", 9];
 		_crate addItemCargoGlobal ["ACE_salineIV_500", 9];
 
 		// Navigation\tracking\communication
@@ -486,7 +486,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_epinephrine", 10];
 		_crate addItemCargoGlobal ["ACE_morphine", 10];
 		_crate addItemCargoGlobal ["ACE_tourniquet", 10];
-		_crate addItemCargoGlobal ["adv_aceSplint_splint", 10];
+		_crate addItemCargoGlobal ["ACE_splint", 10];
 		_crate addItemCargoGlobal ["ACE_salineIV_500", 10];
 
 		// Navigation\tracking\communication
@@ -722,12 +722,12 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_elasticBandage", 100];
 		_crate addItemCargoGlobal ["ACE_packingBandage", 100];
 		_crate addItemCargoGlobal ["ACE_quikclot", 50];
-		_crate addItemCargoGlobal ["ACE_atropine", 75];
+		_crate addItemCargoGlobal ["ACE_adenosine", 75];
 		_crate addItemCargoGlobal ["ACE_epinephrine", 75];
 		_crate addItemCargoGlobal ["ACE_morphine", 75];
 		_crate addItemCargoGlobal ["ACE_tourniquet", 25];
 		_crate addItemCargoGlobal ["ACE_salineIV", 35];
-		_crate addItemCargoGlobal ["adv_aceSplint_splint", 25];
+		_crate addItemCargoGlobal ["ACE_splint", 25];
 		_crate addItemCargoGlobal ["ACE_personalAidKit", 5];
 
 		// Navigation\tracking\communication
