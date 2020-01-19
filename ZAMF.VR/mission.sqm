@@ -8,14 +8,14 @@ class EditorData
 	toggles=101;
 	class ItemIDProvider
 	{
-		nextID=446;
+		nextID=449;
 	};
 	class Camera
 	{
-		pos[]={7502.9971,15.474817,7352.5713};
-		dir[]={-0.80018014,-0.53344202,0.27433866};
-		up[]={-0.50465935,0.84579563,0.17302023};
-		aside[]={0.32433224,-1.2034434e-007,0.94600248};
+		pos[]={7496.1704,24.961708,7328.8452};
+		dir[]={-0.54955012,-0.5006628,0.66900694};
+		up[]={-0.31784704,0.86557162,0.38693655};
+		aside[]={0.77279574,1.2517557e-006,0.63480902};
 	};
 };
 binarizationWanted=0;
@@ -2934,6 +2934,7 @@ class Mission
 				position[]={7465.5,5,7341.5};
 			};
 			name="zamf_object_curator_admin";
+			init="call{[this] call zamf_fnc_zeus_ensureLoggedInAdmin}";
 			id=27;
 			type="ModuleCurator_F";
 			class CustomAttributes
@@ -2953,7 +2954,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="#adminLogged";
+							value="";
 						};
 					};
 				};

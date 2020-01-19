@@ -63,4 +63,11 @@ class ZAMF
 		class spectateOptions {description = "Gives the target player local only action menu options to spectate.";};
 		class trackingMarkers {description = "Creates and keeps up to date local markers for all units";};
 	};
+
+	class zeus
+	{
+		file = "zamf\zeus\fnc";
+		class zeus_ensureLoggedInAdmin {description = "Ensures that the currently logged in admin is assigned the given curator at all times and unassigned when no longer admin.";};
+		class zeus_ensureUnit {description = "Ensures that the given unit is assigned to the given curator.";};
+	};
 };
