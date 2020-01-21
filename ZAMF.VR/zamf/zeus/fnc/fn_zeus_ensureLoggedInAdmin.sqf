@@ -16,7 +16,7 @@ _this spawn {
 	params ["_curator"];
 	waitUntil {time > 5};
 
-	if (isMultiplayer and not isDedicated) exitWith {
+	if !(isDedicated) exitWith {
 		player assignCurator _curator;
 	};
 
