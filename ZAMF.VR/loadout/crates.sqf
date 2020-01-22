@@ -81,17 +81,6 @@ switch (_loadout) do {
 		
 	};
 
-	case "med": { // To be removed
-
-		_crate addItemCargoGlobal ["ACE_fieldDressing", 500];
-		_crate addItemCargoGlobal ["ACE_morphine", 100];
-		_crate addItemCargoGlobal ["ACE_epinephrine", 50];
-		_crate addItemCargoGlobal ["ACE_bloodIV", 30];
-		_crate addItemCargoGlobal ["ACE_bodyBag", 30];
-		_crate addItemCargoGlobal ["ACE_EarPlugs", 30];
-
-	};
-
 	case "explosives": {
 
 		_crate addMagazineCargoGlobal ["SatchelCharge_Remote_Mag", 8];
@@ -660,6 +649,7 @@ switch (_loadout) do {
 
 		// Medical
 		_crate addItemCargoGlobal ["ACE_personalAidKit", 5];
+		_crate addItemCargoGlobal ["ACE_bodyBag", 30];
 
 
 		// Navigation\tracking\communication
@@ -729,6 +719,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_salineIV", 35];
 		_crate addItemCargoGlobal ["ACE_splint", 25];
 		_crate addItemCargoGlobal ["ACE_personalAidKit", 5];
+		_crate addItemCargoGlobal ["ACE_bodyBag", 30];
 
 		// Navigation\tracking\communication
 
