@@ -41,6 +41,7 @@ addons[]=
 	"A3_Structures_F_Mil_Helipads",
 	"ace_explosives",
 	"A3_Characters_F_Mark",
+	"cfp_uniforms",
 	"ace_gforces",
 	"ace_parachute",
 	"A3_Characters_F_Common",
@@ -53,7 +54,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=22;
+		items=23;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -171,33 +172,39 @@ class AddonsMetaData
 		};
 		class Item17
 		{
+			className="cfp_uniforms";
+			name="cfp_uniforms";
+			author="CFP Team";
+		};
+		class Item18
+		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item18
+		class Item19
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item19
+		class Item20
 		{
 			className="acre_api";
 			name="ACRE2 - API";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item20
+		class Item21
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item22
 		{
 			className="ALiVE_sup_combatsupport";
 			name="alive_sup_combatsupport";
