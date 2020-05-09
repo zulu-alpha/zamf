@@ -1,4 +1,4 @@
-.vscode
+.vscode/settings.json
 ~ZAMF.VR
 __pycache__
 .mypy_cache
