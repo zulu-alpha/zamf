@@ -593,13 +593,13 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell", 8];
 		_crate addMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell", 8];
 
-		_crate addWeaponCargoGlobal ["srifle_EBR_F", 1];
+		_crate addWeaponCargoGlobal ["hlc_rifle_m14sopmod", 1];
 		_crate addItemCargoGlobal ["optic_SOS", 1];
 		_crate addItemCargoGlobal ["optic_NVS", 1];
 		//_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15", 1];
 		_crate addItemCargoGlobal ["bipod_01_F_blk", 1];
 		_crate addItemCargoGlobal ["muzzle_snds_B", 1];
-		_crate addMagazineCargoGlobal ["20Rnd_762x51_Mag", 8];
+		_crate addMagazineCargoGlobal ["hlc_20Rnd_762x51_barrier_M14", 8];
 		_crate addItemCargoGlobal ["ACE_Tripod", 1];
 		_crate addItemCargoGlobal ["ACE_Kestrel4500", 1];
 		_crate addItemCargoGlobal ["ACE_RangeCard", 1];
