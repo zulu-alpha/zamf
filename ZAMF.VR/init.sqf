@@ -16,9 +16,6 @@
 
 ] call ZAMF_fnc_init;
 
-// VCOM AI
-[] execVM "Vcom\VcomInit.sqf";
-
 // Devas Autopilot
 [] execVM "AutoPilot\AutoPilotInit.sqf";
 

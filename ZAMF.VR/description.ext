@@ -15,8 +15,6 @@ forceRotorLibSimulation = 1;
 class CfgFunctions
 {
     #include "zamf\cfgfunctions.hpp"
-    // VCOMAI 3
-    #include "vcom\cfgFunctions.hpp"
 };
 
 // Enabling remote execution: https://community.bistudio.com/wiki/CfgRemoteExec
@@ -30,12 +28,9 @@ class CfgRemoteExec
         // Ability to send jip messages: 0-disabled, 1-enabled (default)
         jip = 1;
         // VCOMAI 3
-		class vcm_serverask {allowedTargets = 0; jip = 1;};
-		class VCM_PublicScript {allowedTargets = 0; jip = 1;};
 		class BIS_fnc_debugConsoleExec {allowedTargets = 0; jip = 1;};
 		class SpawnScript {allowedTargets = 0; jip = 1;};
 		class enableSimulationGlobal {allowedTargets = 0; jip = 1;};
-		class VCM_fnc_KnowAbout {allowedTargets = 0; jip = 1;};
         // ZAMF
         #include "zamf\cfgRemoteExec_functions.hpp"
         /* your functions here */
@@ -50,11 +45,6 @@ class CfgRemoteExec
             allowedTargets = 0; // can target anyone
         };
     };
-};
-
-class Extended_PreInit_EventHandlers {
-    // VCOMAI 3
-	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_Functions\fn_CBASettings.sqf";
 };
 
 // ZAMF specific parts of the description.ext

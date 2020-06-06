@@ -9,7 +9,6 @@ ZAMF_PATH = Path(__file__).parent.parent / "ZAMF.VR"
 # file or directory full paths with /, relative to ZAMF.VR
 IGNORE = [
     "cba_settings.sqf",  # Doesn't like `force`
-    "Vcom",
     "zamf/fnc/fn_getLoadout.sqf",  # Confused by advanced pre-processor
     "zamf/fnc/fn_setLoadout.sqf",  # TODO: Report incapability to parse
     "zamf/towing/fn_advancedTowingInit.sqf",  # TODO: Report parsing problem
