@@ -440,6 +440,25 @@ force lambs_eventhandlers_ExplosionReactionTime = 9;
 // LAMBS Danger WP
 force lambs_wp_autoAddArtillery = false;
 
+// GRAD Trenches
+force grad_trenches_functions_allowBigEnvelope = true;
+force grad_trenches_functions_allowCamouflage = true;
+force grad_trenches_functions_allowDigging = true;
+force grad_trenches_functions_allowGiantEnvelope = true;
+force grad_trenches_functions_allowLongEnvelope = true;
+force grad_trenches_functions_allowShortEnvelope = true;
+force grad_trenches_functions_allowSmallEnvelope = true;
+force grad_trenches_functions_allowVehicleEnvelope = true;
+force grad_trenches_functions_bigEnvelopeDigTime = 40;
+force grad_trenches_functions_buildFatigueFactor = 1;
+force grad_trenches_functions_camouflageRequireEntrenchmentTool = true;
+force grad_trenches_functions_giantEnvelopeDigTime = 90;
+force grad_trenches_functions_LongEnvelopeDigTime = 100;
+force grad_trenches_functions_shortEnvelopeDigTime = 20;
+force grad_trenches_functions_smallEnvelopeDigTime = 30;
+force grad_trenches_functions_stopBuildingAtFatigueMax = true;
+force grad_trenches_functions_vehicleEnvelopeDigTime = 120;
+
 // ZAM ShowNames
 zam_showNames_enabled = true;
 force ZAM_showNames_fade = true;
