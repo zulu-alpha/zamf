@@ -43,9 +43,8 @@ switch (_loadout) do {
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_fieldDressing";};
 		_unit addItemToUniform "ACE_epinephrine";
 		_unit addItemToUniform "ACE_morphine";
-		_unit addItemToUniform "ACE_tourniquet";
+				for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_tourniquet";};
 		_unit addItemToUniform "ACE_EarPlugs";
-		_unit addItemToUniform "ACE_salineIV_500";
 		_unit addItemToUniform "ACE_splint";
 		_unit addVest (["za_vst_carrierlite_arid", "za_vst_carrierlite_trans", "za_vst_carrierlite_wood"] select _index);
 		_unit addHeadgear (["H_HelmetB_desert", "H_HelmetB_snakeskin", "H_HelmetB_tna_F"] select _index);
@@ -71,8 +70,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_fieldDressing";};
 		_unit addItemToUniform "ACE_epinephrine";
 		_unit addItemToUniform "ACE_morphine";
-		_unit addItemToUniform "ACE_tourniquet";
-		_unit addItemToUniform "ACE_salineIV_500";
+				for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_tourniquet";};
 		_unit addItemToUniform "ACE_splint";
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addVest (["za_vst_carrier_arid", "za_vst_carrier_trans", "za_vst_carrier_wood"] select _index);
@@ -97,7 +95,7 @@ switch (_loadout) do {
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_fieldDressing";};
 		_unit addItemToUniform "ACE_epinephrine";
 		_unit addItemToUniform "ACE_morphine";
-		_unit addItemToUniform "ACE_tourniquet";
+		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_tourniquet";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_quikclot";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_packingBandage";};
@@ -105,11 +103,11 @@ switch (_loadout) do {
 		_unit addBackpack (["za_bag_carryallmedic_arid", "za_bag_carryallmedic_trans", "za_bag_carryallmedic_wood"] select _index);
 		for "_i" from 1 to 15 do {_unit addItemToBackpack "ACE_elasticBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_quikclot";};
-		for "_i" from 1 to 15 do {_unit addItemToBackpack "ACE_adenosine";};
-		for "_i" from 1 to 14 do {_unit addItemToBackpack "ACE_epinephrine";};
+		for "_i" from 1 to 8 do {_unit addItemToBackpack "ACE_adenosine";};
+		for "_i" from 1 to 8 do {_unit addItemToBackpack "ACE_epinephrine";};
 		for "_i" from 1 to 14 do {_unit addItemToBackpack "ACE_morphine";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_tourniquet";};
-		for "_i" from 1 to 7 do {_unit addItemToBackpack "ACE_salineIV";};
+		for "_i" from 1 to 8 do {_unit addItemToBackpack "ACE_tourniquet";};
+		for "_i" from 1 to 10 do {_unit addItemToBackpack "ACE_salineIV";};
 		for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_fieldDressing";};
 		for "_i" from 1 to 10 do {_unit addItemToBackpack "ACE_packingBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_splint";};
@@ -137,9 +135,8 @@ switch (_loadout) do {
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_fieldDressing";};
 		_unit addItemToUniform "ACE_epinephrine";
 		_unit addItemToUniform "ACE_morphine";
-		_unit addItemToUniform "ACE_tourniquet";
+		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_tourniquet";};
 		_unit addItemToUniform "ACE_EarPlugs";
-		_unit addItemToUniform "ACE_salineIV_500";
 		_unit addItemToUniform "ACE_splint";
 		_unit addVest "V_TacVestIR_blk";
 		_unit addHeadgear "za_hel_helihelmet_ghostrider";
@@ -163,9 +160,8 @@ switch (_loadout) do {
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_fieldDressing";};
 		_unit addItemToUniform "ACE_epinephrine";
 		_unit addItemToUniform "ACE_morphine";
-		_unit addItemToUniform "ACE_tourniquet";
 		_unit addItemToUniform "ACE_EarPlugs";
-		_unit addItemToUniform "ACE_salineIV_500";
+				for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_tourniquet";};
 		_unit addItemToUniform "ACE_splint";
 		_unit addHeadgear "H_PilotHelmetFighter_B";
 
@@ -188,9 +184,8 @@ switch (_loadout) do {
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_fieldDressing";};
 		_unit addItemToUniform "ACE_epinephrine";
 		_unit addItemToUniform "ACE_morphine";
-		_unit addItemToUniform "ACE_tourniquet";
 		_unit addItemToUniform "ACE_EarPlugs";
-		_unit addItemToUniform "ACE_salineIV_500";
+				for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_tourniquet";};
 		_unit addItemToUniform "ACE_splint";
 		_unit addVest (["za_vst_modularlite_arid", "za_vst_modularlite_trans", "za_vst_modularlite_wood"] select _index);
 		_unit addHeadgear "za_hel_crewhelmet_brown";

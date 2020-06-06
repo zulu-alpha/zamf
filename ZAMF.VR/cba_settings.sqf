@@ -146,7 +146,7 @@ ace_maptools_rotateModifierKey = 1;
 // ACE Medical
 force ace_medical_ai_enabledFor = 2;
 force ace_medical_AIDamageThreshold = 1;
-force ace_medical_bleedingCoefficient = 0.75;
+force ace_medical_bleedingCoefficient = 0.8;
 force ace_medical_blood_bloodLifetime = 900;
 force ace_medical_blood_enabledFor = 2;
 force ace_medical_blood_maxBloodObjects = 500;
@@ -160,7 +160,7 @@ ace_medical_gui_enableMedicalMenu = 1;
 ace_medical_gui_enableSelfActions = true;
 force ace_medical_gui_maxDistance = 3;
 ace_medical_gui_openAfterTreatment = true;
-force ace_medical_ivFlowRate = 1;
+force ace_medical_ivFlowRate = 0.9;
 force ace_medical_limping = 1;
 force ace_medical_painCoefficient = 1;
 force ace_medical_playerDamageThreshold = 1;
