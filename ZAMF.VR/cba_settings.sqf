@@ -472,3 +472,6 @@ ZAM_showNames_ranks = false;
 ZAM_showNames_rucks = true;
 zam_showNames_toggle = false;
 force ZAM_showNames_voice = true;
+
+// CFP
+cfp_autoEquipNVG = false;
