@@ -110,17 +110,17 @@ class fogValue {
 #endif
 class fogDecay {
 	title="    Decay of fog density with altitude";
-	values[]={0,1,2,3,4,5,6,7,8,9,10,20,30,40,50,60,70,80,90,100};
-	texts[]={"0","0.01","0.02","0.03","0.04","0.05","0.06","0.07","0.08","0.09","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"};
+	values[]={-1,0,1,2,3,4,5,6,7,8,9,10,20,30,40,50,60,70,80,90,100};
+	texts[]={"No change","0","0.01","0.02","0.03","0.04","0.05","0.06","0.07","0.08","0.09","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"};
 	default = zamf_world_params_fogDecay;
 };
 
 #ifndef zamf_world_params_fogBase
-	#define zamf_world_params_fogBase 0
+	#define zamf_world_params_fogBase -1
 #endif
 class fogBase {
 	title="    Base altitude of fog (in meters)";
-	values[]={0,10,20,30,40,50,60,70,80,90,100,150,200,300,500,1000};
-	texts[]={"0m","10m","20m","30m","40m","50m","60m","70m","80m","90m","100m","150m","200m","300m","500m","1000m"};
+	values[]={-1,0,10,20,30,40,50,60,70,80,90,100,150,200,300,500,1000};
+	texts[]={"No change","0m","10m","20m","30m","40m","50m","60m","70m","80m","90m","100m","150m","200m","300m","500m","1000m"};
 	default = zamf_world_params_fogBase;
 };
