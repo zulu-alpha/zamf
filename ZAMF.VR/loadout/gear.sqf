@@ -177,7 +177,7 @@ switch (_loadout) do {
 	case "crew": {
 
 		comment "Add containers";
-		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans", "za_fat1_soldier_wood", ] select _index);
+		_unit forceAddUniform (["za_fat2_soldier_arid", "za_fat1_soldier_trans", "za_fat1_soldier_wood","za_fat1_soldier_snow" ] select _index);
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_packingBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_quikclot";};
