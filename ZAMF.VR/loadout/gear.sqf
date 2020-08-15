@@ -20,7 +20,6 @@ this = _unit; // Ease compatibility with BIS Arsenal export
 
 // Get the camo type needed
 private _index = call zamf_fnc_getClimate;
-_index = if (_index == 3) then {1} else {_index};  // No woodland camo, Included now
 
 removeAllWeapons _unit;
 removeAllItems _unit;
@@ -188,7 +187,6 @@ switch (_loadout) do {
 				for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_tourniquet";};
 		_unit addItemToUniform "ACE_splint";
 		_unit addVest (["za_vst_carrierlite_arid", "za_vst_carrierlite_trans", "za_vst_carrierlite_wood","za_vst_carrierlite_snow"] select _index); //temp replacement as Modularlite vests are ugly
-		//_unit addVest (["za_vst_modularlite_arid", "za_vst_modularlite_trans", "za_vst_modularlite_wood"] select _index);
 		_unit addHeadgear "za_hel_crewhelmet_brown";
 		_unit addGoggles "G_Balaclava_combat";
 

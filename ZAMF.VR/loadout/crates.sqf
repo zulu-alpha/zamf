@@ -107,10 +107,10 @@ switch (_loadout) do {
 	case "hq": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_trans"] select _index), 2];
+		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood", "za_bag_carryall_snow"] select _index), 2];
 
 		// Vision
-		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green"] select _index), 2];
+		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green", "CUP_NVG_GPNVG_green"] select _index), 2];
 		_crate addItemCargoGlobal ["Binocular", 1];
 		_crate addItemCargoGlobal ["ACE_Vector", 1];
 
@@ -181,10 +181,10 @@ switch (_loadout) do {
 	case "assault_squad": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_trans"] select _index), 9];
+		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood", "za_bag_carryall_snow"] select _index), 9];
 
 		// Vision
-		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green"] select _index), 9];
+		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green", "CUP_NVG_GPNVG_green"] select _index), 9];
 		_crate addItemCargoGlobal ["Binocular", 6];
 		_crate addItemCargoGlobal ["ACE_Vector", 3];
 
@@ -241,13 +241,13 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["CUP_1Rnd_StarFlare_White_M203", 12];
 
 		// DM
-		_crate addWeaponCargoGlobal [(["hlc_rifle_SAMR", "hlc_rifle_samr2", "hlc_rifle_samr2"] select _index), 1];
+		_crate addWeaponCargoGlobal [(["hlc_rifle_SAMR", "hlc_rifle_samr2", "hlc_rifle_samr2", "hlc_rifle_samr2"] select _index), 1];
 		_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_SPR", 10];
 		_crate addItemCargoGlobal ["ACE_ATragMX", 1];
 		_crate addItemCargoGlobal ["ACE_Kestrel4500", 1];
 		_crate addItemCargoGlobal ["hlc_muzzle_556nato_m42000", 1];
 		_crate addItemCargoGlobal ["hlc_bipod_utgshooters", 1];
-		_crate addItemCargoGlobal [(["CUP_optic_SB_11_4x20_PM_tan", "CUP_optic_SB_11_4x20_PM", "CUP_optic_SB_11_4x20_PM_od"] select _index), 1];
+		_crate addItemCargoGlobal [(["CUP_optic_SB_11_4x20_PM_tan", "CUP_optic_SB_11_4x20_PM", "CUP_optic_SB_11_4x20_PM_od", "CUP_optic_SB_11_4x20_PM_od"] select _index), 1];
 		_crate addItemCargoGlobal ["ACE_Tripod", 1];
 
 		// Launcher
@@ -356,10 +356,10 @@ switch (_loadout) do {
 	case "weapons_squad": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_trans"] select _index), 10];
+		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood", "za_bag_carryall_snow"] select _index), 10];
 
 		// Vision
-		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green"] select _index), 10];
+		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green", "CUP_NVG_GPNVG_green"] select _index), 10];
 		_crate addItemCargoGlobal ["Binocular", 4];
 		_crate addItemCargoGlobal ["ACE_Vector", 6];
 
@@ -406,13 +406,13 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_SpareBarrel", 2];
 
 		// DM
-		_crate addWeaponCargoGlobal [(["hlc_rifle_SAMR", "hlc_rifle_samr2", "hlc_rifle_samr2"] select _index), 1];
+		_crate addWeaponCargoGlobal [(["hlc_rifle_SAMR", "hlc_rifle_samr2", "hlc_rifle_samr2", "hlc_rifle_samr2"] select _index), 1];
 		_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_SPR", 10];
 		_crate addItemCargoGlobal ["ACE_ATragMX", 1];
 		_crate addItemCargoGlobal ["ACE_Kestrel4500", 1];
 		_crate addItemCargoGlobal ["hlc_muzzle_556nato_m42000", 1];
 		_crate addItemCargoGlobal ["hlc_bipod_utgshooters", 1];
-		_crate addItemCargoGlobal [(["CUP_optic_SB_11_4x20_PM_tan", "CUP_optic_SB_11_4x20_PM", "CUP_optic_SB_11_4x20_PM_od"] select _index), 1];
+		_crate addItemCargoGlobal [(["CUP_optic_SB_11_4x20_PM_tan", "CUP_optic_SB_11_4x20_PM", "CUP_optic_SB_11_4x20_PM_od", "CUP_optic_SB_11_4x20_PM_od"] select _index), 1];
 		_crate addItemCargoGlobal ["ACE_Tripod", 1];
 
 		// Launcher
@@ -522,11 +522,11 @@ switch (_loadout) do {
 	case "fst": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_trans"] select _index), 2];
+		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood", "za_bag_carryall_snow"] select _index), 2];
 
 
 		// Vision
-		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green"] select _index), 3];
+		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green", "CUP_NVG_GPNVG_green"] select _index), 3];
 		_crate addItemCargoGlobal ["ACE_Vector", 3];
 
 
@@ -580,13 +580,13 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell", 8];
 
 		// DM
-		_crate addWeaponCargoGlobal [(["hlc_rifle_SAMR", "hlc_rifle_samr2", "hlc_rifle_samr2"] select _index), 1];
+		_crate addWeaponCargoGlobal [(["hlc_rifle_SAMR", "hlc_rifle_samr2", "hlc_rifle_samr2", "hlc_rifle_samr2"] select _index), 1];
 		_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_SPR", 10];
 		_crate addItemCargoGlobal ["ACE_ATragMX", 1];
 		_crate addItemCargoGlobal ["ACE_Kestrel4500", 1];
 		_crate addItemCargoGlobal ["hlc_muzzle_556nato_m42000", 1];
 		_crate addItemCargoGlobal ["hlc_bipod_utgshooters", 1];
-		_crate addItemCargoGlobal [(["CUP_optic_SB_11_4x20_PM_tan", "CUP_optic_SB_11_4x20_PM", "CUP_optic_SB_11_4x20_PM_od"] select _index), 1];
+		_crate addItemCargoGlobal [(["CUP_optic_SB_11_4x20_PM_tan", "CUP_optic_SB_11_4x20_PM", "CUP_optic_SB_11_4x20_PM_od", "CUP_optic_SB_11_4x20_PM_od"] select _index), 1];
 		_crate addItemCargoGlobal ["ACE_Tripod", 1];
 
 		// Launcher
@@ -629,7 +629,7 @@ switch (_loadout) do {
 
 
 		// Vision
-		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green"] select _index), 5];
+		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green", "CUP_NVG_GPNVG_green"] select _index), 5];
 		_crate addItemCargoGlobal ["Binocular", 5];
 
 		// Medical
@@ -746,11 +746,11 @@ switch (_loadout) do {
 	case "heli": {
 
 		// Attire
-		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans", "za_hel_Boonie_wood"] select _index), 1];
+		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans", "za_hel_Boonie_wood", "za_hel_Boonie_wood"] select _index), 1];
 		_crate addBackpackCargoGlobal ["B_AssaultPack_blk", 3];
 
 		// Vision
-		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green"] select _index), 3];
+		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green", "CUP_NVG_GPNVG_green"] select _index), 3];
 
 
 		// Medical
@@ -804,11 +804,10 @@ switch (_loadout) do {
 	case "jet": {
 
 		// Attire
-		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans", "za_hel_Boonie_trans"] select _index), 1];
+		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans", "za_hel_Boonie_trans", "za_hel_Boonie_trans"] select _index), 1];
 		_crate addBackpackCargoGlobal ["B_AssaultPack_sgg", 1];
 
 		// Vision
-		//_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green"] select _index), 1];
 
 
 		// Medical
@@ -863,7 +862,7 @@ switch (_loadout) do {
 		// Attire
 
 		// Vision
-		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green"] select _index), 3];
+		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green", "CUP_NVG_GPNVG_green"] select _index), 3];
 		_crate addItemCargoGlobal ["Binocular", 3];
 
 		// Medical
@@ -925,7 +924,7 @@ switch (_loadout) do {
 	case "repair": {
 
 		_crate addItemCargoGlobal ["ToolKit", 2];
-		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_trans"] select _index), 2];
+		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood", "za_bag_carryall_snow"] select _index), 2];
 
 	};
 
