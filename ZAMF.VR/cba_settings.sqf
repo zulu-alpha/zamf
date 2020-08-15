@@ -328,7 +328,7 @@ ace_weaponselect_displayText = true;
 force ace_weather_enabled = true;
 ace_weather_showCheckAirTemperature = true;
 force ace_weather_updateInterval = 60;
-force ace_weather_windSimulation = false;
+force ace_weather_windSimulation = true;
 
 // ACE Wind Deflection
 force ace_winddeflection_enabled = true;
