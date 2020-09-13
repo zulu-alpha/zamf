@@ -8,14 +8,14 @@ class EditorData
 	toggles=101;
 	class ItemIDProvider
 	{
-		nextID=449;
+		nextID=452;
 	};
 	class Camera
 	{
-		pos[]={7477.7031,18.722166,7363.6685};
-		dir[]={0.68441743,-0.72799456,-0.042994864};
-		up[]={0.72658306,0.68553251,-0.045642562};
-		aside[]={-0.062699288,-1.9769868e-007,-0.99813342};
+		pos[]={7510.7778,25.312004,7339.5713};
+		dir[]={-0.6262629,-0.45165381,0.63565713};
+		up[]={-0.31705374,0.89211631,0.3218056};
+		aside[]={0.71241021,4.2910688e-007,0.70188814};
 	};
 };
 binarizationWanted=0;
@@ -3772,7 +3772,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					dataType="Object";
@@ -3898,8 +3898,69 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7481.5,5.0014391,7351.0498};
+						position[]={7481.5,5.0014391,7353.5498};
 						angles[]={0,1.5707964,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{nul = [this, ""grunt"", ""Dragon'0""] call zamf_fnc_team;}";
+						description="B [XO/IO]@Dragon'0";
+						isPlayable=1;
+					};
+					id=449;
+					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7481.5,5.0014391,7350.5498};
+						angles[]={-0,1.5707964,0};
 					};
 					side="West";
 					flags=4;
@@ -3911,7 +3972,7 @@ class Mission
 						description="E [Engineer]@Dragon'0";
 						isPlayable=1;
 					};
-					id=39;
+					id=451;
 					type="B_engineer_F";
 					class CustomAttributes
 					{

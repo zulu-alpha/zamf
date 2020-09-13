@@ -107,11 +107,11 @@ switch (_loadout) do {
 	case "hq": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood", "za_bag_carryall_snow"] select _index), 2];
+		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood", "za_bag_carryall_snow"] select _index), 3];
 
 		// Vision
-		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green", "CUP_NVG_GPNVG_green"] select _index), 2];
-		_crate addItemCargoGlobal ["Binocular", 1];
+		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green", "CUP_NVG_GPNVG_green"] select _index), 3];
+		_crate addItemCargoGlobal ["Binocular", 2];
 		_crate addItemCargoGlobal ["ACE_Vector", 1];
 
 
@@ -119,52 +119,52 @@ switch (_loadout) do {
 
 
 		// Navigation\tracking\communication
-		_crate addItemCargoGlobal ["ACE_MapTools", 2];
-		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 2];
-		_crate addItemCargoGlobal ["ACRE_PRC117F", 1];
-		_crate addItemCargoGlobal ["ACRE_PRC152", 2];
-		_crate addItemCargoGlobal ["ACRE_PRC343", 2];
+		_crate addItemCargoGlobal ["ACE_MapTools", 3];
+		_crate addItemCargoGlobal ["ACE_Flashlight_MX991", 3];
+		_crate addItemCargoGlobal ["ACRE_PRC117F", 2];
+		_crate addItemCargoGlobal ["ACRE_PRC152", 3];
+		_crate addItemCargoGlobal ["ACRE_PRC343", 3];
 		_crate addItemCargoGlobal ["ItemcTab", 1];
-		_crate addItemCargoGlobal ["ItemAndroid", 1];
+		_crate addItemCargoGlobal ["ItemAndroid", 2];
 
 		// Signalling
-		_crate addMagazineCargoGlobal ["SmokeShell", 4];
-		_crate addMagazineCargoGlobal ["SmokeShellGreen", 4];
-		_crate addMagazineCargoGlobal ["SmokeShellBlue", 4];
+		_crate addMagazineCargoGlobal ["SmokeShell", 12];
+		_crate addMagazineCargoGlobal ["SmokeShellGreen", 6];
+		_crate addMagazineCargoGlobal ["SmokeShellBlue", 6];
 		_crate addMagazineCargoGlobal ["SmokeShellRed", 2];
-		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiWhite", 4];
-		_crate addMagazineCargoGlobal ["ACE_Chemlight_UltraHiOrange", 4];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiWhite", 6];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_UltraHiOrange", 6];
 		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiRed", 24];
-		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiYellow", 8];
-		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 2];
-		_crate addMagazineCargoGlobal ["B_IR_Grenade", 2];
+		_crate addMagazineCargoGlobal ["ACE_Chemlight_HiYellow", 10];
+		_crate addItemCargoGlobal ["ACE_IR_Strobe_Item", 3];
+		_crate addMagazineCargoGlobal ["B_IR_Grenade", 3];
 
 		// Grenades
-		_crate addMagazineCargoGlobal ["HandGrenade", 4];
-		_crate addMagazineCargoGlobal ["ACE_M84", 4];
+		_crate addMagazineCargoGlobal ["HandGrenade", 6];
+		_crate addMagazineCargoGlobal ["ACE_M84", 8];
 
 		// Primary Weapon
-		_crate addWeaponCargoGlobal ["hlc_rifle_M4", 2];
+		_crate addWeaponCargoGlobal ["hlc_rifle_M4", 3];
 
-		_crate addItemCargoGlobal ["optic_Holosight_blk_F", 2];
-		_crate addItemCargoGlobal ["optic_Arco_blk_F", 2];
-		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15_Flashlight_Black_L", 2];
+		_crate addItemCargoGlobal ["optic_Holosight_blk_F", 3];
+		_crate addItemCargoGlobal ["optic_Arco_blk_F", 3];
+		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15_Flashlight_Black_L", 3];
 		
-		_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_SOST", 12];
-		_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_MDim", 4];
-		_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_t", 4];
+		_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_SOST", 20];
+		_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_MDim", 6];
+		_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_t", 6];
 
 		// Launcher
 
 
 		// Sidearm
-		_crate addWeaponCargoGlobal ["hlc_pistol_Mk25TR", 2];
-		_crate addItemCargoGlobal ["hlc_acc_DBALPL", 2];
-		_crate addItemCargoGlobal ["HLC_optic_Siglite", 2];
-		_crate addMagazineCargoGlobal ["hlc_15Rnd_9x19_B_P226", 8];
+		_crate addWeaponCargoGlobal ["hlc_pistol_Mk25TR", 3];
+		_crate addItemCargoGlobal ["hlc_acc_DBALPL", 3];
+		_crate addItemCargoGlobal ["HLC_optic_Siglite", 3];
+		_crate addMagazineCargoGlobal ["hlc_15Rnd_9x19_B_P226", 12];
 
 		// Misc Equipment
-		_crate addItemCargoGlobal ["ACE_CableTie", 8];
+		_crate addItemCargoGlobal ["ACE_CableTie", 12];
 		_crate addItemCargoGlobal ["ALIVE_Tablet", 1];
 		_crate addItemCargoGlobal ["ACE_key_west", 1];
 		_crate addItemCargoGlobal ["ToolKit", 1];
