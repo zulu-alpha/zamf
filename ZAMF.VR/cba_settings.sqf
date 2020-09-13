@@ -310,9 +310,9 @@ force ace_vehicles_hideEjectAction = true;
 ace_vehicles_keepEngineRunning = false;
 
 // ACE View Distance Limiter
-ace_viewdistance_enabled = true;
-ace_viewdistance_limitViewDistance = 12000;
-ace_viewdistance_objectViewDistanceCoeff = 0;
+force ace_viewdistance_enabled = true;
+force ace_viewdistance_limitViewDistance = 12000;
+ace_viewdistance_objectViewDistanceCoeff = 4;
 ace_viewdistance_viewDistanceAirVehicle = 0;
 ace_viewdistance_viewDistanceLandVehicle = 0;
 ace_viewdistance_viewDistanceOnFoot = 0;
