@@ -449,15 +449,15 @@ force grad_trenches_functions_allowLongEnvelope = true;
 force grad_trenches_functions_allowShortEnvelope = true;
 force grad_trenches_functions_allowSmallEnvelope = true;
 force grad_trenches_functions_allowVehicleEnvelope = true;
-force grad_trenches_functions_bigEnvelopeDigTime = 40;
+force grad_trenches_functions_bigEnvelopeDigTime = 120;
 force grad_trenches_functions_buildFatigueFactor = 1;
 force grad_trenches_functions_camouflageRequireEntrenchmentTool = true;
-force grad_trenches_functions_giantEnvelopeDigTime = 90;
-force grad_trenches_functions_LongEnvelopeDigTime = 100;
-force grad_trenches_functions_shortEnvelopeDigTime = 20;
-force grad_trenches_functions_smallEnvelopeDigTime = 30;
+force grad_trenches_functions_giantEnvelopeDigTime = 270;
+force grad_trenches_functions_LongEnvelopeDigTime = 300;
+force grad_trenches_functions_shortEnvelopeDigTime = 60;
+force grad_trenches_functions_smallEnvelopeDigTime = 90;
 force grad_trenches_functions_stopBuildingAtFatigueMax = true;
-force grad_trenches_functions_vehicleEnvelopeDigTime = 120;
+force grad_trenches_functions_vehicleEnvelopeDigTime = 360;
 
 // ZAM ShowNames
 zam_showNames_enabled = true;
