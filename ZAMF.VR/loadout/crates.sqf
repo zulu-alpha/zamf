@@ -443,8 +443,8 @@ switch (_loadout) do {
 
 
 		// Ammo Bearing
-		_crate addBackpackCargoGlobal ["I_E_HMG_02_high_weapon_F", 2];
-		_crate addBackpackCargoGlobal ["I_E_HMG_02_support_high_F", 2];
+		_crate addBackpackCargoGlobal ["CUP_B_L111A1_Gun_Bag", 2];
+		_crate addBackpackCargoGlobal ["CUP_B_L111A1_Tripod_Bag", 2];
 
 	};
 
@@ -512,7 +512,7 @@ switch (_loadout) do {
 
 
 		// Ammo Bearing
-		_crate addBackpackCargoGlobal ["I_E_HMG_02_high_weapon_F", 2];
+		_crate addBackpackCargoGlobal ["CUP_B_L111A1_Gun_Bag", 2];
 
 		// Destroy crate
 		_crate addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 1];
