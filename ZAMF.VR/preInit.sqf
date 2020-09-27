@@ -4,7 +4,7 @@ if (isServer) then {
 			markers = [] call compile preprocessFileLineNumbers "markers.sqf";
 			{
 				private _mk_name = "opord_" + (_x select 0);
-				_mk = createMarker [_mk_name, _x select 5];
+				private _mk = createMarker [_mk_name, _x select 5];
 				_mk setMarkerAlpha (_x select 1);
 				_mk setMarkerBrush (_x select 2);
 				_mk setMarkerColor (_x select 3);
