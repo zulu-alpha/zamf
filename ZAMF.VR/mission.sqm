@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7510.7778,25.312004,7339.5713};
-		dir[]={-0.6262629,-0.45165381,0.63565713};
-		up[]={-0.31705374,0.89211631,0.3218056};
-		aside[]={0.71241021,4.2910688e-007,0.70188814};
+		pos[]={7513.3247,25.918306,7316.1719};
+		dir[]={-0.38096961,-0.42134181,0.82315958};
+		up[]={-0.17701627,0.90682155,0.38247159};
+		aside[]={0.90759647,8.8813249e-007,0.42005199};
 	};
 };
 binarizationWanted=0;
@@ -3610,7 +3610,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7537.1787,5.7000113,7381.4766};
+				position[]={7537.1792,5.6999998,7381.4771};
 			};
 			side="Empty";
 			flags=5;
@@ -3619,7 +3619,6 @@ class Mission
 			};
 			id=32;
 			type="Land_Medevac_house_V1_F";
-			atlOffset=1.1444092e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3658,7 +3657,7 @@ class Mission
 			};
 			id=33;
 			type="CamoNet_BLUFOR_open_F";
-			atlOffset=0.70536327;
+			atlOffset=0.70572281;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3728,7 +3727,7 @@ class Mission
 							{
 								type[]=
 								{
-									"SCALAR"
+									"BOOL"
 								};
 							};
 							value=1;
@@ -3765,6 +3764,7 @@ class Mission
 			text="Field Hospital";
 			type="b_med";
 			id=36;
+			atlOffset=1.1444092e-005;
 		};
 		class Item33
 		{
@@ -3960,7 +3960,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={7481.5,5.0014391,7350.5498};
-						angles[]={-0,1.5707964,0};
+						angles[]={0,1.5707964,0};
 					};
 					side="West";
 					flags=4;
