@@ -158,10 +158,8 @@ switch (_loadout) do {
 
 
 		// Sidearm
-		_crate addWeaponCargoGlobal ["hlc_pistol_Mk25TR", 3];
-		_crate addItemCargoGlobal ["hlc_acc_DBALPL", 3];
-		_crate addItemCargoGlobal ["HLC_optic_Siglite", 3];
-		_crate addMagazineCargoGlobal ["hlc_15Rnd_9x19_B_P226", 12];
+		_crate addWeaponCargoGlobal ["CUP_hgun_M9", 3];
+		_crate addMagazineCargoGlobal ["CUP_15Rnd_9x19_M9", 12];
 
 		// Misc Equipment
 		_crate addItemCargoGlobal ["ACE_CableTie", 12];
@@ -261,10 +259,8 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["tf47_m3maaws_ILLUM", 6];
 
 		// Sidearm
-		_crate addWeaponCargoGlobal ["hlc_pistol_Mk25TR", 9];
-		_crate addItemCargoGlobal ["hlc_acc_DBALPL", 9];
-		_crate addItemCargoGlobal ["HLC_optic_Siglite", 9];
-		_crate addMagazineCargoGlobal ["hlc_15Rnd_9x19_B_P226", 36];
+		_crate addWeaponCargoGlobal ["CUP_hgun_M9", 9];
+		_crate addMagazineCargoGlobal ["CUP_15Rnd_9x19_M9", 36];
 
 		// Misc Equipment
 		_crate addItemCargoGlobal ["ACE_CableTie", 36];
@@ -339,7 +335,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["tf47_m3maaws_ILLUM", 6];
 
 		// Sidearm
-		_crate addMagazineCargoGlobal ["hlc_15Rnd_9x19_B_P226", 40];
+		_crate addMagazineCargoGlobal ["CUP_15Rnd_9x19_M9", 40];
 
 		// Misc Equipment
 		_crate addItemCargoGlobal ["ACE_CableTie", 36];
@@ -429,10 +425,8 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["tf47_m3maaws_ILLUM", 4];
 
 		// Sidearm
-		_crate addWeaponCargoGlobal ["hlc_pistol_Mk25TR", 10];
-		_crate addItemCargoGlobal ["hlc_acc_DBALPL", 10];
-		_crate addItemCargoGlobal ["HLC_optic_Siglite", 10];
-		_crate addMagazineCargoGlobal ["hlc_15Rnd_9x19_B_P226", 40];
+		_crate addWeaponCargoGlobal ["CUP_hgun_M9", 10];
+		_crate addMagazineCargoGlobal ["CUP_15Rnd_9x19_M9", 40];
 
 		// Misc Equipment
 		_crate addItemCargoGlobal ["ACE_CableTie", 40];
@@ -502,7 +496,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["tf47_m3maaws_ILLUM", 4];
 
 		// Sidearm
-		_crate addMagazineCargoGlobal ["hlc_15Rnd_9x19_B_P226", 44];
+		_crate addMagazineCargoGlobal ["CUP_15Rnd_9x19_M9", 44];
 
 		// Misc Equipment
 		_crate addItemCargoGlobal ["ACE_CableTie", 40];
@@ -593,10 +587,8 @@ switch (_loadout) do {
 
 
 		// Sidearm
-		_crate addWeaponCargoGlobal ["hlc_pistol_Mk25TR", 3];
-		_crate addItemCargoGlobal ["hlc_acc_DBALPL", 3];
-		_crate addItemCargoGlobal ["HLC_optic_Siglite", 3];
-		_crate addMagazineCargoGlobal ["hlc_15Rnd_9x19_B_P226", 12];
+		_crate addWeaponCargoGlobal ["CUP_hgun_M9", 3];
+		_crate addMagazineCargoGlobal ["CUP_15Rnd_9x19_M9", 12];
 
 		// Misc Equipment
 		_crate addItemCargoGlobal ["ACE_CableTie", 12];
@@ -675,10 +667,8 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_t", 5];
 
 		// Sidearm
-		_crate addWeaponCargoGlobal ["hlc_pistol_Mk25TR", 5];
-		_crate addItemCargoGlobal ["hlc_acc_DBALPL", 5];
-		_crate addItemCargoGlobal ["HLC_optic_Siglite", 5];
-		_crate addMagazineCargoGlobal ["hlc_15Rnd_9x19_B_P226", 20];
+		_crate addWeaponCargoGlobal ["CUP_hgun_M9", 5];
+		_crate addMagazineCargoGlobal ["CUP_15Rnd_9x19_M9", 20];
 
 		// Misc Equipment
 		_crate addItemCargoGlobal ["ACE_CableTie", 20];
@@ -733,7 +723,7 @@ switch (_loadout) do {
 		_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_t", 5];
 
 		// Sidearm
-		_crate addMagazineCargoGlobal ["hlc_15Rnd_9x19_B_P226", 20];
+		_crate addMagazineCargoGlobal ["CUP_15Rnd_9x19_M9", 20];
 
 		// Misc Equipment
 		_crate addItemCargoGlobal ["ACE_CableTie", 20];
@@ -838,10 +828,8 @@ switch (_loadout) do {
 
 
 		// Sidearm
-		_crate addWeaponCargoGlobal ["hlc_pistol_Mk25TR", 1];
-		_crate addItemCargoGlobal ["hlc_acc_DBALPL", 1];
-		_crate addItemCargoGlobal ["HLC_optic_Siglite", 1];
-		_crate addMagazineCargoGlobal ["hlc_15Rnd_9x19_B_P226", 3];
+		_crate addWeaponCargoGlobal ["CUP_hgun_M9", 1];
+		_crate addMagazineCargoGlobal ["CUP_15Rnd_9x19_M9", 3];
 
 		// Misc Equipment
 		_crate addItemCargoGlobal ["ACE_key_west", 1];
