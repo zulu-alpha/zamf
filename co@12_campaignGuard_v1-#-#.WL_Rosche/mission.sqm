@@ -8,11 +8,11 @@ class EditorData
 	toggles=65;
 	class ItemIDProvider
 	{
-		nextID=1382;
+		nextID=1392;
 	};
 	class MarkerIDProvider
 	{
-		nextID=21;
+		nextID=23;
 	};
 	class LayerIndexProvider
 	{
@@ -20,7 +20,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={808.3277,29.583288,4679.1519};
+		pos[]={808.09552,40.422367,4665.6694};
 		dir[]={0.18354981,-0.56011122,0.80782729};
 		up[]={0.12410204,0.8284173,0.54618973};
 		aside[]={0.9751451,0,-0.22156677};
@@ -269,7 +269,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=66;
+		items=76;
 		class Item0
 		{
 			dataType="Object";
@@ -11182,6 +11182,86 @@ class Mission
 			};
 			id=1377;
 			type="EmptyDetector";
+		};
+		class Item66
+		{
+			dataType="Marker";
+			position[]={6000.0596,38.302422,12265.322};
+			name="marker_21";
+			type="o_unknown";
+			id=1382;
+		};
+		class Item67
+		{
+			dataType="Marker";
+			position[]={5990.3628,45.001171,12527.141};
+			name="marker_22";
+			type="group_3";
+			id=1383;
+		};
+		class Item68
+		{
+			dataType="Marker";
+			position[]={10174.605,33.835129,13215.626};
+			name="marker_23";
+			type="o_unknown";
+			id=1384;
+		};
+		class Item69
+		{
+			dataType="Marker";
+			position[]={10174.605,33.317833,13448.353};
+			name="marker_24";
+			type="group_3";
+			id=1385;
+		};
+		class Item70
+		{
+			dataType="Marker";
+			position[]={13054.605,22.42,11276.232};
+			name="marker_25";
+			type="o_unknown";
+			id=1386;
+		};
+		class Item71
+		{
+			dataType="Marker";
+			position[]={13035.213,22.123003,11547.747};
+			name="marker_26";
+			type="group_3";
+			id=1387;
+		};
+		class Item72
+		{
+			dataType="Marker";
+			position[]={14344.302,31.666874,7727.1396};
+			name="marker_27";
+			type="o_unknown";
+			id=1388;
+		};
+		class Item73
+		{
+			dataType="Marker";
+			position[]={14334.604,25.825977,7998.6553};
+			name="marker_28";
+			type="group_3";
+			id=1389;
+		};
+		class Item74
+		{
+			dataType="Marker";
+			position[]={10513.998,25.142796,4430.1709};
+			name="marker_29";
+			type="o_unknown";
+			id=1390;
+		};
+		class Item75
+		{
+			dataType="Marker";
+			position[]={10513.998,29.368044,4730.7759};
+			name="marker_30";
+			type="group_1";
+			id=1391;
 		};
 	};
 	class Connections
