@@ -54,7 +54,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_SpraypaintBlue", 10];
 		_crate addItemCargoGlobal ["ACE_SpraypaintBlack", 10];
 
-		_crate addItemCargoGlobal ["ItemcTabHCam", 43];
+		//_crate addItemCargoGlobal ["ItemcTabHCam", 43];
 
 		_crate addBackpackCargoGlobal ["ACE_TacticalLadder_Pack", 16];
 
@@ -107,10 +107,10 @@ switch (_loadout) do {
 	case "hq": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood", "za_bag_carryall_snow"] select _index), 3];
+		_crate addBackpackCargoGlobal ["B_Carryall_green_F", 3];
 
 		// Vision
-		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green", "CUP_NVG_GPNVG_green"] select _index), 3];
+		_crate addItemCargoGlobal ["CUP_NVG_PVS7", 3];
 		_crate addItemCargoGlobal ["Binocular", 2];
 		_crate addItemCargoGlobal ["ACE_Vector", 1];
 
@@ -124,8 +124,8 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACRE_PRC117F", 2];
 		_crate addItemCargoGlobal ["ACRE_PRC152", 3];
 		_crate addItemCargoGlobal ["ACRE_PRC343", 3];
-		_crate addItemCargoGlobal ["ItemcTab", 1];
-		_crate addItemCargoGlobal ["ItemAndroid", 2];
+		//_crate addItemCargoGlobal ["ItemcTab", 1];
+		// _crate addItemCargoGlobal ["ItemAndroid", 2];
 
 		// Signalling
 		_crate addMagazineCargoGlobal ["SmokeShell", 12];
@@ -146,7 +146,7 @@ switch (_loadout) do {
 		// Primary Weapon
 		_crate addWeaponCargoGlobal ["hlc_rifle_M4", 3];
 
-		_crate addItemCargoGlobal ["optic_Holosight_blk_F", 3];
+		//_crate addItemCargoGlobal ["optic_Holosight_blk_F", 3];
 		_crate addItemCargoGlobal ["optic_Arco_blk_F", 3];
 		_crate addItemCargoGlobal ["za_flashlight_led", 3];
 		
@@ -181,10 +181,10 @@ switch (_loadout) do {
 	case "assault_squad": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood", "za_bag_carryall_snow"] select _index), 9];
+		_crate addBackpackCargoGlobal ["B_Carryall_green_F", 9];
 
 		// Vision
-		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green", "CUP_NVG_GPNVG_green"] select _index), 9];
+		_crate addItemCargoGlobal ["CUP_NVG_PVS7", 9];
 		_crate addItemCargoGlobal ["Binocular", 6];
 		_crate addItemCargoGlobal ["ACE_Vector", 3];
 
@@ -198,7 +198,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACRE_PRC152", 3];
 		_crate addItemCargoGlobal ["ACRE_PRC343", 9];
 		//_crate addItemCargoGlobal ["ItemMicroDAGR", 6];
-		_crate addItemCargoGlobal ["ItemAndroid", 3];
+		// _crate addItemCargoGlobal ["ItemAndroid", 3];
 
 		// Signalling
 		_crate addMagazineCargoGlobal ["SmokeShell", 72];
@@ -216,11 +216,11 @@ switch (_loadout) do {
 
 		// Primary Weapon
 		_crate addWeaponCargoGlobal ["hlc_rifle_M4", 5];
-		_crate addWeaponCargoGlobal ["hlc_lmg_mk46mod1", 2];
+		_crate addWeaponCargoGlobal ["hlc_lmg_m249para", 2];
 		_crate addWeaponCargoGlobal ["hlc_rifle_m4m203", 2];
 
-		_crate addItemCargoGlobal ["optic_Holosight_blk_F", 9];
-		_crate addItemCargoGlobal ["optic_Arco_blk_F", 9];
+		//_crate addItemCargoGlobal ["optic_Holosight_blk_F", 9];
+		_crate addItemCargoGlobal ["optic_Arco_blk_F", 8];
 
 		_crate addItemCargoGlobal ["za_flashlight_led", 7];
 		_crate addItemCargoGlobal ["za_flashlight_led", 2];
@@ -356,10 +356,10 @@ switch (_loadout) do {
 	case "weapons_squad": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood", "za_bag_carryall_snow"] select _index), 10];
+		_crate addBackpackCargoGlobal ["B_Carryall_green_F", 10];
 
 		// Vision
-		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green", "CUP_NVG_GPNVG_green"] select _index), 10];
+		_crate addItemCargoGlobal ["CUP_NVG_PVS7", 10];
 		_crate addItemCargoGlobal ["Binocular", 4];
 		_crate addItemCargoGlobal ["ACE_Vector", 6];
 
@@ -371,7 +371,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACRE_PRC343", 10];
 		_crate addItemCargoGlobal ["ACRE_PRC117F",1];
 		//_crate addItemCargoGlobal ["ItemMicroDAGR", 5];
-		_crate addItemCargoGlobal ["ItemAndroid", 5];
+		// _crate addItemCargoGlobal ["ItemAndroid", 5];
 
 		// Signalling
 		_crate addMagazineCargoGlobal ["SmokeShell", 80];
@@ -392,14 +392,14 @@ switch (_loadout) do {
 		_crate addWeaponCargoGlobal ["hlc_rifle_m4m203", 1];
 
 		_crate addItemCargoGlobal ["optic_Arco_blk_F", 10];
-		_crate addItemCargoGlobal ["optic_Holosight_blk_F", 10];
+		//_crate addItemCargoGlobal ["optic_Holosight_blk_F", 10];
 		_crate addItemCargoGlobal ["za_flashlight_led", 10];
 
 		_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_SOST", 60];
 		_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_MDim", 14];
 		_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_t", 14];
 
-		_crate addWeaponCargoGlobal ["hlc_lmg_mk48mod1", 2];
+		_crate addWeaponCargoGlobal ["CUP_lmg_M240_B", 2];
 		_crate addItemCargoGlobal ["optic_Arco_blk_F", 2];
 		_crate addMagazineCargoGlobal ["hlc_100Rnd_762x51_Barrier_M60E4", 22];
 		_crate addMagazineCargoGlobal ["hlc_100Rnd_762x51_Mdim_M60E4", 22];
@@ -522,11 +522,11 @@ switch (_loadout) do {
 	case "fst": {
 
 		// Attire
-		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood", "za_bag_carryall_snow"] select _index), 2];
+		_crate addBackpackCargoGlobal ["B_Carryall_green_F", 2];
 
 
 		// Vision
-		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green", "CUP_NVG_GPNVG_green"] select _index), 3];
+		_crate addItemCargoGlobal ["CUP_NVG_PVS7", 3];
 		_crate addItemCargoGlobal ["ACE_Vector", 3];
 
 
@@ -539,8 +539,8 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACRE_PRC117F", 2];
 		_crate addItemCargoGlobal ["ACRE_PRC152", 6];
 		_crate addItemCargoGlobal ["ACRE_PRC343", 3];
-		_crate addItemCargoGlobal ["ItemcTab", 2];
-		_crate addItemCargoGlobal ["ItemAndroid", 1];
+		//_crate addItemCargoGlobal ["ItemcTab", 2];
+		// _crate addItemCargoGlobal ["ItemAndroid", 1];
 
 		// Signalling
 		_crate addMagazineCargoGlobal ["SmokeShell", 24];
@@ -561,7 +561,7 @@ switch (_loadout) do {
 		_crate addWeaponCargoGlobal ["hlc_rifle_M4", 2];
 
 		_crate addItemCargoGlobal ["optic_Arco_blk_F", 3];
-		_crate addItemCargoGlobal ["optic_Holosight_blk_F", 3];
+		//_crate addItemCargoGlobal ["optic_Holosight_blk_F", 3];
 
 		_crate addItemCargoGlobal ["za_flashlight_led", 3];
 		_crate addItemCargoGlobal ["acc_flashlight", 3];
@@ -629,7 +629,7 @@ switch (_loadout) do {
 
 
 		// Vision
-		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green", "CUP_NVG_GPNVG_green"] select _index), 5];
+		_crate addItemCargoGlobal ["CUP_NVG_PVS7", 5];
 		_crate addItemCargoGlobal ["Binocular", 5];
 
 		// Medical
@@ -644,7 +644,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACRE_PRC152", 5];
 		_crate addItemCargoGlobal ["ACRE_PRC343", 5];
 		_crate addItemCargoGlobal ["ACRE_PRC117F", 1];
-		_crate addItemCargoGlobal ["ItemAndroid", 5];
+		// _crate addItemCargoGlobal ["ItemAndroid", 5];
 
 		// Signalling
 		_crate addMagazineCargoGlobal ["SmokeShell", 40];
@@ -664,7 +664,7 @@ switch (_loadout) do {
 		_crate addWeaponCargoGlobal ["hlc_rifle_M4", 5];
 
 		_crate addItemCargoGlobal ["optic_Arco_blk_F", 5];
-		_crate addItemCargoGlobal ["optic_Holosight_blk_F", 5];
+		//_crate addItemCargoGlobal ["optic_Holosight_blk_F", 5];
 		
 		_crate addItemCargoGlobal ["za_flashlight_led", 5];
 		_crate addItemCargoGlobal ["acc_flashlight", 5];
@@ -750,7 +750,7 @@ switch (_loadout) do {
 		_crate addBackpackCargoGlobal ["B_AssaultPack_blk", 3];
 
 		// Vision
-		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green", "CUP_NVG_GPNVG_green"] select _index), 3];
+		_crate addItemCargoGlobal ["CUP_NVG_PVS7", 3];
 
 
 		// Medical
@@ -862,7 +862,7 @@ switch (_loadout) do {
 		// Attire
 
 		// Vision
-		_crate addItemCargoGlobal [(["CUP_NVG_GPNVG_tan", "CUP_NVG_GPNVG_black", "CUP_NVG_GPNVG_green", "CUP_NVG_GPNVG_green"] select _index), 3];
+		_crate addItemCargoGlobal ["CUP_NVG_PVS7", 3];
 		_crate addItemCargoGlobal ["Binocular", 3];
 
 		// Medical
@@ -924,7 +924,7 @@ switch (_loadout) do {
 	case "repair": {
 
 		_crate addItemCargoGlobal ["ToolKit", 2];
-		_crate addBackpackCargoGlobal [(["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood", "za_bag_carryall_snow"] select _index), 2];
+		_crate addBackpackCargoGlobal ["B_Carryall_green_F", 2];
 
 	};
 
