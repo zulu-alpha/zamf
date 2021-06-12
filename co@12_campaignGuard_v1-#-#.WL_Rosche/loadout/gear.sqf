@@ -186,9 +186,9 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_EarPlugs";
 				for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_tourniquet";};
 		_unit addItemToUniform "ACE_splint";
-		_unit addVest (["za_vst_carrierlite_arid", "za_vst_carrierlite_trans", "za_vst_carrierlite_wood","za_vst_carrierlite_snow"] select _index); //temp replacement as Modularlite vests are ugly
-		_unit addHeadgear "za_hel_crewhelmet_brown";
-		_unit addGoggles "G_Balaclava_combat";
+		_unit addVest "CFP_US_pasgt_core";
+		_unit addHeadgear "CUP_H_BAF_DPM_Mk6_CREW_PRR";
+		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
 
