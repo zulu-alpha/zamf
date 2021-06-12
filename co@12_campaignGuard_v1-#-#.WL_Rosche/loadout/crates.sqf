@@ -736,7 +736,7 @@ switch (_loadout) do {
 	case "heli": {
 
 		// Attire
-		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans", "za_hel_Boonie_wood", "za_hel_Boonie_wood"] select _index), 1];
+		_crate addItemCargoGlobal ["CFP_BoonieHat_M81", 3];
 		_crate addBackpackCargoGlobal ["B_AssaultPack_blk", 3];
 
 		// Vision
@@ -794,10 +794,11 @@ switch (_loadout) do {
 	case "jet": {
 
 		// Attire
-		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans", "za_hel_Boonie_trans", "za_hel_Boonie_trans"] select _index), 1];
+		_crate addItemCargoGlobal ["CFP_BoonieHat_M81", 1];
 		_crate addBackpackCargoGlobal ["B_AssaultPack_sgg", 1];
 
 		// Vision
+		_crate addItemCargoGlobal ["CUP_NVG_PVS7", 1];
 
 
 		// Medical
@@ -848,6 +849,7 @@ switch (_loadout) do {
 	case "crew": {
 
 		// Attire
+		_crate addItemCargoGlobal ["G_Combat", 3];
 
 		// Vision
 		_crate addItemCargoGlobal ["CUP_NVG_PVS7", 3];

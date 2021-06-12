@@ -127,7 +127,7 @@ switch (_loadout) do {
 	case "heli": {
 
 		comment "Add containers";
-		_unit forceAddUniform "CUP_U_B_BDUv2_M81_US";
+		_unit forceAddUniform "CUP_U_B_USArmy_PilotOverall";
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_packingBandage";};
 		for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_quikclot";};
@@ -137,8 +137,8 @@ switch (_loadout) do {
 		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_tourniquet";};
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addItemToUniform "ACE_splint";
-		_unit addVest "V_TacVestIR_blk";
-		_unit addHeadgear "za_hel_helihelmet_ghostrider";
+		_unit addVest "CUP_V_B_PilotVest";
+		_unit addHeadgear "CUP_H_USMC_Helmet_Pilot";
 
 		comment "Add weapons";
 
@@ -188,7 +188,6 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_splint";
 		_unit addVest "CFP_US_pasgt_core";
 		_unit addHeadgear "CUP_H_BAF_DPM_Mk6_CREW_PRR";
-		_unit addGoggles "G_Combat";
 
 		comment "Add weapons";
 
