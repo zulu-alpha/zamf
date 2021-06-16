@@ -8,14 +8,14 @@ class EditorData
 	toggles=97;
 	class ItemIDProvider
 	{
-		nextID=454;
+		nextID=455;
 	};
 	class Camera
 	{
-		pos[]={7485.2412,18.265444,7328.1011};
-		dir[]={-0.25601628,-0.50751096,0.82289261};
-		up[]={-0.15079542,0.86156791,0.48468035};
-		aside[]={0.95493507,1.4185207e-007,0.29710126};
+		pos[]={7490.3794,13.414388,7334.5688};
+		dir[]={-0.63169956,-0.35571423,0.68879533};
+		up[]={-0.24042918,0.93459404,0.26215988};
+		aside[]={0.73699808,1.4528632e-007,0.67590696};
 	};
 };
 binarizationWanted=0;
@@ -48,7 +48,6 @@ addons[]=
 	"A3_Characters_F_Common",
 	"A3_Drones_F_Soft_F_Gamma_UGV_01",
 	"acre_api",
-	"A3_Modules_F_StrategicMap",
 	"alive_sup_combatsupport",
 	"A3_Structures_F_Civ_Camping",
 	"CUP_CAMisc"
@@ -57,7 +56,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=25;
+		items=24;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -202,25 +201,18 @@ class AddonsMetaData
 		};
 		class Item21
 		{
-			className="A3_Modules_F";
-			name="Arma 3 Alpha - Scripted Modules";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item22
-		{
 			className="ALiVE_sup_combatsupport";
 			name="alive_sup_combatsupport";
 			author="ALiVE Mod Team";
 		};
-		class Item23
+		class Item22
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item24
+		class Item23
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
@@ -289,7 +281,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=56;
+		items=54;
 		class Item0
 		{
 			dataType="Marker";
@@ -11135,186 +11127,6 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7487.5,5,7309};
-			};
-			id=105;
-			type="ModuleStrategicMapORBAT_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleStrategicMapORBAT_F_Path";
-					expression="_this setVariable ['Path',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="missionconfigfile >> ""CfgORBAT"" >> ""zulu_company""";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleStrategicMapORBAT_F_Tags";
-					expression="_this setVariable ['Tags',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleStrategicMapORBAT_F_Parent";
-					expression="_this setVariable ['Parent',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="missionconfigfile >> ""CfgORBAT"" >> ""zulu_company""";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleStrategicMapORBAT_F_Tiers";
-					expression="_this setVariable ['Tiers',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item51
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={7648.5,5,7372.5};
-			};
-			id=106;
-			type="ModuleStrategicMapORBAT_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleStrategicMapORBAT_F_Path";
-					expression="_this setVariable ['Path',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="missionconfigfile >> ""CfgORBAT"" >> ""reaper""";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleStrategicMapORBAT_F_Tags";
-					expression="_this setVariable ['Tags',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleStrategicMapORBAT_F_Parent";
-					expression="_this setVariable ['Parent',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="missionconfigfile >> ""CfgORBAT"" >> ""reaper""";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleStrategicMapORBAT_F_Tiers";
-					expression="_this setVariable ['Tiers',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item52
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
 				position[]={7455,5,7423};
 			};
 			id=397;
@@ -11438,7 +11250,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item53
+		class Item51
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -11662,13 +11474,13 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item54
+		class Item52
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={7478.6582,5.4052014,7354.9419};
-				angles[]={-0,1.5707964,0};
+				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11678,7 +11490,7 @@ class Mission
 			id=452;
 			type="Land_CampingTable_small_F";
 		};
-		class Item55
+		class Item53
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11693,7 +11505,7 @@ class Mission
 			};
 			id=453;
 			type="Vysilacka";
-			atlOffset=0.8130002;
+			atlOffset=0.81299973;
 		};
 	};
 };
