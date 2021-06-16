@@ -43,8 +43,5 @@ enableDebugConsole = 1;
 // 1 = Available in SP and for hosts / logged in admins
 // 2 = Available for everyone
 
-// ORBAT
-#include "..\orbat.hpp"
-
 // CBA Settings
 cba_settings_hasSettingsFile = 1;

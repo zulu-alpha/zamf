@@ -8,7 +8,7 @@ class EditorData
 	toggles=1089;
 	class ItemIDProvider
 	{
-		nextID=1440;
+		nextID=1442;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=14;
+		nextID=18;
 	};
 	class Camera
 	{
-		pos[]={809.39325,28.548117,4652.9468};
-		dir[]={0.36776295,-0.45129719,0.81307149};
-		up[]={0.18598746,0.89237374,0.41119173};
-		aside[]={0.91113329,-8.5798092e-008,-0.41211739};
+		pos[]={808.40363,29.052385,4668.4355};
+		dir[]={0.15745448,-0.47749415,0.86441177};
+		up[]={0.085568629,0.87863487,0.46976456};
+		aside[]={0.98381221,-1.6298145e-009,-0.17920354};
 	};
 };
 binarizationWanted=0;
@@ -57,13 +57,15 @@ addons[]=
 	"CFP_B_USARMY_2003_WDL",
 	"cfp_uniforms",
 	"ace_gforces",
-	"ace_parachute"
+	"ace_parachute",
+	"A3_Structures_F_Civ_Camping",
+	"CUP_CAMisc"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=25;
+		items=26;
 		class Item0
 		{
 			className="A3_Supplies_F_Heli";
@@ -226,6 +228,11 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item25
+		{
+			className="CUP_CAMisc";
+			name="CUP_CAMisc";
+		};
 	};
 };
 dlcs[]=
@@ -294,7 +301,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=98;
+		items=100;
 		class Item0
 		{
 			dataType="Object";
@@ -11643,7 +11650,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={817.83276,15.955303,4684.3882};
-				angles[]={-0,0.81595886,0};
+				angles[]={0,0.81595886,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11711,7 +11718,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={826.63531,15.131439,4692.5938};
-						angles[]={-0,0.81595886,0};
+						angles[]={0,0.81595886,0};
 					};
 					side="West";
 					flags=6;
@@ -11850,7 +11857,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={825.16833,15.131439,4691.2344};
-						angles[]={-0,0.81595886,0};
+						angles[]={0,0.81595886,0};
 					};
 					side="West";
 					flags=4;
@@ -11989,7 +11996,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={823.70135,15.131439,4689.875};
-						angles[]={-0,0.81595886,0};
+						angles[]={0,0.81595886,0};
 					};
 					side="West";
 					flags=4;
@@ -12327,7 +12334,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={823.27032,15.955303,4678.52};
-				angles[]={-0,0.81595886,0};
+				angles[]={0,0.81595886,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12381,6 +12388,39 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item98
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={802.67084,15.535201,4712.2358};
+				angles[]={0,2.4233005,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1440;
+			type="Land_CampingTable_small_F";
+		};
+		class Item99
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={802.67432,17.04562,4712.2461};
+				angles[]={0,3.9940968,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{if (isServer) then {this spawn {waitUntil {time > 5}; [_this, [""ACRE_VRC103"", ""Radio"", ""Radio"", false, [""external""], [], ""ACRE_PRC117F"", [], []], true, {}] call acre_api_fnc_addRackToVehicle}}; }";
+			};
+			id=1441;
+			type="Vysilacka";
+			atlOffset=0.81300449;
 		};
 	};
 	class Connections
