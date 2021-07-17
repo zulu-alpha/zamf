@@ -14,6 +14,7 @@ IGNORE = [
     "zamf/towing/fn_advancedTowingInit.sqf",  # TODO: Report parsing problem
     "zamf/spectate/fnc/fn_spectateOnDeath.sqf",  # TODO: False positive Local variable "_this"
     "AutoPilot",
+    "preInit.sqf"
 ]
 
 
