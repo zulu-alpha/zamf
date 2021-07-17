@@ -746,7 +746,7 @@ switch (_loadout) do {
 	case "heli": {
 
 		// Attire
-		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans", "za_hel_Boonie_wood", "za_hel_Boonie_wood"] select _index), 1];
+		_crate addItemCargoGlobal [(["za_hel_Boonie_arid", "za_hel_Boonie_trans", "za_hel_Boonie_wood", "za_hel_Boonie_wood"] select _index), 3];
 		_crate addBackpackCargoGlobal ["B_AssaultPack_blk", 3];
 
 		// Vision
