@@ -190,11 +190,11 @@ ace_maptools_rotateModifierKey = 1;
 // ACE Medical
 force ace_medical_ai_enabledFor = 2;
 force ace_medical_AIDamageThreshold = 1;
-force ace_medical_bleedingCoefficient = 0.8;
+force ace_medical_bleedingCoefficient = 0.7;
 force ace_medical_blood_bloodLifetime = 900;
 force ace_medical_blood_enabledFor = 2;
 force ace_medical_blood_maxBloodObjects = 500;
-force ace_medical_fatalDamageSource = 0;
+force ace_medical_fatalDamageSource = 2;
 ace_medical_feedback_bloodVolumeEffectType = 0;
 ace_medical_feedback_painEffectType = 0;
 force ace_medical_fractureChance = 0.8;
@@ -205,15 +205,15 @@ ace_medical_gui_enableSelfActions = true;
 ace_medical_gui_interactionMenuShowTriage = 1;
 force ace_medical_gui_maxDistance = 3;
 ace_medical_gui_openAfterTreatment = true;
-force ace_medical_ivFlowRate = 0.9;
+force ace_medical_ivFlowRate = 0.8;
 force ace_medical_limping = 1;
 force ace_medical_painCoefficient = 1;
 ace_medical_painUnconsciousChance = 0.1;
 force ace_medical_playerDamageThreshold = 1;
-force ace_medical_spontaneousWakeUpChance = 0.1;
+force ace_medical_spontaneousWakeUpChance = 0.15;
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 1;
 force ace_medical_statemachine_AIUnconsciousness = true;
-ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
+force ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
 force ace_medical_statemachine_cardiacArrestTime = 120;
 force ace_medical_statemachine_fatalInjuriesAI = 0;
 force ace_medical_statemachine_fatalInjuriesPlayer = 1;
@@ -462,7 +462,7 @@ force acex_headless_delay = 15;
 force acex_headless_enabled = true;
 force acex_headless_endMission = 0;
 force acex_headless_log = true;
-force acex_headless_transferLoadout = 2;
+force acex_headless_transferLoadout = 1;
 
 // ACEX Sitting
 force acex_sitting_enable = true;
@@ -494,12 +494,12 @@ acre_sys_core_postmixGlobalVolume = 1;
 acre_sys_core_premixGlobalVolume = 1;
 force acre_sys_core_revealToAI = 1;
 acre_sys_core_spectatorVolume = 1;
-force acre_sys_core_terrainLoss = 0.8;
+force acre_sys_core_terrainLoss = 1;
 acre_sys_core_ts3ChannelName = "ACRE";
 acre_sys_core_ts3ChannelPassword = "";
 acre_sys_core_ts3ChannelSwitch = true;
 force acre_sys_core_unmuteClients = true;
-force acre_sys_signal_signalModel = 0;
+force acre_sys_signal_signalModel = 1;
 
 // ACRE2 Gestures
 acre_sys_gestures_enabled = true;
@@ -534,11 +534,11 @@ acre_sys_zeus_zeusDefaultVoiceSource = false;
 cfp_autoEquipNVG = false;
 
 // Community Base Addons
-cba_diagnostic_ConsoleIndentType = -1;
+cba_diagnostic_ConsoleIndentType = 0;
 cba_disposable_dropUsedLauncher = 2;
 force cba_disposable_replaceDisposableLauncher = true;
 cba_events_repetitionMode = 1;
-cba_network_loadoutValidation = 0;
+cba_network_loadoutValidation = 2;
 cba_optics_usePipOptics = true;
 cba_ui_notifyLifetime = 4;
 cba_ui_StorePasswords = 1;
