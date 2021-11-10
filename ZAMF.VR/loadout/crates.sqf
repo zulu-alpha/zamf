@@ -59,6 +59,7 @@ switch (_loadout) do {
 		_crate addBackpackCargoGlobal ["ACE_TacticalLadder_Pack", 16];
 
 		_crate addItemCargoGlobal ["ACRE_VHF30108SPIKE", 5];
+		_crate addItemCargoGlobal ["AMP_Door_Wedge", 20];
 
 	};
 
@@ -270,6 +271,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACE_CableTie", 36];
 		//_crate addItemCargoGlobal ["ACE_HuntIR_monitor", 1];
 		//_crate addItemCargoGlobal ["ACE_HuntIR_M203", 2];
+		_crate addMagazineCargoGlobal ["AMP_Breaching_Charge_Mag", 9];
 
 		// Marking
 		_crate addWeaponCargoGlobal ["Laserdesignator", 1];
@@ -344,6 +346,7 @@ switch (_loadout) do {
 		// Misc Equipment
 		_crate addItemCargoGlobal ["ACE_CableTie", 36];
 		//_crate addItemCargoGlobal ["ACE_HuntIR_M203", 2];
+		_crate addMagazineCargoGlobal ["AMP_Breaching_Charge_Mag", 9];
 
 		// Marking
 		_crate addMagazineCargoGlobal ["Laserbatteries", 1];
