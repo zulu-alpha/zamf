@@ -73,6 +73,7 @@ switch (_loadout) do {
 		_unit addItemToUniform "ACE_splint";
 		_unit addItemToUniform "ACE_EarPlugs";
 		_unit addVest (["za_vst_carrier_arid", "za_vst_carrier_trans", "za_vst_carrier_wood", "za_vst_carrier_snow" ] select _index);
+		_unit addBackpack (["za_bag_carryall_arid", "za_bag_carryall_trans", "za_bag_carryall_wood", "za_bag_carryall_snow"] select _index);
 		_unit addHeadgear (["za_hel_enh_arid", "za_hel_enh_trans", "za_hel_enh_wood","za_hel_enh_snow"] select _index);
 		_unit addGoggles "G_Combat";
 
