@@ -21,16 +21,24 @@ this = _unit; // Ease compatibility with BIS Arsenal export
 // Get the camo type needed
 private _index = call zamf_fnc_getClimate;
 
-removeAllWeapons _unit;
-removeAllItems _unit;
-removeAllAssignedItems _unit;
-removeUniform _unit;
-removeVest _unit;
-removeBackpack _unit;
-removeHeadgear _unit;
-removeGoggles _unit;
+if (_loadout != "custom") then {
+	removeAllWeapons _unit;
+	removeAllItems _unit;
+	removeAllAssignedItems _unit;
+	removeUniform _unit;
+	removeVest _unit;
+	removeBackpack _unit;
+	removeHeadgear _unit;
+	removeGoggles _unit;
+};
 
 switch (_loadout) do {
+
+	case "custom": {
+		if isNil "zamf_var_gear_loadout_saved" then {
+			zamf_var_gear_loadout_saved = getUnitLoadout _unit;
+		};
+	};
 
 	case "officer": {
 

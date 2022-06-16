@@ -17,6 +17,4 @@ params ["_unit", "_gear", "_gid"];
 
 _unit setGroupId [_gid];
 
-if (typeName _gear == (typeName "") and !(_gear in ["arsenal", "custom"])) then {
-    [_unit, _gear] spawn zamf_fnc_gear;
-};
+[_unit, _gear] spawn zamf_fnc_gear;
