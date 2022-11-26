@@ -13,6 +13,7 @@
 "zeusify",                   // Make sure that all units are detected by zeus.
 "disable_chat_channels",     // Disables chat channels. Used here instead of description to allow them in map screen.
 "towing"                     // Advanced towing.
+//"weather"                  // Weather params
 
 ] call ZAMF_fnc_zamf_init;
 */
@@ -24,15 +25,17 @@
 ["def_view_distance"] call zamf_fnc_setViewDistance;
 
 // Weather Parameter
-[
-    "overcast",
-    "rain",
-    "waves",
-    "lightning",
-    "fogValue",
-    "fogDecay",
-    "fogBase"
-] call zamf_fnc_setWeather;
+if ("weather" in _this) then {
+    [
+        "overcast",
+        "rain",
+        "waves",
+        "lightning",
+        "fogValue",
+        "fogDecay",
+        "fogBase"
+    ] call zamf_fnc_setWeather;
+};
 
 // Disable AI for all playable units
 if ("disable_playable_ai" in _this) then {execVM "zamf\player\disable_playable.sqf"};

@@ -13,6 +13,7 @@
 "zeusify",                   // Make sure that all units are detected by zeus.
 "disable_chat_channels",     // Disables chat channels. Used here instead of description to allow them in map screen.
 "towing"                     // Advanced towing.
+//"weather"                  // Weather params
 
 ] call ZAMF_fnc_init;
 
