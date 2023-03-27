@@ -61,6 +61,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["ACRE_VHF30108SPIKE", 5];
 		_crate addItemCargoGlobal ["AMP_Door_Wedge", 20];
 
+		_crate addItemCargoGlobal ["ACE_WaterBottle", 60];
 	};
 
 	case "suppressors": {
@@ -901,7 +902,6 @@ switch (_loadout) do {
 		// Misc Equipment
 		_crate addItemCargoGlobal ["ACE_key_west", 3];
 		_crate addItemCargoGlobal ["ACE_CableTie", 12];
-		_crate addItemCargoGlobal ["ACE_WaterBottle", 60];
 
 		// Marking
 
