@@ -71,3 +71,4 @@ class ZAMF
 		class zeus_ensureUnit {description = "Ensures that the given unit is assigned to the given curator.";};
 	};
 };
+#include "block_markers\cfgfunctions.hpp"

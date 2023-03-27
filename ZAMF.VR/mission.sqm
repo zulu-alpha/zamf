@@ -8,14 +8,14 @@ class EditorData
 	toggles=97;
 	class ItemIDProvider
 	{
-		nextID=456;
+		nextID=458;
 	};
 	class Camera
 	{
-		pos[]={7483.2383,9.3712845,7355.7817};
-		dir[]={-0.8162691,-0.57764453,-0.0063170046};
-		up[]={-0.57762796,0.8162871,-0.0044702664};
-		aside[]={-0.0077386517,2.2431777e-008,0.99997324};
+		pos[]={7475.1587,98.718742,7224.8643};
+		dir[]={0.10125371,-0.54214388,0.83416289};
+		up[]={0.065327875,0.84028566,0.53819352};
+		aside[]={0.99271345,0,-0.12049915};
 	};
 };
 binarizationWanted=0;
@@ -42,7 +42,6 @@ addons[]=
 	"A3_Structures_F_Mil_Helipads",
 	"ace_explosives",
 	"A3_Characters_F_Mark",
-	"cfp_uniforms",
 	"ace_gforces",
 	"ace_parachute",
 	"A3_Characters_F_Common",
@@ -58,7 +57,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=26;
+		items=25;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -176,59 +175,53 @@ class AddonsMetaData
 		};
 		class Item17
 		{
-			className="cfp_uniforms";
-			name="cfp_uniforms";
-			author="CFP Team";
-		};
-		class Item18
-		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item19
+		class Item18
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item20
+		class Item19
 		{
 			className="acre_api";
 			name="ACRE2 - API";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item21
+		class Item20
 		{
 			className="ALiVE_sup_combatsupport";
 			name="alive_sup_combatsupport";
 			author="ALiVE Mod Team";
 		};
-		class Item22
+		class Item21
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item23
+		class Item22
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item24
+		class Item23
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item25
+		class Item24
 		{
 			className="acre_sys_gsa";
 			name="ACRE2 - Ground Spike Antenna";

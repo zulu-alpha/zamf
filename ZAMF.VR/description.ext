@@ -44,6 +44,10 @@ class CfgRemoteExec
         {
             allowedTargets = 0; // can target anyone
         };
+        class setMarkerType
+        {
+            allowedTargets = 0; // can target anyone
+        };
     };
 };
 
