@@ -6,6 +6,7 @@
 	@usage Call example (from unit init):
 	@usage nul = [this, "nato_guns"] call compile preprocessfilelinenumbers "loadout\crates.sqf";
 	@usage Or: nul = [this, "nato_guns", "refill"] call compile preprocessfilelinenumbers "loadout\crates.sqf";
+	@usage Or: nul = [this, "leave_kit"] call compile preprocessfilelinenumbers "loadout\crates.sqf"; to ignore kit.
 */
 
 private ["_crate","_loadout","_opt"];
@@ -13,23 +14,28 @@ private ["_crate","_loadout","_opt"];
 _crate = _this select 0;
 _loadout = _this select 1;
 _opt = if (count _this > 2) then {_this select 2} else {"none"};
-
-if (_opt == "refill") then {
-	_crate addaction [("<t color=""#FF9900"">" + ("Refill Crate") + "</t>"), "loadout\crates_refill.sqf", _loadout]
+if (_loadout != "leave_kit") then {
+	if (_opt == "refill") then {
+		_crate addaction [("<t color=""#FF9900"">" + ("Refill Crate") + "</t>"), "loadout\crates_refill.sqf", _loadout]
+	};
 };
 
 if !isServer exitWith {};
 
-clearweaponcargoGlobal _crate;
-clearmagazinecargoGlobal _crate;
-clearItemCargoGlobal _crate;
-clearBackpackCargoGlobal _crate;
+if (_loadout != "leave_kit") then {
+	clearweaponcargoGlobal _crate;
+	clearmagazinecargoGlobal _crate;
+	clearItemCargoGlobal _crate;
+	clearBackpackCargoGlobal _crate;
+};
 
 // Get the camo type needed
 private _index = call zamf_fnc_getClimate;
 
 
 switch (_loadout) do {
+
+	case "leave_kit": {};
 
 	case "equipment": {
 

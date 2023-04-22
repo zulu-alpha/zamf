@@ -5,9 +5,11 @@
 		Gives the crate the given gear, labels the crate with the given name using ZAM-Shownames and
 		optionally restricts access to the crate to anyone but members of the given name of it matches their group ID.
 
+		The magic word "leave_kit" can be used to leave the kit as is, but still apply the name and restriction.
+
 	Params:
 		0 : OBJECT - The crate to apply gear and ID to.
-		1 : STRING - The type of Gear to be outfitted (see zamf\loadout\crates.sqf for choices).
+		1 : STRING - The type of Gear to be outfitted (see zamf\loadout\crates.sqf for choices), or "leave_kit" to leave the kit as is.
 		2 : STRING - The name to label the crate with.
 		3 : BOOLEAN - If True, then restrict access to members of the the team who's group ID matches the name.
 
