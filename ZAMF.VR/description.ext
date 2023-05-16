@@ -15,6 +15,13 @@ forceRotorLibSimulation = 1;
 class CfgFunctions
 {
     #include "zamf\cfgfunctions.hpp"
+    class sebs_briefing_table {
+        class sebs_briefing_table {
+            file = "sebsBriefingTable";
+            class createTable {};
+            class clearTable {};
+        };
+    };
 };
 
 // Enabling remote execution: https://community.bistudio.com/wiki/CfgRemoteExec

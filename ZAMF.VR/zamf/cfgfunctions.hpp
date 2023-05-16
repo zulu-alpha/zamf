@@ -72,3 +72,4 @@ class ZAMF
 	};
 };
 #include "block_markers\cfgfunctions.hpp"
+#include "zebs_briefing_handler\cfgfunctions.hpp"
