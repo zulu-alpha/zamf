@@ -36,6 +36,9 @@ ace_arsenal_enableIdentityTabs = true;
 ace_arsenal_enableModIcons = true;
 ace_arsenal_EnableRPTLog = false;
 ace_arsenal_fontHeight = 4.5;
+ace_arsenal_loadoutsSaveFace = false;
+ace_arsenal_loadoutsSaveInsignia = true;
+ace_arsenal_loadoutsSaveVoice = false;
 
 // ACE Artillery
 force ace_artillerytables_advancedCorrections = true;
@@ -51,6 +54,10 @@ force ace_captives_allowSurrender = true;
 force ace_captives_requireSurrender = 1;
 force ace_captives_requireSurrenderAi = false;
 
+// ACE Casings
+ace_casings_enabled = true;
+ace_casings_maxCasings = 250;
+
 // ACE Common
 ace_common_allowFadeMusic = true;
 ace_common_checkPBOsAction = 0;
@@ -62,10 +69,10 @@ ace_common_epilepsyFriendlyMode = false;
 ace_common_progressBarInfo = 2;
 ace_common_settingFeedbackIcons = 1;
 ace_common_settingProgressBarLocation = 0;
-ace_noradio_enabled = true;
 
 // ACE Cook off
 force ace_cookoff_ammoCookoffDuration = 2;
+ace_cookoff_destroyVehicleAfterCookoff = false;
 force ace_cookoff_enable = 2;
 force ace_cookoff_enableAmmobox = true;
 force ace_cookoff_enableAmmoCookoff = true;
@@ -77,6 +84,7 @@ force ace_csw_ammoHandling = 2;
 force ace_csw_defaultAssemblyMode = true;
 ace_csw_dragAfterDeploy = true;
 force ace_csw_handleExtraMagazines = true;
+ace_csw_handleExtraMagazinesType = 0;
 force ace_csw_progressBarTimeCoefficent = 1;
 
 // ACE Dragging
@@ -104,10 +112,15 @@ acex_field_rations_timeWithoutWater = 2;
 acex_field_rations_waterSourceActions = 2;
 
 // ACE Fire
+ace_fire_dropWeapon = 1;
 ace_fire_enabled = true;
 ace_fire_enableFlare = false;
+ace_fire_enableScreams = true;
 
 // ACE Fortify
+ace_fortify_markObjectsOnMap = 1;
+ace_fortify_timeCostCoefficient = 1;
+ace_fortify_timeMin = 1.5;
 acex_fortify_settingHint = 2;
 
 // ACE Fragmentation Simulation
@@ -203,6 +216,7 @@ ace_interact_menu_more__acex_sitting_Stand = false;
 ace_interact_menu_more__ACRE_Interact = false;
 ace_interact_menu_more__acre_sys_zeus_playerEars = false;
 ace_interact_menu_more__acre_sys_zeus_remoteEars = false;
+ace_interact_menu_more__Player_actions = false;
 
 // ACE Interaction Menu (Self) - Move to Root
 ace_interact_menu_moveToRoot__ACE_Equipment__ace_atragmx_open = false;
@@ -223,6 +237,7 @@ ace_interact_menu_moveToRoot__ACE_Equipment__ace_interaction_weaponAttachments =
 ace_interact_menu_moveToRoot__ACE_Equipment__ace_kestrel4500_open = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__ace_kestrel4500_open__ace_kestrel4500_hide = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__ace_kestrel4500_open__ace_kestrel4500_show = false;
+ace_interact_menu_moveToRoot__ACE_Equipment__ace_marker_flags = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__ace_microdagr_configure = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__ace_microdagr_configure__ace_microdagr_close = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__ace_microdagr_configure__ace_microdagr_show = false;
@@ -297,8 +312,10 @@ ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_JoinTeamYellow = false;
 ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_LeaveGroup = false;
 ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_LeaveTeam = false;
 ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_RenameGroup = false;
+ace_interact_menu_moveToRoot__Player_actions__Release Body = false;
 
 // ACE Logistics
+ace_cargo_carryAfterUnload = true;
 force ace_cargo_enable = true;
 ace_cargo_enableRename = true;
 force ace_cargo_loadTimeCoefficient = 5;
@@ -308,6 +325,7 @@ force ace_rearm_distance = 20;
 force ace_rearm_level = 1;
 force ace_rearm_supply = 0;
 force ace_refuel_hoseLength = 12;
+force ace_refuel_progressDuration = 2;
 force ace_refuel_rate = 1;
 force ace_repair_addSpareParts = true;
 force ace_repair_autoShutOffEngineWhenStartingRepair = true;
@@ -317,14 +335,16 @@ force ace_repair_engineerSetting_fullRepair = 1;
 force ace_repair_engineerSetting_repair = 1;
 force ace_repair_engineerSetting_wheel = 0;
 force ace_repair_fullRepairLocation = 3;
-force ace_repair_fullRepairRequiredItems = ["ToolKit"];
-ace_repair_locationsBoostTraining = false;
-force ace_repair_miscRepairRequiredItems = ["ToolKit"];
+force ace_repair_fullRepairRequiredItems = ["ace_repair_anyToolKit"];
+force ace_repair_locationsBoostTraining = true;
+force ace_repair_miscRepairRequiredItems = ["ace_repair_anyToolKit"];
 force ace_repair_repairDamageThreshold = 0.6;
 force ace_repair_repairDamageThreshold_engineer = 0.4;
 force ace_repair_wheelRepairRequiredItems = [];
+ace_towing_addRopeToVehicleInventory = true;
 
 // ACE Magazine Repack
+ace_magazinerepack_repackAnimation = true;
 ace_magazinerepack_repackLoadedMagazines = true;
 force ace_magazinerepack_timePerAmmo = 1.5;
 force ace_magazinerepack_timePerBeltLink = 8;
@@ -404,6 +424,7 @@ ace_medical_gui_enableSelfActions = true;
 ace_medical_gui_interactionMenuShowTriage = 1;
 force ace_medical_gui_maxDistance = 3;
 ace_medical_gui_openAfterTreatment = true;
+ace_medical_gui_showBloodlossEntry = true;
 force ace_medical_ivFlowRate = 0.8;
 force ace_medical_limping = 1;
 force ace_medical_painCoefficient = 1;
@@ -501,6 +522,8 @@ force ace_finger_enabled = true;
 ace_finger_indicatorColor = [0.83,0.68,0.21,0.75];
 ace_finger_indicatorForSelf = true;
 force ace_finger_maxRange = 5;
+ace_finger_proximityScaling = false;
+ace_finger_sizeCoef = 1;
 
 // ACE Pylons
 force ace_pylons_enabledForZeus = true;
@@ -565,8 +588,11 @@ ace_gunbag_swapGunbagEnabled = true;
 force ace_hitreactions_minDamageToTrigger = 0.1;
 ace_inventory_inventoryDisplaySize = 0;
 force ace_laser_dispersionCount = 2;
+ace_laser_showLaserOnMap = 1;
+ace_marker_flags_placeAnywhere = false;
 ace_microdagr_mapDataAvailable = 2;
 ace_microdagr_waypointPrecision = 3;
+ace_noradio_enabled = true;
 ace_optionsmenu_showNewsOnMainMenu = true;
 force ace_overpressure_distanceCoefficient = 1;
 ace_parachute_failureChance = 0;
@@ -591,6 +617,7 @@ ace_ui_gunnerWeaponLowerInfoBackground = true;
 ace_ui_gunnerWeaponName = true;
 ace_ui_gunnerWeaponNameBackground = true;
 ace_ui_gunnerZeroing = true;
+ace_ui_hideDefaultActionIcon = false;
 ace_ui_magCount = true;
 ace_ui_soldierVehicleWeaponInfo = true;
 ace_ui_staminaBar = true;
@@ -617,9 +644,11 @@ force ace_vehiclelock_lockVehicleInventory = false;
 force ace_vehiclelock_vehicleStartingLockState = -1;
 
 // ACE Vehicles
+ace_novehicleclanlogo_enabled = false;
 ace_vehicles_hideEjectAction = true;
 ace_vehicles_keepEngineRunning = false;
 ace_vehicles_speedLimiterStep = 5;
+ace_viewports_enabled = true;
 
 // ACE View Distance Limiter
 force ace_viewdistance_enabled = true;
@@ -719,8 +748,99 @@ acre_sys_zeus_zeusCanSpectate = true;
 acre_sys_zeus_zeusCommunicateViaCamera = true;
 acre_sys_zeus_zeusDefaultVoiceSource = false;
 
+// CF_BAI
+CF_BAI_subskills_maximum_aimingAccuracy = 0;
+CF_BAI_subskills_maximum_aimingShake = 0;
+CF_BAI_subskills_maximum_aimingSpeed = 0;
+CF_BAI_subskills_maximum_commanding = 0;
+CF_BAI_subskills_maximum_courage = 0;
+CF_BAI_subskills_maximum_general = 0;
+CF_BAI_subskills_maximum_reloadSpeed = 0;
+CF_BAI_subskills_maximum_spotDistance = 0;
+CF_BAI_subskills_maximum_spotTime = 0;
+CF_BAI_subskills_minimum_aimingAccuracy = 0.41;
+CF_BAI_subskills_minimum_aimingShake = 0.5;
+CF_BAI_subskills_minimum_aimingSpeed = 0.5;
+CF_BAI_subskills_minimum_commanding = 0.5;
+CF_BAI_subskills_minimum_courage = 0.5;
+CF_BAI_subskills_minimum_general = 1;
+CF_BAI_subskills_minimum_reloadSpeed = 0.5;
+CF_BAI_subskills_minimum_spotDistance = 0.35;
+CF_BAI_subskills_minimum_spotTime = 0.5;
+CF_BAI_subskills_sleep = 30;
+CF_BAI_subskills_terrain_maximum_default = 30;
+CF_BAI_subskills_terrain_maximum_world_code = "[[""pja310"",25],[""Panthera3"",25]]";
+CF_BAI_subskills_terrain_range = 25;
+
+// CF_BAI_boost
+CF_BAI_boost_bulletsToMaxBoost = 5;
+CF_BAI_boost_disableBoost = false;
+CF_BAI_boost_maxBoost = 1.1;
+CF_BAI_boost_minimumShotDistance = 300;
+CF_BAI_boost_minimumShotInterval = 2;
+CF_BAI_boost_targetChangeSleepTime = 0.1;
+CF_BAI_boost_toleranceRange = 50;
+
+// CF_BAI_death
+CF_BAI_death_deathMessageDelay = 10;
+CF_BAI_death_disableDeath = false;
+CF_BAI_death_messageHint = true;
+CF_BAI_death_messageSideChat = true;
+CF_BAI_death_messageSystemChat = false;
+
+// CF_BAI_detect
+CF_BAI_detect_aiplayervision_max_distance = 1200;
+CF_BAI_detect_aivision_aware_chance = 0.9;
+CF_BAI_detect_aivision_aware_knowledge = 1;
+CF_BAI_detect_aivision_careless_chance = 0.5;
+CF_BAI_detect_aivision_careless_knowledge = 0.5;
+CF_BAI_detect_aivision_combat_chance = 1;
+CF_BAI_detect_aivision_combat_knowledge = 1;
+CF_BAI_detect_aivision_nobino_chance = 0.75;
+CF_BAI_detect_aivision_nobino_knowledge = 0.75;
+CF_BAI_detect_aivision_nooptics_chance = 0.5;
+CF_BAI_detect_aivision_nooptics_knowledge = 0.5;
+CF_BAI_detect_aivision_nooptics_range = 400;
+CF_BAI_detect_aivision_nvg_percentage = 0.25;
+CF_BAI_detect_aivision_optics_range = 1500;
+CF_BAI_detect_aivision_safe_chance = 0.75;
+CF_BAI_detect_aivision_safe_knowledge = 1;
+CF_BAI_detect_aivision_stealth_chance = 0.75;
+CF_BAI_detect_aivision_stealth_knowledge = 0.75;
+CF_BAI_detect_disableDetect = false;
+CF_BAI_detect_environmentConiditions_fog = 0.9;
+CF_BAI_detect_environmentConiditions_nightTime = 0.5;
+CF_BAI_detect_environmentConiditions_rain = 0.2;
+CF_BAI_detect_overall_visibility_multiplier = 1;
+CF_BAI_detect_playerVisibility_crouch_chance = 0.5;
+CF_BAI_detect_playerVisibility_crouch_knowledge = 1;
+CF_BAI_detect_playerVisibility_movement = 0.5;
+CF_BAI_detect_playerVisibility_movement_knowledge = 1;
+CF_BAI_detect_playerVisibility_prone_chance = 0.1;
+CF_BAI_detect_playerVisibility_prone_knowledge = 1;
+CF_BAI_detect_playerVisibility_standing_chance = 1;
+CF_BAI_detect_playerVisibility_standing_knowledge = 1;
+CF_BAI_detect_playerVisibility_terrain_count = 4;
+
+// CF_BAI_suppression
+CF_BAI_suppression_aimingAccuracy = 0.2;
+CF_BAI_suppression_aimingShake = 0.2;
+CF_BAI_suppression_aimingSpeed = 0.2;
+CF_BAI_suppression_bulletImpact = 0.1;
+CF_BAI_suppression_commanding = 0.2;
+CF_BAI_suppression_courage = 0.2;
+CF_BAI_suppression_decay = 0.03;
+CF_BAI_suppression_decaySleep = 5;
+CF_BAI_suppression_disableSuppression = false;
+CF_BAI_suppression_general = 0.5;
+CF_BAI_suppression_heldTime = 20;
+CF_BAI_suppression_reloadSpeed = 0.5;
+CF_BAI_suppression_spotDistance = 0.5;
+CF_BAI_suppression_spotTime = 0.5;
+
 // Community Base Addons
 cba_diagnostic_ConsoleIndentType = 0;
+cba_diagnostic_watchInfoRefreshRate = 0.2;
 cba_disposable_dropUsedLauncher = 2;
 force cba_disposable_replaceDisposableLauncher = true;
 cba_events_repetitionMode = 1;
@@ -736,31 +856,67 @@ CUP_CheckCfgPatches = false;
 CUP_staticWeapons_allowMovement = false;
 CUP_staticWeapons_allowRotation = false;
 
+// Enhanced Movement Rework
+force emr_main_allowClimbOnStandingUnits = false;
+force emr_main_allowMidairClimbing = true;
+force emr_main_animSpeedCoef = 1;
+force emr_main_animSpeedStaminaCoef = 1;
+force emr_main_assistDuty = 1.5;
+force emr_main_assistHeight = 1;
+force emr_main_blacklistStr = "";
+force emr_main_climbingEnabled = true;
+force emr_main_climbOnDuty = 3.4;
+force emr_main_climbOverDuty = 3;
+force emr_main_dropDuty = 0.7;
+emr_main_dropViewElevation = -0.7;
+force emr_main_enableWalkableSurface = true;
+force emr_main_enableWeightCheck = true;
+emr_main_hintType = 2;
+emr_main_interactBehaviorInVehicle = "DISMOUNT";
+force emr_main_jumpDuty = 1;
+force emr_main_jumpForwardVelocity = 1.2;
+force emr_main_jumpingEnabled = true;
+force emr_main_jumpingLoadCoefficient = 1;
+force emr_main_jumpVelocity = 3.5;
+force emr_main_maxClimbHeight = 2.6;
+force emr_main_maxDropHeight = 6;
+force emr_main_maxWeightClimb1 = 100;
+force emr_main_maxWeightClimb2 = 70;
+force emr_main_maxWeightClimb3 = 50;
+force emr_main_maxWeightJump = 80;
+force emr_main_minClimbTerrain = 0.3;
+emr_main_preventHighVaulting = false;
+force emr_main_staminaCoefficient = 2;
+force emr_main_whitelistStr = "";
+force emr_main_yeetCoefficient = 1.4;
+
 // GRAD Trenches
 force grad_trenches_functions_allowBigEnvelope = true;
 force grad_trenches_functions_allowCamouflage = true;
 force grad_trenches_functions_allowDigging = true;
 grad_trenches_functions_allowEffects = true;
 force grad_trenches_functions_allowGiantEnvelope = true;
-grad_trenches_functions_allowHitDecay = true;
+force grad_trenches_functions_allowHitDecay = true;
 force grad_trenches_functions_allowLongEnvelope = true;
 force grad_trenches_functions_allowShortEnvelope = true;
 force grad_trenches_functions_allowSmallEnvelope = true;
+grad_trenches_functions_allowTextureLock = true;
 grad_trenches_functions_allowTrenchDecay = false;
 force grad_trenches_functions_allowVehicleEnvelope = true;
 grad_trenches_functions_bigEnvelopeDamageMultiplier = 2;
 force grad_trenches_functions_bigEnvelopeDigTime = 80;
 grad_trenches_functions_bigEnvelopeRemovalTime = -1;
-force grad_trenches_functions_buildFatigueFactor = 1;
+force grad_trenches_functions_buildFatigueFactor = 1.5;
 force grad_trenches_functions_camouflageRequireEntrenchmentTool = true;
-grad_trenches_functions_createTrenchMarker = false;
+force grad_trenches_functions_createTrenchMarker = true;
 grad_trenches_functions_decayTime = 1800;
 grad_trenches_functions_giantEnvelopeDamageMultiplier = 1;
 force grad_trenches_functions_giantEnvelopeDigTime = 180;
 grad_trenches_functions_giantEnvelopeRemovalTime = -1;
-grad_trenches_functions_hitDecayMultiplier = 1;
+force grad_trenches_functions_hitDecayMultiplier = 1;
 force grad_trenches_functions_LongEnvelopeDigTime = 200;
 grad_trenches_functions_LongEnvelopeRemovalTime = -1;
+grad_trenches_functions_playersInAreaRadius = 0;
 grad_trenches_functions_shortEnvelopeDamageMultiplier = 2;
 force grad_trenches_functions_shortEnvelopeDigTime = 40;
 grad_trenches_functions_shortEnvelopeRemovalTime = -1;
@@ -768,10 +924,17 @@ grad_trenches_functions_smallEnvelopeDamageMultiplier = 3;
 force grad_trenches_functions_smallEnvelopeDigTime = 60;
 grad_trenches_functions_smallEnvelopeRemovalTime = -1;
 force grad_trenches_functions_stopBuildingAtFatigueMax = true;
+grad_trenches_functions_textureLockDistance = 5;
 grad_trenches_functions_timeoutToDecay = 7200;
 grad_trenches_functions_vehicleEnvelopeDamageMultiplier = 1;
 force grad_trenches_functions_vehicleEnvelopeDigTime = 240;
 grad_trenches_functions_vehicleEnvelopeRemovalTime = -1;
+force grad_trenches_functions_vehicleTrenchBuildSpeed = 5;
+
+// Illuminate The Night
+gjb_itn_setting_drawDist = 3000;
+gjb_itn_setting_interfaceOverlay = true;
+gjb_itn_setting_simpleCtrl = false;
 
 // LAMBS Danger
 lambs_danger_cqbRange = 60;
@@ -782,6 +945,7 @@ force lambs_danger_disableAIHideFromTanksAndAircraft = false;
 force lambs_danger_disableAIPlayerGroup = false;
 force lambs_danger_disableAIPlayerGroupReaction = false;
 force lambs_danger_disableAutonomousFlares = false;
+lambs_danger_disableAutonomousSmokeGrenades = false;
 lambs_danger_panicChance = 0.1;
 
 // LAMBS Danger Eventhandlers
