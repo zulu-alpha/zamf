@@ -415,6 +415,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["CUP_muzzle_snds_M110", 1];
 		_crate addItemCargoGlobal ["CUP_bipod_Harris_1A2_L_BLK", 1];
 		_crate addItemCargoGlobal ["CUP_optic_LeupoldMk4_10x40_LRT_Desert", 1];
+		_crate addItemCargoGlobal ["CUP_optic_AN_PVS_10", 1];
 		_crate addItemCargoGlobal ["ACE_Tripod", 1];
 
 		// Launcher
@@ -586,6 +587,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["CUP_muzzle_snds_M110", 1];
 		_crate addItemCargoGlobal ["CUP_bipod_Harris_1A2_L_BLK", 1];
 		_crate addItemCargoGlobal ["CUP_optic_LeupoldMk4_10x40_LRT_Desert", 1];
+		_crate addItemCargoGlobal ["CUP_optic_AN_PVS_10", 1];
 		_crate addItemCargoGlobal ["ACE_Tripod", 1];
 
 		// Launcher
