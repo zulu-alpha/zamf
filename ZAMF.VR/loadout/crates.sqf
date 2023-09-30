@@ -159,6 +159,7 @@ switch (_loadout) do {
 		// Sidearm
 		_crate addWeaponCargoGlobal ["CUP_hgun_M17_Black", 3];
 		_crate addItemCargoGlobal ["optic_MRD_black", 3];
+		_crate addItemCargoGlobal ["CUP_acc_CZ_M3X", 3];
 		_crate addMagazineCargoGlobal ["CUP_17Rnd_9x19_M17_Black", 12];
 
 		// Misc Equipment
@@ -263,6 +264,7 @@ switch (_loadout) do {
 		// Sidearm
 		_crate addWeaponCargoGlobal ["CUP_hgun_M17_Black", 9];
 		_crate addItemCargoGlobal ["optic_MRD_black", 9];
+		_crate addItemCargoGlobal ["CUP_acc_CZ_M3X", 9];
 		_crate addMagazineCargoGlobal ["CUP_17Rnd_9x19_M17_Black", 36];
 
 		// Misc Equipment
@@ -434,6 +436,7 @@ switch (_loadout) do {
 		// Sidearm
 		_crate addWeaponCargoGlobal ["CUP_hgun_M17_Black", 10];
 		_crate addItemCargoGlobal ["optic_MRD_black", 10];
+		_crate addItemCargoGlobal ["CUP_acc_CZ_M3X", 10];
 		_crate addMagazineCargoGlobal ["CUP_17Rnd_9x19_M17_Black", 40];
 
 		// Misc Equipment
@@ -596,6 +599,7 @@ switch (_loadout) do {
 		// Sidearm
 		_crate addWeaponCargoGlobal ["CUP_hgun_M17_Black", 3];
 		_crate addItemCargoGlobal ["optic_MRD_black", 3];
+		_crate addItemCargoGlobal ["CUP_acc_CZ_M3X", 3];
 		_crate addMagazineCargoGlobal ["CUP_17Rnd_9x19_M17_Black", 12];
 
 		// Misc Equipment
@@ -677,6 +681,7 @@ switch (_loadout) do {
 		// Sidearm
 		_crate addWeaponCargoGlobal ["CUP_hgun_M17_Black", 5];
 		_crate addItemCargoGlobal ["optic_MRD_black", 5];
+		_crate addItemCargoGlobal ["CUP_acc_CZ_M3X", 5];
 		_crate addMagazineCargoGlobal ["CUP_17Rnd_9x19_M17_Black", 20];
 
 		// Misc Equipment
@@ -839,6 +844,7 @@ switch (_loadout) do {
 		// Sidearm
 		_crate addWeaponCargoGlobal ["CUP_hgun_M17_Black", 1];
 		_crate addItemCargoGlobal ["optic_MRD_black", 1];
+		_crate addItemCargoGlobal ["CUP_acc_CZ_M3X", 1];
 		_crate addMagazineCargoGlobal ["CUP_17Rnd_9x19_M17_Black", 3];
 
 		// Misc Equipment
