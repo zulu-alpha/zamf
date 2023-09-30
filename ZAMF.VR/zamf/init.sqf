@@ -77,3 +77,8 @@ if (("towing" in _this) and (isServer)) then {[] execVM "zamf\towing\fn_advanced
 
 // Finish world initialization before mission is launched.
 finishMissionInit;
+
+// Notify that scripts are still working
+if !("disable_complete_hint" in _this) then {
+    hint "ZAMF Init Complete";
+};
