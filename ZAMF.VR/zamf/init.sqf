@@ -80,5 +80,8 @@ finishMissionInit;
 
 // Notify that scripts are still working
 if !("disable_complete_hint" in _this) then {
-    hint "ZAMF Init Complete";
+    [] spawn {
+        sleep 10;
+        hint "ZAMF Init Complete";
+    };
 };
