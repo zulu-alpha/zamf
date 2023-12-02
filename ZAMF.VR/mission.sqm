@@ -8,14 +8,14 @@ class EditorData
 	toggles=97;
 	class ItemIDProvider
 	{
-		nextID=468;
+		nextID=469;
 	};
 	class Camera
 	{
-		pos[]={7484.3896,14.993722,7339.9409};
-		dir[]={0.28111017,-0.4757002,0.83347863};
-		up[]={0.1520271,0.87960744,0.45075327};
-		aside[]={0.94755745,-1.4901161e-008,-0.31958592};
+		pos[]={7454.1704,19.733328,7331.3438};
+		dir[]={0.64798343,-0.37129366,0.66502517};
+		up[]={0.25911483,0.92851549,0.26592949};
+		aside[]={0.71622413,1.4901161e-008,-0.69787031};
 	};
 };
 binarizationWanted=0;
@@ -41,6 +41,7 @@ addons[]=
 	"A3_Structures_F_Mil_Helipads",
 	"ace_explosives",
 	"A3_Characters_F_Mark",
+	"cfp_uniforms",
 	"ace_gforces",
 	"ace_parachute",
 	"A3_Characters_F_Common",
@@ -58,7 +59,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=24;
+		items=25;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -169,53 +170,59 @@ class AddonsMetaData
 		};
 		class Item16
 		{
+			className="cfp_uniforms";
+			name="cfp_uniforms";
+			author="CFP Team";
+		};
+		class Item17
+		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item17
+		class Item18
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item18
+		class Item19
 		{
 			className="acre_api";
 			name="ACRE2 - API";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item19
+		class Item20
 		{
 			className="ALiVE_sup_combatsupport";
 			name="alive_sup_combatsupport";
 			author="ALiVE Mod Team";
 		};
-		class Item20
+		class Item21
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item22
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item22
+		class Item23
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item23
+		class Item24
 		{
 			className="acre_sys_gsa";
 			name="ACRE2 - Ground Spike Antenna";
@@ -614,7 +621,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=6;
+							value=4;
 						};
 					};
 				};
@@ -646,6 +653,19 @@ class Mission
 				};
 				class Attribute3
 				{
+					property="ace_tagging_stencilVehicle";
+					expression=" [_this, _value] call ace_tagging_fnc_stencilVehicle; ";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Repair";
+						};
+					};
+				};
+				class Attribute4
+				{
 					property="ace_isRepairVehicle";
 					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
 					class Value
@@ -657,7 +677,20 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				class Attribute5
+				{
+					property="ace_cargo_space";
+					expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=14;
+						};
+					};
+				};
+				nAttributes=6;
 			};
 		};
 		class Item8
@@ -2941,7 +2974,33 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute2
+				{
+					property="ace_tagging_stencilVehicle";
+					expression=" [_this, _value] call ace_tagging_fnc_stencilVehicle; ";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="D'5";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_cargo_space";
+					expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=10;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item32
