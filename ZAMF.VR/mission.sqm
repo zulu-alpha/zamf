@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7480.5044,14.993722,7335.0806};
-		dir[]={-0.038085941,-0.40129083,0.91519397};
-		up[]={-0.016685404,0.91593552,0.40097111};
-		aside[]={0.9991712,5.9943386e-007,0.041583259};
+		pos[]={7484.3896,14.993722,7339.9409};
+		dir[]={0.28111017,-0.4757002,0.83347863};
+		up[]={0.1520271,0.87960744,0.45075327};
+		aside[]={0.94755745,-1.4901161e-008,-0.31958592};
 	};
 };
 binarizationWanted=0;
@@ -27,7 +27,6 @@ addons[]=
 	"A3_Soft_F_Gamma_Truck_01",
 	"A3_Soft_F_Exp_Truck_01",
 	"ace_realisticnames",
-	"ace_repair",
 	"ace_cargo",
 	"A3_Weapons_F_Ammoboxes",
 	"A3_Characters_F",
@@ -59,7 +58,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=25;
+		items=24;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -97,133 +96,126 @@ class AddonsMetaData
 		};
 		class Item5
 		{
-			className="ace_repair";
-			name="ACE3 - Repair";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item6
-		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item7
+		class Item6
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item7
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item9
+		class Item8
 		{
 			className="ALiVE_sys_profile";
 			name="alive_sys_profile";
 			author="ALiVE Mod Team";
 		};
-		class Item10
+		class Item9
 		{
 			className="ALiVE_SYS_playeroptions";
 			name="alive_sys_playeroptions";
 			author="ALiVE Mod Team";
 		};
-		class Item11
+		class Item10
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item11
 		{
 			className="ALiVE_SYS_LOGISTICS";
 			name="alive_sys_logistics";
 			author="ALiVE Mod Team";
 		};
-		class Item13
+		class Item12
 		{
 			className="ALiVE_main";
 			name="alive_main";
 			author="ALiVE Mod Team";
 		};
-		class Item14
+		class Item13
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item14
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item16
+		class Item15
 		{
 			className="A3_Characters_F_Mark";
 			name="Arma 3 Marksmen - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item17
+		class Item16
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item18
+		class Item17
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item19
+		class Item18
 		{
 			className="acre_api";
 			name="ACRE2 - API";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item20
+		class Item19
 		{
 			className="ALiVE_sup_combatsupport";
 			name="alive_sup_combatsupport";
 			author="ALiVE Mod Team";
 		};
-		class Item21
+		class Item20
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item21
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item23
+		class Item22
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item24
+		class Item23
 		{
 			className="acre_sys_gsa";
 			name="ACRE2 - Ground Spike Antenna";
@@ -655,7 +647,7 @@ class Mission
 				class Attribute3
 				{
 					property="ace_isRepairVehicle";
-					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
 					class Value
 					{
 						class data
@@ -1290,7 +1282,7 @@ class Mission
 						class Attribute0
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -1379,7 +1371,7 @@ class Mission
 						class Attribute0
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -1468,7 +1460,7 @@ class Mission
 						class Attribute0
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -1557,7 +1549,7 @@ class Mission
 						class Attribute0
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -3007,7 +2999,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -3211,7 +3203,7 @@ class Mission
 						class Attribute6
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -3234,7 +3226,7 @@ class Mission
 				class Attribute0
 				{
 					property="acex_headless_blacklist";
-					expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+					expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 					class Value
 					{
 						class data
@@ -3292,7 +3284,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -3395,7 +3387,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -3497,7 +3489,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -3600,7 +3592,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -3702,7 +3694,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -3805,7 +3797,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -3907,7 +3899,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -4010,7 +4002,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -4112,7 +4104,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -4187,7 +4179,7 @@ class Mission
 				class Attribute0
 				{
 					property="acex_headless_blacklist";
-					expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+					expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 					class Value
 					{
 						class data
@@ -4245,7 +4237,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -4348,7 +4340,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -4450,7 +4442,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -4553,7 +4545,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -4655,7 +4647,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -4758,7 +4750,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -4860,7 +4852,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -4963,7 +4955,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -5065,7 +5057,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -5140,7 +5132,7 @@ class Mission
 				class Attribute0
 				{
 					property="acex_headless_blacklist";
-					expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+					expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 					class Value
 					{
 						class data
@@ -5198,7 +5190,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -5301,7 +5293,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -5404,7 +5396,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -5506,7 +5498,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -5609,7 +5601,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -5711,7 +5703,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -5814,7 +5806,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -5916,7 +5908,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -6019,7 +6011,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -6121,7 +6113,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -6196,7 +6188,7 @@ class Mission
 				class Attribute0
 				{
 					property="acex_headless_blacklist";
-					expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+					expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 					class Value
 					{
 						class data
@@ -6254,7 +6246,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -6357,7 +6349,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -6459,7 +6451,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -6534,7 +6526,7 @@ class Mission
 				class Attribute0
 				{
 					property="acex_headless_blacklist";
-					expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+					expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 					class Value
 					{
 						class data
@@ -6655,7 +6647,7 @@ class Mission
 						class Attribute6
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -6769,7 +6761,7 @@ class Mission
 						class Attribute6
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -6818,7 +6810,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -6906,7 +6898,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -6994,7 +6986,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -7056,7 +7048,7 @@ class Mission
 				class Attribute0
 				{
 					property="acex_headless_blacklist";
-					expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+					expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 					class Value
 					{
 						class data
@@ -7114,7 +7106,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -7217,7 +7209,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -7320,7 +7312,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -7395,7 +7387,7 @@ class Mission
 				class Attribute0
 				{
 					property="acex_headless_blacklist";
-					expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+					expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 					class Value
 					{
 						class data
@@ -7453,7 +7445,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -7543,7 +7535,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -7632,7 +7624,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -7694,7 +7686,7 @@ class Mission
 				class Attribute0
 				{
 					property="acex_headless_blacklist";
-					expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+					expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 					class Value
 					{
 						class data
@@ -7752,7 +7744,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -7842,7 +7834,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -7931,7 +7923,7 @@ class Mission
 						class Attribute1
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
@@ -7993,7 +7985,7 @@ class Mission
 				class Attribute0
 				{
 					property="acex_headless_blacklist";
-					expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+					expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 					class Value
 					{
 						class data
@@ -8115,7 +8107,7 @@ class Mission
 						class Attribute6
 						{
 							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"", _value, true]";
+							expression="_this setVariable [""acex_headless_blacklist"",  _value,  true]";
 							class Value
 							{
 								class data
