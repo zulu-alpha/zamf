@@ -932,9 +932,16 @@ grad_trenches_functions_vehicleEnvelopeRemovalTime = -1;
 force grad_trenches_functions_vehicleTrenchBuildSpeed = 5;
 
 // Illuminate The Night
+gjb_itn_setting_cantingMods = "gjb_itn_cantMode";
+gjb_itn_setting_debug = false;
 gjb_itn_setting_drawDist = 3000;
+gjb_itn_setting_genericInterface = false;
+gjb_itn_setting_hijackHeadlights = true;
 gjb_itn_setting_interfaceOverlay = true;
+gjb_itn_setting_nvgColor = [0.6,0.9,1,1];
+gjb_itn_setting_nvgCustom = [1,1,1];
 gjb_itn_setting_simpleCtrl = false;
+gjb_itn_setting_toolTipMode = 0;
 
 // LAMBS Danger
 lambs_danger_cqbRange = 60;
