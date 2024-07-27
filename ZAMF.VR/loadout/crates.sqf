@@ -221,6 +221,7 @@ switch (_loadout) do {
 		_crate addItemCargoGlobal ["CUP_optic_Elcan_SpecterDR_RMR", 9];
 
 		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15_Flashlight_Black_L", 7];
+		_crate addItemCargoGlobal ["CUP_acc_LLM_black", 2];
 		_crate addItemCargoGlobal ["CUP_acc_ANPEQ_15_Top_Flashlight_Black_L", 2];
 
 		_crate addItemCargoGlobal ["CUP_muzzle_snds_M16_coyote", 7];
