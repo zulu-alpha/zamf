@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7499.8696,12.09779,7342.0322};
-		dir[]={-0.39593303,-0.51139975,0.76269758};
-		up[]={-0.23562193,0.85934293,0.45388553};
-		aside[]={0.88753569,0,0.46073925};
+		pos[]={7504.4756,27.990532,7350.3008};
+		dir[]={-0.54472125,-0.68820471,0.47922146};
+		up[]={-0.5167073,0.7255165,0.45457602};
+		aside[]={0.66052443,1.4901161e-08,0.75080466};
 	};
 };
 binarizationWanted=0;
@@ -25,7 +25,6 @@ addons[]=
 	"A3_Ui_F",
 	"A3_Supplies_F_Heli_CargoNets",
 	"A3_Soft_F_Gamma_Truck_01",
-	"A3_Soft_F_Exp_Truck_01",
 	"ace_realisticnames",
 	"ace_cargo",
 	"A3_Weapons_F_Ammoboxes",
@@ -58,7 +57,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=24;
+		items=23;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -82,140 +81,133 @@ class AddonsMetaData
 		};
 		class Item3
 		{
-			className="A3_Soft_F_Exp";
-			name="Arma 3 Apex - Unarmored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item4
-		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item4
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item6
+		class Item5
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item6
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item7
 		{
 			className="ALiVE_sys_profile";
 			name="alive_sys_profile";
 			author="ALiVE Mod Team";
 		};
-		class Item9
+		class Item8
 		{
 			className="ALiVE_SYS_playeroptions";
 			name="alive_sys_playeroptions";
 			author="ALiVE Mod Team";
 		};
-		class Item10
+		class Item9
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item11
+		class Item10
 		{
 			className="ALiVE_SYS_LOGISTICS";
 			name="alive_sys_logistics";
 			author="ALiVE Mod Team";
 		};
-		class Item12
+		class Item11
 		{
 			className="ALiVE_main";
 			name="alive_main";
 			author="ALiVE Mod Team";
 		};
-		class Item13
+		class Item12
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item14
+		class Item13
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item15
+		class Item14
 		{
 			className="A3_Characters_F_Mark";
 			name="Arma 3 Marksmen - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item15
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item17
+		class Item16
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item18
+		class Item17
 		{
 			className="acre_api";
 			name="ACRE2 - API";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item19
+		class Item18
 		{
 			className="ALiVE_sup_combatsupport";
 			name="alive_sup_combatsupport";
 			author="ALiVE Mod Team";
 		};
-		class Item20
+		class Item19
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item20
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item22
+		class Item21
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item23
+		class Item22
 		{
 			className="acre_sys_gsa";
 			name="ACRE2 - Ground Spike Antenna";
@@ -1659,40 +1651,40 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ALiVE_sys_profile_smoothSpawn";
-					expression="_this setVariable ['smoothSpawn',_value,true];";
+					property="ALiVE_sys_profile_virtualcombat_speedmodifier";
+					expression="_this setVariable ['virtualcombat_speedmodifier',_value,true];";
 					class Value
 					{
 						class data
 						{
 							singleType="STRING";
-							value="0.3";
+							value="1";
 						};
 					};
 				};
 				class Attribute1
 				{
-					property="ALiVE_sys_profile_spawnRadius";
-					expression="_this setVariable ['spawnRadius',_value,true];";
+					property="ALiVE_sys_profile_spawnTypeJetRadius";
+					expression="_this setVariable ['spawnTypeJetRadius',_value,true];";
 					class Value
 					{
 						class data
 						{
 							singleType="STRING";
-							value="1500";
+							value="1000";
 						};
 					};
 				};
 				class Attribute2
 				{
-					property="ALiVE_sys_profile_pathfinding";
-					expression="_this setVariable ['pathfinding',_value,true];";
+					property="ALiVE_sys_profile_virtualcombat_rangemodifier";
+					expression="_this setVariable ['virtualcombat_rangemodifier',_value,true];";
 					class Value
 					{
 						class data
 						{
 							singleType="STRING";
-							value="false";
+							value="255";
 						};
 					};
 				};
@@ -1711,27 +1703,27 @@ class Mission
 				};
 				class Attribute4
 				{
-					property="ALiVE_sys_profile_pathfindingSize";
-					expression="_this setVariable ['pathfindingSize',_value,true];";
+					property="ALiVE_sys_profile_pathfinding";
+					expression="_this setVariable ['pathfinding',_value,true];";
 					class Value
 					{
 						class data
 						{
 							singleType="STRING";
-							value="[600,75]";
+							value="false";
 						};
 					};
 				};
 				class Attribute5
 				{
-					property="ALiVE_sys_profile_spawnTypeJetRadius";
-					expression="_this setVariable ['spawnTypeJetRadius',_value,true];";
+					property="ALiVE_sys_profile_debug";
+					expression="_this setVariable ['debug',_value,true];";
 					class Value
 					{
 						class data
 						{
 							singleType="STRING";
-							value="1000";
+							value="false";
 						};
 					};
 				};
@@ -1750,47 +1742,8 @@ class Mission
 				};
 				class Attribute7
 				{
-					property="ALiVE_sys_profile_spawnRadiusUAV";
-					expression="_this setVariable ['spawnRadiusUAV',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="-1";
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="ALiVE_sys_profile_speedModifier";
-					expression="_this setVariable ['speedModifier',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=1;
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="ALiVE_sys_profile_zeusSpawn";
-					expression="_this setVariable ['zeusSpawn',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="true";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="ALiVE_sys_profile_spawnTypeHeliRadius";
-					expression="_this setVariable ['spawnTypeHeliRadius',_value,true];";
+					property="ALiVE_sys_profile_spawnRadius";
+					expression="_this setVariable ['spawnRadius',_value,true];";
 					class Value
 					{
 						class data
@@ -1800,20 +1753,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute11
-				{
-					property="ALiVE_sys_profile_debug";
-					expression="_this setVariable ['debug',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="false";
-						};
-					};
-				};
-				class Attribute12
+				class Attribute8
 				{
 					property="ALiVE_sys_profile_persistent";
 					expression="_this setVariable ['persistent',_value,true];";
@@ -1826,7 +1766,20 @@ class Mission
 						};
 					};
 				};
-				class Attribute13
+				class Attribute9
+				{
+					property="ALiVE_sys_profile_speedModifier";
+					expression="_this setVariable ['speedModifier',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				class Attribute10
 				{
 					property="ALiVE_sys_profile_syncronised";
 					expression="_this setVariable ['syncronised',_value,true];";
@@ -1839,20 +1792,72 @@ class Mission
 						};
 					};
 				};
-				class Attribute14
+				class Attribute11
 				{
-					property="ALiVE_sys_profile_virtualcombat_speedmodifier";
-					expression="_this setVariable ['virtualcombat_speedmodifier',_value,true];";
+					property="ALiVE_sys_profile_smoothSpawn";
+					expression="_this setVariable ['smoothSpawn',_value,true];";
 					class Value
 					{
 						class data
 						{
 							singleType="STRING";
-							value="1";
+							value="0.3";
 						};
 					};
 				};
-				nAttributes=15;
+				class Attribute12
+				{
+					property="ALiVE_sys_profile_spawnRadiusUAV";
+					expression="_this setVariable ['spawnRadiusUAV',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="-1";
+						};
+					};
+				};
+				class Attribute13
+				{
+					property="ALiVE_sys_profile_zeusSpawn";
+					expression="_this setVariable ['zeusSpawn',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="true";
+						};
+					};
+				};
+				class Attribute14
+				{
+					property="ALiVE_sys_profile_spawnTypeHeliRadius";
+					expression="_this setVariable ['spawnTypeHeliRadius',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="1500";
+						};
+					};
+				};
+				class Attribute15
+				{
+					property="ALiVE_sys_profile_pathfindingSize";
+					expression="_this setVariable ['pathfindingSize',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[600,75]";
+						};
+					};
+				};
+				nAttributes=16;
 			};
 		};
 		class Item21
@@ -3004,7 +3009,7 @@ class Mission
 			text="Field Hospital";
 			type="b_med";
 			id=36;
-			atlOffset=1.1444092e-005;
+			atlOffset=1.1444092e-05;
 		};
 		class Item33
 		{
@@ -8227,7 +8232,7 @@ class Mission
 				};
 			};
 			id=95;
-			atlOffset=4.7683716e-007;
+			atlOffset=4.7683716e-07;
 		};
 		class Item44
 		{
@@ -8245,7 +8250,7 @@ class Mission
 			};
 			id=97;
 			type="B_UGV_01_F";
-			atlOffset=4.7683716e-007;
+			atlOffset=4.7683716e-07;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8705,7 +8710,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7478.6973,5.8494267,7354.7266};
-				angles[]={-0,4.7123895,0};
+				angles[]={0,4.7123895,0};
 			};
 			side="Empty";
 			flags=4;
@@ -9078,7 +9083,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7478.6499,5.9804134,7355.1689};
-				angles[]={-0,4.712389,0};
+				angles[]={0,4.712389,0};
 			};
 			side="Empty";
 			class Attributes

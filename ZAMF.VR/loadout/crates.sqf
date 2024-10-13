@@ -448,9 +448,15 @@ switch (_loadout) do {
 		// Marking
 
 
-		// Ammo Bearing
-		_crate addBackpackCargoGlobal ["CUP_B_L111A1_Gun_Bag", 2];
-		_crate addBackpackCargoGlobal ["CUP_B_L111A1_Tripod_Bag", 2];
+		// CSW
+		_crate addWeaponCargoGlobal ["ace_csw_m3CarryTripodLow", 1];
+		_crate addWeaponCargoGlobal ["ace_csw_m3CarryTripod", 1];
+		// HMG
+		_crate addWeaponCargoGlobal ["ace_csw_staticHMGCarry", 1];
+		_crate addMagazineCargoGlobal ["ace_csw_100Rnd_127x99_mag_red", 8];
+		// GMG
+		_crate addWeaponCargoGlobal ["ace_csw_staticGMGCarry", 1];
+		_crate addMagazineCargoGlobal ["ace_csw_20Rnd_20mm_G_belt", 8];
 
 	};
 
@@ -515,12 +521,13 @@ switch (_loadout) do {
 
 		// Marking
 
-
-		// Ammo Bearing
-		_crate addBackpackCargoGlobal ["CUP_B_L111A1_Gun_Bag", 2];
-
 		// Destroy crate
 		_crate addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 1];
+
+		// HMG
+		_crate addMagazineCargoGlobal ["ace_csw_100Rnd_127x99_mag_red", 8];
+		// GMG
+		_crate addMagazineCargoGlobal ["ace_csw_20Rnd_20mm_G_belt", 8];
 
 	};
 
@@ -618,11 +625,11 @@ switch (_loadout) do {
 
 
 		// Mortar
-		_crate addBackpackCargoGlobal ["B_Mortar_01_support_F", 1];
-		_crate addBackpackCargoGlobal ["B_Mortar_01_weapon_F", 1];
+		_crate addWeaponCargoGlobal ["ace_csw_carryMortarBaseplate", 1];
+		_crate addWeaponCargoGlobal ["ace_csw_staticMortarCarry", 1];
 		_crate addItemCargoGlobal ["ACE_RangeTable_82mm", 1];
 		_crate addItemCargoGlobal ["ACE_Kestrel4500", 1];
-		_crate addItemCargoGlobal ["ACE_1Rnd_82mm_Mo_HE", 16];
+		_crate addItemCargoGlobal ["ACE_1Rnd_82mm_Mo_HE", 30];
 		_crate addItemCargoGlobal ["ACE_1Rnd_82mm_Mo_Smoke", 16];
 		_crate addItemCargoGlobal ["ACE_1Rnd_82mm_Mo_Illum", 16];
 
