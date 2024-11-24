@@ -72,11 +72,11 @@ switch (_loadout) do {
 
 	case "surveillance": {
 
-		_crate addBackpackCargoGlobal ["B_UAV_01_backpack_F", 1];
-		_crate addItemCargoGlobal ["ACE_UAVBattery", 5];
+		_crate addBackpackCargoGlobal ["B_UAV_01_backpack_F", 2];
+		_crate addBackpackCargoGlobal ["B_UAV_06_backpack_F", 1];
+		_crate addItemCargoGlobal ["ACE_UAVBattery", 8];
 		_crate addItemCargoGlobal ["ACE_HuntIR_monitor", 2];
 		_crate addMagazineCargoGlobal ["ACE_HuntIR_M203", 8];
-
 	};
 
 	case "explosives": {
