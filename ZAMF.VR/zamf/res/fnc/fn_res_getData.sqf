@@ -69,6 +69,6 @@ private _crew = call {
 	animationState _player,
 	_crew,
 	typeOf _player,
-	[_player] call ace_Hearing_fnc_hasEarPlugsIn,
+	_player getVariable ["ACE_hasEarPlugsIn", false],
 	roleDescription _player
 ]

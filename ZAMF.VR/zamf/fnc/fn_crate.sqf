@@ -38,7 +38,7 @@ _crate addAction [
 		// Save kit
 		zamf_var_gear_loadout_saved = getUnitLoadout player;
 		// Save earplugs
-		if ([player] call ace_Hearing_fnc_hasEarPlugsIn) then {
+		if (player getVariable ["ACE_hasEarPlugsIn", false]) then {
 			zamf_var_gear_loadout_saved_earplugs = true;
 		};
 		// Notify player
